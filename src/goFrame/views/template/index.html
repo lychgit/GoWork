@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{.index}}</title>
+    {{template "head.html" .}}
 </head>
 <body>
-<dev>{{.index.Name}}</dev>
-<dev>{{.index.Age}}</dev>
+{{template "top.html" .}}
+<div>
+
+{{template "left.html" .}}
+</div>
+
+<div class="container">
+{{.LayoutContent}}
+</div>
+
+{{template "js.html" .}}
 </body>
 </html>
