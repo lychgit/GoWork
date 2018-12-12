@@ -3,7 +3,6 @@ package main
 import (
 	_ "goFrame/routers"
 	"github.com/astaxie/beego"
-	"strings"
 )
 
 func main() {

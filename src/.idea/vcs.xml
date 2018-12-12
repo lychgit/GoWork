@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/astaxie/beego" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/astaxie/goredis" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/go-sql-driver/mysql" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pyth_case/github.com/astaxie/beego" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pyth_case/github.com/astaxie/goredis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pyth_case/github.com/beego/bee" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pyth_case/github.com/garyburd/redigo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pyth_case/github.com/go-sql-driver/mysql" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pyth_case/github.com/gomodule/redigo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pyth_case/github.com/lightTrace/beego-blog" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/爬虫/github.com/astaxie/beego" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/爬虫/github.com/astaxie/goredis" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/爬虫/github.com/beego/bee" vcs="Git" />
