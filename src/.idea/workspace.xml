@@ -2,16 +2,96 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3d56d0d-42a1-4b3d-9a4f-590c642be896" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/goFrame/views/index_layout.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/index.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/lisijie/webcron/views/index/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/admin/controllers/admin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/admin/controllers/adminbase.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/admin/controllers/index.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/admin/controllers/login.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/admin/models/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/controllers/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/libs/pager.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/libs/string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/models/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/models/log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/base-admin-responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/bootstrap-responsive.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/font-awesome-ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/font-awesome-ie7.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/pages/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/pages/faq.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/pages/plans.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/pages/reports.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/pages/signin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/font/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/font/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/font/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/font/fontawesome-webfont.svgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/font/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/font/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/font/fontawesome-webfontd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/img/body-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/img/glyphicons-halflings-white.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/img/glyphicons-halflings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/img/icons-sa7c41345d9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/img/signin/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/img/signin/fb_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/img/signin/password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/img/signin/twitter_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/img/signin/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/charts/area.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/charts/bar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/charts/donut.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/charts/line.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/charts/pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/full-calendar/fullcalendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/full-calendar/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/guidely/guidely-number.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/guidely/guidely.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/guidely/guidely.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/static/js/jquery-1.7.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/views/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/views/admin/login/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/views/admin/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/views/error/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/views/error/message.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/views/layout/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/web/controllers/login.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/web/controllers/webbase.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/web/models/models.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/web/models/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goFrame/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/controllers/default.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goFrame/goFrame.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/github.com/astaxie/beego" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/astaxie/beego" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github.com/astaxie/beego/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/astaxie/beego/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github.com/lisijie/goblog/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/lisijie/goblog/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github.com/lisijie/goblog/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/lisijie/goblog/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/base.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github.com/lisijie/webcron/app/models/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/lisijie/webcron/app/models/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github.com/lisijie/webcron/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/lisijie/webcron/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/github.com/lisijie/webcron/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/lisijie/webcron/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/controllers/crawMovie.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/admin/controllers/default.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goFrame/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goFrame/views/template/admin/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/views/template/admin/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goFrame/views/template/admin/js.html" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/views/template/admin/js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goFrame/views/template/admin/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/views/template/admin/left.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goFrame/views/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/views/template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/models/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/models/models.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/models/redis.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/views/index.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/views/index1.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/views/index_layout.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyth_case/craw_movie/controllers/crawMovie.go" beforeDir="false" afterPath="$PROJECT_DIR$/pyth_case/craw_movie/controllers/crawMovie.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,44 +103,63 @@
     <session id="-702239614">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.12" value="3" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="4" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="4" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="conf" value="4" />
-          <entry key="go" value="34" />
-          <entry key="html" value="10" />
+          <entry key="conf" value="17" />
+          <entry key="css" value="1" />
+          <entry key="go" value="205" />
+          <entry key="html" value="31" />
           <entry key="js" value="1" />
-          <entry key="tpl" value="6" />
+          <entry key="log" value="1" />
+          <entry key="prod" value="1" />
+          <entry key="tpl" value="7" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="34" />
-          <entry key="HTML" value="10" />
+          <entry key="CSS" value="1" />
+          <entry key="Go" value="205" />
+          <entry key="HTML" value="31" />
           <entry key="JavaScript" value="1" />
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="PLAIN_TEXT" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="362" />
-          <entry key="html" value="93" />
+          <entry key="conf" value="233" />
+          <entry key="go" value="3184" />
+          <entry key="html" value="114" />
+          <entry key="log" value="3" />
+          <entry key="prod" value="2" />
           <entry key="tpl" value="74" />
           <entry key="txt" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="362" />
-          <entry key="HTML" value="93" />
-          <entry key="PLAIN_TEXT" value="83" />
+          <entry key="Go" value="3184" />
+          <entry key="HTML" value="114" />
+          <entry key="PLAIN_TEXT" value="321" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.go.postfix.template.usages.trigger">
+        <counts>
+          <entry key=".p" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -68,67 +167,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goFrame/views/index.tpl">
+        <entry file="file://$PROJECT_DIR$/goFrame/models/log.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" lean-forward="true" selection-start-column="12" selection-end-column="21" />
+            <state relative-caret-position="285">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goFrame/controllers/default.go">
+        <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/admin.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="18" selection-start-line="18" selection-end-line="19" />
+            <state relative-caret-position="76">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/goFrame/routers/router.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/login.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="16" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/adminbase.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="703">
+              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
               <folding>
-                <element signature="e#21#59#0" expanded="true" />
+                <element signature="e#21#151#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goFrame/views/index_layout.tpl">
+        <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/context/context.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goFrame/views/template/admin/top.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goFrame/views/template/admin/left.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goFrame/views/template/admin/js.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/goFrame/views/template/admin/head.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+            <state relative-caret-position="-47">
+              <caret line="56" column="86" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -136,20 +226,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/goFrame/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#14#84#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goFrame/views/template/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="143">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -159,15 +237,58 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="HTML File" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>layout_blog</find>
+      <find>8080</find>
+      <find>WebConfig.Session</find>
+      <find>jobs</find>
+      <find>controllerName</find>
+      <find>this.controllerName</find>
+      <find>this.actionName</find>
+      <find>this.user</find>
+      <find>isPost</find>
+      <find>MainController</find>
+      <find>modelsmodels</find>
+      <find>db</find>
+      <find>webcontroller</find>
+      <find>controllers</find>
+      <find>Login</find>
+      <find>package routers\n\nimport \(\n\	admin \&quot;goFrame\/admin\/controllers\&quot;\n\	\&quot;goFrame\/controllers\&quot;\n\	web \&quot;goFrame\/web\/controllers\&quot;\n\	\&quot;github\.com\/astaxie\/beego\&quot;\n\	\&quot;net\/http\&quot;\n\	\&quot;html\/template\&quot;\n\	\&quot;pyth_case\/blog\/controllers\&quot;\n\)\n\nfunc init\(\) \{\n\	\/\/ 设置默认404页面\n\	beego\.ErrorHandler\(\&quot;404\&quot;\, func\(rw http\.ResponseWriter\, r \*http\.Request\) \{\n\	\	t\, _ \:\= template\.New\(\&quot;404\.html\&quot;\)\.ParseFiles\(beego\.BConfig\.WebConfig\.ViewsPath \+ \&quot;\/error\/404\.html\&quot;\)\n\	\	data \:\= make\(map\[string\]interface\{\}\)\n\	\	data\[\&quot;content\&quot;\] \= \&quot;page not found\&quot;\n\	\	t\.Execute\(rw\, data\)\n\	\}\)\n\	\/\*路由设置\*\/\n\n\	\/\/固定路由\n\	beego\.Router\(\&quot;\/\&quot;\, \&amp;controllers\.LoginController\{\}\, \&quot;\*\:Index\&quot;\)\n\	\/\/beego\.Router\(\&quot;\/\&quot;\, \&amp;controll\.MainController\{\}\, \&quot;\*\:Index\&quot;\)\n\	\/\/beego\.Router\(\&quot;\/profile\&quot;\, \&amp;controllers\.LoginController\{\}\, \&quot;\*\:Profile\&quot;\)\n\	\/\/beego\.Router\(\&quot;\/gettime\&quot;\, \&amp;controllers\.LoginController\{\}\, \&quot;\*\:GetTime\&quot;\)\n\	beego\.Router\(\&quot;\/login\&quot;\, \&amp;web\.LoginController\{\}\, \&quot;\*\:Login\&quot;\)\n\	beego\.Router\(\&quot;\/logout\&quot;\, \&amp;web\.LoginController\{\}\, \&quot;\*\:Logout\&quot;\)\n\	\/\/beego\.Router\(\&quot;\/help\&quot;\, \&amp;controllers\.HelpController\{\}\, \&quot;\*\:Index\&quot;\)\n\n\n\	beego\.Router\(\&quot;\/admin\&quot;\, \&amp;admin\.AdminController\{\}\, \&quot;\*\:Index\&quot;\)\n\	beego\.Router\(\&quot;\/admin\/login\&quot;\, \&amp;admin\.AdminController\{\}\, \&quot;\*\:Login\&quot;\)\n\	beego\.Router\(\&quot;\/admin\/logout\&quot;\, \&amp;admin\.AdminController\{\}\, \&quot;\*\:Logout\&quot;\)\n\	\/\/beego\.Router\(\&quot;\/admin\/profile\&quot;\, \&amp;controllers\.AdminController\{\}\, \&quot;\*\:Profile\&quot;\)\n\	\/\/beego\.Router\(\&quot;\/admin\/gettime\&quot;\, \&amp;controllers\.AdminController\{\}\, \&quot;\*\:GetTime\&quot;\)\n\n\	\/\/路由自动匹配\n\	\/\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\	\	後台控制器\	\	\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\/\n\	\/\/beego\.AutoRouter\(\&amp;admincontroller\.AdminController\{\}\)\n\n\	\/\/beego\.Router\(\&quot;\/craw_movie\&quot;\, \&amp;controllers\.CrawMovieController\{\}\,\&quot;\*\:CrawMovie\&quot;\)\n\n\}\n</find>
+      <find>TaskLogGetList</find>
+      <find>json</find>
+      <find>TaskLogAdd</find>
+      <find>log</find>
+      <find>auth</find>
+      <find>ip</find>
+      <find>Form</find>
+      <find>this.Ctx.Request.</find>
+      <find>getClientIp</find>
+      <find>Abort</find>
+      <find>404</find>
+      <find>http.Request</find>
+      <find>LevelInformational</find>
     </findStrings>
+    <replaceStrings>
+      <replace>this.ControllerName</replace>
+      <replace>this.Pagesize</replace>
+      <replace>this.User</replace>
+      <replace>AdminController</replace>
+      <replace>controllers</replace>
+      <replace>admincontroller</replace>
+      <replace>LoginController</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\GoWork\src\github.com\lisijie\webcron\app</dir>
+      <dir>D:\GoWork\src\github.com\lisijie\webcron</dir>
+      <dir>D:\GoWork\src\github.com\lisijie</dir>
+      <dir>D:\GoWork\src\goFrame</dir>
+    </dirStrings>
   </component>
   <component name="GOROOT" path="D:\Tool\Go" />
   <component name="Git.Settings">
@@ -176,23 +297,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/goFrame/static/down1/123.txt" />
-        <option value="$PROJECT_DIR$/goFrame/models/user.go" />
         <option value="$PROJECT_DIR$/爬虫/craw_movie/controllers/crawMovie.go" />
-        <option value="$PROJECT_DIR$/goFrame/models/models.go" />
         <option value="$PROJECT_DIR$/goFrame/controllers/crawMovie.go" />
-        <option value="$PROJECT_DIR$/goFrame/routers/router.go" />
         <option value="$PROJECT_DIR$/goFrame/tempalte/index.html" />
         <option value="$PROJECT_DIR$/goFrame/views/tempalte/empty.html" />
         <option value="$PROJECT_DIR$/goFrame/views/tempalte/index.html" />
         <option value="$PROJECT_DIR$/goFrame/views/index.tpl" />
-        <option value="$PROJECT_DIR$/goFrame/main.go" />
         <option value="$PROJECT_DIR$/goFrame/views/template/index.html" />
         <option value="$PROJECT_DIR$/goFrame/controllers/default.go" />
         <option value="$PROJECT_DIR$/goFrame/views/template/admin/top.html" />
         <option value="$PROJECT_DIR$/goFrame/views/template/admin/left.html" />
         <option value="$PROJECT_DIR$/goFrame/views/template/admin/js.html" />
         <option value="$PROJECT_DIR$/goFrame/views/template/admin/head.html" />
+        <option value="$PROJECT_DIR$/goFrame/conf/prod" />
+        <option value="$PROJECT_DIR$/goFrame/conf/dev.conf" />
+        <option value="$PROJECT_DIR$/goFrame/conf/prod.conf" />
+        <option value="$PROJECT_DIR$/github.com/astaxie/beego/config.go" />
+        <option value="$PROJECT_DIR$/github.com/lisijie/goblog/conf/app.conf" />
+        <option value="$PROJECT_DIR$/github.com/lisijie/goblog/main.go" />
+        <option value="$PROJECT_DIR$/goFrame/models/user.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/controllers/index.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/controllers/crawMovie.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/models/init.go" />
+        <option value="$PROJECT_DIR$/goFrame/database/init.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/models/user.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/models/models.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/controllers/default.go" />
+        <option value="$PROJECT_DIR$/goFrame/web/controllers/adminbase.go" />
+        <option value="$PROJECT_DIR$/goFrame/web/controllers/login.go" />
+        <option value="$PROJECT_DIR$/goFrame/views/index.htnl.html" />
+        <option value="$PROJECT_DIR$/goFrame/views/error/404.html" />
+        <option value="$PROJECT_DIR$/goFrame/controllers/main.go" />
+        <option value="$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/main.go" />
+        <option value="$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/index.go" />
+        <option value="$PROJECT_DIR$/github.com/lisijie/webcron/views/index/index.html" />
+        <option value="$PROJECT_DIR$/github.com/lisijie/webcron/main.go" />
+        <option value="$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/base.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/models/log.go" />
+        <option value="$PROJECT_DIR$/goFrame/libs/pager.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/controllers/admin.go" />
+        <option value="$PROJECT_DIR$/goFrame/models/log.go" />
+        <option value="$PROJECT_DIR$/goFrame/models/models.go" />
+        <option value="$PROJECT_DIR$/github.com/lisijie/webcron/app/models/init.go" />
+        <option value="$PROJECT_DIR$/goFrame/controllers/base.go" />
+        <option value="$PROJECT_DIR$/goFrame/routers/router.go" />
+        <option value="$PROJECT_DIR$/github.com/lisijie/webcron/conf/app.conf" />
+        <option value="$PROJECT_DIR$/goFrame/conf/app.conf" />
+        <option value="$PROJECT_DIR$/goFrame/models/init.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/controllers/adminbase.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/controllers/login.go" />
+        <option value="$PROJECT_DIR$/goFrame/main.go" />
+        <option value="$PROJECT_DIR$/goFrame/var/logs/debug.log" />
       </list>
     </option>
   </component>
@@ -203,10 +358,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="1750" />
-    <option name="height" value="970" />
+    <option name="x" value="65" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -214,6 +369,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,58 +380,92 @@
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="goFrame" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="goFrame" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="astaxie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lisijie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lisijie" type="462c0819:PsiDirectoryNode" />
+              <item name="webcron" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lisijie" type="462c0819:PsiDirectoryNode" />
+              <item name="webcron" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lisijie" type="462c0819:PsiDirectoryNode" />
+              <item name="webcron" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lisijie" type="462c0819:PsiDirectoryNode" />
+              <item name="webcron" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lisijie" type="462c0819:PsiDirectoryNode" />
+              <item name="webcron" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lisijie" type="462c0819:PsiDirectoryNode" />
+              <item name="webcron" type="462c0819:PsiDirectoryNode" />
               <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="goFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="goFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="var" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="goFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="routers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="goFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="goFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="goFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="var" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,21 +474,25 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="D:/Case/goblog" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GoWork\src\goFrame\views" />
-      <recent name="D:\GoWork\src\goFrame\views\template\admin" />
-      <recent name="D:\GoWork\src\goFrame\static\js" />
-      <recent name="D:\GoWork\src\goFrame\models" />
-      <recent name="D:\GoWork\src\goFrame\controllers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GoWork\src\goFrame\views" />
+      <recent name="D:\GoWork\src\goFrame\models" />
+      <recent name="D:\GoWork\src\goFrame\views\admin\login" />
+      <recent name="D:\GoWork\src\goFrame\views\admin" />
+      <recent name="D:\GoWork\src\goFrame" />
+      <recent name="D:\GoWork\src\goFrame\admin\models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GoWork\src\goFrame\models" />
+      <recent name="D:\GoWork\src\goFrame" />
+      <recent name="D:\GoWork\src\goFrame\web" />
+      <recent name="D:\GoWork\src\goFrame\admin\controllers" />
+      <recent name="D:\GoWork\src\goFrame\admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -323,6 +517,33 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/goblog/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/github.com/lisijie/goblog/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/github.com/lisijie/webcron/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -335,10 +556,16 @@
     <list>
       <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build main.go (1)" />
+      <item itemvalue="Go Build.go build main.go (2)" />
+      <item itemvalue="Go Build.go build main.go (3)" />
+      <item itemvalue="Go Build.go build main.go (4)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build main.go (4)" />
+        <item itemvalue="Go Build.go build main.go (3)" />
+        <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go (1)" />
       </list>
     </recent_temporary>
@@ -356,19 +583,19 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25871313" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23324397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47592068" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32719547" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49865952" visible="true" weight="0.53966004" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32719547" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49865952" visible="true" weight="0.35835695" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.2592068" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -403,217 +630,355 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/goFrame/static/download1/123.txt">
+    <entry file="file://$PROJECT_DIR$/goFrame/database/init.go" />
+    <entry file="file://$PROJECT_DIR$/goFrame/web/models/user.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        <state relative-caret-position="-285" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/libs/string.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/tests/default_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/爬虫/craw_movie/models/redis.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="67" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/beego.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/爬虫/craw_movie/models/movie_info.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/爬虫/craw_movie/views/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/爬虫/craw_movie/conf/app.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/爬虫/craw_movie/controllers/default.go">
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/models/models.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="7" lean-forward="true" selection-end-line="15" />
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/爬虫/craw_movie/controllers/crawMovie.go">
+    <entry file="file://$PROJECT_DIR$/goFrame/web/controllers/default.go" />
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/default.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="19">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/爬虫/craw_movie/main.go">
+    <entry file="file://$PROJECT_DIR$/goFrame/web/controllers/webbase.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="-1718">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/爬虫/craw_movie/routers/router.go">
+    <entry file="file://$PROJECT_DIR$/goFrame/views/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/web/controllers/login.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/views/error/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/app.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="257" column="5" selection-start-line="257" selection-start-column="5" selection-end-line="257" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="29" />
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/static/js/layer/文档/更新日志.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/static/js/layer/mobile/layer.js">
+    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/log.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/controllers/crawMovie.go">
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/index.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/index1.tpl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/routers/router.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" lean-forward="true" selection-start-column="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/conf/app.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/template/empty.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/main.go">
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/index.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/views/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/views/admin/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/app/libs/pager.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/task.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="190" column="10" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/libs/pager.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/flash.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="93" column="64" selection-start-line="93" selection-start-column="64" selection-end-line="93" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/models/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="29" />
           <folding>
-            <element signature="e#14#84#0" expanded="true" />
+            <element signature="e#16#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/app/models/task_log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/orm/types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="67" column="11" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/app/jobs/job.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="121" selection-start-line="121" selection-end-line="122" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/orm/models_boot.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="313" column="5" selection-start-line="313" selection-start-column="5" selection-end-line="313" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/base.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="104" column="14" selection-start-line="104" selection-start-column="14" selection-end-line="104" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/controllers/base.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/goFrame/models/models.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="e#16#114#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/models/redis.go">
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#16#56#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-209">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/template.go">
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/app/models/task_group.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="74" selection-start-line="74" selection-end-line="75" />
+        <state relative-caret-position="-437">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/controllers/default.go">
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/app/models/task.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="18" selection-start-line="18" selection-end-line="19" />
-          <folding>
-            <element signature="e#21#59#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1538">
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/index_layout.tpl">
+    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/controller.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="101">
+          <caret line="398" column="21" selection-start-line="398" selection-start-column="21" selection-end-line="398" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/template/index.html">
+    <entry file="file://D:/Tool/Go/src/net/url/url.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="-2367">
+          <caret line="877" column="16" selection-start-line="877" selection-start-column="16" selection-end-line="877" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/template/admin/top.html">
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/admin.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        <state relative-caret-position="76">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/template/admin/left.html">
+    <entry file="file://$PROJECT_DIR$/goFrame/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Tool/Go/src/net/http/request.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <caret line="160" column="10" selection-start-line="160" selection-start-column="4" selection-end-line="160" selection-end-column="10" />
+          <folding>
+            <element signature="e#212#459#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/template/admin/js.html">
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/app/models/init.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        <state relative-caret-position="171">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/template/admin/head.html">
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/goblog/controllers/admin/base.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lisijie/webcron/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/models/init.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/controllers/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/context/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="56" column="86" selection-start-line="56" selection-start-column="74" selection-end-line="56" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/models/log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/adminbase.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+          <folding>
+            <element signature="e#21#151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/var/logs/debug.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/login.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="16" selection-end-column="49" />
         </state>
       </provider>
     </entry>

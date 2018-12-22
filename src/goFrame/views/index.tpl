@@ -1,1 +1,0 @@
-{{template "template/index.html" .}}

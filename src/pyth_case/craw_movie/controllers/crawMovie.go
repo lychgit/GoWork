@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"goFrame/models"
+	"goFrame/admin/models"
 	"github.com/astaxie/beego/httplib"
 	"time"
 	"fmt"
