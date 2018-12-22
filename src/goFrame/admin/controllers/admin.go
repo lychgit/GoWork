@@ -3,9 +3,8 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/utils"
-	"goFrame/admin/models"
+	"goFrame/models"
 	"goFrame/libs"
-	"time"
 	"fmt"
 )
 
@@ -110,11 +109,4 @@ func (this *AdminController) Profile() {
 	this.Data["pageTitle"] = "个人信息"
 	this.Data["user"] = user
 	this.display()
-}
-
-// 获取系统时间
-func (this *AdminController) GetTime() {
-	out := make(map[string]interface{})
-	out["time"] = time.Now().UnixNano() / int64(time.Millisecond)
-	this.jsonResult(out)
 }

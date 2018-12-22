@@ -22,7 +22,7 @@ $(function () {
 		}	
 	});
 	initTime = new Date().getTime();
-	$.getJSON("/gettime", function(out) {
+	$.getJSON("/login/gettime", function(out) {
 		setTime(initTime, out.time);
 	});
 });

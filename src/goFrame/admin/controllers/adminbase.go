@@ -2,14 +2,13 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"goFrame/admin/models"
-	BaseModels "goFrame/models"
+	"goFrame/models"
 	"strings"
 	"strconv"
 	"goFrame/libs"
 	"time"
 	"fmt"
-)
+	)
 
 type BaseController struct {
 	beego.Controller
@@ -41,6 +40,9 @@ func (this *BaseController) Prepare() {
 
 //登录状态验证
 func (this *BaseController) auth(controllerName, actionName string) {
+	beego.Debug(controllerName + "." + actionName) //debug埋点
+	//beego.Debug(this.Ctx.Request.URL)              //debug埋点
+	beego.Debug(this.Ctx.Request)                  //debug埋点
 	arr := strings.Split(this.Ctx.GetCookie("auth"), "|")
 	if len(arr) == 2 {
 		idstr, password := arr[0], arr[1]
@@ -58,20 +60,20 @@ func (this *BaseController) auth(controllerName, actionName string) {
 			params := this.Ctx.Request
 			fmt.Println(params)
 
-			log := new(BaseModels.Log)
+			log := new(models.Log)
 			log.Uid = this.userId
 			log.Action = controllerName + "." + actionName //控制器+方法
-			log.Ip = this.getClientIp() //访问者的ip
+			log.Ip = this.getClientIp()                    //访问者的ip
 			//log.Params = this.Ctx.Request.Header; //请求参数
 			log.Type = 0
 			log.CreateTime = t.Unix()
-			BaseModels.LogAdd(log)
+			models.LogAdd(log)
 		}
 	}
 	//未登录重定向至登录界面
 	if this.userId == 0 && (this.controllerName != "login" ||
-		(this.controllerName == "login" && this.actionName != "logout" && this.actionName != "login")) {
-		this.redirect(beego.URLFor("AdminController.Login"))
+		(this.controllerName == "login" && this.actionName != "logout" && this.actionName != "login" && this.actionName != "gettime")) {
+		this.redirect(beego.URLFor("LoginController.Login"))
 	}
 }
 
@@ -95,7 +97,7 @@ func (this *BaseController) redirect(url string) {
 
 // 是否POST提交
 func (this *BaseController) isPost() bool {
-	return this.Ctx.Request.Method == "POST"
+	return strings.ToUpper(this.Ctx.Request.Method) == "POST"
 }
 
 // 显示错误信息

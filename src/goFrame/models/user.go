@@ -2,8 +2,7 @@ package models
 
 import (
 	"github.com/astaxie/beego/orm"
-	"github.com/astaxie/beego"
-	)
+		)
 
 type User struct {
 	Id        	int  		`orm:"auto"`
@@ -34,7 +33,6 @@ func UserAdd(user *User) (int64, error) {
 
 func UserGetById(id int) (*User, error) {
 	u := new(User)
-
 	err := orm.NewOrm().QueryTable(TableName("user")).Filter("id", id).One(u)
 	if err != nil {
 		return nil, err
@@ -44,9 +42,7 @@ func UserGetById(id int) (*User, error) {
 
 func UserGetByName(userName string) (*User, error) {
 	u := new(User)
-	beego.Debug("UserGetByName") //debug埋点
 	err := orm.NewOrm().QueryTable(TableName("user")).Filter("user_name", userName).One(u)
-	beego.Debug("QueryTable") //debug埋点
 	if err != nil {
 		return nil, err
 	}

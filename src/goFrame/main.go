@@ -4,7 +4,7 @@ import (
 	_ "goFrame/routers"
 	"github.com/astaxie/beego"
 	"goFrame/models"
-	)
+)
 
 func init() {
 	//beego.LoadAppConfig("ini", "conf/app.conf")
@@ -18,7 +18,7 @@ func init() {
 }
 
 func main() {
-	
+
 	//是否路由忽略大小写匹配，默认是 true，区分大小写
 	beego.BConfig.RouterCaseSensitive = true
 	//beego 服务器默认在请求的时候输出 server 为 LYCH
@@ -42,11 +42,10 @@ func main() {
 	//是否在日志里面显示文件名和输出日志行号，默认 true。此参数不支持配置文件配置
 	beego.BConfig.Log.FileLineNum = true
 	//日志输出配置，参考 logs 模块，console file 等配置，此参数不支持配置文件配置。
-	beego.BConfig.Log.Outputs = map[string]string{"console": ""}  // or   beego.BConfig.Log.Outputs["console"] = ""
-	
+	beego.BConfig.Log.Outputs = map[string]string{"console": ""} // or   beego.BConfig.Log.Outputs["console"] = ""
 
 	/******************************		web 配置	******************************/
-	
+
 	//是否模板自动渲染，默认值为 true，对于 API 类型的应用，应用需要把该选项设置为 false，不需要渲染模板。
 	beego.BConfig.WebConfig.AutoRender = true
 
@@ -56,10 +55,10 @@ func main() {
 	// 请求方法是 POST，默认的文件后缀是 tpl，那么就会默认请求 /viewpath/AddController/post.tpl 文件。
 
 	//静态文件目录设置，默认是static  可配置单个或多个目录:
-	beego.SetStaticPath("/static", "static")	//设置静态文件处理目录
-	beego.SetStaticPath("/static/images","images")
-	beego.SetStaticPath("/static/css","css")
-	beego.SetStaticPath("/static/js","js")
+	beego.SetStaticPath("/static", "static") //设置静态文件处理目录
+	beego.SetStaticPath("/static/images", "images")
+	beego.SetStaticPath("/static/css", "css")
+	beego.SetStaticPath("/static/js", "js")
 
 	//beego.SetViewsPath("templatePath") //设置模板目录
 	beego.SetViewsPath("views") //设置模板目录
@@ -103,7 +102,6 @@ func main() {
 	//我们的程序往往期望把信息输出到 log 中，现在设置输出到文件很方便，如下所示：
 	beego.SetLogger("file", `{"filename": "var/logs/debug.log"}`);
 
-
 	////dbhost := beego.AppConfig.String("dev::mysqluser")
 	//dbuser := beego.AppConfig.String("AppName")
 	//fmt.Println(beego.AppConfig.String("AppName"))
@@ -112,4 +110,3 @@ func main() {
 
 	beego.Run()
 }
-

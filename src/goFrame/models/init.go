@@ -4,10 +4,9 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego"
-	model "goFrame/admin/models"
 	"fmt"
 	"net/url"
-)
+	)
 
 var (
 	db orm.Ormer
@@ -20,7 +19,7 @@ func Init() {
 	dbpassword := beego.AppConfig.String("dbpassword")
 	dbname := beego.AppConfig.String("dbname")
 	timezone := beego.AppConfig.String("dbtimezone")
-	dbprefix := beego.AppConfig.String("dbprefix")
+	//dbprefix := beego.AppConfig.String("dbprefix")
 	if dbport == "" {
 		dbport = "3306"
 	}
@@ -35,8 +34,10 @@ func Init() {
 	//不使用表名前缀
 	//orm.RegisterModel(new(User), new(Task), new(TaskGroup), new(TaskLog))
 	//使用表名前缀
-	orm.RegisterModelWithPrefix(dbprefix, new(model.User),new(Log))
-	//orm.RegisterModel(new(User), new(Post), new(Tag), new(TagPost), new(Option))
+	//dbprefix = "go_"
+	//orm.RegisterModelWithPrefix(dbprefix, new(model.TaskLog))
+	//orm.RegisterModelWithPrefix(dbprefix, new(User), new(Log))
+	orm.RegisterModel(new(User), new(Log))
 
 	if beego.AppConfig.String("runmode") == "dev" {
 		orm.Debug = true
@@ -46,5 +47,5 @@ func Init() {
 }
 
 func TableName(name string) string {
-	return beego.AppConfig.String("db.prefix") + name
+	return beego.AppConfig.String("dbprefix") + name
 }

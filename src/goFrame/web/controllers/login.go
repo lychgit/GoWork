@@ -2,13 +2,12 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"goFrame/admin/models"
+	"goFrame/models"
 	"goFrame/libs"
 	"time"
 	//"runtime"
 	"strings"
 	"strconv"
-	"fmt"
 )
 
 type LoginController struct {
@@ -16,7 +15,7 @@ type LoginController struct {
 }
 // 登录
 func (this *LoginController) Login() {
-	fmt.Println("web/Login")
+	beego.Debug("web/Login") //debug埋点
 	if this.userId > 0 {
 		this.redirect("/")
 	}

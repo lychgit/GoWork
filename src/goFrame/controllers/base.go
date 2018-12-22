@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"goFrame/admin/models"
+	"goFrame/models"
 	"goFrame/libs"
 	"strings"
 	"strconv"
