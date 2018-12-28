@@ -50,7 +50,7 @@ func LogGetList(page, pageSize int, filters ...interface{}) ([] *Log, int64) {
 	query := orm.NewOrm().QueryTable("log")
 	if len(filters) > 0 {
 		length := len(filters)
-		for k := 0; k < length; k++ {
+		for k := 0; k < length; k+=2 {
 			//add condition expression to QuerySeter. for example:  filter by UserName == 'slene'
 			query.Filter(filters[k].(string), filters[k+1])
 		}

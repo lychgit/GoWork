@@ -1,28 +1,106 @@
-2018/12/23 04:31:00.305 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/23 04:31:09.833 [D] [adminbase.go:43]  LoginController.Login 
-2018/12/23 04:31:09.834 [D] [adminbase.go:45]  &{GET /admin/login HTTP/1.1 1 1 map[Accept-Language:[zh-CN,zh;q=0.9] Cookie:[__guid=111872281.2998518982375784000.1537855088473.291; _ga=GA1.1.610560441.1541381784; beegosessionID=6aa4c8a4a9c06e03a1aa0b4a1ba1cdc9; monitor_count=2; BEEGO_FLASH=%00error%23BEEGOFLASH%23%E5%B8%90%E5%8F%B7%E6%88%96%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF%00; beegosessionID=6ece3adfecc048c6a8a185c992300348] Connection:[keep-alive] Upgrade-Insecure-Requests:[1] User-Agent:[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36] Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8] Accept-Encoding:[gzip, deflate, br]] {} <nil> 0 [] false localhost:8080 map[] map[] <nil> map[] [::1]:55377 /admin/login <nil> <nil> <nil> 0xc04218c740} 
-2018/12/23 04:31:10.389 [D] [adminbase.go:43]  LoginController.GetTime 
-2018/12/23 04:31:10.389 [D] [adminbase.go:45]  &{GET /login/gettime HTTP/1.1 1 1 map[Cookie:[__guid=111872281.2998518982375784000.1537855088473.291; _ga=GA1.1.610560441.1541381784; beegosessionID=6ece3adfecc048c6a8a185c992300348; monitor_count=3] Connection:[keep-alive] Accept:[application/json, text/javascript, */*; q=0.01] X-Requested-With:[XMLHttpRequest] User-Agent:[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36] Referer:[http://localhost:8080/admin/login] Accept-Encoding:[gzip, deflate, br] Accept-Language:[zh-CN,zh;q=0.9]] {} <nil> 0 [] false localhost:8080 map[] map[] <nil> map[] [::1]:55377 /login/gettime <nil> <nil> <nil> 0xc04218d780} 
-2018/12/23 04:31:14.724 [D] [adminbase.go:43]  LoginController.Login 
-2018/12/23 04:31:14.725 [D] [adminbase.go:45]  &{POST /admin/login HTTP/1.1 1 1 map[Origin:[http://localhost:8080] Content-Type:[application/x-www-form-urlencoded] Accept-Encoding:[gzip, deflate, br] Cookie:[__guid=111872281.2998518982375784000.1537855088473.291; _ga=GA1.1.610560441.1541381784; beegosessionID=6ece3adfecc048c6a8a185c992300348; monitor_count=3] Connection:[keep-alive] Content-Length:[27] Upgrade-Insecure-Requests:[1] User-Agent:[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36] Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8] Referer:[http://localhost:8080/admin/login] Accept-Language:[zh-CN,zh;q=0.9] Cache-Control:[max-age=0]] 0xc04218d840 <nil> 27 [] false localhost:8080 map[username:[admin] password:[ddd]] map[username:[admin] password:[ddd]] <nil> map[] [::1]:55377 /admin/login <nil> <nil> <nil> 0xc04218d880} 
-2018/12/23 04:31:14.729 [D] [login.go:49]  errorMsg=帐号或密码错误 
-2018/12/23 04:32:34.235 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/23 04:32:42.310 [D] [adminbase.go:43]  LoginController.Login 
-2018/12/23 04:32:42.311 [D] [adminbase.go:45]  &{GET /admin/login HTTP/1.1 1 1 map[Connection:[keep-alive] Upgrade-Insecure-Requests:[1] User-Agent:[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36] Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8] Accept-Encoding:[gzip, deflate, br] Accept-Language:[zh-CN,zh;q=0.9] Cookie:[__guid=111872281.2998518982375784000.1537855088473.291; _ga=GA1.1.610560441.1541381784; beegosessionID=6ece3adfecc048c6a8a185c992300348; monitor_count=3; BEEGO_FLASH=%00error%23BEEGOFLASH%23%E5%B8%90%E5%8F%B7%E6%88%96%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF%00; beegosessionID=0d214999c9ff9e89a6f4afee71f00fcd]] {} <nil> 0 [] false localhost:8080 map[] map[] <nil> map[] [::1]:55500 /admin/login <nil> <nil> <nil> 0xc04218ca00} 
-2018/12/23 04:32:42.906 [D] [adminbase.go:43]  LoginController.GetTime 
-2018/12/23 04:32:42.906 [D] [adminbase.go:45]  &{GET /login/gettime HTTP/1.1 1 1 map[X-Requested-With:[XMLHttpRequest] Connection:[keep-alive] Referer:[http://localhost:8080/admin/login] Accept-Encoding:[gzip, deflate, br] Accept-Language:[zh-CN,zh;q=0.9] Cookie:[__guid=111872281.2998518982375784000.1537855088473.291; _ga=GA1.1.610560441.1541381784; beegosessionID=0d214999c9ff9e89a6f4afee71f00fcd; monitor_count=4] Accept:[application/json, text/javascript, */*; q=0.01] User-Agent:[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36]] {} <nil> 0 [] false localhost:8080 map[] map[] <nil> map[] [::1]:55500 /login/gettime <nil> <nil> <nil> 0xc04218d2c0} 
-2018/12/23 04:32:55.408 [D] [adminbase.go:43]  LoginController.Login 
-2018/12/23 04:32:55.408 [D] [adminbase.go:45]  &{POST /admin/login HTTP/1.1 1 1 map[Connection:[keep-alive] Content-Length:[29] Content-Type:[application/x-www-form-urlencoded] Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8] Referer:[http://localhost:8080/admin/login] Accept-Language:[zh-CN,zh;q=0.9] Cookie:[__guid=111872281.2998518982375784000.1537855088473.291; _ga=GA1.1.610560441.1541381784; beegosessionID=1c026753606eee9ef8b4e3c92c2c07f7] Cache-Control:[max-age=0] Origin:[http://localhost:8080] Upgrade-Insecure-Requests:[1] User-Agent:[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36] Accept-Encoding:[gzip, deflate, br]] 0xc0421ec780 <nil> 29 [] false localhost:8080 map[password:[sssss] username:[admin]] map[username:[admin] password:[sssss]] <nil> map[] [::1]:55509 /admin/login <nil> <nil> <nil> 0xc0421ecbc0} 
-2018/12/23 04:32:55.413 [D] [login.go:49]  errorMsg=帐号或密码错误 
-2018/12/23 04:32:55.676 [D] [adminbase.go:43]  LoginController.GetTime 
-2018/12/23 04:32:55.677 [D] [adminbase.go:45]  &{GET /login/gettime HTTP/1.1 1 1 map[X-Requested-With:[XMLHttpRequest] User-Agent:[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36] Referer:[http://localhost:8080/admin/login] Accept-Encoding:[gzip, deflate, br] Accept:[application/json, text/javascript, */*; q=0.01] Accept-Language:[zh-CN,zh;q=0.9] Cookie:[__guid=111872281.2998518982375784000.1537855088473.291; _ga=GA1.1.610560441.1541381784; beegosessionID=1c026753606eee9ef8b4e3c92c2c07f7; BEEGO_FLASH=%00error%23BEEGOFLASH%23%E5%B8%90%E5%8F%B7%E6%88%96%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF%00; monitor_count=1] Connection:[keep-alive]] {} <nil> 0 [] false localhost:8080 map[] map[] <nil> map[] [::1]:55513 /login/gettime <nil> <nil> <nil> 0xc0421ec140} 
-2018/12/23 04:33:04.815 [D] [adminbase.go:43]  LoginController.Login 
-2018/12/23 04:33:04.815 [D] [adminbase.go:45]  &{POST /admin/login HTTP/1.1 1 1 map[Upgrade-Insecure-Requests:[1] Content-Type:[application/x-www-form-urlencoded] Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8] Referer:[http://localhost:8080/admin/login] Accept-Encoding:[gzip, deflate, br] Connection:[keep-alive] Content-Length:[27] Cache-Control:[max-age=0] Accept-Language:[zh-CN,zh;q=0.9] Cookie:[__guid=111872281.2998518982375784000.1537855088473.291; _ga=GA1.1.610560441.1541381784; beegosessionID=1c026753606eee9ef8b4e3c92c2c07f7; BEEGO_FLASH=%00error%23BEEGOFLASH%23%E5%B8%90%E5%8F%B7%E6%88%96%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF%00; monitor_count=1] Origin:[http://localhost:8080] User-Agent:[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36]] 0xc0421ec180 <nil> 27 [] false localhost:8080 map[username:[admin] password:[ddd]] map[username:[admin] password:[ddd]] <nil> map[] [::1]:55513 /admin/login <nil> <nil> <nil> 0xc0421ec300} 
-2018/12/23 04:33:04.819 [D] [login.go:49]  errorMsg=帐号或密码错误 
-2018/12/23 04:33:04.951 [D] [adminbase.go:43]  LoginController.GetTime 
-2018/12/23 04:33:04.951 [D] [adminbase.go:45]  &{GET /login/gettime HTTP/1.1 1 1 map[Accept-Language:[zh-CN,zh;q=0.9] X-Requested-With:[XMLHttpRequest] Accept-Encoding:[gzip, deflate, br] Referer:[http://localhost:8080/admin/login] Cookie:[__guid=111872281.2998518982375784000.1537855088473.291; _ga=GA1.1.610560441.1541381784; beegosessionID=1c026753606eee9ef8b4e3c92c2c07f7; BEEGO_FLASH=%00error%23BEEGOFLASH%23%E5%B8%90%E5%8F%B7%E6%88%96%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF%00; monitor_count=2] Connection:[keep-alive] Accept:[application/json, text/javascript, */*; q=0.01] User-Agent:[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36]] {} <nil> 0 [] false localhost:8080 map[] map[] <nil> map[] [::1]:55513 /login/gettime <nil> <nil> <nil> 0xc0421ed600} 
-2018/12/23 04:33:29.731 [D] [adminbase.go:43]  LoginController.Login 
-2018/12/23 04:33:29.731 [D] [adminbase.go:45]  &{POST /admin/login HTTP/1.1 1 1 map[Connection:[keep-alive] Cache-Control:[max-age=0] User-Agent:[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36] Referer:[http://localhost:8080/admin/login] Accept-Encoding:[gzip, deflate, br] Content-Length:[32] Origin:[http://localhost:8080] Upgrade-Insecure-Requests:[1] Content-Type:[application/x-www-form-urlencoded] Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8] Accept-Language:[zh-CN,zh;q=0.9] Cookie:[__guid=111872281.2998518982375784000.1537855088473.291; _ga=GA1.1.610560441.1541381784; beegosessionID=1c026753606eee9ef8b4e3c92c2c07f7; BEEGO_FLASH=%00error%23BEEGOFLASH%23%E5%B8%90%E5%8F%B7%E6%88%96%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF%00; monitor_count=2]] 0xc0421ed640 <nil> 32 [] false localhost:8080 map[username:[admin] password:[admin888]] map[password:[admin888] username:[admin]] <nil> map[] [::1]:55513 /admin/login <nil> <nil> <nil> 0xc0421ed680} 
-2018/12/23 04:33:29.735 [D] [login.go:39]  UserUpdate 
-2018/12/23 04:33:29.744 [D] [adminbase.go:43]  AdminController.Index 
-2018/12/23 04:33:29.744 [D] [adminbase.go:45]  &{GET /admin HTTP/1.1 1 1 map[Connection:[keep-alive] Upgrade-Insecure-Requests:[1] Accept-Language:[zh-CN,zh;q=0.9] Cookie:[__guid=111872281.2998518982375784000.1537855088473.291; _ga=GA1.1.610560441.1541381784; beegosessionID=1c026753606eee9ef8b4e3c92c2c07f7; monitor_count=2; auth=1|610fcd12532eb00efbad0c4fb90fc6a1] Cache-Control:[max-age=0] User-Agent:[Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36] Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8] Referer:[http://localhost:8080/admin/login] Accept-Encoding:[gzip, deflate, br]] {} <nil> 0 [] false localhost:8080 map[] map[] <nil> map[] [::1]:55513 /admin <nil> <nil> <nil> 0xc0423bc1c0} 
+2018/12/28 21:52:24.635 [D] [adminbase.go:46]  here is auth 
+2018/12/28 21:52:24.637 [D] [adminbase.go:47]  AdminController.Index 
+2018/12/28 22:09:25.651 [I] [asm_amd64.s:2361]  http server Running on http://:8080
+2018/12/28 22:09:25.703 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:09:25.703 [D] [adminbase.go:47]  AdminController.Index 
+2018/12/28 22:09:25.716 [C] [asm_amd64.s:573]  the request url is  /login
+2018/12/28 22:09:25.717 [C] [asm_amd64.s:573]  Handler crashed with error <Ormer.QueryTable> table name: `user` not exists
+2018/12/28 22:09:25.717 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2018/12/28 22:09:25.717 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2018/12/28 22:09:25.718 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm.go:439
+2018/12/28 22:09:25.718 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/web/models/user.go:37
+2018/12/28 22:09:25.719 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/web/controllers/webbase.go:44
+2018/12/28 22:09:25.719 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/web/controllers/webbase.go:26
+2018/12/28 22:09:25.720 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:816
+2018/12/28 22:09:25.720 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2018/12/28 22:09:25.721 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2018/12/28 22:09:25.721 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2018/12/28 22:09:25.723 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/28 22:09:49.092 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:09:49.092 [D] [adminbase.go:47]  LoginController.Login 
+2018/12/28 22:10:47.621 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:10:47.621 [D] [adminbase.go:47]  LoginController.Login 
+2018/12/28 22:13:40.560 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:13:40.560 [D] [adminbase.go:47]  LoginController.Login 
+2018/12/28 22:13:45.243 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:13:45.243 [D] [adminbase.go:47]  LoginController.Login 
+2018/12/28 22:13:46.953 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:13:46.953 [D] [adminbase.go:47]  LoginController.Login 
+2018/12/28 22:14:05.514 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:14:05.514 [D] [adminbase.go:47]  LoginController.Login 
+2018/12/28 22:14:05.528 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:14:05.529 [D] [adminbase.go:47]  AdminController.Index 
+2018/12/28 22:17:03.564 [I] [asm_amd64.s:2361]  http server Running on http://:8080
+2018/12/28 22:17:08.469 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:17:08.469 [D] [adminbase.go:47]  AdminController.Index 
+2018/12/28 22:17:08.474 [C] [asm_amd64.s:573]  the request url is  /login
+2018/12/28 22:17:08.474 [C] [asm_amd64.s:573]  Handler crashed with error <Ormer.QueryTable> table name: `user` not exists
+2018/12/28 22:17:08.474 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2018/12/28 22:17:08.474 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2018/12/28 22:17:08.474 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm.go:439
+2018/12/28 22:17:08.475 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/web/models/user.go:37
+2018/12/28 22:17:08.475 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/web/controllers/webbase.go:44
+2018/12/28 22:17:08.475 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/web/controllers/webbase.go:26
+2018/12/28 22:17:08.475 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:816
+2018/12/28 22:17:08.475 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2018/12/28 22:17:08.475 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2018/12/28 22:17:08.476 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2018/12/28 22:17:08.476 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/28 22:17:16.655 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:17:16.655 [D] [adminbase.go:47]  LoginController.Login 
+2018/12/28 22:17:18.306 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:17:18.306 [D] [adminbase.go:47]  LoginController.Login 
+2018/12/28 22:17:18.317 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:17:18.318 [D] [adminbase.go:47]  AdminController.Index 
+2018/12/28 22:17:23.269 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:17:23.269 [D] [adminbase.go:47]  AdminController.Index 
+2018/12/28 22:17:37.782 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:17:37.782 [D] [adminbase.go:47]  AdminController.Index 
+2018/12/28 22:17:44.830 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:17:44.830 [D] [adminbase.go:47]  LoginController.Login 
+2018/12/28 22:17:46.438 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:17:46.438 [D] [adminbase.go:47]  LoginController.Login 
+2018/12/28 22:17:46.445 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:17:46.446 [D] [adminbase.go:47]  AdminController.Index 
+2018/12/28 22:19:21.602 [I] [asm_amd64.s:2361]  http server Running on http://:8080
+2018/12/28 22:19:23.861 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:19:23.862 [D] [adminbase.go:47]  AdminController.Index 
+2018/12/28 22:19:23.865 [C] [asm_amd64.s:573]  the request url is  /admin
+2018/12/28 22:19:23.865 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/admin/admin/index.html
+2018/12/28 22:19:23.865 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2018/12/28 22:19:23.865 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2018/12/28 22:19:23.865 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2018/12/28 22:19:23.866 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2018/12/28 22:19:23.866 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2018/12/28 22:19:23.866 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2018/12/28 22:19:23.866 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2018/12/28 22:19:23.867 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2018/12/28 22:19:23.868 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2018/12/28 22:19:23.868 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2018/12/28 22:19:23.869 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/28 22:20:24.178 [I] [asm_amd64.s:2361]  http server Running on http://:8080
+2018/12/28 22:20:26.447 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:20:26.447 [D] [adminbase.go:47]  AdminController.Index 
+2018/12/28 22:21:06.634 [D] [adminbase.go:46]  here is auth 
+2018/12/28 22:21:06.635 [D] [adminbase.go:47]  AdminController.Index 
+2018/12/28 22:24:31.553 [I] [asm_amd64.s:2361]  http server Running on http://:8080
+2018/12/28 22:24:34.795 [D] [adminbase.go:47]  here is auth 
+2018/12/28 22:24:34.795 [D] [adminbase.go:48]  AdminController.Index 
+2018/12/28 22:26:30.228 [I] [asm_amd64.s:2361]  http server Running on http://:8080
+2018/12/28 22:26:33.994 [D] [adminbase.go:47]  here is auth 
+2018/12/28 22:26:33.994 [D] [adminbase.go:48]  AdminController.Index 
+2018/12/28 22:27:07.603 [I] [asm_amd64.s:2361]  http server Running on http://:8080
+2018/12/28 22:27:09.657 [D] [adminbase.go:47]  here is auth 
+2018/12/28 22:27:09.657 [D] [adminbase.go:48]  AdminController.Index 
+2018/12/28 22:29:04.295 [I] [asm_amd64.s:2361]  http server Running on http://:8080
+2018/12/28 22:29:06.551 [D] [adminbase.go:47]  here is auth 
+2018/12/28 22:29:06.551 [D] [adminbase.go:48]  AdminController.Index 
+2018/12/28 22:31:13.556 [I] [asm_amd64.s:2361]  http server Running on http://:8080
+2018/12/28 22:31:19.797 [D] [adminbase.go:47]  here is auth 
+2018/12/28 22:31:19.798 [D] [adminbase.go:48]  AdminController.Index 
+2018/12/28 22:32:03.286 [I] [asm_amd64.s:2361]  http server Running on http://:8080
+2018/12/28 22:32:05.097 [D] [adminbase.go:47]  here is auth 
+2018/12/28 22:32:05.097 [D] [adminbase.go:48]  AdminController.Index 
+2018/12/28 22:32:37.166 [I] [asm_amd64.s:2361]  http server Running on http://:8080
+2018/12/28 22:32:38.711 [D] [adminbase.go:47]  here is auth 
+2018/12/28 22:32:38.712 [D] [adminbase.go:48]  AdminController.Index 

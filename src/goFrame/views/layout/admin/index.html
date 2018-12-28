@@ -1,0 +1,8 @@
+{{/*admin模块的js，css等资源*/}}
+
+<script>
+    //判断当前页面是否在iframe里打开的
+    if (parent && parent != window) {
+        parent.window.location.href = window.location.href;
+    }
+</script>

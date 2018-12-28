@@ -6,8 +6,8 @@ import (
 	"goFrame/libs"
 	"strings"
 	"strconv"
-		"fmt"
-	)
+	"fmt"
+)
 
 type BaseController struct {
 	beego.Controller

@@ -27,8 +27,27 @@ func (u *User) Update(fields ...string) error {
 	return nil
 }
 
+func (u *User) Add() error {
+	if _, err := orm.NewOrm().Insert(u); err != nil {
+		return err
+	}
+	return nil
+}
+
+func (u *User) Delete() error{
+	if _, err := orm.NewOrm().Delete(u); err != nil {
+		return err
+	}
+	return nil
+}
+
 func UserAdd(user *User) (int64, error) {
 	return orm.NewOrm().Insert(user)
+}
+
+func UserUpdate(user *User, fields ...string) error {
+	_, err := orm.NewOrm().Update(user, fields...)
+	return err
 }
 
 func UserGetById(id int) (*User, error) {
@@ -49,7 +68,3 @@ func UserGetByName(userName string) (*User, error) {
 	return u, nil
 }
 
-func UserUpdate(user *User, fields ...string) error {
-	_, err := orm.NewOrm().Update(user, fields...)
-	return err
-}

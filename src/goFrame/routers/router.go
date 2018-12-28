@@ -32,7 +32,10 @@ func init() {
 	beego.Router("/admin", &admin.AdminController{}, "*:Index")
 	beego.Router("/admin/login", &admin.LoginController{}, "*:Login")
 	beego.Router("/admin/logout", &admin.LoginController{}, "*:Logout")
-	beego.Router("/login/gettime", &admin.LoginController{}, "*:GetTime")
+	beego.Router("/admin/config", &admin.ConfigController{}, "*:Config") //设置网站配置
+	beego.Router("/admin/config/edit", &admin.ConfigController{}, "*:EditConfig") //编辑网站配置
+	beego.Router("/admin/config/delete", &admin.ConfigController{}, "*:DeleteConfig") //删除网站配置
+	beego.Router("/login/gettime", &admin.LoginController{}, "*:GetTime") //获取系统时间
 	//beego.Router("/admin/profile", &controllers.AdminController{}, "*:Profile")
 	//beego.Router("/admin/gettime", &controllers.AdminController{}, "*:GetTime")
 

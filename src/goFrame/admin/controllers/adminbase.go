@@ -6,9 +6,7 @@ import (
 	"strings"
 	"strconv"
 	"goFrame/libs"
-	"time"
-	"fmt"
-	)
+			)
 
 type BaseController struct {
 	beego.Controller
@@ -20,6 +18,11 @@ type BaseController struct {
 	pageSize       int
 }
 
+type AjaxJson struct {
+	status bool
+	data map[string] string
+}
+
 //这个函数主要是为了用户扩展用的，这个函数会在Get、Post、Delete、Put、Finish等这些 Method 方法之前执行，用户可以重写这个函数实现类似用户验证之类。
 func (this *BaseController) Prepare() {
 	this.pageSize = 20
@@ -29,6 +32,7 @@ func (this *BaseController) Prepare() {
 
 	this.auth(controllerName, actionName)
 
+	this.Data["pageTitle"] = "LYCH System Backstage"
 	this.Data["version"] = beego.AppConfig.String("version")
 	this.Data["siteName"] = beego.AppConfig.String("site.name")
 	this.Data["curRoute"] = this.controllerName + "." + this.actionName
@@ -40,9 +44,10 @@ func (this *BaseController) Prepare() {
 
 //登录状态验证
 func (this *BaseController) auth(controllerName, actionName string) {
+	beego.Debug("here is auth") //debug埋点
 	beego.Debug(controllerName + "." + actionName) //debug埋点
 	//beego.Debug(this.Ctx.Request.URL)              //debug埋点
-	beego.Debug(this.Ctx.Request)                  //debug埋点
+	//beego.Debug(this.Ctx.Request)                  //debug埋点
 	arr := strings.Split(this.Ctx.GetCookie("auth"), "|")
 	if len(arr) == 2 {
 		idstr, password := arr[0], arr[1]
@@ -54,20 +59,18 @@ func (this *BaseController) auth(controllerName, actionName string) {
 				this.userName = user.UserName
 				this.user = user
 			}
-
 			//用户已登录状态  添加用户访问日志
-			t := time.Now()
-			params := this.Ctx.Request
-			fmt.Println(params)
-
-			log := new(models.Log)
-			log.Uid = this.userId
-			log.Action = controllerName + "." + actionName //控制器+方法
-			log.Ip = this.getClientIp()                    //访问者的ip
-			//log.Params = this.Ctx.Request.Header; //请求参数
-			log.Type = 0
-			log.CreateTime = t.Unix()
-			models.LogAdd(log)
+			//t := time.Now()
+			//params := this.Ctx.Request
+			//fmt.Println(params)
+			//log := new(models.Log)
+			//log.Uid = this.userId
+			//log.Action = controllerName + "." + actionName //控制器+方法
+			//log.Ip = this.getClientIp()                    //访问者的ip
+			////log.Params = this.Ctx.Request.Header; //请求参数
+			//log.Type = 0
+			//log.CreateTime = t.Unix()
+			//models.LogAdd(log)
 		}
 	}
 	//未登录重定向至登录界面
@@ -85,8 +88,11 @@ func (this *BaseController) display(tpl ...string) {
 	} else {
 		tplname = "admin/" + this.controllerName + "/" + this.actionName + ".html"
 	}
-	this.Layout = "layout/layout.html"
+	this.Layout = "layout/admin/layout.html"
+	//this.LayoutSections = make(map[string]string)
+	//this.LayoutSections["head_resource"] = "template/head.html" //公共css、js等资源文件
 	this.TplName = tplname
+	//beego.Debug("display:" + this.TplName) //debug埋点
 }
 
 // 重定向

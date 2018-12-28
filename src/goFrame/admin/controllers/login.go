@@ -15,9 +15,11 @@ type LoginController struct {
 
 // 登录
 func (this *LoginController) Login() {
+
 	if this.userId > 0 {
 		beego.Debug("here is admin Login,uid=" + string(this.userId)) //debug埋点
-		this.redirect("/admin")
+		//this.redirect("/admin")
+		this.redirect("/admin/config")
 	}
 	beego.ReadFromRequest(&this.Controller)
 	if this.isPost() {
@@ -33,10 +35,10 @@ func (this *LoginController) Login() {
 			} else if user.Status == -1 {
 				errorMsg = "该帐号已禁用"
 			} else {
+				//beego.Debug("UserUpdate") //debug埋点
 				user.LastIp = this.getClientIp()
 				user.LastLogin = time.Now().Unix() //获取当前时间的Unix时间戳
 				models.UserUpdate(user)
-				beego.Debug("UserUpdate") //debug埋点
 				authkey := libs.Md5([]byte(this.getClientIp() + "|" + user.Password + user.Salt))
 				if remember == "yes" {
 					this.Ctx.SetCookie("auth", strconv.Itoa(user.Id)+"|"+authkey, 7*86400)
@@ -49,13 +51,13 @@ func (this *LoginController) Login() {
 			flash.Store(&this.Controller)
 		}
 	}
-	this.display()
+	this.TplName = "admin/" + this.controllerName + "/" + this.actionName + ".html"
 }
 
 // 退出登录
 func (this *LoginController) Logout() {
 	this.Ctx.SetCookie("auth", "")
-	this.redirect(beego.URLFor("AdminController.Login"))
+	this.redirect(beego.URLFor("LoginController.Login"))
 }
 
 // 获取系统时间

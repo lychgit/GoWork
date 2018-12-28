@@ -5,8 +5,7 @@ import (
 	"github.com/astaxie/beego/utils"
 	"goFrame/models"
 	"goFrame/libs"
-	"fmt"
-)
+	)
 
 type AdminController struct {
 	BaseController
@@ -14,8 +13,6 @@ type AdminController struct {
 
 // 首页
 func (this *AdminController) Index() {
-	fmt.Println("index")
-	this.Data["pageTitle"] = "系统概况"
 	//
 	//// 即将执行的任务
 	//entries := jobs.GetEntries(30)
@@ -72,7 +69,7 @@ func (this *AdminController) Index() {
 	//this.Data["errLogs"] = errLogs
 	//this.Data["jobs"] = jobList
 	//this.Data["cpuNum"] = runtime.NumCPU()
-	this.TplName = "admin/index.html"
+	this.display()
 }
 
 // 个人信息
@@ -110,3 +107,4 @@ func (this *AdminController) Profile() {
 	this.Data["user"] = user
 	this.display()
 }
+

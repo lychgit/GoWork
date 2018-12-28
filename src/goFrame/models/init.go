@@ -37,7 +37,7 @@ func Init() {
 	//dbprefix = "go_"
 	//orm.RegisterModelWithPrefix(dbprefix, new(model.TaskLog))
 	//orm.RegisterModelWithPrefix(dbprefix, new(User), new(Log))
-	orm.RegisterModel(new(User), new(Log))
+	orm.RegisterModel(new(User), new(Log), new(Config))
 
 	if beego.AppConfig.String("runmode") == "dev" {
 		orm.Debug = true
