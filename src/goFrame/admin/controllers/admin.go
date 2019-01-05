@@ -108,3 +108,7 @@ func (this *AdminController) Profile() {
 	this.display()
 }
 
+func (this *AdminController) Error() {
+	this.Data["error"] = this.GetString(":error")
+	this.setTpl("admin/error.html", "layout/admin/layout_pullbox.html")
+}

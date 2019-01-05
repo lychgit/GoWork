@@ -2,18 +2,22 @@ package models
 
 import (
 	"github.com/astaxie/beego/orm"
-		)
+)
 
 type User struct {
-	Id        	int  		`orm:"auto"`
-	UserName  	string
-	Password  	string
-	Salt      	string
-	Email     	string
-	LastLogin 	int64
-	LastIp    	string
-	Status    	int
-	Level		int
+	Id             int `orm:"auto"`
+	UserName       string
+	Password       string
+	Salt           string
+	LastLogin      int64
+	LastIp         string
+	Status         int
+	Mobile         string         `orm:"size(16)"`
+	Email          string         `orm:"size(256)"`
+	Avatar         string         `orm:"size(256)"`
+	RoleIds        []int          `orm:"-" form:"RoleIds"`
+	RoleUserRel    []*RoleUserRel `orm:"reverse(many)"` // 设置一对多的反向关系
+	MenuUrlForList []string       `orm:"-"`
 }
 
 func (u *User) TableName() string {
@@ -34,7 +38,7 @@ func (u *User) Add() error {
 	return nil
 }
 
-func (u *User) Delete() error{
+func (u *User) Delete() error {
 	if _, err := orm.NewOrm().Delete(u); err != nil {
 		return err
 	}
@@ -67,4 +71,3 @@ func UserGetByName(userName string) (*User, error) {
 	}
 	return u, nil
 }
-

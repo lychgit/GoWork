@@ -17,9 +17,10 @@ type LoginController struct {
 func (this *LoginController) Login() {
 
 	if this.userId > 0 {
-		beego.Debug("here is admin Login,uid=" + string(this.userId)) //debug埋点
+		beego.Debug("here is admin Login,uid=") //debug埋点
+		beego.Debug(this.userId)
 		//this.redirect("/admin")
-		this.redirect("/admin/config")
+		this.redirect(beego.URLFor("AdminController.Index"))
 	}
 	beego.ReadFromRequest(&this.Controller)
 	if this.isPost() {
@@ -40,11 +41,14 @@ func (this *LoginController) Login() {
 				user.LastLogin = time.Now().Unix() //获取当前时间的Unix时间戳
 				models.UserUpdate(user)
 				authkey := libs.Md5([]byte(this.getClientIp() + "|" + user.Password + user.Salt))
+				//设置登录cookie
 				if remember == "yes" {
 					this.Ctx.SetCookie("auth", strconv.Itoa(user.Id)+"|"+authkey, 7*86400)
 				} else {
 					this.Ctx.SetCookie("auth", strconv.Itoa(user.Id)+"|"+authkey)
 				}
+				// 设置用户登录session
+				this.setUserSession(user.Id);
 				this.redirect(beego.URLFor("AdminController.Index"))
 			}
 			flash.Error(errorMsg)

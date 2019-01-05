@@ -1,106 +1,111 @@
-2018/12/28 21:52:24.635 [D] [adminbase.go:46]  here is auth 
-2018/12/28 21:52:24.637 [D] [adminbase.go:47]  AdminController.Index 
-2018/12/28 22:09:25.651 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/28 22:09:25.703 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:09:25.703 [D] [adminbase.go:47]  AdminController.Index 
-2018/12/28 22:09:25.716 [C] [asm_amd64.s:573]  the request url is  /login
-2018/12/28 22:09:25.717 [C] [asm_amd64.s:573]  Handler crashed with error <Ormer.QueryTable> table name: `user` not exists
-2018/12/28 22:09:25.717 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
-2018/12/28 22:09:25.717 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
-2018/12/28 22:09:25.718 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm.go:439
-2018/12/28 22:09:25.718 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/web/models/user.go:37
-2018/12/28 22:09:25.719 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/web/controllers/webbase.go:44
-2018/12/28 22:09:25.719 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/web/controllers/webbase.go:26
-2018/12/28 22:09:25.720 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:816
-2018/12/28 22:09:25.720 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
-2018/12/28 22:09:25.721 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
-2018/12/28 22:09:25.721 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
-2018/12/28 22:09:25.723 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
-2018/12/28 22:09:49.092 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:09:49.092 [D] [adminbase.go:47]  LoginController.Login 
-2018/12/28 22:10:47.621 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:10:47.621 [D] [adminbase.go:47]  LoginController.Login 
-2018/12/28 22:13:40.560 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:13:40.560 [D] [adminbase.go:47]  LoginController.Login 
-2018/12/28 22:13:45.243 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:13:45.243 [D] [adminbase.go:47]  LoginController.Login 
-2018/12/28 22:13:46.953 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:13:46.953 [D] [adminbase.go:47]  LoginController.Login 
-2018/12/28 22:14:05.514 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:14:05.514 [D] [adminbase.go:47]  LoginController.Login 
-2018/12/28 22:14:05.528 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:14:05.529 [D] [adminbase.go:47]  AdminController.Index 
-2018/12/28 22:17:03.564 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/28 22:17:08.469 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:17:08.469 [D] [adminbase.go:47]  AdminController.Index 
-2018/12/28 22:17:08.474 [C] [asm_amd64.s:573]  the request url is  /login
-2018/12/28 22:17:08.474 [C] [asm_amd64.s:573]  Handler crashed with error <Ormer.QueryTable> table name: `user` not exists
-2018/12/28 22:17:08.474 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
-2018/12/28 22:17:08.474 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
-2018/12/28 22:17:08.474 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm.go:439
-2018/12/28 22:17:08.475 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/web/models/user.go:37
-2018/12/28 22:17:08.475 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/web/controllers/webbase.go:44
-2018/12/28 22:17:08.475 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/web/controllers/webbase.go:26
-2018/12/28 22:17:08.475 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:816
-2018/12/28 22:17:08.475 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
-2018/12/28 22:17:08.475 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
-2018/12/28 22:17:08.476 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
-2018/12/28 22:17:08.476 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
-2018/12/28 22:17:16.655 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:17:16.655 [D] [adminbase.go:47]  LoginController.Login 
-2018/12/28 22:17:18.306 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:17:18.306 [D] [adminbase.go:47]  LoginController.Login 
-2018/12/28 22:17:18.317 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:17:18.318 [D] [adminbase.go:47]  AdminController.Index 
-2018/12/28 22:17:23.269 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:17:23.269 [D] [adminbase.go:47]  AdminController.Index 
-2018/12/28 22:17:37.782 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:17:37.782 [D] [adminbase.go:47]  AdminController.Index 
-2018/12/28 22:17:44.830 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:17:44.830 [D] [adminbase.go:47]  LoginController.Login 
-2018/12/28 22:17:46.438 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:17:46.438 [D] [adminbase.go:47]  LoginController.Login 
-2018/12/28 22:17:46.445 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:17:46.446 [D] [adminbase.go:47]  AdminController.Index 
-2018/12/28 22:19:21.602 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/28 22:19:23.861 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:19:23.862 [D] [adminbase.go:47]  AdminController.Index 
-2018/12/28 22:19:23.865 [C] [asm_amd64.s:573]  the request url is  /admin
-2018/12/28 22:19:23.865 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/admin/admin/index.html
-2018/12/28 22:19:23.865 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
-2018/12/28 22:19:23.865 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
-2018/12/28 22:19:23.865 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
-2018/12/28 22:19:23.866 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
-2018/12/28 22:19:23.866 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
-2018/12/28 22:19:23.866 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
-2018/12/28 22:19:23.866 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
-2018/12/28 22:19:23.867 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
-2018/12/28 22:19:23.868 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
-2018/12/28 22:19:23.868 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
-2018/12/28 22:19:23.869 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
-2018/12/28 22:20:24.178 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/28 22:20:26.447 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:20:26.447 [D] [adminbase.go:47]  AdminController.Index 
-2018/12/28 22:21:06.634 [D] [adminbase.go:46]  here is auth 
-2018/12/28 22:21:06.635 [D] [adminbase.go:47]  AdminController.Index 
-2018/12/28 22:24:31.553 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/28 22:24:34.795 [D] [adminbase.go:47]  here is auth 
-2018/12/28 22:24:34.795 [D] [adminbase.go:48]  AdminController.Index 
-2018/12/28 22:26:30.228 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/28 22:26:33.994 [D] [adminbase.go:47]  here is auth 
-2018/12/28 22:26:33.994 [D] [adminbase.go:48]  AdminController.Index 
-2018/12/28 22:27:07.603 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/28 22:27:09.657 [D] [adminbase.go:47]  here is auth 
-2018/12/28 22:27:09.657 [D] [adminbase.go:48]  AdminController.Index 
-2018/12/28 22:29:04.295 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/28 22:29:06.551 [D] [adminbase.go:47]  here is auth 
-2018/12/28 22:29:06.551 [D] [adminbase.go:48]  AdminController.Index 
-2018/12/28 22:31:13.556 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/28 22:31:19.797 [D] [adminbase.go:47]  here is auth 
-2018/12/28 22:31:19.798 [D] [adminbase.go:48]  AdminController.Index 
-2018/12/28 22:32:03.286 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/28 22:32:05.097 [D] [adminbase.go:47]  here is auth 
-2018/12/28 22:32:05.097 [D] [adminbase.go:48]  AdminController.Index 
-2018/12/28 22:32:37.166 [I] [asm_amd64.s:2361]  http server Running on http://:8080
-2018/12/28 22:32:38.711 [D] [adminbase.go:47]  here is auth 
-2018/12/28 22:32:38.712 [D] [adminbase.go:48]  AdminController.Index 
+2019/01/06 01:16:09.114 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 01:16:16.915 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:16:16.915 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:16:36.363 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:16:36.363 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 01:16:36.370 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:16:36.370 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:17:54.603 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 01:17:59.052 [D] [adminbase.go:224]  getUserSession 
+2019/01/06 01:17:59.052 [D] [adminbase.go:225]  <nil> 
+2019/01/06 01:17:59.052 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:17:59.055 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:18:05.617 [D] [adminbase.go:224]  getUserSession 
+2019/01/06 01:18:05.617 [D] [adminbase.go:225]  <nil> 
+2019/01/06 01:18:05.617 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:18:05.618 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 01:18:05.625 [D] [adminbase.go:224]  getUserSession 
+2019/01/06 01:18:05.625 [D] [adminbase.go:225]  <nil> 
+2019/01/06 01:18:05.626 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:18:05.626 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:18:19.354 [D] [adminbase.go:224]  getUserSession 
+2019/01/06 01:18:19.354 [D] [adminbase.go:225]  <nil> 
+2019/01/06 01:18:19.355 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:18:19.355 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:20:09.022 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 01:20:14.161 [D] [adminbase.go:224]  getUserSession 
+2019/01/06 01:20:14.161 [D] [adminbase.go:225]  <nil> 
+2019/01/06 01:20:14.162 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:20:14.162 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:21:45.156 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 01:21:47.032 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:21:47.032 [D] [adminbase.go:226]  <nil> 
+2019/01/06 01:21:47.032 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:21:47.033 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:21:47.035 [D] [adminbase.go:105]  1 
+2019/01/06 01:22:02.574 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:22:02.575 [D] [adminbase.go:226]  <nil> 
+2019/01/06 01:22:02.575 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:22:02.576 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:22:02.577 [D] [adminbase.go:105]  1 
+2019/01/06 01:23:35.266 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:23:35.266 [D] [adminbase.go:226]  <nil> 
+2019/01/06 01:23:35.267 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:23:35.267 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:23:35.267 [D] [adminbase.go:105]  0 
+2019/01/06 01:23:41.941 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:23:41.941 [D] [adminbase.go:226]  <nil> 
+2019/01/06 01:23:41.942 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:23:41.942 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 01:23:41.942 [D] [adminbase.go:105]  0 
+2019/01/06 01:23:50.595 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:23:50.595 [D] [adminbase.go:226]  <nil> 
+2019/01/06 01:23:50.596 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:23:50.596 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 01:23:50.596 [D] [adminbase.go:105]  0 
+2019/01/06 01:23:50.606 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
+2019/01/06 01:23:50.606 [D] [adminbase.go:215]  [] 
+2019/01/06 01:23:50.613 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:23:50.613 [D] [adminbase.go:226]  {1 admin 7fef6171469e80d32c0559f88b377245  1546709030 [ 0  admin@example.com  [] [] []} 
+2019/01/06 01:23:50.614 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:23:50.614 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:23:50.615 [D] [adminbase.go:105]  1 
+2019/01/06 01:23:50.623 [D] [controller.go:255]  template Execute err: template: layout/admin/layout.html:144:63: executing "layout/admin/layout.html" at <.user.RealName>: can't evaluate field RealName in type interface {}
+2019/01/06 01:35:03.302 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 01:35:08.819 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:35:08.820 [D] [adminbase.go:226]  <nil> 
+2019/01/06 01:35:08.820 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:35:08.820 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:35:08.822 [D] [adminbase.go:105]  1 
+2019/01/06 01:35:25.877 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:35:25.877 [D] [adminbase.go:226]  <nil> 
+2019/01/06 01:35:25.879 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:35:25.880 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:35:25.880 [D] [adminbase.go:105]  0 
+2019/01/06 01:35:40.172 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:35:40.172 [D] [adminbase.go:226]  <nil> 
+2019/01/06 01:35:40.172 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:35:40.172 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 01:35:40.173 [D] [adminbase.go:105]  0 
+2019/01/06 01:35:54.804 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:35:54.804 [D] [adminbase.go:226]  <nil> 
+2019/01/06 01:35:54.804 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:35:54.804 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 01:35:54.805 [D] [adminbase.go:105]  0 
+2019/01/06 01:35:54.812 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
+2019/01/06 01:35:54.812 [D] [adminbase.go:215]  [] 
+2019/01/06 01:35:54.817 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:35:54.817 [D] [adminbase.go:226]  {1 admin 7fef6171469e80d32c0559f88b377245  1546709754 [ 0  admin@example.com  [] [] []} 
+2019/01/06 01:35:54.817 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:35:54.818 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:35:54.819 [D] [adminbase.go:105]  1 
+2019/01/06 01:35:54.822 [D] [controller.go:255]  template Execute err: template: layout/admin/layout.html:144:63: executing "layout/admin/layout.html" at <.user.RealName>: can't evaluate field RealName in type interface {}
+2019/01/06 01:36:53.227 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 01:37:04.369 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:37:04.369 [D] [adminbase.go:226]  <nil> 
+2019/01/06 01:37:04.370 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:37:04.370 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 01:37:04.370 [D] [adminbase.go:105]  0 
+2019/01/06 01:37:09.179 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:37:09.179 [D] [adminbase.go:226]  <nil> 
+2019/01/06 01:37:09.180 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:37:09.180 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 01:37:09.180 [D] [adminbase.go:105]  0 
+2019/01/06 01:37:09.187 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
+2019/01/06 01:37:09.187 [D] [adminbase.go:215]  [0xc0421fa1c0 0xc0421fa2a0 0xc0421fa380 0xc0421fa460 0xc0421fa540 0xc0421fa620 0xc0421fa700 0xc0421fa7e0] 
+2019/01/06 01:37:09.191 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 01:37:09.191 [D] [adminbase.go:226]  {1 admin 7fef6171469e80d32c0559f88b377245  1546709829 [ 0  admin@example.com  [] [] [ MenuController.Index      ]} 
+2019/01/06 01:37:09.191 [D] [adminbase.go:74]  here is auth 
+2019/01/06 01:37:09.191 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 01:37:09.192 [D] [adminbase.go:105]  1 
+2019/01/06 01:37:09.196 [D] [controller.go:255]  template Execute err: template: layout/admin/layout.html:144:63: executing "layout/admin/layout.html" at <.user.RealName>: can't evaluate field RealName in type interface {}

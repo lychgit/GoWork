@@ -75,7 +75,7 @@ func main() {
 	//应用监听地址，默认为空，监听所有的网卡 IP
 	beego.BConfig.Listen.HTTPAddr = ""
 	//应用监听端口，默认为 8080
-	beego.BConfig.Listen.HTTPPort = 8080
+	beego.BConfig.Listen.HTTPPort = 8000
 	//是否启用 HTTPS，默认是 false 关闭。当需要启用时，先设置 EnableHTTPS = true，并设置 HTTPSCertFile 和 HTTPSKeyFile
 	beego.BConfig.Listen.EnableHTTPS = false
 	//应用监听地址，默认为空，监听所有的网卡 IP

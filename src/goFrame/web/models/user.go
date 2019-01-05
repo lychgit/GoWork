@@ -13,7 +13,7 @@ type User struct {
 	LastLogin 	int64
 	LastIp    	string
 	Status    	int
-	Level		int
+	LevelId		int
 }
 
 func (u *User) TableName() string {
