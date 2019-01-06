@@ -1,0 +1,50 @@
+<!-- 验证插件 -->
+<script src="/static/plugins/jquery-validation/jquery.validate.min.js"></script>
+<script src="/static/plugins/jquery-validation/localization/messages_zh.min.js"></script>
+<!-- 针对当前主题进行简单封装，精简代码 -->
+<script src="/static/sdtheme/scripts/sdvalidate.js"></script>
+
+<script>
+    function FormSubmit() {
+        $("#form").submit();
+    }
+    //使用表单验证页面重写validte方法
+    function validateForm() {
+        var $thisForm = $('#form');
+        $thisForm.sdvalidate({
+            rules: {
+                UserName: {
+                    maxlength: 24,
+                    required: true
+                },
+                UserPwd: {
+                    maxlength: 24,
+                    required: true
+                },
+            },
+            messages: {
+                UserName: {
+                    maxlength: "长度不大于24位",
+                    required: "请输入用户名"
+                },
+                UserPwd: {
+                    maxlength: "长度不大于24位",
+                    required: "请输入密码"
+                },
+
+            },
+            submitHandler: function (form) {
+                var url = '{{ urlfor "HomeController.DoLogin"}}'
+                var data = $thisForm.serialize();
+                $.sdpost(url, data, function (re) {
+                    if (re.code === 0) {
+                        window.location.href='{{ urlfor "HomeController.Index"}}'
+                    } else {
+                        layer.alert(re.msg, { icon: 2, title: '失败' })
+                    }
+                });
+                return false;
+            }
+        });
+    }
+</script>
