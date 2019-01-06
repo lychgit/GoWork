@@ -13,6 +13,7 @@ type AdminController struct {
 
 // 首页
 func (this *AdminController) Index() {
+	this.Data["activeSidebarUrl"] = this.URLFor(this.controllerName + "." + this.actionName)
 	//
 	//// 即将执行的任务
 	//entries := jobs.GetEntries(30)

@@ -15,13 +15,12 @@ type LoginController struct {
 
 // 登录
 func (this *LoginController) Login() {
-
-	if this.userId > 0 {
+	//if this.userId > 0 {
 		beego.Debug("here is admin Login,uid=") //debug埋点
-		beego.Debug(this.userId)
-		//this.redirect("/admin")
-		this.redirect(beego.URLFor("AdminController.Index"))
-	}
+	//	beego.Debug(this.userId)
+	//	//this.redirect("/admin")
+	//	this.redirect(beego.URLFor("AdminController.Index"))
+	//}
 	beego.ReadFromRequest(&this.Controller)
 	if this.isPost() {
 		flash := beego.NewFlash()
@@ -68,5 +67,5 @@ func (this *LoginController) Logout() {
 func (this *LoginController) GetTime() {
 	out := make(map[string]interface{})
 	out["time"] = time.Now().UnixNano() / int64(time.Millisecond)
-	this.jsonResult(out)
+	this.jsonResult(0, "", out)
 }

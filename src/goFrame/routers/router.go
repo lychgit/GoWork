@@ -29,6 +29,7 @@ func init() {
 	//beego.Router("/help", &controllers.HelpController{}, "*:Index")
 
 
+	/******************************		后台路由	******************************/
 	beego.Router("/admin", &admin.AdminController{}, "*:Index")
 	beego.Router("/admin/login", &admin.LoginController{}, "*:Login")
 	beego.Router("/admin/logout", &admin.LoginController{}, "*:Logout")
@@ -36,6 +37,25 @@ func init() {
 	beego.Router("/admin/config/edit", &admin.ConfigController{}, "*:EditConfig") //编辑网站配置
 	beego.Router("/admin/config/delete", &admin.ConfigController{}, "*:DeleteConfig") //删除网站配置
 	beego.Router("/login/gettime", &admin.LoginController{}, "*:GetTime") //获取系统时间
+
+	//用户有权管理的菜单列表（包括区域）
+	beego.Router("/admin/menu/menutree", &admin.MenuController{}, "POST:UserMenuTree")
+	//菜单管理
+	beego.Router("/admin/menu/index", &admin.MenuController{}, "*:Index")
+	//权限管理
+	beego.Router("/admin/auth/index", &admin.AuthController{}, "*:Index")
+	//角色管理
+	beego.Router("/admin/role/index", &admin.RoleController{}, "*:Index")
+	//用户管理
+	beego.Router("/admin/user/index", &admin.UserController{}, "*:Index")
+	//日志管理
+	beego.Router("/admin/log/index", &admin.LogController{}, "*:Index")
+	beego.Router("/admin/log/system", &admin.LogController{}, "*:System")
+	beego.Router("/admin/log/opera", &admin.LogController{}, "*:Opera")
+
+
+	//beego.Router("/resource/checkurlfor", &controllers.MainController{}, "POST:CheckUrlFor")
+
 	//beego.Router("/admin/profile", &controllers.AdminController{}, "*:Profile")
 	//beego.Router("/admin/gettime", &controllers.AdminController{}, "*:GetTime")
 

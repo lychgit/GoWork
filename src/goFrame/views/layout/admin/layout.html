@@ -8,7 +8,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>{{.pageTitle}}</title>
     <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"> 
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     {{template "layout/admin/head.html"}}
     {{.head_resource}}
 </head>
@@ -87,7 +87,7 @@
                                         <li>
                                             <!-- start notification -->
                                             <a href="#">
-                                                <i class="fa fa-users text-aqua"></i> 
+                                                <i class="fa fa-users text-aqua"></i>
                                                 目前没有实质功能，留作将来扩展
                                             </a>
                                         </li>
@@ -141,7 +141,7 @@
                                 <!-- The user image in the navbar-->
                                 <img src="{{.user.Avatar}}" class="user-image" alt="User Image">
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                <span class="hidden-xs">{{.user.RealName}}</span>
+                                <span class="hidden-xs">{{.user.UserName}}</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
@@ -149,7 +149,7 @@
                                     <img src="{{.user.Avatar}}" class="img-circle" alt="User Image">
 
                                     <p>
-                                        高级开发工程师                                       
+                                        高级开发工程师
                                     </p>
                                 </li>
                                 <!-- Menu Body -->
@@ -164,7 +164,7 @@
                                         <div class="col-xs-4 text-center">
                                             <a href="#">Friends</a>
                                         </div>
-                                    </div>                                   
+                                    </div>
                                 </li>-->
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
@@ -210,12 +210,12 @@
     <!-- ./wrapper -->
     <script>
         $(function () {
-           {{/*//页面左侧菜单初始化*/}}
-           {{/*rms.pageSidebarInit({*/}}
-                {{/*slideBarBox:'#pageSidebar',                         //菜单容器*/}}
-                {{/*url:'{{urlfor "ResourceController.UserMenuTree"}}', //菜单数据地址*/}}
-                {{/*cur:'{{.activeSidebarUrl}}'             //当前激活的菜单地址*/}}
-           {{/*});*/}}
+           //页面左侧菜单初始化
+           rms.pageSidebarInit({
+                slideBarBox:'#pageSidebar',                         //菜单容器
+                url:'{{urlfor "MenuController.UserMenuTree"}}', //菜单数据地址
+                cur:'{{.activeSidebarUrl}}'             //当前激活的菜单地址
+           });
         });
     </script>
     {{/*{{.footerjs}}*/}}

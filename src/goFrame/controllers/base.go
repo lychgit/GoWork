@@ -98,8 +98,9 @@ func (this *BaseController) showMsg(args ...string) {
 }
 
 // 输出json
-func (this *BaseController) jsonResult(out interface{}) {
-	this.Data["json"] = out
+func (this *BaseController) jsonResult(code int, msg string, obj interface{}) {
+	r := &models.JsonResult{code, msg, obj}
+	this.Data["json"] = r
 	this.ServeJSON()
 	this.StopRun()
 }
@@ -109,7 +110,7 @@ func (this *BaseController) ajaxMsg(msg interface{}, msgno int) {
 	out["status"] = msgno
 	out["msg"] = msg
 
-	this.jsonResult(out)
+	this.jsonResult(0, "", out)
 }
 
 //获取用户IP地址

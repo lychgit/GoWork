@@ -1,13 +1,13 @@
 var rms = function () {
     //初始化    
     function init() {
-        //console.log("*** rms js *** init");
+        console.log("*** rms js *** init");
     }
     //菜单初化
     function pageSidebarInit(options) {
         var url = options.url;
         $.sdpost(url, {}, function (re) {
-            if (re.code === 0) {                
+            if (re.code === 0) {
                 var $pageSidebar = $(options.slideBarBox);
                 if ($pageSidebar.length === 0) {
                     console.log("menu box is null");
@@ -17,16 +17,16 @@ var rms = function () {
                 var data = re.obj;
                 var html = [];
                 $(data).filter(function (i, e) {
-                    //找出要节点
+                    //找出父节点
                     return e.Parent.Id === 0;
                 }).each(function (i, e) {
                     //菜单
-                    if (e.Rtype === 1) {
+                    if (e.Type === 1) {
                         //递归加载子节点
                         html.push(showSiderBarSon(e, data));
-                    } else if (e.Rtype === 0) {
+                    } else if (e.Type === 0) {
                         //如果是区域，先添加header
-                        html.push('<li class="header" > ' + e.Name + ' </li>');
+                        html.push('<li class="header" > ' + e.TitleCn + ' </li>');
                         //添加区域的子节点  
                         $(data).filter(function (i1, e1) {
                             return e1.Parent.Id === e.Id;
@@ -60,7 +60,7 @@ var rms = function () {
             html.push('<li class="treeview">');
             html.push('  <a href="javascript:;">');
             html.push('    <i class="' + getIcon(cur.Icon) + '"></i>');
-            html.push('    <span>' + cur.Name + '</span>');
+            html.push('    <span>' + cur.TitleCn + '</span>');
             html.push('    <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>');
             html.push('  </a>');
             html.push('  <ul class="treeview-menu">');
@@ -77,7 +77,7 @@ var rms = function () {
                 cur.LinkUrl = "javascript:;"
             }
             //无子菜单
-            html.push('<li><a href="' + cur.LinkUrl + '"><i class="' + getIcon(cur.Icon) + '"></i><span>' + cur.Name + '</span></a></li>');
+            html.push('<li><a href="' + cur.LinkUrl + '"><i class="' + getIcon(cur.Icon) + '"></i><span>' + cur.TitleCn + '</span></a></li>');
         }
         return html.join('');
     }
@@ -146,9 +146,9 @@ var rms = function () {
                 }
             },
             error: function (response, newValue) {
-                if (response.status === 500) {
+                if (response.code === 500) {
                     return '系统错误，请刷新后重试';
-                } if (response.status === 404) {
+                } if (response.code === 404) {
                     return '请求失败，请刷新后重试';
                 } else {
                     return response.responseText;

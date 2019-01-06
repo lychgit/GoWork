@@ -3,7 +3,8 @@ package models
 import (
 	"github.com/astaxie/beego/orm"
 	"fmt"
-	)
+	"github.com/astaxie/beego"
+)
 
 type Menu struct {
 	Id           int `orm: "auto"`
@@ -110,11 +111,11 @@ func MenuListGetByUid(uid, maxrtype int) []*Menu {
 	var sql string
 	if user.Id == 0 {
 		//如果是管理员，则查出所有的
-		sql = fmt.Sprintf(`SELECT id,  pid, title_cn, title_en, type, icon, sort, url_for FROM %s Where logic_delete = 0 Order By sort asc,Id asc`, TableName("menu"))
+		sql = fmt.Sprintf(`SELECT id,  parent_id, title_cn, title_en, type, icon, sort, url_for FROM %s Where logic_delete = 0 Order By sort asc,Id asc`, TableName("menu"))
 		o.Raw(sql).QueryRows(&list)
 	} else {
 		//联查多张表，找出某用户有权管理的
-		sql = fmt.Sprintf(`SELECT DISTINCT T0.role_id, T2.id, T2.pid, T2.title_cn, T2.title_en, T2.type, T2.icon, T2.sort, T2.url_for
+		sql = fmt.Sprintf(`SELECT DISTINCT T0.role_id, T2.id, T2.parent_id, T2.title_cn, T2.title_en, T2.type, T2.icon, T2.sort, T2.url_for
 		FROM %s As T0
 		INNER JOIN %s AS T1 ON T0.role_id = T1.role_id
 		INNER JOIN %s AS T2 ON T1.menu_id = T2.id
@@ -131,8 +132,11 @@ func MenuListGetByUid(uid, maxrtype int) []*Menu {
 
 // menuListTreeGrid 将资源列表转成treegrid格式
 func menuListTreeGrid(list []*Menu) []*Menu {
+	beego.Debug("menuListTreeGrid")
 	result := make([]*Menu, 0)
 	for _, item := range list {
+		//beego.Debug(*item)
+		//beego.Debug(*item.Parent)
 		if item.Parent == nil || item.Parent.Id == 0 {
 			item.Level = 0
 			result = append(result, item)

@@ -78,6 +78,8 @@ func (this *BaseController) auth(controllerName, actionName string) {
 	arr := strings.Split(this.Ctx.GetCookie("auth"), "|")
 	//beego.Debug("GetCookie" + this.Ctx.GetCookie("auth")) //debug埋点
 	//beego.Debug(arr[0]) //debug埋点
+	beego.Debug(arr)
+	beego.Debug(this.userId)
 	if len(arr) == 2 {
 		idstr, password := arr[0], arr[1]
 		userId, _ := strconv.Atoi(idstr)
@@ -88,6 +90,7 @@ func (this *BaseController) auth(controllerName, actionName string) {
 				this.userName = user.UserName
 				this.curUser = *user
 			}
+			beego.Debug("用户已登录状态")
 			//用户已登录状态  添加用户访问日志
 			//t := time.Now()
 			//params := this.Ctx.Request
@@ -102,11 +105,12 @@ func (this *BaseController) auth(controllerName, actionName string) {
 			//models.LogAdd(log)
 		}
 	}
-	beego.Debug(this.userId)
 	//未登录重定向至登录界面
 	if this.userId == 0 && (this.controllerName != "login" ||
 		(this.controllerName == "login" && this.actionName != "logout" && this.actionName != "login" && this.actionName != "gettime")) {
-		this.redirect(beego.URLFor("LoginController.Login"))
+		beego.Debug("未登录重定向至登录界面")
+		beego.Debug("/admin" + beego.URLFor("LoginController.Login"))
+		this.redirect("/admin" + beego.URLFor("LoginController.Login"))
 	}
 }
 
@@ -173,8 +177,9 @@ func (this *BaseController) showMsg(args ...string) {
 }
 
 // 输出json
-func (this *BaseController) jsonResult(out interface{}) {
-	this.Data["json"] = out
+func (this *BaseController) jsonResult(code int, msg string, obj interface{}) {
+	r := &models.JsonResult{code, msg, obj}
+	this.Data["json"] = r
 	this.ServeJSON()
 	this.StopRun()
 }
@@ -184,7 +189,7 @@ func (this *BaseController) ajaxMsg(msg interface{}, msgno int) {
 	out["status"] = msgno
 	out["msg"] = msg
 
-	this.jsonResult(out)
+	this.jsonResult(0, "", out)
 }
 
 //获取用户IP地址
@@ -222,8 +227,8 @@ func (this *BaseController) setUserSession(uid int) error {
 
 func (this *BaseController) getUserSession() {
 	a := this.GetSession("adminuser")
-	beego.Debug("getUserSession")
-	beego.Debug(a)
+	//beego.Debug("getUserSession")
+	//beego.Debug(a)
 	if a != nil {
 		this.curUser = a.(models.User)
 		this.Data["user"] = a

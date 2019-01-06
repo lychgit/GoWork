@@ -1,111 +1,528 @@
-2019/01/06 01:16:09.114 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 01:16:16.915 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:16:16.915 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:16:36.363 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:16:36.363 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 01:16:36.370 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:16:36.370 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:17:54.603 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 01:17:59.052 [D] [adminbase.go:224]  getUserSession 
-2019/01/06 01:17:59.052 [D] [adminbase.go:225]  <nil> 
-2019/01/06 01:17:59.052 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:17:59.055 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:18:05.617 [D] [adminbase.go:224]  getUserSession 
-2019/01/06 01:18:05.617 [D] [adminbase.go:225]  <nil> 
-2019/01/06 01:18:05.617 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:18:05.618 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 01:18:05.625 [D] [adminbase.go:224]  getUserSession 
-2019/01/06 01:18:05.625 [D] [adminbase.go:225]  <nil> 
-2019/01/06 01:18:05.626 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:18:05.626 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:18:19.354 [D] [adminbase.go:224]  getUserSession 
-2019/01/06 01:18:19.354 [D] [adminbase.go:225]  <nil> 
-2019/01/06 01:18:19.355 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:18:19.355 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:20:09.022 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 01:20:14.161 [D] [adminbase.go:224]  getUserSession 
-2019/01/06 01:20:14.161 [D] [adminbase.go:225]  <nil> 
-2019/01/06 01:20:14.162 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:20:14.162 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:21:45.156 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 01:21:47.032 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:21:47.032 [D] [adminbase.go:226]  <nil> 
-2019/01/06 01:21:47.032 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:21:47.033 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:21:47.035 [D] [adminbase.go:105]  1 
-2019/01/06 01:22:02.574 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:22:02.575 [D] [adminbase.go:226]  <nil> 
-2019/01/06 01:22:02.575 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:22:02.576 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:22:02.577 [D] [adminbase.go:105]  1 
-2019/01/06 01:23:35.266 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:23:35.266 [D] [adminbase.go:226]  <nil> 
-2019/01/06 01:23:35.267 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:23:35.267 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:23:35.267 [D] [adminbase.go:105]  0 
-2019/01/06 01:23:41.941 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:23:41.941 [D] [adminbase.go:226]  <nil> 
-2019/01/06 01:23:41.942 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:23:41.942 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 01:23:41.942 [D] [adminbase.go:105]  0 
-2019/01/06 01:23:50.595 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:23:50.595 [D] [adminbase.go:226]  <nil> 
-2019/01/06 01:23:50.596 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:23:50.596 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 01:23:50.596 [D] [adminbase.go:105]  0 
-2019/01/06 01:23:50.606 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
-2019/01/06 01:23:50.606 [D] [adminbase.go:215]  [] 
-2019/01/06 01:23:50.613 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:23:50.613 [D] [adminbase.go:226]  {1 admin 7fef6171469e80d32c0559f88b377245  1546709030 [ 0  admin@example.com  [] [] []} 
-2019/01/06 01:23:50.614 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:23:50.614 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:23:50.615 [D] [adminbase.go:105]  1 
-2019/01/06 01:23:50.623 [D] [controller.go:255]  template Execute err: template: layout/admin/layout.html:144:63: executing "layout/admin/layout.html" at <.user.RealName>: can't evaluate field RealName in type interface {}
-2019/01/06 01:35:03.302 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 01:35:08.819 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:35:08.820 [D] [adminbase.go:226]  <nil> 
-2019/01/06 01:35:08.820 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:35:08.820 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:35:08.822 [D] [adminbase.go:105]  1 
-2019/01/06 01:35:25.877 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:35:25.877 [D] [adminbase.go:226]  <nil> 
-2019/01/06 01:35:25.879 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:35:25.880 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:35:25.880 [D] [adminbase.go:105]  0 
-2019/01/06 01:35:40.172 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:35:40.172 [D] [adminbase.go:226]  <nil> 
-2019/01/06 01:35:40.172 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:35:40.172 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 01:35:40.173 [D] [adminbase.go:105]  0 
-2019/01/06 01:35:54.804 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:35:54.804 [D] [adminbase.go:226]  <nil> 
-2019/01/06 01:35:54.804 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:35:54.804 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 01:35:54.805 [D] [adminbase.go:105]  0 
-2019/01/06 01:35:54.812 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
-2019/01/06 01:35:54.812 [D] [adminbase.go:215]  [] 
-2019/01/06 01:35:54.817 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:35:54.817 [D] [adminbase.go:226]  {1 admin 7fef6171469e80d32c0559f88b377245  1546709754 [ 0  admin@example.com  [] [] []} 
-2019/01/06 01:35:54.817 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:35:54.818 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:35:54.819 [D] [adminbase.go:105]  1 
-2019/01/06 01:35:54.822 [D] [controller.go:255]  template Execute err: template: layout/admin/layout.html:144:63: executing "layout/admin/layout.html" at <.user.RealName>: can't evaluate field RealName in type interface {}
-2019/01/06 01:36:53.227 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 01:37:04.369 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:37:04.369 [D] [adminbase.go:226]  <nil> 
-2019/01/06 01:37:04.370 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:37:04.370 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 01:37:04.370 [D] [adminbase.go:105]  0 
-2019/01/06 01:37:09.179 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:37:09.179 [D] [adminbase.go:226]  <nil> 
-2019/01/06 01:37:09.180 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:37:09.180 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 01:37:09.180 [D] [adminbase.go:105]  0 
-2019/01/06 01:37:09.187 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
-2019/01/06 01:37:09.187 [D] [adminbase.go:215]  [0xc0421fa1c0 0xc0421fa2a0 0xc0421fa380 0xc0421fa460 0xc0421fa540 0xc0421fa620 0xc0421fa700 0xc0421fa7e0] 
-2019/01/06 01:37:09.191 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 01:37:09.191 [D] [adminbase.go:226]  {1 admin 7fef6171469e80d32c0559f88b377245  1546709829 [ 0  admin@example.com  [] [] [ MenuController.Index      ]} 
-2019/01/06 01:37:09.191 [D] [adminbase.go:74]  here is auth 
-2019/01/06 01:37:09.191 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 01:37:09.192 [D] [adminbase.go:105]  1 
-2019/01/06 01:37:09.196 [D] [controller.go:255]  template Execute err: template: layout/admin/layout.html:144:63: executing "layout/admin/layout.html" at <.user.RealName>: can't evaluate field RealName in type interface {}
+2019/01/06 13:54:27.305 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 13:54:32.391 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 13:54:32.391 [D] [adminbase.go:226]  <nil> 
+2019/01/06 13:54:32.394 [D] [adminbase.go:74]  here is auth 
+2019/01/06 13:54:32.396 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 13:54:40.679 [D] [adminbase.go:225]  getUserSession 
+2019/01/06 13:54:40.679 [D] [adminbase.go:226]  <nil> 
+2019/01/06 13:54:40.679 [D] [adminbase.go:74]  here is auth 
+2019/01/06 13:54:40.680 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 14:03:51.902 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 14:03:57.921 [D] [adminbase.go:74]  here is auth 
+2019/01/06 14:03:57.922 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 14:03:58.487 [D] [adminbase.go:74]  here is auth 
+2019/01/06 14:03:58.488 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 14:03:58.515 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 14:15:16.190 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 14:15:22.289 [D] [adminbase.go:74]  here is auth 
+2019/01/06 14:15:22.289 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 14:15:22.949 [D] [adminbase.go:74]  here is auth 
+2019/01/06 14:15:22.949 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 14:15:22.978 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 14:15:22.981 [D] [menu.go:34]  [0xc04216c000 0xc04216c1c0 0xc04216c380 0xc04216c540 0xc04216c700 0xc04216c8c0 0xc04216ca80 0xc04216cc40] 
+2019/01/06 19:50:35.076 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 19:51:01.695 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:51:01.695 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 19:51:06.377 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:51:06.377 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 19:51:06.396 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 19:51:06.396 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
+2019/01/06 19:51:06.397 [D] [adminbase.go:215]  [0xc0421e42a0 0xc0421e4460 0xc0421e4620 0xc0421e47e0 0xc0421e49a0 0xc0421e4b60 0xc0421e4d20 0xc0421e4ee0] 
+2019/01/06 19:51:06.405 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:51:06.405 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 19:51:07.064 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:51:07.064 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 19:51:07.070 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 19:51:07.072 [D] [menu.go:34]  [0xc0421e41c0 0xc0421e4380 0xc0421e4540 0xc0421e4700 0xc0421e48c0 0xc0421e4a80 0xc0421e4c40 0xc0421e4e00] 
+2019/01/06 19:51:16.010 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:51:16.011 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 19:51:16.444 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:51:16.445 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 19:51:16.452 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 19:51:16.457 [D] [menu.go:34]  [0xc0423d4000 0xc0423d41c0 0xc0423d4380 0xc0423d4540 0xc0423d4700 0xc0423d48c0 0xc0423d4a80 0xc0423d4c40] 
+2019/01/06 19:51:25.460 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:51:25.460 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 19:51:25.932 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:51:25.932 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 19:51:25.938 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 19:51:25.943 [D] [menu.go:34]  [0xc042344000 0xc0423441c0 0xc042344380 0xc042344540 0xc042344700 0xc0423448c0 0xc042344a80 0xc042344c40] 
+2019/01/06 19:54:15.544 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 19:54:20.032 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:54:20.032 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 19:54:20.555 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:54:20.555 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 19:54:20.563 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 19:54:20.569 [D] [menu.go:34]  [0xc042402000 0xc0424021c0 0xc042402380 0xc042402540 0xc042402700 0xc0424028c0 0xc042402a80 0xc042402c40] 
+2019/01/06 19:57:10.152 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:57:10.152 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 19:57:17.003 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:57:17.003 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 19:57:21.613 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:57:21.613 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 19:57:21.622 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 19:57:21.622 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
+2019/01/06 19:57:21.622 [D] [adminbase.go:215]  [0xc0422b2000 0xc0422b2380 0xc0422b2540 0xc0422b2700 0xc0422b28c0 0xc0422b2a80 0xc0422b2c40 0xc0422b2e00] 
+2019/01/06 19:57:21.636 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:57:21.637 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 19:57:22.806 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:57:22.806 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 19:57:22.815 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 19:57:22.820 [D] [menu.go:34]  [0xc04238c0e0 0xc04238c2a0 0xc04238c540 0xc04238c700 0xc04238c8c0 0xc04238ca80 0xc04238cc40 0xc04238ce00] 
+2019/01/06 19:57:32.710 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:57:32.710 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 19:57:33.249 [D] [adminbase.go:74]  here is auth 
+2019/01/06 19:57:33.249 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 19:57:33.254 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 19:57:33.255 [D] [menu.go:34]  [0xc0421d40e0 0xc0421d42a0 0xc0421d4460 0xc0421d4620 0xc0421d47e0 0xc0421d49a0 0xc0421d4b60 0xc0421d4d20] 
+2019/01/06 20:06:38.211 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:06:41.145 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:06:41.146 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 20:06:48.788 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:06:48.788 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 20:06:48.805 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:06:48.805 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
+2019/01/06 20:06:48.805 [D] [adminbase.go:215]  [0xc0421fe0e0 0xc0421fe380 0xc0421fe540 0xc0421fe700 0xc0421fe8c0 0xc0421fea80 0xc0421fec40 0xc0421fee00] 
+2019/01/06 20:06:48.813 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:06:48.813 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:06:49.653 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:06:49.654 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:06:49.659 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:06:49.662 [D] [menu.go:34]  [0xc0421e80e0 0xc0421e82a0 0xc0421e8460 0xc0421e8620 0xc0421e87e0 0xc0421e89a0 0xc0421e8b60 0xc0421e8d20] 
+2019/01/06 20:12:41.856 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:12:58.981 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:12:58.981 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 20:13:03.841 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:13:03.842 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 20:13:03.852 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:13:03.852 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
+2019/01/06 20:13:03.853 [D] [adminbase.go:215]  [0xc0422b6000 0xc0422b61c0 0xc0422b6380 0xc0422b6540 0xc0422b6700 0xc0422b68c0 0xc0422b6a80 0xc0422b6c40] 
+2019/01/06 20:13:03.863 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:13:03.863 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:13:04.489 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:13:04.489 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:13:04.496 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:13:04.498 [D] [menu.go:34]  [0xc04211e0e0 0xc04211e380 0xc04211e540 0xc04211e700 0xc04211e8c0 0xc04211ea80 0xc04211ec40 0xc04211ee00] 
+2019/01/06 20:18:07.017 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:18:17.335 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:18:17.335 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:18:17.935 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:18:17.935 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:18:17.944 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:18:17.945 [D] [menu.go:51]  MenuController 
+2019/01/06 20:18:17.946 [D] [menu.go:52]  [Index] 
+2019/01/06 20:18:17.946 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:18:17.946 [D] [menu.go:51]  AuthController 
+2019/01/06 20:18:17.947 [D] [menu.go:52]  [Index] 
+2019/01/06 20:18:17.947 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:18:17.947 [D] [menu.go:51]  RoleController 
+2019/01/06 20:18:17.948 [D] [menu.go:52]  [Index] 
+2019/01/06 20:18:17.948 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:18:17.949 [D] [menu.go:51]  UserController 
+2019/01/06 20:18:17.950 [D] [menu.go:52]  [Index] 
+2019/01/06 20:18:17.950 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:18:17.950 [D] [menu.go:51]  LogController 
+2019/01/06 20:18:17.951 [D] [menu.go:52]  [Index] 
+2019/01/06 20:18:17.951 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:18:17.952 [D] [menu.go:51]  SystemLogController 
+2019/01/06 20:18:17.952 [D] [menu.go:52]  [Index] 
+2019/01/06 20:18:17.952 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:18:17.953 [D] [menu.go:51]  OperaLogController 
+2019/01/06 20:18:17.953 [D] [menu.go:52]  [Index] 
+2019/01/06 20:18:17.953 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:18:17.954 [D] [menu.go:34]  [0xc042312000 0xc0423121c0 0xc042312380 0xc042312540 0xc042312700 0xc0423128c0 0xc042312a80 0xc042312c40] 
+2019/01/06 20:19:02.348 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:19:05.179 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:19:05.179 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:19:05.690 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:19:05.690 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:19:05.696 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:19:05.696 [D] [menu.go:51]  MenuController 
+2019/01/06 20:19:05.697 [D] [menu.go:52]  Index 
+2019/01/06 20:19:05.697 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:05.697 [D] [menu.go:51]  AuthController 
+2019/01/06 20:19:05.698 [D] [menu.go:52]  Index 
+2019/01/06 20:19:05.698 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:05.699 [D] [menu.go:51]  RoleController 
+2019/01/06 20:19:05.699 [D] [menu.go:52]  Index 
+2019/01/06 20:19:05.700 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:05.700 [D] [menu.go:51]  UserController 
+2019/01/06 20:19:05.701 [D] [menu.go:52]  Index 
+2019/01/06 20:19:05.701 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:05.701 [D] [menu.go:51]  LogController 
+2019/01/06 20:19:05.702 [D] [menu.go:52]  Index 
+2019/01/06 20:19:05.702 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:05.703 [D] [menu.go:51]  SystemLogController 
+2019/01/06 20:19:05.703 [D] [menu.go:52]  Index 
+2019/01/06 20:19:05.705 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:05.705 [D] [menu.go:51]  OperaLogController 
+2019/01/06 20:19:05.706 [D] [menu.go:52]  Index 
+2019/01/06 20:19:05.707 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:05.708 [D] [menu.go:34]  [0xc042120380 0xc042120540 0xc042120700 0xc0421208c0 0xc042120a80 0xc042120c40 0xc042120e00 0xc042120fc0] 
+2019/01/06 20:19:43.041 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:19:46.496 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:19:46.496 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:19:47.032 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:19:47.032 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:19:47.044 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:19:47.044 [D] [menu.go:42]   
+2019/01/06 20:19:47.045 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:47.045 [D] [menu.go:42]   
+2019/01/06 20:19:47.046 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:47.046 [D] [menu.go:42]   
+2019/01/06 20:19:47.047 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:47.047 [D] [menu.go:42]   
+2019/01/06 20:19:47.047 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:47.048 [D] [menu.go:42]   
+2019/01/06 20:19:47.049 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:47.049 [D] [menu.go:42]   
+2019/01/06 20:19:47.050 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:47.051 [D] [menu.go:42]   
+2019/01/06 20:19:47.051 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:19:47.054 [D] [menu.go:42]   
+2019/01/06 20:19:47.054 [D] [menu.go:34]  [0xc0423600e0 0xc0423602a0 0xc042360460 0xc042360620 0xc0423607e0 0xc0423609a0 0xc042360b60 0xc042360d20] 
+2019/01/06 20:31:17.531 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:31:23.926 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:31:23.926 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:31:24.513 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:31:24.514 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:31:24.520 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:31:24.521 [D] [menu.go:41]   
+2019/01/06 20:31:24.522 [D] [menu.go:43]   
+2019/01/06 20:31:24.522 [D] [menu.go:41]  MenuController.Index 
+2019/01/06 20:31:24.522 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:31:24.523 [D] [menu.go:43]   
+2019/01/06 20:31:24.523 [D] [menu.go:41]  AuthController.Index 
+2019/01/06 20:31:24.524 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:31:24.525 [D] [menu.go:43]   
+2019/01/06 20:31:24.526 [D] [menu.go:41]  RoleController.Index 
+2019/01/06 20:31:24.526 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:31:24.526 [D] [menu.go:43]   
+2019/01/06 20:31:24.527 [D] [menu.go:41]  UserController.Index 
+2019/01/06 20:31:24.527 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:31:24.527 [D] [menu.go:43]   
+2019/01/06 20:31:24.528 [D] [menu.go:41]  LogController.Index 
+2019/01/06 20:31:24.529 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:31:24.529 [D] [menu.go:43]   
+2019/01/06 20:31:24.530 [D] [menu.go:41]  SystemLogController.Index 
+2019/01/06 20:31:24.530 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:31:24.531 [D] [menu.go:43]   
+2019/01/06 20:31:24.531 [D] [menu.go:41]  OperaLogController.Index 
+2019/01/06 20:31:24.531 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
+2019/01/06 20:31:24.533 [D] [menu.go:43]   
+2019/01/06 20:31:24.533 [D] [menu.go:34]  [0xc0421f02a0 0xc0421f0460 0xc0421f0620 0xc0421f07e0 0xc0421f09a0 0xc0421f0b60 0xc0421f0d20 0xc0421f0ee0] 
+2019/01/06 20:32:57.094 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:33:00.358 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:33:00.359 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:33:00.872 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:33:00.872 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:33:00.883 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:33:00.884 [D] [menu.go:41]   
+2019/01/06 20:33:00.885 [D] [menu.go:43]   
+2019/01/06 20:33:00.885 [D] [menu.go:41]  MenuController.Index 
+2019/01/06 20:33:00.886 [D] [menu.go:43]   
+2019/01/06 20:33:00.886 [D] [menu.go:41]  AuthController.Index 
+2019/01/06 20:33:00.887 [D] [menu.go:43]   
+2019/01/06 20:33:00.887 [D] [menu.go:41]  RoleController.Index 
+2019/01/06 20:33:00.888 [D] [menu.go:43]   
+2019/01/06 20:33:00.890 [D] [menu.go:41]  UserController.Index 
+2019/01/06 20:33:00.891 [D] [menu.go:43]   
+2019/01/06 20:33:00.891 [D] [menu.go:41]  LogController.Index 
+2019/01/06 20:33:00.899 [D] [menu.go:43]   
+2019/01/06 20:33:00.899 [D] [menu.go:41]  SystemLogController.Index 
+2019/01/06 20:33:00.901 [D] [menu.go:43]   
+2019/01/06 20:33:00.901 [D] [menu.go:41]  OperaLogController.Index 
+2019/01/06 20:33:00.902 [D] [menu.go:43]   
+2019/01/06 20:33:00.902 [D] [menu.go:34]  [0xc0422a6000 0xc0422a61c0 0xc0422a6380 0xc0422a6540 0xc0422a6700 0xc0422a68c0 0xc0422a6a80 0xc0422a6c40] 
+2019/01/06 20:33:26.158 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:33:27.880 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:33:27.881 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:33:28.413 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:33:28.413 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:33:28.421 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:33:28.421 [D] [menu.go:41]   
+2019/01/06 20:33:28.421 [D] [menu.go:43]   
+2019/01/06 20:33:28.422 [D] [menu.go:41]  MenuController.Index 
+2019/01/06 20:33:28.422 [D] [menu.go:54]  MenuController.Index 
+2019/01/06 20:33:28.423 [C] [asm_amd64.s:573]  the request url is  /menu/menutree
+2019/01/06 20:33:28.423 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: index out of range
+2019/01/06 20:33:28.423 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/06 20:33:28.424 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/06 20:33:28.424 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:28
+2019/01/06 20:33:28.425 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:55
+2019/01/06 20:33:28.426 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:42
+2019/01/06 20:33:28.426 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:33
+2019/01/06 20:33:28.426 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/06 20:33:28.427 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/06 20:33:28.430 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/06 20:33:28.431 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/06 20:33:28.431 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/06 20:33:28.434 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/06 20:33:28.436 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/06 20:33:28.438 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/06 20:34:06.169 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:34:08.041 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:34:08.042 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:34:08.735 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:34:08.735 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:34:08.743 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:34:08.743 [D] [menu.go:41]   
+2019/01/06 20:34:08.744 [D] [menu.go:43]   
+2019/01/06 20:34:08.744 [D] [menu.go:41]  MenuController.Index 
+2019/01/06 20:34:08.745 [D] [menu.go:54]  MenuController.Index 
+2019/01/06 20:34:08.745 [D] [menu.go:43]   
+2019/01/06 20:34:08.745 [D] [menu.go:41]  AuthController.Index 
+2019/01/06 20:34:08.746 [D] [menu.go:54]  AuthController.Index 
+2019/01/06 20:34:08.747 [D] [menu.go:43]   
+2019/01/06 20:34:08.747 [D] [menu.go:41]  RoleController.Index 
+2019/01/06 20:34:08.748 [D] [menu.go:54]  RoleController.Index 
+2019/01/06 20:34:08.749 [D] [menu.go:43]   
+2019/01/06 20:34:08.749 [D] [menu.go:41]  UserController.Index 
+2019/01/06 20:34:08.750 [D] [menu.go:54]  UserController.Index 
+2019/01/06 20:34:08.751 [D] [menu.go:43]   
+2019/01/06 20:34:08.751 [D] [menu.go:41]  LogController.Index 
+2019/01/06 20:34:08.751 [D] [menu.go:54]  LogController.Index 
+2019/01/06 20:34:08.752 [D] [menu.go:43]   
+2019/01/06 20:34:08.752 [D] [menu.go:41]  SystemLogController.Index 
+2019/01/06 20:34:08.753 [D] [menu.go:54]  SystemLogController.Index 
+2019/01/06 20:34:08.755 [D] [menu.go:43]   
+2019/01/06 20:34:08.761 [D] [menu.go:41]  OperaLogController.Index 
+2019/01/06 20:34:08.761 [D] [menu.go:54]  OperaLogController.Index 
+2019/01/06 20:34:08.762 [D] [menu.go:43]   
+2019/01/06 20:34:08.763 [D] [menu.go:34]  [0xc0421e82a0 0xc0421e8460 0xc0421e8620 0xc0421e87e0 0xc0421e89a0 0xc0421e8b60 0xc0421e8d20 0xc0421e8ee0] 
+2019/01/06 20:36:40.588 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:36:42.911 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:36:42.911 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:36:43.586 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:36:43.586 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:36:43.596 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:36:43.596 [D] [menu.go:43]   
+2019/01/06 20:36:43.598 [D] [menu.go:54]   
+2019/01/06 20:36:43.599 [D] [menu.go:43]   
+2019/01/06 20:36:43.600 [D] [menu.go:54]   
+2019/01/06 20:36:43.600 [D] [menu.go:43]   
+2019/01/06 20:36:43.601 [D] [menu.go:54]   
+2019/01/06 20:36:43.602 [D] [menu.go:43]   
+2019/01/06 20:36:43.602 [D] [menu.go:54]   
+2019/01/06 20:36:43.604 [D] [menu.go:43]   
+2019/01/06 20:36:43.606 [D] [menu.go:54]   
+2019/01/06 20:36:43.608 [D] [menu.go:43]   
+2019/01/06 20:36:43.610 [D] [menu.go:54]   
+2019/01/06 20:36:43.613 [D] [menu.go:43]   
+2019/01/06 20:36:43.614 [D] [menu.go:54]   
+2019/01/06 20:36:43.617 [D] [menu.go:43]   
+2019/01/06 20:36:43.618 [D] [menu.go:34]  [0xc0422da000 0xc0422da1c0 0xc0422da380 0xc0422da540 0xc0422da700 0xc0422da8c0 0xc0422daa80 0xc0422dac40] 
+2019/01/06 20:39:29.570 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:39:30.989 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:39:30.989 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:39:30.992 [D] [controller.go:343]  admin.index 
+2019/01/06 20:39:31.623 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:39:31.623 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:39:31.628 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:39:31.628 [D] [menu.go:43]   
+2019/01/06 20:39:31.629 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:39:31.629 [D] [controller.go:343]  MenuController.Index 
+2019/01/06 20:39:31.630 [D] [menu.go:43]   
+2019/01/06 20:39:31.630 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:39:31.630 [D] [controller.go:343]  AuthController.Index 
+2019/01/06 20:39:31.631 [D] [menu.go:43]   
+2019/01/06 20:39:31.632 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:39:31.632 [D] [controller.go:343]  RoleController.Index 
+2019/01/06 20:39:31.633 [D] [menu.go:43]   
+2019/01/06 20:39:31.633 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:39:31.633 [D] [controller.go:343]  UserController.Index 
+2019/01/06 20:39:31.634 [D] [menu.go:43]   
+2019/01/06 20:39:31.634 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:39:31.635 [D] [controller.go:343]  LogController.Index 
+2019/01/06 20:39:31.635 [D] [menu.go:43]   
+2019/01/06 20:39:31.635 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:39:31.636 [D] [controller.go:343]  SystemLogController.Index 
+2019/01/06 20:39:31.637 [D] [menu.go:43]   
+2019/01/06 20:39:31.637 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:39:31.637 [D] [controller.go:343]  OperaLogController.Index 
+2019/01/06 20:39:31.638 [D] [menu.go:43]   
+2019/01/06 20:39:31.638 [D] [menu.go:34]  [0xc0423dc0e0 0xc0423dc2a0 0xc0423dc460 0xc0423dc620 0xc0423dc7e0 0xc0423dc9a0 0xc0423dcb60 0xc0423dcd20] 
+2019/01/06 20:51:33.741 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:51:37.054 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:51:37.054 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:51:37.057 [D] [controller.go:343]  admin.index 
+2019/01/06 20:51:37.627 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:51:37.627 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:51:37.633 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:51:37.633 [D] [menu.go:43]   
+2019/01/06 20:51:37.634 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:51:37.634 [D] [controller.go:343]  MenuController.Index 
+2019/01/06 20:51:37.635 [D] [menu.go:43]   
+2019/01/06 20:51:37.635 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:51:37.636 [D] [controller.go:343]  AuthController.Index 
+2019/01/06 20:51:37.636 [D] [menu.go:43]   
+2019/01/06 20:51:37.637 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:51:37.637 [D] [controller.go:343]  RoleController.Index 
+2019/01/06 20:51:37.639 [D] [menu.go:43]   
+2019/01/06 20:51:37.639 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:51:37.640 [D] [controller.go:343]  UserController.Index 
+2019/01/06 20:51:37.641 [D] [menu.go:43]   
+2019/01/06 20:51:37.641 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:51:37.641 [D] [controller.go:343]  LogController.Index 
+2019/01/06 20:51:37.642 [D] [menu.go:43]   
+2019/01/06 20:51:37.642 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:51:37.643 [D] [controller.go:343]  LogController.System 
+2019/01/06 20:51:37.644 [D] [menu.go:43]   
+2019/01/06 20:51:37.644 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:51:37.645 [D] [controller.go:343]  LogController.Opera 
+2019/01/06 20:51:37.645 [D] [menu.go:43]   
+2019/01/06 20:51:37.646 [D] [menu.go:34]  [0xc0421200e0 0xc0421202a0 0xc042120460 0xc042120620 0xc0421207e0 0xc0421209a0 0xc042120b60 0xc042120d20] 
+2019/01/06 20:57:30.545 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 20:57:32.676 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:57:32.677 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 20:57:32.679 [D] [controller.go:343]  admin.index 
+2019/01/06 20:57:33.192 [D] [adminbase.go:74]  here is auth 
+2019/01/06 20:57:33.192 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 20:57:33.199 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 20:57:33.200 [D] [menu.go:43]   
+2019/01/06 20:57:33.200 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:57:33.201 [D] [controller.go:343]  MenuController.Index 
+2019/01/06 20:57:33.202 [D] [menu.go:43]   
+2019/01/06 20:57:33.202 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:57:33.203 [D] [controller.go:343]  AuthController.Index 
+2019/01/06 20:57:33.204 [D] [menu.go:43]   
+2019/01/06 20:57:33.204 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:57:33.204 [D] [controller.go:343]  RoleController.Index 
+2019/01/06 20:57:33.205 [D] [menu.go:43]   
+2019/01/06 20:57:33.205 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:57:33.206 [D] [controller.go:343]  UserController.Index 
+2019/01/06 20:57:33.207 [D] [menu.go:43]   
+2019/01/06 20:57:33.207 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:57:33.207 [D] [controller.go:343]  LogController.Index 
+2019/01/06 20:57:33.208 [D] [menu.go:43]   
+2019/01/06 20:57:33.208 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:57:33.208 [D] [controller.go:343]  LogController.System 
+2019/01/06 20:57:33.209 [D] [menu.go:43]   
+2019/01/06 20:57:33.209 [D] [menu.go:55]  UrlForLinkOne 
+2019/01/06 20:57:33.209 [D] [controller.go:343]  LogController.Opera 
+2019/01/06 20:57:33.211 [D] [menu.go:43]   
+2019/01/06 20:57:33.211 [D] [menu.go:34]  [0xc04238e000 0xc04238e1c0 0xc04238e380 0xc04238e540 0xc04238e700 0xc04238e8c0 0xc04238ea80 0xc04238ec40] 
+2019/01/06 20:59:41.038 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 21:01:29.370 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 21:02:56.328 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 21:03:16.717 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:03:16.717 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/06 21:03:40.962 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:03:40.963 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/06 21:07:12.196 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 21:07:16.671 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:07:16.671 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/06 21:07:48.247 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 21:07:52.152 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:07:52.153 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/06 21:08:09.040 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:08:09.040 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/06 21:08:17.901 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:08:17.901 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/06 21:10:04.240 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 21:10:15.402 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:10:15.402 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/06 21:10:15.403 [D] [adminbase.go:81]  [] 
+2019/01/06 21:10:15.403 [D] [adminbase.go:82]  0 
+2019/01/06 21:12:05.452 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 21:12:14.472 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:12:14.473 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/06 21:12:14.473 [D] [adminbase.go:81]  [] 
+2019/01/06 21:12:14.473 [D] [adminbase.go:82]  0 
+2019/01/06 21:12:14.474 [D] [adminbase.go:108]  未登录重定向至登录界面 
+2019/01/06 21:12:14.474 [D] [adminbase.go:112]  redirect 
+2019/01/06 21:13:09.107 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 21:13:30.194 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:13:30.195 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/06 21:13:30.195 [D] [adminbase.go:81]  [] 
+2019/01/06 21:13:30.196 [D] [adminbase.go:82]  0 
+2019/01/06 21:13:30.196 [D] [adminbase.go:108]  未登录重定向至登录界面 
+2019/01/06 21:13:30.196 [D] [adminbase.go:112]  redirect 
+2019/01/06 21:14:37.453 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 21:14:44.349 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:14:44.349 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/06 21:14:44.350 [D] [adminbase.go:81]  [] 
+2019/01/06 21:14:44.350 [D] [adminbase.go:82]  0 
+2019/01/06 21:14:44.350 [D] [adminbase.go:108]  未登录重定向至登录界面 
+2019/01/06 21:14:44.350 [D] [adminbase.go:112]  /login 
+2019/01/06 21:16:37.538 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/06 21:16:46.038 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:16:46.038 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/06 21:16:46.039 [D] [adminbase.go:81]  [] 
+2019/01/06 21:16:46.039 [D] [adminbase.go:82]  0 
+2019/01/06 21:16:46.039 [D] [adminbase.go:111]  未登录重定向至登录界面 
+2019/01/06 21:16:46.040 [D] [adminbase.go:112]  /admin/login 
+2019/01/06 21:16:46.054 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:16:46.055 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 21:16:46.055 [D] [adminbase.go:81]  [] 
+2019/01/06 21:16:46.056 [D] [adminbase.go:82]  0 
+2019/01/06 21:16:46.056 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/06 21:16:51.018 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:16:51.018 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 21:16:51.019 [D] [adminbase.go:81]  [] 
+2019/01/06 21:16:51.019 [D] [adminbase.go:82]  0 
+2019/01/06 21:16:51.019 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/06 21:16:55.574 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:16:55.575 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/06 21:16:55.575 [D] [adminbase.go:81]  [] 
+2019/01/06 21:16:55.575 [D] [adminbase.go:82]  0 
+2019/01/06 21:16:55.576 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/06 21:16:55.586 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 21:16:55.586 [D] [adminbase.go:219]  获取这个用户能获取到的所有菜单列表 
+2019/01/06 21:16:55.586 [D] [adminbase.go:220]  [0xc042236000 0xc0422361c0 0xc042236380 0xc042236540 0xc042236700 0xc0422368c0 0xc042236a80 0xc042236c40] 
+2019/01/06 21:16:55.593 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:16:55.593 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/06 21:16:55.594 [D] [adminbase.go:81]  [1 610fcd12532eb00efbad0c4fb90fc6a1] 
+2019/01/06 21:16:55.594 [D] [adminbase.go:82]  0 
+2019/01/06 21:16:55.596 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/06 21:16:56.078 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:16:56.078 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 21:16:56.079 [D] [adminbase.go:81]  [1 610fcd12532eb00efbad0c4fb90fc6a1] 
+2019/01/06 21:16:56.079 [D] [adminbase.go:82]  0 
+2019/01/06 21:16:56.081 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/06 21:16:56.084 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 21:16:56.085 [D] [menu.go:43]   
+2019/01/06 21:16:56.085 [D] [menu.go:43]  /admin/menu/index 
+2019/01/06 21:16:56.085 [D] [menu.go:43]  /admin/auth/index 
+2019/01/06 21:16:56.086 [D] [menu.go:43]  /admin/role/index 
+2019/01/06 21:16:56.086 [D] [menu.go:43]  /admin/user/index 
+2019/01/06 21:16:56.087 [D] [menu.go:43]  /admin/log/index 
+2019/01/06 21:16:56.087 [D] [menu.go:43]  /admin/log/system 
+2019/01/06 21:16:56.087 [D] [menu.go:43]  /admin/log/opera 
+2019/01/06 21:17:05.786 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:17:05.786 [D] [adminbase.go:75]  LogController.System 
+2019/01/06 21:17:05.787 [D] [adminbase.go:81]  [1 610fcd12532eb00efbad0c4fb90fc6a1] 
+2019/01/06 21:17:05.787 [D] [adminbase.go:82]  0 
+2019/01/06 21:17:05.789 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/06 21:17:08.948 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:17:08.949 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 21:17:08.951 [D] [adminbase.go:81]  [1 610fcd12532eb00efbad0c4fb90fc6a1] 
+2019/01/06 21:17:08.952 [D] [adminbase.go:82]  0 
+2019/01/06 21:17:08.954 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/06 21:17:08.956 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 21:17:08.956 [D] [menu.go:43]   
+2019/01/06 21:17:08.957 [D] [menu.go:43]  /admin/menu/index 
+2019/01/06 21:17:08.957 [D] [menu.go:43]  /admin/auth/index 
+2019/01/06 21:17:08.957 [D] [menu.go:43]  /admin/role/index 
+2019/01/06 21:17:08.958 [D] [menu.go:43]  /admin/user/index 
+2019/01/06 21:17:08.959 [D] [menu.go:43]  /admin/log/index 
+2019/01/06 21:17:08.959 [D] [menu.go:43]  /admin/log/system 
+2019/01/06 21:17:08.960 [D] [menu.go:43]  /admin/log/opera 
+2019/01/06 21:17:23.709 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:17:23.709 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/06 21:17:23.710 [D] [adminbase.go:81]  [1 610fcd12532eb00efbad0c4fb90fc6a1] 
+2019/01/06 21:17:23.710 [D] [adminbase.go:82]  0 
+2019/01/06 21:17:23.712 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/06 21:17:24.233 [D] [adminbase.go:74]  here is auth 
+2019/01/06 21:17:24.234 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/06 21:17:24.234 [D] [adminbase.go:81]  [1 610fcd12532eb00efbad0c4fb90fc6a1] 
+2019/01/06 21:17:24.234 [D] [adminbase.go:82]  0 
+2019/01/06 21:17:24.236 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/06 21:17:24.240 [D] [Menu.go:135]  menuListTreeGrid 
+2019/01/06 21:17:24.240 [D] [menu.go:43]   
+2019/01/06 21:17:24.240 [D] [menu.go:43]  /admin/menu/index 
+2019/01/06 21:17:24.241 [D] [menu.go:43]  /admin/auth/index 
+2019/01/06 21:17:24.241 [D] [menu.go:43]  /admin/role/index 
+2019/01/06 21:17:24.241 [D] [menu.go:43]  /admin/user/index 
+2019/01/06 21:17:24.242 [D] [menu.go:43]  /admin/log/index 
+2019/01/06 21:17:24.242 [D] [menu.go:43]  /admin/log/system 
+2019/01/06 21:17:24.243 [D] [menu.go:43]  /admin/log/opera 

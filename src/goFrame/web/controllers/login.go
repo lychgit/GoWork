@@ -66,5 +66,5 @@ func (this *LoginController) Logout() {
 func (this *LoginController) GetTime() {
 	out := make(map[string]interface{})
 	out["time"] = time.Now().UnixNano() / int64(time.Millisecond)
-	this.jsonResult(out)
+	this.jsonResult(0, "", out)
 }
