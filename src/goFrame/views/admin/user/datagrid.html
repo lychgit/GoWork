@@ -1,0 +1,197 @@
+<script>
+    var $dataGrid = $('#dataGrid');
+    var $searchForm = $("#searchForm")
+    //高亮显示id
+    var highlightPk = null;
+    //初始化加载
+    $(function () {
+        pageInit();
+    });
+    //bootstrap table data init
+    function dataGridInit() {
+        $dataGrid.bootstrapTable({
+            url: '{{ urlfor "UserController.UserDataGrid"}}',
+            method: 'post',
+            sidePagination: 'server', //服务器端用 server
+            idField: 'Id',
+            queryParamsType: 'limit',
+            queryParams: function (params) {
+                //params的自带参数类型由queryParamsType决定
+                params.NameLike = $('.searchForm input[name="Name"]').val();
+                return params;
+            },
+            pagination: true,
+            showRefresh: true,
+            showColumns: true,
+            toolbar: '#toolbar',
+            pageSize: 10,
+            pageList: [5, 10, 20, 100, 200],
+            paginationShowPageGo: true,//20170812 lht 扩展select跳转
+            paginationUseBSSelect: true,//20170812 lht 扩展select跳转 启用BoostrapSelect(页面须引用botstrap-select.min.js)
+            cookie: true,
+            classes: 'table table-bordered table-hover',
+            undefinedText: '',
+            sortName: 'Id',
+            sortOrder: 'desc',
+            rowAttributes: function (row, index) {
+                return {'data-pk': row.Id}
+            },
+            columns: [{
+                field: 'state',
+                checkbox: true,
+                radio: false,
+            }, {
+                field: 'Id',
+                title: 'ID',
+                width: '90px',
+                align: 'center',
+                sortable: true,
+            }, {
+                field: 'UserName',
+                title: '用户名称',
+                align: 'center',
+                formatter: formatterWapBySpan,
+                cellStyle: function (value, row, index, field) {
+                    return {classes: 'ellipsis'};
+                }
+            }, {
+                field: 'Email',
+                title: '邮箱',
+                align: 'center',
+                formatter: formatterWapBySpan,
+                cellStyle: function (value, row, index, field) {
+                    return {classes: 'ellipsis'};
+                }
+            }, {
+                field: 'Mobile',
+                title: '手机号',
+            }, {
+                field: 'LastLogin',
+                title: '最后登录时间',
+                formatter: dateFormatter,
+            }, {
+                field: 'LastIp',
+                title: '最后登录IP',
+                formatter:sdtheme.showenable,
+            }, {
+                field: 'Status',
+                title: '状态',
+                formatter:sdtheme.showenable,
+            }, {
+                field: 'operate',
+                title: '操作',
+                width: '120px',
+                formatter: function (value, row, index) {
+                    var ret = [];
+                    ret.push('<div class="btn-group">')
+                    {{/*if ('{{.canDelete}}' === 'true') {*/}}
+                        ret.push('<button class="btn btn-primary btn-xs"  onclick="EditFun(' + row.Id + ')">' +
+                                '<i class="fa fa-pencil"></i> 编辑</button>');
+                    // }
+                    {{/*if ('{{.canAllocate}}' === 'true') {*/}}
+                        ret.push('<button class="btn btn-info btn-xs"  onclick="AllocateFun(' + row.Id + ')">' +
+                                '<i class="fa fa-th"></i> 分配</button>');
+                    // }
+                    ret.push('</div>')
+                    return ret.join('');
+                }
+            }],
+            onLoadSuccess: function (data) {
+                layer.closeAll('loading');
+                //
+                //CheboxUniform()
+            },
+            onSort: function (name, order) {
+                //alert('name:' + name + " order:" + order);
+            },
+            onPageChange: function () {
+                layer.load();
+            },
+            onCheckAll: function (rows) {
+                //某条记录或全部记录被选中时  去除删除按钮禁用状态
+                $(".table-btn-check-enable").removeAttr('disabled');
+            },
+            onCheck: function (rows) {
+                //某条记录或全部记录被选中时  去除删除按钮禁用状态
+                $(".table-btn-check-enable").removeAttr('disabled');
+            },
+            onUncheck: function (rows) {
+                //某条记录或全部记录被选中时  去除删除按钮禁用状态
+                if ($("#dataGrid").bootstrapTable("getSelections").length === 0) {
+                    $(".table-btn-check-enable").attr('disabled', 'disabled');
+                }
+            }, onUncheckAll: function () {
+                //某条记录或全部记录被选中时  去除删除按钮禁用状态
+                if ($("#dataGrid").bootstrapTable("getSelections").length === 0) {
+                    $(".table-btn-check-enable").attr('disabled', 'disabled');
+                }
+            },
+            onLoadError: function (status) {
+                layer.alert('获取数据失败,错误代码：' + status);
+            }
+        });
+
+        function GetStatusText(value) {
+            var texts = [{ Text: '锁定', Value: -1 }, { Text: '禁用', Value: 0 }, { Text: '启用', Value: 1 } ]
+            return sdtheme.showenum(value, texts);
+        }
+
+        ///用一个带有title值的span将值包裹起来
+        function formatterWapBySpan(value, row, index) {
+            if (value !== null) {
+                return '<span title="' + value + '">' + value + '</span>';
+            }
+            return "";
+        }
+
+        function Edit(Id) {
+            var title = '添加用户';
+            if (Id > 0) {
+                title = "编辑用户"
+            }
+            var url = '{{ urlfor "UserController.Edit"}}' + '/' + Id;
+            layer.open({
+                type: 2,
+                title: title,
+                shadeClose: false,
+                shade: 0.2,
+                maxmin: true,
+                shift: 1,
+                area: ['1000px', '600px'],
+                content: url,
+                btn: ['保存', '关闭'],
+                yes: function (index, layero) {
+                    var iframeWin = window[layero.find('iframe')[0]['name']];
+                    iframeWin.FormSubmit();
+                }
+            });
+        }
+
+        function Delete() {
+            var url = '{{ urlfor "BackendUserController.Delete"}}';
+            var rows = $dataGrid.bootstrapTable("getSelections")
+            if (rows.length === 0) {
+                layer.alert('请选择想要删除的项', {icon: 0, title: '提示'});
+                return;
+            }
+            var ids = [];
+            $(rows).each(function (i, e) {
+                ids.push(e.Id);
+            });
+            layer.confirm('您是否要删除所选的项？', {
+                btn: ['是', '否'], icon: 3, title: '请确认'
+            }, function () {
+                console.log(ids)
+                var dataValues = {ids:ids.join(',')};
+                $.sdpost(url, dataValues, function (re) {
+                    if (re.code == 0) {
+                        layer.msg(re.msg, {icon: 1, title: '成功'});
+                        refresh();
+                    } else {
+                        layer.alert(re.msg, {icon: 2, title: "失败"});
+                    }
+                });
+            });
+        }
+    }
+</script>

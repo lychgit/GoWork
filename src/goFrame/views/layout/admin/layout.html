@@ -9,8 +9,8 @@
     <title>{{.pageTitle}}</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="/static/css/style.css" rel="stylesheet">
     {{template "layout/admin/head.html"}}
-    {{.head_resource}}
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -19,7 +19,7 @@
         <header class="main-header">
 
             <!-- Logo -->
-            <a href="index2.html" class="logo">
+            <a href="javascript:;" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>TO</b> FOUND A WAY</span>
                 <!-- logo for regular state and mobile devices -->
@@ -172,7 +172,7 @@
                                         <a href="{{urlfor "UserCenterController.Profile" }}" class="btn btn-default btn-flat"> 个人信息</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="{{urlfor "HomeController.Logout" }}" class="btn btn-default btn-flat"> 退  出</a>
+                                        <a href="{{urlfor "LoginController.Logout" }}" class="btn btn-default btn-flat"> 退  出</a>
                                     </div>
                                 </li>
                             </ul>
@@ -218,7 +218,7 @@
            });
         });
     </script>
-    {{/*{{.footerjs}}*/}}
+    {{.datagrid}}
 </body>
 
 </html>

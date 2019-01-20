@@ -35,8 +35,13 @@ textarea {
 	padding-left: 3px;
 }
 
+.table th {
+	text-align: center;
+}
+
 .table td {
 	vertical-align: middle;
+	text-align: center;
 }
 
 .table-bordered th {

@@ -3,8 +3,7 @@ package controllers
 import (
 	"goFrame/models"
 	"strings"
-	"github.com/astaxie/beego"
-)
+	)
 
 type MenuController struct {
 	BaseController
@@ -12,10 +11,9 @@ type MenuController struct {
 
 func (this *MenuController) Index() {
 	//需要权限控制
-	this.checkAuthor()
+	//this.checkAuthor()
 	//将页面左边菜单的某项激活
-	this.Data["activeSidebarUrl"] = this.URLFor(this.controllerName + "." + this.actionName)
-	this.setTpl()
+	this.display()
 	//this.LayoutSections = make(map[string]string)
 	//this.LayoutSections["headcssjs"] = "resource/index_headcssjs.html"
 	//this.LayoutSections["footerjs"] = "resource/index_footerjs.html"
@@ -40,7 +38,7 @@ func (this *MenuController) UrlForLink(menus []*models.Menu) {
 	for _, item := range menus {
 		//beego.Debug(item.UrlFor)
 		item.LinkUrl = this.UrlForLinkOne(item.UrlFor)
-		beego.Debug(item.LinkUrl)
+		//beego.Debug(item.LinkUrl)
 	}
 }
 

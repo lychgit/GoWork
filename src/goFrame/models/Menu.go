@@ -3,8 +3,7 @@ package models
 import (
 	"github.com/astaxie/beego/orm"
 	"fmt"
-	"github.com/astaxie/beego"
-)
+	)
 
 type Menu struct {
 	Id           int `orm: "auto"`
@@ -132,7 +131,7 @@ func MenuListGetByUid(uid, maxrtype int) []*Menu {
 
 // menuListTreeGrid 将资源列表转成treegrid格式
 func menuListTreeGrid(list []*Menu) []*Menu {
-	beego.Debug("menuListTreeGrid")
+	//beego.Debug("menuListTreeGrid")
 	result := make([]*Menu, 0)
 	for _, item := range list {
 		//beego.Debug(*item)

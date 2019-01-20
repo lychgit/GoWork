@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"goFrame/models"
 )
 
 type RoleController struct {
@@ -19,5 +20,20 @@ func (this *RoleController) Index() {
 	//this.Data["canEdit"] = this.checkActionRoleor("MenuController", "Edit")
 	//this.Data["canDelete"] = this.checkActionRoleor("MenuController", "Delete")
 	this.display()
+}
+
+// DataGrid 后台用户管理页 表格获取数据
+func (this *RoleController) RoleDataGrid() {
+	//直接反序化获取json格式的requestbody里的值
+	//var params models.RoleQueryParam
+	//json.Unmarshal(this.Ctx.Input.RequestBody, &params)
+	//获取数据列表和总数
+	data, total := models.RoleList(this.page, this.pageSize)
+	//定义返回的数据结构
+	result := make(map[string]interface{})
+	result["total"] = total
+	result["rows"] = data
+	this.Data["json"] = result
+	this.ServeJSON()
 }
 

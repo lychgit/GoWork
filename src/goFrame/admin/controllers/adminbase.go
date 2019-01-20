@@ -6,15 +6,20 @@ import (
 	"strings"
 	"strconv"
 	"goFrame/libs"
+	"encoding/json"
+		"bytes"
 )
 
 type BaseController struct {
 	beego.Controller
+	//className      string //控制器全名
+	//functonName    string //方法全名
 	controllerName string
 	actionName     string
 	curUser        models.User
 	userId         int
 	userName       string
+	page           int
 	pageSize       int
 }
 
@@ -25,10 +30,14 @@ type AjaxJson struct {
 
 //这个函数主要是为了用户扩展用的，这个函数会在Get、Post、Delete、Put、Finish等这些 Method 方法之前执行，用户可以重写这个函数实现类似用户验证之类。
 func (this *BaseController) Prepare() {
-	this.pageSize = 20
+	this.page = 0    //列表页 初始分页
+	this.pageSize = 20 //列表页 分页记录条数
 	controllerName, actionName := this.GetControllerAndAction()
+	//this.className = controllerName //控制器全名
+	//this.functonName = actionName
 	this.controllerName = strings.ToLower(controllerName[0 : len(controllerName)-10])
 	this.actionName = strings.ToLower(actionName)
+	this.Data["activeSidebarUrl"] = this.URLFor(controllerName + "." + actionName)
 
 	//判断用户是否有权访问某地址，无权则会跳转到错误页面
 	//this.checkAuthor("login")
@@ -55,7 +64,7 @@ func (this *BaseController) checkAuthor(ignores ...string) {
 			return
 		}
 	}
-	hasAuthor := false //c.checkActionAuthor(c.controllerName, c.actionName)
+	hasAuthor := true //c.checkActionAuthor(c.controllerName, c.actionName)
 	if !hasAuthor {
 		//utils.LogDebug(fmt.Sprintf("author control: path=%s.%s userid=%v  无权访问", c.controllerName, c.actionName, c.curUser.Id))
 		//如果没有权限
@@ -78,8 +87,8 @@ func (this *BaseController) auth(controllerName, actionName string) {
 	arr := strings.Split(this.Ctx.GetCookie("auth"), "|")
 	//beego.Debug("GetCookie" + this.Ctx.GetCookie("auth")) //debug埋点
 	//beego.Debug(arr[0]) //debug埋点
-	beego.Debug(arr)
-	beego.Debug(this.userId)
+	//beego.Debug(arr)
+	//beego.Debug(this.userId)
 	if len(arr) == 2 {
 		idstr, password := arr[0], arr[1]
 		userId, _ := strconv.Atoi(idstr)
@@ -177,7 +186,7 @@ func (this *BaseController) showMsg(args ...string) {
 }
 
 // 输出json
-func (this *BaseController) jsonResult(code int, msg string, obj interface{}) {
+func (this *BaseController) jsonResult(code interface{}, msg string, obj interface{}) {
 	r := &models.JsonResult{code, msg, obj}
 	this.Data["json"] = r
 	this.ServeJSON()
@@ -200,7 +209,7 @@ func (this *BaseController) getClientIp() string {
 
 // 重定向 去错误页
 func (this *BaseController) pageError(msg string) {
-	error_url := this.URLFor("AdminController.Error") + "/" + msg
+	error_url := this.URLFor("BaseController.Error") + "/" + msg
 	this.Redirect(error_url, 302)
 	this.StopRun()
 }
@@ -216,8 +225,8 @@ func (this *BaseController) setUserSession(uid int) error {
 	}
 	//获取这个用户能获取到的所有菜单列表
 	resourceList := models.MenuListGetByUid(uid, 1000)
-	beego.Debug("获取这个用户能获取到的所有菜单列表")
-	beego.Debug(resourceList)
+	//beego.Debug("获取这个用户能获取到的所有菜单列表")
+	//beego.Debug(resourceList)
 	for _, item := range resourceList {
 		m.MenuUrlForList = append(m.MenuUrlForList, strings.TrimSpace(item.UrlFor))
 	}
@@ -230,7 +239,63 @@ func (this *BaseController) getUserSession() {
 	//beego.Debug("getUserSession")
 	//beego.Debug(a)
 	if a != nil {
+		//待实现  从session中获取当前登录的后台用户的操作方法权限
+
 		this.curUser = a.(models.User)
 		this.Data["user"] = a
 	}
+}
+
+
+
+func (this *BaseController) Json_encode(data interface{}, encoding ...bool) string {
+	var (
+		hasIndent   = beego.BConfig.RunMode != beego.PROD
+		hasEncoding = len(encoding) > 0 && encoding[0]
+	)
+	return this.json_return(data, hasIndent, hasEncoding)
+	//	c.Ctx.Output.JSON(c.Data["json"], hasIndent, hasEncoding)
+}
+func (this *BaseController) json_return(data interface{}, hasIndent bool, encoding bool) string {
+	var content []byte
+	var err error
+	if hasIndent {
+		content, err = json.MarshalIndent(data, "", "  ")
+	} else {
+		content, err = json.Marshal(data)
+	}
+	if err != nil {
+		return err.Error()
+	}
+	//if encoding {
+	//	content = []byte(this.stringsToJSON(string(content)))
+	//}
+	return string(content)
+}
+
+
+func (this *BaseController) stringsToJSON(str string) string {
+	var jsons bytes.Buffer
+	for _, r := range str {
+		rint := int(r)
+		if rint < 128 {
+			jsons.WriteRune(r)
+		} else {
+			jsons.WriteString("\\u")
+			if rint < 0x100 {
+				jsons.WriteString("00")
+			} else if rint < 0x1000 {
+				jsons.WriteString("0")
+			}
+			jsons.WriteString(strconv.FormatInt(int64(rint), 16))
+		}
+	}
+	return jsons.String()
+}
+func (this *BaseController) pointToArray(data []*interface{}) map[interface{}]interface{}{
+	var list = make(map[interface{}]interface{})
+	for i, _ := range data {
+		list[i] = *data[i]
+	}
+	return list
 }

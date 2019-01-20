@@ -46,8 +46,11 @@ func init() {
 	beego.Router("/admin/auth/index", &admin.AuthController{}, "*:Index")
 	//角色管理
 	beego.Router("/admin/role/index", &admin.RoleController{}, "*:Index")
+	beego.Router("/admin/role/datagrid", &admin.RoleController{}, "POST:RoleDataGrid")
 	//用户管理
 	beego.Router("/admin/user/index", &admin.UserController{}, "*:Index")
+	beego.Router("/admin/user/datagrid", &admin.UserController{}, "POST:UserDataGrid")
+	beego.Router("/admin/user/edit", &admin.UserController{}, "POST:UserEdit")
 	//日志管理
 	beego.Router("/admin/log/index", &admin.LogController{}, "*:Index")
 	beego.Router("/admin/log/system", &admin.LogController{}, "*:System")

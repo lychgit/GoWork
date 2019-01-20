@@ -1,528 +1,1789 @@
-2019/01/06 13:54:27.305 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 13:54:32.391 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 13:54:32.391 [D] [adminbase.go:226]  <nil> 
-2019/01/06 13:54:32.394 [D] [adminbase.go:74]  here is auth 
-2019/01/06 13:54:32.396 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 13:54:40.679 [D] [adminbase.go:225]  getUserSession 
-2019/01/06 13:54:40.679 [D] [adminbase.go:226]  <nil> 
-2019/01/06 13:54:40.679 [D] [adminbase.go:74]  here is auth 
-2019/01/06 13:54:40.680 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 14:03:51.902 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 14:03:57.921 [D] [adminbase.go:74]  here is auth 
-2019/01/06 14:03:57.922 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 14:03:58.487 [D] [adminbase.go:74]  here is auth 
-2019/01/06 14:03:58.488 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 14:03:58.515 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 14:15:16.190 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 14:15:22.289 [D] [adminbase.go:74]  here is auth 
-2019/01/06 14:15:22.289 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 14:15:22.949 [D] [adminbase.go:74]  here is auth 
-2019/01/06 14:15:22.949 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 14:15:22.978 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 14:15:22.981 [D] [menu.go:34]  [0xc04216c000 0xc04216c1c0 0xc04216c380 0xc04216c540 0xc04216c700 0xc04216c8c0 0xc04216ca80 0xc04216cc40] 
-2019/01/06 19:50:35.076 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 19:51:01.695 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:51:01.695 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 19:51:06.377 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:51:06.377 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 19:51:06.396 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 19:51:06.396 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
-2019/01/06 19:51:06.397 [D] [adminbase.go:215]  [0xc0421e42a0 0xc0421e4460 0xc0421e4620 0xc0421e47e0 0xc0421e49a0 0xc0421e4b60 0xc0421e4d20 0xc0421e4ee0] 
-2019/01/06 19:51:06.405 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:51:06.405 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 19:51:07.064 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:51:07.064 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 19:51:07.070 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 19:51:07.072 [D] [menu.go:34]  [0xc0421e41c0 0xc0421e4380 0xc0421e4540 0xc0421e4700 0xc0421e48c0 0xc0421e4a80 0xc0421e4c40 0xc0421e4e00] 
-2019/01/06 19:51:16.010 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:51:16.011 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 19:51:16.444 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:51:16.445 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 19:51:16.452 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 19:51:16.457 [D] [menu.go:34]  [0xc0423d4000 0xc0423d41c0 0xc0423d4380 0xc0423d4540 0xc0423d4700 0xc0423d48c0 0xc0423d4a80 0xc0423d4c40] 
-2019/01/06 19:51:25.460 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:51:25.460 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 19:51:25.932 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:51:25.932 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 19:51:25.938 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 19:51:25.943 [D] [menu.go:34]  [0xc042344000 0xc0423441c0 0xc042344380 0xc042344540 0xc042344700 0xc0423448c0 0xc042344a80 0xc042344c40] 
-2019/01/06 19:54:15.544 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 19:54:20.032 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:54:20.032 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 19:54:20.555 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:54:20.555 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 19:54:20.563 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 19:54:20.569 [D] [menu.go:34]  [0xc042402000 0xc0424021c0 0xc042402380 0xc042402540 0xc042402700 0xc0424028c0 0xc042402a80 0xc042402c40] 
-2019/01/06 19:57:10.152 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:57:10.152 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 19:57:17.003 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:57:17.003 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 19:57:21.613 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:57:21.613 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 19:57:21.622 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 19:57:21.622 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
-2019/01/06 19:57:21.622 [D] [adminbase.go:215]  [0xc0422b2000 0xc0422b2380 0xc0422b2540 0xc0422b2700 0xc0422b28c0 0xc0422b2a80 0xc0422b2c40 0xc0422b2e00] 
-2019/01/06 19:57:21.636 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:57:21.637 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 19:57:22.806 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:57:22.806 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 19:57:22.815 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 19:57:22.820 [D] [menu.go:34]  [0xc04238c0e0 0xc04238c2a0 0xc04238c540 0xc04238c700 0xc04238c8c0 0xc04238ca80 0xc04238cc40 0xc04238ce00] 
-2019/01/06 19:57:32.710 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:57:32.710 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 19:57:33.249 [D] [adminbase.go:74]  here is auth 
-2019/01/06 19:57:33.249 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 19:57:33.254 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 19:57:33.255 [D] [menu.go:34]  [0xc0421d40e0 0xc0421d42a0 0xc0421d4460 0xc0421d4620 0xc0421d47e0 0xc0421d49a0 0xc0421d4b60 0xc0421d4d20] 
-2019/01/06 20:06:38.211 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:06:41.145 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:06:41.146 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 20:06:48.788 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:06:48.788 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 20:06:48.805 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:06:48.805 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
-2019/01/06 20:06:48.805 [D] [adminbase.go:215]  [0xc0421fe0e0 0xc0421fe380 0xc0421fe540 0xc0421fe700 0xc0421fe8c0 0xc0421fea80 0xc0421fec40 0xc0421fee00] 
-2019/01/06 20:06:48.813 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:06:48.813 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:06:49.653 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:06:49.654 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:06:49.659 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:06:49.662 [D] [menu.go:34]  [0xc0421e80e0 0xc0421e82a0 0xc0421e8460 0xc0421e8620 0xc0421e87e0 0xc0421e89a0 0xc0421e8b60 0xc0421e8d20] 
-2019/01/06 20:12:41.856 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:12:58.981 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:12:58.981 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 20:13:03.841 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:13:03.842 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 20:13:03.852 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:13:03.852 [D] [adminbase.go:214]  获取这个用户能获取到的所有菜单列表 
-2019/01/06 20:13:03.853 [D] [adminbase.go:215]  [0xc0422b6000 0xc0422b61c0 0xc0422b6380 0xc0422b6540 0xc0422b6700 0xc0422b68c0 0xc0422b6a80 0xc0422b6c40] 
-2019/01/06 20:13:03.863 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:13:03.863 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:13:04.489 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:13:04.489 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:13:04.496 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:13:04.498 [D] [menu.go:34]  [0xc04211e0e0 0xc04211e380 0xc04211e540 0xc04211e700 0xc04211e8c0 0xc04211ea80 0xc04211ec40 0xc04211ee00] 
-2019/01/06 20:18:07.017 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:18:17.335 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:18:17.335 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:18:17.935 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:18:17.935 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:18:17.944 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:18:17.945 [D] [menu.go:51]  MenuController 
-2019/01/06 20:18:17.946 [D] [menu.go:52]  [Index] 
-2019/01/06 20:18:17.946 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:18:17.946 [D] [menu.go:51]  AuthController 
-2019/01/06 20:18:17.947 [D] [menu.go:52]  [Index] 
-2019/01/06 20:18:17.947 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:18:17.947 [D] [menu.go:51]  RoleController 
-2019/01/06 20:18:17.948 [D] [menu.go:52]  [Index] 
-2019/01/06 20:18:17.948 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:18:17.949 [D] [menu.go:51]  UserController 
-2019/01/06 20:18:17.950 [D] [menu.go:52]  [Index] 
-2019/01/06 20:18:17.950 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:18:17.950 [D] [menu.go:51]  LogController 
-2019/01/06 20:18:17.951 [D] [menu.go:52]  [Index] 
-2019/01/06 20:18:17.951 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:18:17.952 [D] [menu.go:51]  SystemLogController 
-2019/01/06 20:18:17.952 [D] [menu.go:52]  [Index] 
-2019/01/06 20:18:17.952 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:18:17.953 [D] [menu.go:51]  OperaLogController 
-2019/01/06 20:18:17.953 [D] [menu.go:52]  [Index] 
-2019/01/06 20:18:17.953 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:18:17.954 [D] [menu.go:34]  [0xc042312000 0xc0423121c0 0xc042312380 0xc042312540 0xc042312700 0xc0423128c0 0xc042312a80 0xc042312c40] 
-2019/01/06 20:19:02.348 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:19:05.179 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:19:05.179 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:19:05.690 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:19:05.690 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:19:05.696 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:19:05.696 [D] [menu.go:51]  MenuController 
-2019/01/06 20:19:05.697 [D] [menu.go:52]  Index 
-2019/01/06 20:19:05.697 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:05.697 [D] [menu.go:51]  AuthController 
-2019/01/06 20:19:05.698 [D] [menu.go:52]  Index 
-2019/01/06 20:19:05.698 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:05.699 [D] [menu.go:51]  RoleController 
-2019/01/06 20:19:05.699 [D] [menu.go:52]  Index 
-2019/01/06 20:19:05.700 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:05.700 [D] [menu.go:51]  UserController 
-2019/01/06 20:19:05.701 [D] [menu.go:52]  Index 
-2019/01/06 20:19:05.701 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:05.701 [D] [menu.go:51]  LogController 
-2019/01/06 20:19:05.702 [D] [menu.go:52]  Index 
-2019/01/06 20:19:05.702 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:05.703 [D] [menu.go:51]  SystemLogController 
-2019/01/06 20:19:05.703 [D] [menu.go:52]  Index 
-2019/01/06 20:19:05.705 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:05.705 [D] [menu.go:51]  OperaLogController 
-2019/01/06 20:19:05.706 [D] [menu.go:52]  Index 
-2019/01/06 20:19:05.707 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:05.708 [D] [menu.go:34]  [0xc042120380 0xc042120540 0xc042120700 0xc0421208c0 0xc042120a80 0xc042120c40 0xc042120e00 0xc042120fc0] 
-2019/01/06 20:19:43.041 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:19:46.496 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:19:46.496 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:19:47.032 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:19:47.032 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:19:47.044 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:19:47.044 [D] [menu.go:42]   
-2019/01/06 20:19:47.045 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:47.045 [D] [menu.go:42]   
-2019/01/06 20:19:47.046 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:47.046 [D] [menu.go:42]   
-2019/01/06 20:19:47.047 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:47.047 [D] [menu.go:42]   
-2019/01/06 20:19:47.047 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:47.048 [D] [menu.go:42]   
-2019/01/06 20:19:47.049 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:47.049 [D] [menu.go:42]   
-2019/01/06 20:19:47.050 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:47.051 [D] [menu.go:42]   
-2019/01/06 20:19:47.051 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:19:47.054 [D] [menu.go:42]   
-2019/01/06 20:19:47.054 [D] [menu.go:34]  [0xc0423600e0 0xc0423602a0 0xc042360460 0xc042360620 0xc0423607e0 0xc0423609a0 0xc042360b60 0xc042360d20] 
-2019/01/06 20:31:17.531 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:31:23.926 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:31:23.926 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:31:24.513 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:31:24.514 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:31:24.520 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:31:24.521 [D] [menu.go:41]   
-2019/01/06 20:31:24.522 [D] [menu.go:43]   
-2019/01/06 20:31:24.522 [D] [menu.go:41]  MenuController.Index 
-2019/01/06 20:31:24.522 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:31:24.523 [D] [menu.go:43]   
-2019/01/06 20:31:24.523 [D] [menu.go:41]  AuthController.Index 
-2019/01/06 20:31:24.524 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:31:24.525 [D] [menu.go:43]   
-2019/01/06 20:31:24.526 [D] [menu.go:41]  RoleController.Index 
-2019/01/06 20:31:24.526 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:31:24.526 [D] [menu.go:43]   
-2019/01/06 20:31:24.527 [D] [menu.go:41]  UserController.Index 
-2019/01/06 20:31:24.527 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:31:24.527 [D] [menu.go:43]   
-2019/01/06 20:31:24.528 [D] [menu.go:41]  LogController.Index 
-2019/01/06 20:31:24.529 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:31:24.529 [D] [menu.go:43]   
-2019/01/06 20:31:24.530 [D] [menu.go:41]  SystemLogController.Index 
-2019/01/06 20:31:24.530 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:31:24.531 [D] [menu.go:43]   
-2019/01/06 20:31:24.531 [D] [menu.go:41]  OperaLogController.Index 
-2019/01/06 20:31:24.531 [W] [templatefunc.go:253]  urlfor endpoint must like path.controller.method
-2019/01/06 20:31:24.533 [D] [menu.go:43]   
-2019/01/06 20:31:24.533 [D] [menu.go:34]  [0xc0421f02a0 0xc0421f0460 0xc0421f0620 0xc0421f07e0 0xc0421f09a0 0xc0421f0b60 0xc0421f0d20 0xc0421f0ee0] 
-2019/01/06 20:32:57.094 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:33:00.358 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:33:00.359 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:33:00.872 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:33:00.872 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:33:00.883 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:33:00.884 [D] [menu.go:41]   
-2019/01/06 20:33:00.885 [D] [menu.go:43]   
-2019/01/06 20:33:00.885 [D] [menu.go:41]  MenuController.Index 
-2019/01/06 20:33:00.886 [D] [menu.go:43]   
-2019/01/06 20:33:00.886 [D] [menu.go:41]  AuthController.Index 
-2019/01/06 20:33:00.887 [D] [menu.go:43]   
-2019/01/06 20:33:00.887 [D] [menu.go:41]  RoleController.Index 
-2019/01/06 20:33:00.888 [D] [menu.go:43]   
-2019/01/06 20:33:00.890 [D] [menu.go:41]  UserController.Index 
-2019/01/06 20:33:00.891 [D] [menu.go:43]   
-2019/01/06 20:33:00.891 [D] [menu.go:41]  LogController.Index 
-2019/01/06 20:33:00.899 [D] [menu.go:43]   
-2019/01/06 20:33:00.899 [D] [menu.go:41]  SystemLogController.Index 
-2019/01/06 20:33:00.901 [D] [menu.go:43]   
-2019/01/06 20:33:00.901 [D] [menu.go:41]  OperaLogController.Index 
-2019/01/06 20:33:00.902 [D] [menu.go:43]   
-2019/01/06 20:33:00.902 [D] [menu.go:34]  [0xc0422a6000 0xc0422a61c0 0xc0422a6380 0xc0422a6540 0xc0422a6700 0xc0422a68c0 0xc0422a6a80 0xc0422a6c40] 
-2019/01/06 20:33:26.158 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:33:27.880 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:33:27.881 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:33:28.413 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:33:28.413 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:33:28.421 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:33:28.421 [D] [menu.go:41]   
-2019/01/06 20:33:28.421 [D] [menu.go:43]   
-2019/01/06 20:33:28.422 [D] [menu.go:41]  MenuController.Index 
-2019/01/06 20:33:28.422 [D] [menu.go:54]  MenuController.Index 
-2019/01/06 20:33:28.423 [C] [asm_amd64.s:573]  the request url is  /menu/menutree
-2019/01/06 20:33:28.423 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: index out of range
-2019/01/06 20:33:28.423 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
-2019/01/06 20:33:28.424 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
-2019/01/06 20:33:28.424 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:28
-2019/01/06 20:33:28.425 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:55
-2019/01/06 20:33:28.426 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:42
-2019/01/06 20:33:28.426 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:33
-2019/01/06 20:33:28.426 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
-2019/01/06 20:33:28.427 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
-2019/01/06 20:33:28.430 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
-2019/01/06 20:33:28.431 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
-2019/01/06 20:33:28.431 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
-2019/01/06 20:33:28.434 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
-2019/01/06 20:33:28.436 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
-2019/01/06 20:33:28.438 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
-2019/01/06 20:34:06.169 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:34:08.041 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:34:08.042 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:34:08.735 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:34:08.735 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:34:08.743 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:34:08.743 [D] [menu.go:41]   
-2019/01/06 20:34:08.744 [D] [menu.go:43]   
-2019/01/06 20:34:08.744 [D] [menu.go:41]  MenuController.Index 
-2019/01/06 20:34:08.745 [D] [menu.go:54]  MenuController.Index 
-2019/01/06 20:34:08.745 [D] [menu.go:43]   
-2019/01/06 20:34:08.745 [D] [menu.go:41]  AuthController.Index 
-2019/01/06 20:34:08.746 [D] [menu.go:54]  AuthController.Index 
-2019/01/06 20:34:08.747 [D] [menu.go:43]   
-2019/01/06 20:34:08.747 [D] [menu.go:41]  RoleController.Index 
-2019/01/06 20:34:08.748 [D] [menu.go:54]  RoleController.Index 
-2019/01/06 20:34:08.749 [D] [menu.go:43]   
-2019/01/06 20:34:08.749 [D] [menu.go:41]  UserController.Index 
-2019/01/06 20:34:08.750 [D] [menu.go:54]  UserController.Index 
-2019/01/06 20:34:08.751 [D] [menu.go:43]   
-2019/01/06 20:34:08.751 [D] [menu.go:41]  LogController.Index 
-2019/01/06 20:34:08.751 [D] [menu.go:54]  LogController.Index 
-2019/01/06 20:34:08.752 [D] [menu.go:43]   
-2019/01/06 20:34:08.752 [D] [menu.go:41]  SystemLogController.Index 
-2019/01/06 20:34:08.753 [D] [menu.go:54]  SystemLogController.Index 
-2019/01/06 20:34:08.755 [D] [menu.go:43]   
-2019/01/06 20:34:08.761 [D] [menu.go:41]  OperaLogController.Index 
-2019/01/06 20:34:08.761 [D] [menu.go:54]  OperaLogController.Index 
-2019/01/06 20:34:08.762 [D] [menu.go:43]   
-2019/01/06 20:34:08.763 [D] [menu.go:34]  [0xc0421e82a0 0xc0421e8460 0xc0421e8620 0xc0421e87e0 0xc0421e89a0 0xc0421e8b60 0xc0421e8d20 0xc0421e8ee0] 
-2019/01/06 20:36:40.588 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:36:42.911 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:36:42.911 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:36:43.586 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:36:43.586 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:36:43.596 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:36:43.596 [D] [menu.go:43]   
-2019/01/06 20:36:43.598 [D] [menu.go:54]   
-2019/01/06 20:36:43.599 [D] [menu.go:43]   
-2019/01/06 20:36:43.600 [D] [menu.go:54]   
-2019/01/06 20:36:43.600 [D] [menu.go:43]   
-2019/01/06 20:36:43.601 [D] [menu.go:54]   
-2019/01/06 20:36:43.602 [D] [menu.go:43]   
-2019/01/06 20:36:43.602 [D] [menu.go:54]   
-2019/01/06 20:36:43.604 [D] [menu.go:43]   
-2019/01/06 20:36:43.606 [D] [menu.go:54]   
-2019/01/06 20:36:43.608 [D] [menu.go:43]   
-2019/01/06 20:36:43.610 [D] [menu.go:54]   
-2019/01/06 20:36:43.613 [D] [menu.go:43]   
-2019/01/06 20:36:43.614 [D] [menu.go:54]   
-2019/01/06 20:36:43.617 [D] [menu.go:43]   
-2019/01/06 20:36:43.618 [D] [menu.go:34]  [0xc0422da000 0xc0422da1c0 0xc0422da380 0xc0422da540 0xc0422da700 0xc0422da8c0 0xc0422daa80 0xc0422dac40] 
-2019/01/06 20:39:29.570 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:39:30.989 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:39:30.989 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:39:30.992 [D] [controller.go:343]  admin.index 
-2019/01/06 20:39:31.623 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:39:31.623 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:39:31.628 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:39:31.628 [D] [menu.go:43]   
-2019/01/06 20:39:31.629 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:39:31.629 [D] [controller.go:343]  MenuController.Index 
-2019/01/06 20:39:31.630 [D] [menu.go:43]   
-2019/01/06 20:39:31.630 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:39:31.630 [D] [controller.go:343]  AuthController.Index 
-2019/01/06 20:39:31.631 [D] [menu.go:43]   
-2019/01/06 20:39:31.632 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:39:31.632 [D] [controller.go:343]  RoleController.Index 
-2019/01/06 20:39:31.633 [D] [menu.go:43]   
-2019/01/06 20:39:31.633 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:39:31.633 [D] [controller.go:343]  UserController.Index 
-2019/01/06 20:39:31.634 [D] [menu.go:43]   
-2019/01/06 20:39:31.634 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:39:31.635 [D] [controller.go:343]  LogController.Index 
-2019/01/06 20:39:31.635 [D] [menu.go:43]   
-2019/01/06 20:39:31.635 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:39:31.636 [D] [controller.go:343]  SystemLogController.Index 
-2019/01/06 20:39:31.637 [D] [menu.go:43]   
-2019/01/06 20:39:31.637 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:39:31.637 [D] [controller.go:343]  OperaLogController.Index 
-2019/01/06 20:39:31.638 [D] [menu.go:43]   
-2019/01/06 20:39:31.638 [D] [menu.go:34]  [0xc0423dc0e0 0xc0423dc2a0 0xc0423dc460 0xc0423dc620 0xc0423dc7e0 0xc0423dc9a0 0xc0423dcb60 0xc0423dcd20] 
-2019/01/06 20:51:33.741 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:51:37.054 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:51:37.054 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:51:37.057 [D] [controller.go:343]  admin.index 
-2019/01/06 20:51:37.627 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:51:37.627 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:51:37.633 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:51:37.633 [D] [menu.go:43]   
-2019/01/06 20:51:37.634 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:51:37.634 [D] [controller.go:343]  MenuController.Index 
-2019/01/06 20:51:37.635 [D] [menu.go:43]   
-2019/01/06 20:51:37.635 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:51:37.636 [D] [controller.go:343]  AuthController.Index 
-2019/01/06 20:51:37.636 [D] [menu.go:43]   
-2019/01/06 20:51:37.637 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:51:37.637 [D] [controller.go:343]  RoleController.Index 
-2019/01/06 20:51:37.639 [D] [menu.go:43]   
-2019/01/06 20:51:37.639 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:51:37.640 [D] [controller.go:343]  UserController.Index 
-2019/01/06 20:51:37.641 [D] [menu.go:43]   
-2019/01/06 20:51:37.641 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:51:37.641 [D] [controller.go:343]  LogController.Index 
-2019/01/06 20:51:37.642 [D] [menu.go:43]   
-2019/01/06 20:51:37.642 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:51:37.643 [D] [controller.go:343]  LogController.System 
-2019/01/06 20:51:37.644 [D] [menu.go:43]   
-2019/01/06 20:51:37.644 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:51:37.645 [D] [controller.go:343]  LogController.Opera 
-2019/01/06 20:51:37.645 [D] [menu.go:43]   
-2019/01/06 20:51:37.646 [D] [menu.go:34]  [0xc0421200e0 0xc0421202a0 0xc042120460 0xc042120620 0xc0421207e0 0xc0421209a0 0xc042120b60 0xc042120d20] 
-2019/01/06 20:57:30.545 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 20:57:32.676 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:57:32.677 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 20:57:32.679 [D] [controller.go:343]  admin.index 
-2019/01/06 20:57:33.192 [D] [adminbase.go:74]  here is auth 
-2019/01/06 20:57:33.192 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 20:57:33.199 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 20:57:33.200 [D] [menu.go:43]   
-2019/01/06 20:57:33.200 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:57:33.201 [D] [controller.go:343]  MenuController.Index 
-2019/01/06 20:57:33.202 [D] [menu.go:43]   
-2019/01/06 20:57:33.202 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:57:33.203 [D] [controller.go:343]  AuthController.Index 
-2019/01/06 20:57:33.204 [D] [menu.go:43]   
-2019/01/06 20:57:33.204 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:57:33.204 [D] [controller.go:343]  RoleController.Index 
-2019/01/06 20:57:33.205 [D] [menu.go:43]   
-2019/01/06 20:57:33.205 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:57:33.206 [D] [controller.go:343]  UserController.Index 
-2019/01/06 20:57:33.207 [D] [menu.go:43]   
-2019/01/06 20:57:33.207 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:57:33.207 [D] [controller.go:343]  LogController.Index 
-2019/01/06 20:57:33.208 [D] [menu.go:43]   
-2019/01/06 20:57:33.208 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:57:33.208 [D] [controller.go:343]  LogController.System 
-2019/01/06 20:57:33.209 [D] [menu.go:43]   
-2019/01/06 20:57:33.209 [D] [menu.go:55]  UrlForLinkOne 
-2019/01/06 20:57:33.209 [D] [controller.go:343]  LogController.Opera 
-2019/01/06 20:57:33.211 [D] [menu.go:43]   
-2019/01/06 20:57:33.211 [D] [menu.go:34]  [0xc04238e000 0xc04238e1c0 0xc04238e380 0xc04238e540 0xc04238e700 0xc04238e8c0 0xc04238ea80 0xc04238ec40] 
-2019/01/06 20:59:41.038 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 21:01:29.370 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 21:02:56.328 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 21:03:16.717 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:03:16.717 [D] [adminbase.go:75]  AuthController.Index 
-2019/01/06 21:03:40.962 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:03:40.963 [D] [adminbase.go:75]  AuthController.Index 
-2019/01/06 21:07:12.196 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 21:07:16.671 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:07:16.671 [D] [adminbase.go:75]  AuthController.Index 
-2019/01/06 21:07:48.247 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 21:07:52.152 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:07:52.153 [D] [adminbase.go:75]  AuthController.Index 
-2019/01/06 21:08:09.040 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:08:09.040 [D] [adminbase.go:75]  AuthController.Index 
-2019/01/06 21:08:17.901 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:08:17.901 [D] [adminbase.go:75]  AuthController.Index 
-2019/01/06 21:10:04.240 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 21:10:15.402 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:10:15.402 [D] [adminbase.go:75]  AuthController.Index 
-2019/01/06 21:10:15.403 [D] [adminbase.go:81]  [] 
-2019/01/06 21:10:15.403 [D] [adminbase.go:82]  0 
-2019/01/06 21:12:05.452 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 21:12:14.472 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:12:14.473 [D] [adminbase.go:75]  AuthController.Index 
-2019/01/06 21:12:14.473 [D] [adminbase.go:81]  [] 
-2019/01/06 21:12:14.473 [D] [adminbase.go:82]  0 
-2019/01/06 21:12:14.474 [D] [adminbase.go:108]  未登录重定向至登录界面 
-2019/01/06 21:12:14.474 [D] [adminbase.go:112]  redirect 
-2019/01/06 21:13:09.107 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 21:13:30.194 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:13:30.195 [D] [adminbase.go:75]  AuthController.Index 
-2019/01/06 21:13:30.195 [D] [adminbase.go:81]  [] 
-2019/01/06 21:13:30.196 [D] [adminbase.go:82]  0 
-2019/01/06 21:13:30.196 [D] [adminbase.go:108]  未登录重定向至登录界面 
-2019/01/06 21:13:30.196 [D] [adminbase.go:112]  redirect 
-2019/01/06 21:14:37.453 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 21:14:44.349 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:14:44.349 [D] [adminbase.go:75]  AuthController.Index 
-2019/01/06 21:14:44.350 [D] [adminbase.go:81]  [] 
-2019/01/06 21:14:44.350 [D] [adminbase.go:82]  0 
-2019/01/06 21:14:44.350 [D] [adminbase.go:108]  未登录重定向至登录界面 
-2019/01/06 21:14:44.350 [D] [adminbase.go:112]  /login 
-2019/01/06 21:16:37.538 [I] [asm_amd64.s:2361]  http server Running on http://:8000
-2019/01/06 21:16:46.038 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:16:46.038 [D] [adminbase.go:75]  AuthController.Index 
-2019/01/06 21:16:46.039 [D] [adminbase.go:81]  [] 
-2019/01/06 21:16:46.039 [D] [adminbase.go:82]  0 
-2019/01/06 21:16:46.039 [D] [adminbase.go:111]  未登录重定向至登录界面 
-2019/01/06 21:16:46.040 [D] [adminbase.go:112]  /admin/login 
-2019/01/06 21:16:46.054 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:16:46.055 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 21:16:46.055 [D] [adminbase.go:81]  [] 
-2019/01/06 21:16:46.056 [D] [adminbase.go:82]  0 
-2019/01/06 21:16:46.056 [D] [login.go:19]  here is admin Login,uid= 
-2019/01/06 21:16:51.018 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:16:51.018 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 21:16:51.019 [D] [adminbase.go:81]  [] 
-2019/01/06 21:16:51.019 [D] [adminbase.go:82]  0 
-2019/01/06 21:16:51.019 [D] [login.go:19]  here is admin Login,uid= 
-2019/01/06 21:16:55.574 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:16:55.575 [D] [adminbase.go:75]  LoginController.Login 
-2019/01/06 21:16:55.575 [D] [adminbase.go:81]  [] 
-2019/01/06 21:16:55.575 [D] [adminbase.go:82]  0 
-2019/01/06 21:16:55.576 [D] [login.go:19]  here is admin Login,uid= 
-2019/01/06 21:16:55.586 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 21:16:55.586 [D] [adminbase.go:219]  获取这个用户能获取到的所有菜单列表 
-2019/01/06 21:16:55.586 [D] [adminbase.go:220]  [0xc042236000 0xc0422361c0 0xc042236380 0xc042236540 0xc042236700 0xc0422368c0 0xc042236a80 0xc042236c40] 
-2019/01/06 21:16:55.593 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:16:55.593 [D] [adminbase.go:75]  AdminController.Index 
-2019/01/06 21:16:55.594 [D] [adminbase.go:81]  [1 610fcd12532eb00efbad0c4fb90fc6a1] 
-2019/01/06 21:16:55.594 [D] [adminbase.go:82]  0 
-2019/01/06 21:16:55.596 [D] [adminbase.go:93]  用户已登录状态 
-2019/01/06 21:16:56.078 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:16:56.078 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 21:16:56.079 [D] [adminbase.go:81]  [1 610fcd12532eb00efbad0c4fb90fc6a1] 
-2019/01/06 21:16:56.079 [D] [adminbase.go:82]  0 
-2019/01/06 21:16:56.081 [D] [adminbase.go:93]  用户已登录状态 
-2019/01/06 21:16:56.084 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 21:16:56.085 [D] [menu.go:43]   
-2019/01/06 21:16:56.085 [D] [menu.go:43]  /admin/menu/index 
-2019/01/06 21:16:56.085 [D] [menu.go:43]  /admin/auth/index 
-2019/01/06 21:16:56.086 [D] [menu.go:43]  /admin/role/index 
-2019/01/06 21:16:56.086 [D] [menu.go:43]  /admin/user/index 
-2019/01/06 21:16:56.087 [D] [menu.go:43]  /admin/log/index 
-2019/01/06 21:16:56.087 [D] [menu.go:43]  /admin/log/system 
-2019/01/06 21:16:56.087 [D] [menu.go:43]  /admin/log/opera 
-2019/01/06 21:17:05.786 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:17:05.786 [D] [adminbase.go:75]  LogController.System 
-2019/01/06 21:17:05.787 [D] [adminbase.go:81]  [1 610fcd12532eb00efbad0c4fb90fc6a1] 
-2019/01/06 21:17:05.787 [D] [adminbase.go:82]  0 
-2019/01/06 21:17:05.789 [D] [adminbase.go:93]  用户已登录状态 
-2019/01/06 21:17:08.948 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:17:08.949 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 21:17:08.951 [D] [adminbase.go:81]  [1 610fcd12532eb00efbad0c4fb90fc6a1] 
-2019/01/06 21:17:08.952 [D] [adminbase.go:82]  0 
-2019/01/06 21:17:08.954 [D] [adminbase.go:93]  用户已登录状态 
-2019/01/06 21:17:08.956 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 21:17:08.956 [D] [menu.go:43]   
-2019/01/06 21:17:08.957 [D] [menu.go:43]  /admin/menu/index 
-2019/01/06 21:17:08.957 [D] [menu.go:43]  /admin/auth/index 
-2019/01/06 21:17:08.957 [D] [menu.go:43]  /admin/role/index 
-2019/01/06 21:17:08.958 [D] [menu.go:43]  /admin/user/index 
-2019/01/06 21:17:08.959 [D] [menu.go:43]  /admin/log/index 
-2019/01/06 21:17:08.959 [D] [menu.go:43]  /admin/log/system 
-2019/01/06 21:17:08.960 [D] [menu.go:43]  /admin/log/opera 
-2019/01/06 21:17:23.709 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:17:23.709 [D] [adminbase.go:75]  AuthController.Index 
-2019/01/06 21:17:23.710 [D] [adminbase.go:81]  [1 610fcd12532eb00efbad0c4fb90fc6a1] 
-2019/01/06 21:17:23.710 [D] [adminbase.go:82]  0 
-2019/01/06 21:17:23.712 [D] [adminbase.go:93]  用户已登录状态 
-2019/01/06 21:17:24.233 [D] [adminbase.go:74]  here is auth 
-2019/01/06 21:17:24.234 [D] [adminbase.go:75]  MenuController.UserMenuTree 
-2019/01/06 21:17:24.234 [D] [adminbase.go:81]  [1 610fcd12532eb00efbad0c4fb90fc6a1] 
-2019/01/06 21:17:24.234 [D] [adminbase.go:82]  0 
-2019/01/06 21:17:24.236 [D] [adminbase.go:93]  用户已登录状态 
-2019/01/06 21:17:24.240 [D] [Menu.go:135]  menuListTreeGrid 
-2019/01/06 21:17:24.240 [D] [menu.go:43]   
-2019/01/06 21:17:24.240 [D] [menu.go:43]  /admin/menu/index 
-2019/01/06 21:17:24.241 [D] [menu.go:43]  /admin/auth/index 
-2019/01/06 21:17:24.241 [D] [menu.go:43]  /admin/role/index 
-2019/01/06 21:17:24.241 [D] [menu.go:43]  /admin/user/index 
-2019/01/06 21:17:24.242 [D] [menu.go:43]  /admin/log/index 
-2019/01/06 21:17:24.242 [D] [menu.go:43]  /admin/log/system 
-2019/01/06 21:17:24.243 [D] [menu.go:43]  /admin/log/opera 
+2019/01/19 02:33:46.909 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 02:33:53.744 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:33:53.744 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/19 02:33:53.744 [D] [adminbase.go:111]  未登录重定向至登录界面 
+2019/01/19 02:33:53.745 [D] [adminbase.go:112]  /admin/login 
+2019/01/19 02:33:53.747 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:33:53.747 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 02:33:53.748 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 02:34:00.594 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:34:00.595 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 02:34:00.595 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 02:34:00.609 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:34:00.609 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/19 02:34:00.610 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:34:00.816 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:34:00.816 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 02:34:00.817 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:34:02.704 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:34:02.704 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:34:02.705 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:34:16.375 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:34:16.375 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 02:34:16.377 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:34:19.458 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:34:19.458 [D] [adminbase.go:75]  LogController.Opera 
+2019/01/19 02:34:19.459 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:34:20.915 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:34:20.915 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 02:34:20.916 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:35:53.079 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 02:36:06.212 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:36:06.212 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/19 02:36:06.213 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:36:06.460 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:36:06.461 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 02:36:06.462 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:36:09.412 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:36:09.412 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:36:09.413 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:36:15.332 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:36:15.334 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/19 02:36:15.334 [D] [adminbase.go:111]  未登录重定向至登录界面 
+2019/01/19 02:36:15.334 [D] [adminbase.go:112]  /admin/login 
+2019/01/19 02:36:15.338 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:36:15.338 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 02:36:15.338 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 02:36:23.056 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:36:23.056 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 02:36:23.056 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 02:36:23.068 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:36:23.068 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/19 02:36:23.070 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:36:23.414 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:36:23.414 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 02:36:23.415 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:36:26.679 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:36:26.680 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:36:26.680 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:36:35.946 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:36:35.947 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 02:36:35.949 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:37:58.354 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:37:58.354 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:37:58.355 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:38:01.566 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:38:01.566 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 02:38:01.567 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:39:50.853 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 02:39:53.622 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:39:53.622 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/19 02:39:53.626 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:39:54.049 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:39:54.050 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 02:39:54.051 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:39:55.179 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:39:55.180 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:39:55.181 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:39:55.181 [C] [asm_amd64.s:573]  the request url is  /admin/menu/index
+2019/01/19 02:39:55.181 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: slice bounds out of range
+2019/01/19 02:39:55.181 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:39:55.181 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 02:39:55.182 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:35
+2019/01/19 02:39:55.182 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/adminbase.go:145
+2019/01/19 02:39:55.182 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:18
+2019/01/19 02:39:55.182 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:39:55.182 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 02:39:55.182 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 02:39:55.183 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 02:39:55.183 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 02:39:55.183 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 02:39:55.184 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 02:39:55.184 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 02:46:23.700 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 02:46:30.098 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:46:30.098 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:46:30.100 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:46:30.100 [C] [asm_amd64.s:573]  the request url is  /admin/menu/index
+2019/01/19 02:46:30.100 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: slice bounds out of range
+2019/01/19 02:46:30.100 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:46:30.101 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 02:46:30.101 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:35
+2019/01/19 02:46:30.101 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/adminbase.go:145
+2019/01/19 02:46:30.101 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:18
+2019/01/19 02:46:30.102 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:46:30.102 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 02:46:30.102 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 02:46:30.102 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 02:46:30.103 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 02:46:30.103 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 02:46:30.103 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 02:46:30.104 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 02:46:31.935 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:46:31.935 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:46:31.936 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:46:31.937 [C] [asm_amd64.s:573]  the request url is  /admin/menu/index
+2019/01/19 02:46:31.937 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: slice bounds out of range
+2019/01/19 02:46:31.937 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:46:31.937 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 02:46:31.938 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:35
+2019/01/19 02:46:31.938 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/adminbase.go:145
+2019/01/19 02:46:31.938 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:18
+2019/01/19 02:46:31.938 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:46:31.938 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 02:46:31.939 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 02:46:31.939 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 02:46:31.939 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 02:46:31.939 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 02:46:31.939 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 02:46:31.940 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 02:46:32.599 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:46:32.599 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:46:32.600 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:46:32.601 [C] [asm_amd64.s:573]  the request url is  /admin/menu/index
+2019/01/19 02:46:32.601 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: slice bounds out of range
+2019/01/19 02:46:32.601 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:46:32.602 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 02:46:32.602 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:35
+2019/01/19 02:46:32.602 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/adminbase.go:145
+2019/01/19 02:46:32.602 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:18
+2019/01/19 02:46:32.602 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:46:32.603 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 02:46:32.603 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 02:46:32.603 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 02:46:32.603 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 02:46:32.603 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 02:46:32.604 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 02:46:32.604 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 02:47:11.921 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 02:47:16.175 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:47:16.175 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:47:16.178 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:47:16.178 [D] [menu.go:14]  menu-index 
+2019/01/19 02:47:16.178 [C] [asm_amd64.s:573]  the request url is  /admin/menu/index
+2019/01/19 02:47:16.179 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: slice bounds out of range
+2019/01/19 02:47:16.179 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:47:16.179 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 02:47:16.179 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:35
+2019/01/19 02:47:16.180 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/adminbase.go:145
+2019/01/19 02:47:16.180 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:19
+2019/01/19 02:47:16.180 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:47:16.180 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 02:47:16.180 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 02:47:16.181 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 02:47:16.181 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 02:47:16.181 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 02:47:16.181 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 02:47:16.182 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 02:47:24.321 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:47:24.321 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:47:24.321 [D] [adminbase.go:111]  未登录重定向至登录界面 
+2019/01/19 02:47:24.321 [D] [adminbase.go:112]  /admin/login 
+2019/01/19 02:47:24.331 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:47:24.331 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 02:47:24.332 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 02:47:29.864 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:47:29.864 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 02:47:29.864 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 02:47:37.123 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:47:37.123 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 02:47:37.124 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 02:47:37.134 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:47:37.134 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/19 02:47:37.135 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:47:37.501 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:47:37.501 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 02:47:37.502 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:47:39.620 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:47:39.620 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:47:39.621 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:47:39.621 [D] [menu.go:14]  menu-index 
+2019/01/19 02:47:39.622 [C] [asm_amd64.s:573]  the request url is  /admin/menu/index
+2019/01/19 02:47:39.622 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: slice bounds out of range
+2019/01/19 02:47:39.622 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:47:39.622 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 02:47:39.623 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:35
+2019/01/19 02:47:39.623 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/adminbase.go:145
+2019/01/19 02:47:39.623 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:19
+2019/01/19 02:47:39.623 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:47:39.624 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 02:47:39.624 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 02:47:39.624 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 02:47:39.624 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 02:47:39.624 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 02:47:39.625 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 02:47:39.625 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 02:48:26.529 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 02:48:33.776 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:48:33.777 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:48:33.779 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:48:33.781 [D] [menu.go:14]  menu-index 
+2019/01/19 02:48:33.782 [C] [asm_amd64.s:573]  the request url is  /admin/menu/index
+2019/01/19 02:48:33.782 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: slice bounds out of range
+2019/01/19 02:48:33.782 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:48:33.782 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 02:48:33.783 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:35
+2019/01/19 02:48:33.783 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/adminbase.go:145
+2019/01/19 02:48:33.783 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:19
+2019/01/19 02:48:33.784 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:48:33.784 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 02:48:33.784 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 02:48:33.784 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 02:48:33.784 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 02:48:33.784 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 02:48:33.785 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 02:48:33.785 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 02:48:43.389 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:48:43.389 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:48:43.390 [D] [adminbase.go:111]  未登录重定向至登录界面 
+2019/01/19 02:48:43.390 [D] [adminbase.go:112]  /admin/login 
+2019/01/19 02:48:43.398 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:48:43.398 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 02:48:43.398 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 02:48:48.555 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:48:48.555 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 02:48:48.555 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 02:48:48.566 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:48:48.566 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/19 02:48:48.567 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:48:48.933 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:48:48.933 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 02:48:48.936 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:48:50.808 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:48:50.808 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:48:50.809 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:48:50.809 [D] [menu.go:14]  menu-index 
+2019/01/19 02:48:50.809 [C] [asm_amd64.s:573]  the request url is  /admin/menu/index
+2019/01/19 02:48:50.809 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: slice bounds out of range
+2019/01/19 02:48:50.809 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:48:50.810 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 02:48:50.810 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:35
+2019/01/19 02:48:50.810 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/adminbase.go:145
+2019/01/19 02:48:50.810 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:19
+2019/01/19 02:48:50.810 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:48:50.811 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 02:48:50.811 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 02:48:50.811 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 02:48:50.811 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 02:48:50.811 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 02:48:50.812 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 02:48:50.812 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 02:51:12.769 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 02:51:14.328 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:51:14.328 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:51:14.331 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:51:14.331 [D] [menu.go:14]  menu-index 
+2019/01/19 02:51:14.332 [C] [asm_amd64.s:573]  the request url is  /admin/menu/index
+2019/01/19 02:51:14.332 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: slice bounds out of range
+2019/01/19 02:51:14.332 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:51:14.333 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 02:51:14.334 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:35
+2019/01/19 02:51:14.334 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/adminbase.go:145
+2019/01/19 02:51:14.334 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:19
+2019/01/19 02:51:14.335 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:51:14.335 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 02:51:14.335 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 02:51:14.335 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 02:51:14.336 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 02:51:14.336 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 02:51:14.336 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 02:51:14.337 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 02:51:16.755 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:51:16.756 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:51:16.757 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:51:16.757 [D] [menu.go:14]  menu-index 
+2019/01/19 02:51:16.757 [C] [asm_amd64.s:573]  the request url is  /admin/menu/index
+2019/01/19 02:51:16.758 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: slice bounds out of range
+2019/01/19 02:51:16.758 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:51:16.758 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 02:51:16.758 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:35
+2019/01/19 02:51:16.759 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/adminbase.go:145
+2019/01/19 02:51:16.759 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:19
+2019/01/19 02:51:16.759 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:51:16.759 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 02:51:16.760 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 02:51:16.760 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 02:51:16.760 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 02:51:16.760 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 02:51:16.760 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 02:51:16.761 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 02:51:36.716 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 02:51:38.368 [D] [adminbase.go:74]  here is auth 
+2019/01/19 02:51:38.368 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 02:51:38.369 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 02:51:38.369 [D] [menu.go:14]  menu-index 
+2019/01/19 02:51:38.369 [C] [asm_amd64.s:573]  the request url is  /admin/menu/index
+2019/01/19 02:51:38.369 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: slice bounds out of range
+2019/01/19 02:51:38.370 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:51:38.370 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 02:51:38.370 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:35
+2019/01/19 02:51:38.370 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/adminbase.go:145
+2019/01/19 02:51:38.370 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/menu.go:19
+2019/01/19 02:51:38.371 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 02:51:38.372 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 02:51:38.372 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 02:51:38.373 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 02:51:38.373 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 02:51:38.373 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 02:51:38.373 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 02:51:38.374 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 03:08:28.125 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 03:14:32.731 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 03:14:44.672 [D] [adminbase.go:74]  here is auth 
+2019/01/19 03:14:44.672 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 03:14:44.675 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 03:14:44.675 [D] [menu.go:14]  menu-index 
+2019/01/19 03:14:45.013 [D] [adminbase.go:74]  here is auth 
+2019/01/19 03:14:45.014 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 03:14:45.015 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 03:16:30.300 [D] [adminbase.go:74]  here is auth 
+2019/01/19 03:16:30.301 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 03:16:30.302 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 03:16:30.302 [D] [menu.go:14]  menu-index 
+2019/01/19 03:16:30.639 [D] [adminbase.go:74]  here is auth 
+2019/01/19 03:16:30.639 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 03:16:30.640 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 03:16:32.967 [D] [adminbase.go:74]  here is auth 
+2019/01/19 03:16:32.967 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 03:16:32.968 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 03:16:32.969 [D] [menu.go:14]  menu-index 
+2019/01/19 03:16:33.236 [D] [adminbase.go:74]  here is auth 
+2019/01/19 03:16:33.236 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 03:16:33.238 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 03:16:52.100 [D] [adminbase.go:74]  here is auth 
+2019/01/19 03:16:52.100 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 03:16:52.101 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 03:16:52.101 [D] [menu.go:14]  menu-index 
+2019/01/19 03:16:52.358 [D] [adminbase.go:74]  here is auth 
+2019/01/19 03:16:52.359 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 03:16:52.364 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 03:49:22.070 [D] [adminbase.go:74]  here is auth 
+2019/01/19 03:49:22.070 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 03:49:22.071 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 03:49:22.071 [D] [menu.go:14]  menu-index 
+2019/01/19 03:49:22.326 [D] [adminbase.go:74]  here is auth 
+2019/01/19 03:49:22.326 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 03:49:22.329 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:00:49.790 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 10:11:14.415 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:11:14.416 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 10:11:14.418 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 10:11:27.339 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:11:27.339 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 10:11:27.340 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 10:11:27.359 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:11:27.359 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/19 10:11:27.361 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:11:28.165 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:11:28.165 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:11:28.167 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:11:48.690 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:11:48.690 [D] [adminbase.go:75]  AuthController.Index 
+2019/01/19 10:11:48.692 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:11:48.932 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:11:48.932 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:11:48.934 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:46:41.692 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:46:41.692 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 10:46:41.693 [D] [adminbase.go:111]  未登录重定向至登录界面 
+2019/01/19 10:46:41.693 [D] [adminbase.go:112]  /admin/login 
+2019/01/19 10:46:41.698 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:46:41.698 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 10:46:41.699 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 10:46:48.738 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:46:48.738 [D] [adminbase.go:75]  LoginController.Login 
+2019/01/19 10:46:48.739 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/19 10:46:48.751 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:46:48.751 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/19 10:46:48.753 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:46:49.114 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:46:49.114 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:46:49.116 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:46:51.813 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:46:51.813 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:46:51.815 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:47:54.309 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:47:54.310 [D] [adminbase.go:75]  AdminController.Index 
+2019/01/19 10:47:54.315 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:47:54.687 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:47:54.687 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:47:54.689 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:49:22.615 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:49:22.615 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 10:49:22.617 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:49:22.618 [D] [menu.go:14]  menu-index 
+2019/01/19 10:49:22.982 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:49:22.983 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:49:22.985 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:53:34.123 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:53:34.124 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 10:53:34.128 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:53:34.128 [D] [menu.go:14]  menu-index 
+2019/01/19 10:53:34.444 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:53:34.444 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:53:34.446 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:53:41.932 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:53:41.932 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 10:53:41.934 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:53:41.934 [D] [menu.go:14]  menu-index 
+2019/01/19 10:53:42.155 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:53:42.156 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:53:42.157 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:00.239 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:00.239 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 10:56:00.241 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:00.243 [D] [menu.go:14]  menu-index 
+2019/01/19 10:56:00.399 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:00.400 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:56:00.401 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:01.370 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:01.371 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 10:56:01.372 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:01.373 [D] [menu.go:14]  menu-index 
+2019/01/19 10:56:01.494 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:01.494 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:56:01.495 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:02.221 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:02.221 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 10:56:02.227 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:02.227 [D] [menu.go:14]  menu-index 
+2019/01/19 10:56:02.363 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:02.363 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:56:02.365 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:03.104 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:03.104 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 10:56:03.106 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:03.106 [D] [menu.go:14]  menu-index 
+2019/01/19 10:56:03.231 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:03.231 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:56:03.233 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:03.873 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:03.874 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 10:56:03.876 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:03.876 [D] [menu.go:14]  menu-index 
+2019/01/19 10:56:04.003 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:04.003 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:56:04.005 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:04.966 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:04.966 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 10:56:04.968 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:04.968 [D] [menu.go:14]  menu-index 
+2019/01/19 10:56:05.100 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:05.100 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:56:05.102 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:05.686 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:05.686 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 10:56:05.688 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 10:56:05.688 [D] [menu.go:14]  menu-index 
+2019/01/19 10:56:05.813 [D] [adminbase.go:74]  here is auth 
+2019/01/19 10:56:05.813 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 10:56:05.815 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:20:29.315 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 11:20:56.992 [D] [adminbase.go:74]  here is auth 
+2019/01/19 11:20:56.993 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 11:20:56.997 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:20:56.998 [D] [menu.go:18]   
+2019/01/19 11:20:57.394 [D] [adminbase.go:74]  here is auth 
+2019/01/19 11:20:57.394 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 11:20:57.396 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:21:01.939 [D] [adminbase.go:74]  here is auth 
+2019/01/19 11:21:01.939 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 11:21:01.944 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:21:01.945 [D] [menu.go:18]   
+2019/01/19 11:21:02.258 [D] [adminbase.go:74]  here is auth 
+2019/01/19 11:21:02.258 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 11:21:02.260 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:22:16.657 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 11:22:18.143 [D] [adminbase.go:74]  here is auth 
+2019/01/19 11:22:18.143 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 11:22:18.146 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:22:18.146 [D] [menu.go:17]  MenuController - Index 
+2019/01/19 11:22:18.147 [D] [menu.go:19]   
+2019/01/19 11:22:18.511 [D] [adminbase.go:74]  here is auth 
+2019/01/19 11:22:18.511 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 11:22:18.515 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:22:53.046 [D] [adminbase.go:74]  here is auth 
+2019/01/19 11:22:53.047 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 11:22:53.050 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:22:53.050 [D] [menu.go:17]  MenuController - Index 
+2019/01/19 11:22:53.053 [D] [menu.go:19]   
+2019/01/19 11:22:53.342 [D] [adminbase.go:74]  here is auth 
+2019/01/19 11:22:53.342 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 11:22:53.345 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:22:58.152 [D] [adminbase.go:74]  here is auth 
+2019/01/19 11:22:58.152 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 11:22:58.154 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:22:58.155 [D] [menu.go:17]  MenuController - Index 
+2019/01/19 11:22:58.156 [D] [menu.go:19]   
+2019/01/19 11:22:58.449 [D] [adminbase.go:74]  here is auth 
+2019/01/19 11:22:58.449 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 11:22:58.452 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:30:42.486 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 11:30:50.167 [D] [adminbase.go:74]  here is auth 
+2019/01/19 11:30:50.167 [D] [adminbase.go:75]  MenuController.Index 
+2019/01/19 11:30:50.170 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:30:50.171 [D] [menu.go:17]  menu.index 
+2019/01/19 11:30:50.172 [D] [menu.go:19]   
+2019/01/19 11:30:50.552 [D] [adminbase.go:74]  here is auth 
+2019/01/19 11:30:50.553 [D] [adminbase.go:75]  MenuController.UserMenuTree 
+2019/01/19 11:30:50.555 [D] [adminbase.go:93]  用户已登录状态 
+2019/01/19 11:38:06.954 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 11:38:22.979 [D] [adminbase.go:76]  here is auth 
+2019/01/19 11:38:22.979 [D] [adminbase.go:77]  MenuController.Index 
+2019/01/19 11:38:22.982 [D] [adminbase.go:95]  用户已登录状态 
+2019/01/19 11:38:22.982 [D] [menu.go:17]  . 
+2019/01/19 11:38:22.984 [D] [menu.go:19]   
+2019/01/19 11:38:23.323 [D] [adminbase.go:76]  here is auth 
+2019/01/19 11:38:23.323 [D] [adminbase.go:77]  MenuController.UserMenuTree 
+2019/01/19 11:38:23.327 [D] [adminbase.go:95]  用户已登录状态 
+2019/01/19 11:38:25.551 [D] [adminbase.go:76]  here is auth 
+2019/01/19 11:38:25.551 [D] [adminbase.go:77]  MenuController.Index 
+2019/01/19 11:38:25.553 [D] [adminbase.go:95]  用户已登录状态 
+2019/01/19 11:38:25.554 [D] [menu.go:17]  . 
+2019/01/19 11:38:25.555 [D] [menu.go:19]   
+2019/01/19 11:38:25.873 [D] [adminbase.go:76]  here is auth 
+2019/01/19 11:38:25.873 [D] [adminbase.go:77]  MenuController.UserMenuTree 
+2019/01/19 11:38:25.875 [D] [adminbase.go:95]  用户已登录状态 
+2019/01/19 11:44:15.293 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 11:44:19.313 [D] [adminbase.go:76]  here is auth 
+2019/01/19 11:44:19.313 [D] [adminbase.go:77]  MenuController.Index 
+2019/01/19 11:44:19.317 [D] [adminbase.go:95]  用户已登录状态 
+2019/01/19 11:44:19.318 [D] [menu.go:17]  . 
+2019/01/19 11:44:19.319 [D] [menu.go:19]   
+2019/01/19 11:44:19.708 [D] [adminbase.go:76]  here is auth 
+2019/01/19 11:44:19.708 [D] [adminbase.go:77]  MenuController.UserMenuTree 
+2019/01/19 11:44:19.710 [D] [adminbase.go:95]  用户已登录状态 
+2019/01/19 11:49:45.982 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 11:49:59.547 [D] [adminbase.go:78]  here is auth 
+2019/01/19 11:49:59.548 [D] [adminbase.go:79]  MenuController.Index 
+2019/01/19 11:49:59.552 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 11:49:59.552 [D] [menu.go:17]  MenuController-Index 
+2019/01/19 11:49:59.552 [D] [menu.go:18]  MenuController.Index 
+2019/01/19 11:49:59.553 [D] [menu.go:20]  /admin/menu/index 
+2019/01/19 11:49:59.918 [D] [adminbase.go:78]  here is auth 
+2019/01/19 11:49:59.919 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 11:49:59.925 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 11:50:21.044 [D] [adminbase.go:78]  here is auth 
+2019/01/19 11:50:21.044 [D] [adminbase.go:79]  AuthController.Index 
+2019/01/19 11:50:21.050 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 11:50:21.354 [D] [adminbase.go:78]  here is auth 
+2019/01/19 11:50:21.354 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 11:50:21.359 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 11:50:23.568 [D] [adminbase.go:78]  here is auth 
+2019/01/19 11:50:23.568 [D] [adminbase.go:79]  MenuController.Index 
+2019/01/19 11:50:23.571 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 11:50:23.571 [D] [menu.go:17]  MenuController-Index 
+2019/01/19 11:50:23.572 [D] [menu.go:18]  MenuController.Index 
+2019/01/19 11:50:23.573 [D] [menu.go:20]  /admin/menu/index 
+2019/01/19 11:50:23.857 [D] [adminbase.go:78]  here is auth 
+2019/01/19 11:50:23.857 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 11:50:23.858 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 11:52:08.943 [D] [adminbase.go:78]  here is auth 
+2019/01/19 11:52:08.943 [D] [adminbase.go:79]  MenuController.Index 
+2019/01/19 11:52:08.946 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 11:52:08.947 [D] [menu.go:17]  MenuController-Index 
+2019/01/19 11:52:08.948 [D] [menu.go:18]  MenuController.Index 
+2019/01/19 11:52:08.948 [D] [menu.go:20]  /admin/menu/index 
+2019/01/19 11:52:09.150 [D] [adminbase.go:78]  here is auth 
+2019/01/19 11:52:09.150 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 11:52:09.153 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:41:31.897 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:41:31.898 [D] [adminbase.go:79]  RoleController.Index 
+2019/01/19 12:41:31.900 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:41:32.182 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:41:32.183 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 12:41:32.186 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:41:37.049 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:41:37.049 [D] [adminbase.go:79]  UserController.Index 
+2019/01/19 12:41:37.051 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:41:37.283 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:41:37.284 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 12:41:37.286 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:41:57.437 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:41:57.437 [D] [adminbase.go:79]  UserController.Index 
+2019/01/19 12:41:57.439 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:41:57.589 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:41:57.589 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 12:41:57.593 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:47:26.106 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:47:26.106 [D] [adminbase.go:79]  UserController.Index 
+2019/01/19 12:47:26.109 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:47:26.443 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:47:26.443 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 12:47:26.445 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:49:47.241 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:49:47.242 [D] [adminbase.go:79]  MenuController.Index 
+2019/01/19 12:49:47.244 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:49:47.244 [D] [menu.go:17]  MenuController-Index 
+2019/01/19 12:49:47.247 [D] [menu.go:18]  MenuController.Index 
+2019/01/19 12:49:47.249 [D] [menu.go:20]  /admin/menu/index 
+2019/01/19 12:49:47.552 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:49:47.552 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 12:49:47.554 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:50:56.649 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:50:56.649 [D] [adminbase.go:79]  MenuController.Index 
+2019/01/19 12:50:56.652 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:50:56.653 [D] [menu.go:17]  MenuController-Index 
+2019/01/19 12:50:56.653 [D] [menu.go:18]  MenuController.Index 
+2019/01/19 12:50:56.654 [D] [menu.go:20]  /admin/menu/index 
+2019/01/19 12:50:57.015 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:50:57.017 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 12:50:57.021 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:56:07.796 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:56:07.796 [D] [adminbase.go:79]  MenuController.Index 
+2019/01/19 12:56:07.799 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:56:07.799 [D] [menu.go:17]  MenuController-Index 
+2019/01/19 12:56:07.800 [D] [menu.go:18]  MenuController.Index 
+2019/01/19 12:56:07.800 [D] [menu.go:20]  /admin/menu/index 
+2019/01/19 12:56:08.142 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:56:08.142 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 12:56:08.144 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:56:08.872 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:56:08.873 [D] [adminbase.go:79]  MenuController.Index 
+2019/01/19 12:56:08.879 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:56:08.882 [D] [menu.go:17]  MenuController-Index 
+2019/01/19 12:56:08.884 [D] [menu.go:18]  MenuController.Index 
+2019/01/19 12:56:08.885 [D] [menu.go:20]  /admin/menu/index 
+2019/01/19 12:56:09.203 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:56:09.203 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 12:56:09.205 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:56:23.044 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:56:23.044 [D] [adminbase.go:79]  UserController.Index 
+2019/01/19 12:56:23.048 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 12:56:23.412 [D] [adminbase.go:78]  here is auth 
+2019/01/19 12:56:23.412 [D] [adminbase.go:79]  MenuController.UserMenuTree 
+2019/01/19 12:56:23.414 [D] [adminbase.go:97]  用户已登录状态 
+2019/01/19 13:41:51.839 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 13:41:59.600 [D] [adminbase.go:80]  here is auth 
+2019/01/19 13:41:59.600 [D] [adminbase.go:81]  UserController.Index 
+2019/01/19 13:41:59.604 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 13:41:59.606 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 13:41:59.606 [C] [asm_amd64.s:573]  Handler crashed with error wrong object type `*[]*models.Role` for rows scan, need *[]*goFrame/models.Menu or *[]goFrame/models.Menu
+2019/01/19 13:41:59.607 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 13:41:59.607 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 13:41:59.608 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/db.go:918
+2019/01/19 13:41:59.608 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/01/19 13:41:59.608 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/models/Role.go:68
+2019/01/19 13:41:59.609 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:16
+2019/01/19 13:41:59.609 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 13:41:59.609 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 13:41:59.610 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 13:41:59.610 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 13:41:59.611 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 13:41:59.613 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 13:41:59.613 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 13:41:59.618 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 13:49:35.852 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 13:49:39.327 [D] [adminbase.go:80]  here is auth 
+2019/01/19 13:49:39.328 [D] [adminbase.go:81]  UserController.Index 
+2019/01/19 13:49:39.334 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 13:49:39.349 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 13:49:39.350 [C] [asm_amd64.s:573]  Handler crashed with error wrong object type `*[]*models.Role` for rows scan, need *[]*goFrame/models.Menu or *[]goFrame/models.Menu
+2019/01/19 13:49:39.351 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 13:49:39.352 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 13:49:39.352 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/db.go:918
+2019/01/19 13:49:39.354 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/01/19 13:49:39.355 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/models/Role.go:68
+2019/01/19 13:49:39.355 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:16
+2019/01/19 13:49:39.357 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 13:49:39.358 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 13:49:39.363 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 13:49:39.368 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 13:49:39.374 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 13:49:39.376 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 13:49:39.377 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 13:49:39.380 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 13:49:41.267 [D] [adminbase.go:80]  here is auth 
+2019/01/19 13:49:41.267 [D] [adminbase.go:81]  UserController.Index 
+2019/01/19 13:49:41.269 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 13:49:41.272 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 13:49:41.273 [C] [asm_amd64.s:573]  Handler crashed with error wrong object type `*[]*models.Role` for rows scan, need *[]*goFrame/models.Menu or *[]goFrame/models.Menu
+2019/01/19 13:49:41.274 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 13:49:41.283 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 13:49:41.284 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/db.go:918
+2019/01/19 13:49:41.285 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/01/19 13:49:41.285 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/models/Role.go:68
+2019/01/19 13:49:41.287 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:16
+2019/01/19 13:49:41.287 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 13:49:41.288 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 13:49:41.289 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 13:49:41.291 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 13:49:41.293 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 13:49:41.294 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 13:49:41.294 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 13:49:41.295 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 14:10:42.617 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 14:10:48.591 [D] [adminbase.go:80]  here is auth 
+2019/01/19 14:10:48.592 [D] [adminbase.go:81]  UserController.Index 
+2019/01/19 14:10:48.598 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 14:10:48.604 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 14:10:48.605 [C] [asm_amd64.s:573]  Handler crashed with error wrong object type `*[]*models.Role` for rows scan, need *[]*goFrame/models.Menu or *[]goFrame/models.Menu
+2019/01/19 14:10:48.606 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:10:48.606 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 14:10:48.606 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/db.go:918
+2019/01/19 14:10:48.607 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/01/19 14:10:48.608 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/models/Role.go:68
+2019/01/19 14:10:48.608 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:20
+2019/01/19 14:10:48.611 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:10:48.613 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 14:10:48.622 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 14:10:48.623 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 14:10:48.624 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 14:10:48.624 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 14:10:48.624 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 14:10:48.626 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 14:12:55.049 [D] [adminbase.go:80]  here is auth 
+2019/01/19 14:12:55.049 [D] [adminbase.go:81]  UserController.Index 
+2019/01/19 14:12:55.051 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 14:12:55.054 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 14:12:55.054 [C] [asm_amd64.s:573]  Handler crashed with error wrong object type `*[]*models.Role` for rows scan, need *[]*goFrame/models.Menu or *[]goFrame/models.Menu
+2019/01/19 14:12:55.054 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:12:55.055 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 14:12:55.055 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/db.go:918
+2019/01/19 14:12:55.056 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/01/19 14:12:55.056 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/models/Role.go:68
+2019/01/19 14:12:55.056 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:20
+2019/01/19 14:12:55.057 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:12:55.057 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 14:12:55.057 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 14:12:55.058 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 14:12:55.058 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 14:12:55.058 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 14:12:55.059 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 14:12:55.060 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 14:12:55.971 [D] [adminbase.go:80]  here is auth 
+2019/01/19 14:12:55.971 [D] [adminbase.go:81]  UserController.Index 
+2019/01/19 14:12:55.973 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 14:12:55.974 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 14:12:55.974 [C] [asm_amd64.s:573]  Handler crashed with error wrong object type `*[]*models.Role` for rows scan, need *[]*goFrame/models.Menu or *[]goFrame/models.Menu
+2019/01/19 14:12:55.974 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:12:55.975 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 14:12:55.975 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/db.go:918
+2019/01/19 14:12:55.975 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/01/19 14:12:55.976 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/models/Role.go:68
+2019/01/19 14:12:55.977 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:20
+2019/01/19 14:12:55.977 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:12:55.978 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 14:12:55.978 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 14:12:55.978 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 14:12:55.979 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 14:12:55.979 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 14:12:55.980 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 14:12:55.981 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 14:13:52.379 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 14:13:54.116 [D] [adminbase.go:80]  here is auth 
+2019/01/19 14:13:54.117 [D] [adminbase.go:81]  UserController.Index 
+2019/01/19 14:13:54.120 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 14:13:54.121 [D] [user.go:20]  UserController 
+2019/01/19 14:13:54.125 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 14:13:54.125 [C] [asm_amd64.s:573]  Handler crashed with error wrong object type `*[]*models.Role` for rows scan, need *[]*goFrame/models.Menu or *[]goFrame/models.Menu
+2019/01/19 14:13:54.126 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:13:54.126 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 14:13:54.127 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/db.go:918
+2019/01/19 14:13:54.127 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/01/19 14:13:54.127 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/models/Role.go:68
+2019/01/19 14:13:54.128 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:21
+2019/01/19 14:13:54.128 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:13:54.128 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 14:13:54.129 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 14:13:54.129 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 14:13:54.130 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 14:13:54.130 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 14:13:54.130 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 14:13:54.131 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 14:15:15.325 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 14:15:17.703 [D] [adminbase.go:80]  here is auth 
+2019/01/19 14:15:17.703 [D] [adminbase.go:81]  UserController.Index 
+2019/01/19 14:15:17.707 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 14:15:17.707 [D] [user.go:20]  UserController 
+2019/01/19 14:15:17.710 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 14:15:17.710 [C] [asm_amd64.s:573]  Handler crashed with error unknown field/column name `sort`
+2019/01/19 14:15:17.711 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:15:17.711 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 14:15:17.712 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/db_tables.go:442
+2019/01/19 14:15:17.712 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/db.go:967
+2019/01/19 14:15:17.713 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/01/19 14:15:17.714 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/models/Role.go:68
+2019/01/19 14:15:17.715 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:21
+2019/01/19 14:15:17.715 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:15:17.716 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 14:15:17.716 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 14:15:17.717 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 14:15:17.717 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 14:15:17.718 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 14:15:17.718 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 14:15:17.719 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 14:16:04.231 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 14:16:07.182 [D] [adminbase.go:80]  here is auth 
+2019/01/19 14:16:07.182 [D] [adminbase.go:81]  UserController.Index 
+2019/01/19 14:16:07.187 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 14:16:07.188 [D] [user.go:20]  UserController 
+2019/01/19 14:16:07.194 [D] [user.go:22]  data 
+2019/01/19 14:16:07.194 [D] [user.go:23]  [0xc042472270] 
+2019/01/19 14:16:07.599 [D] [adminbase.go:80]  here is auth 
+2019/01/19 14:16:07.599 [D] [adminbase.go:81]  MenuController.UserMenuTree 
+2019/01/19 14:16:07.601 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 14:16:19.721 [D] [adminbase.go:80]  here is auth 
+2019/01/19 14:16:19.721 [D] [adminbase.go:81]  UserController.Index 
+2019/01/19 14:16:19.723 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 14:16:19.723 [D] [user.go:20]  UserController 
+2019/01/19 14:16:19.725 [D] [user.go:22]  data 
+2019/01/19 14:16:19.725 [D] [user.go:23]  [0xc0421bba70] 
+2019/01/19 14:16:20.070 [D] [adminbase.go:80]  here is auth 
+2019/01/19 14:16:20.071 [D] [adminbase.go:81]  MenuController.UserMenuTree 
+2019/01/19 14:16:20.074 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 14:17:48.402 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 14:17:49.047 [D] [adminbase.go:80]  here is auth 
+2019/01/19 14:17:49.048 [D] [adminbase.go:81]  UserController.Index 
+2019/01/19 14:17:49.053 [D] [adminbase.go:99]  用户已登录状态 
+2019/01/19 14:17:49.053 [D] [user.go:14]  UserController-Index 
+2019/01/19 14:17:49.060 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 14:17:49.064 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/01/19 14:17:49.066 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:17:49.066 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 14:17:49.067 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:63
+2019/01/19 14:17:49.069 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/signal_windows.go:167
+2019/01/19 14:17:49.070 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:28
+2019/01/19 14:17:49.070 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:17:49.070 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 14:17:49.070 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 14:17:49.072 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 14:17:49.072 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 14:17:49.072 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 14:17:49.072 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 14:17:49.074 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 14:20:04.274 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 14:20:05.541 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 14:20:05.542 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/01/19 14:20:05.542 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:20:05.543 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 14:20:05.543 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:63
+2019/01/19 14:20:05.544 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/signal_windows.go:167
+2019/01/19 14:20:05.544 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:28
+2019/01/19 14:20:05.545 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:20:05.546 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 14:20:05.550 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 14:20:05.551 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 14:20:05.551 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 14:20:05.552 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 14:20:05.552 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 14:20:05.553 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 14:34:42.961 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 14:45:00.563 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 14:45:00.564 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/01/19 14:45:00.570 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:45:00.571 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 14:45:00.572 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:63
+2019/01/19 14:45:00.572 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/signal_windows.go:167
+2019/01/19 14:45:00.574 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:28
+2019/01/19 14:45:00.574 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 14:45:00.582 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 14:45:00.583 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 14:45:00.584 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 14:45:00.585 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 14:45:00.587 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 14:45:00.588 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 14:45:00.591 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 14:53:07.443 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 15:01:36.776 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 15:03:32.199 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 15:03:33.627 [D] [adminbase.go:82]  here is auth 
+2019/01/19 15:03:33.627 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 15:03:33.632 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 15:03:33.632 [D] [user.go:13]  UserController-Index 
+2019/01/19 15:03:33.636 [D] [adminbase.go:270]  json_return 
+2019/01/19 15:03:33.638 [D] [adminbase.go:271]  [
+  {
+    "Id": 1,
+    "NameCn": "超级管理员",
+    "NameEn": "superadmin",
+    "CreateTime": 0
+  }
+] 
+2019/01/19 15:03:33.639 [D] [user.go:31]  map[total:1 rows:[
+  {
+    "Id": 1,
+    "NameCn": "超级管理员",
+    "NameEn": "superadmin",
+    "CreateTime": 0
+  }
+]] 
+2019/01/19 15:03:34.037 [D] [adminbase.go:82]  here is auth 
+2019/01/19 15:03:34.037 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 15:03:34.042 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 15:06:41.069 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 15:06:44.216 [D] [adminbase.go:82]  here is auth 
+2019/01/19 15:06:44.216 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 15:06:44.219 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 15:06:44.220 [D] [user.go:13]  UserController-Index 
+2019/01/19 15:06:44.228 [D] [user.go:24]  map[total:1 rows:[
+  {
+    "Id": 1,
+    "NameCn": "超级管理员",
+    "NameEn": "superadmin",
+    "CreateTime": 0
+  }
+]] 
+2019/01/19 15:06:44.234 [D] [controller.go:283]  template Execute err: template: admin/user/index.html:26:42: executing "admin/user/index.html" at <.role.rows>: range can't iterate over [
+  {
+    "Id": 1,
+    "NameCn": "超级管理员",
+    "NameEn": "superadmin",
+    "CreateTime": 0
+  }
+]
+2019/01/19 15:06:44.235 [E] [server.go:2694]  template: admin/user/index.html:26:42: executing "admin/user/index.html" at <.role.rows>: range can't iterate over [
+  {
+    "Id": 1,
+    "NameCn": "超级管理员",
+    "NameEn": "superadmin",
+    "CreateTime": 0
+  }
+]
+2019/01/19 16:36:27.137 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 16:36:35.689 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:36:35.690 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 16:36:35.693 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:36:35.693 [D] [user.go:13]  UserController-Index 
+2019/01/19 16:36:35.699 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 16:36:35.700 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: index out of range
+2019/01/19 16:36:35.700 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 16:36:35.700 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 16:36:35.701 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:28
+2019/01/19 16:36:35.701 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/models/Role.go:76
+2019/01/19 16:36:35.702 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:19
+2019/01/19 16:36:35.702 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 16:36:35.702 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 16:36:35.703 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 16:36:35.703 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 16:36:35.703 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 16:36:35.704 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 16:36:35.704 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 16:36:35.705 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 16:41:39.527 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 16:41:41.452 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:41:41.453 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 16:41:41.457 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:41:41.457 [D] [user.go:13]  UserController-Index 
+2019/01/19 16:41:41.461 [C] [asm_amd64.s:573]  the request url is  /admin/user/index
+2019/01/19 16:41:41.462 [C] [asm_amd64.s:573]  Handler crashed with error runtime error: index out of range
+2019/01/19 16:41:41.462 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 16:41:41.463 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 16:41:41.463 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:28
+2019/01/19 16:41:41.463 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/models/Role.go:76
+2019/01/19 16:41:41.465 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:19
+2019/01/19 16:41:41.465 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 16:41:41.466 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 16:41:41.466 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 16:41:41.466 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 16:41:41.467 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 16:41:41.467 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 16:41:41.476 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 16:41:41.481 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 16:42:51.636 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 16:42:57.748 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:42:57.749 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 16:42:57.753 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:42:57.755 [D] [user.go:13]  UserController-Index 
+2019/01/19 16:42:58.176 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:42:58.176 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 16:42:58.178 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:43:40.223 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:43:40.223 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 16:43:40.225 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:43:40.231 [D] [user.go:13]  UserController-Index 
+2019/01/19 16:43:40.506 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:43:40.506 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 16:43:40.509 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:45:38.464 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 16:45:41.255 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:45:41.255 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 16:45:41.258 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:45:41.258 [D] [user.go:13]  UserController-Index 
+2019/01/19 16:45:41.266 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 16:45:41.266 [D] [Role.go:76]  1 
+2019/01/19 16:45:41.266 [D] [Role.go:77]  [0xc0423c69f0] 
+2019/01/19 16:45:41.463 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:45:41.463 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 16:45:41.465 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:46:13.072 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 16:46:15.269 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:46:15.269 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 16:46:15.274 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:46:15.274 [D] [user.go:13]  UserController-Index 
+2019/01/19 16:46:15.280 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 16:46:15.281 [D] [Role.go:80]  1 
+2019/01/19 16:46:15.282 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 16:46:15.462 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:46:15.463 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 16:46:15.465 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:46:55.024 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:46:55.024 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 16:46:55.026 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:46:55.026 [D] [user.go:13]  UserController-Index 
+2019/01/19 16:46:55.030 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 16:46:55.031 [D] [Role.go:80]  1 
+2019/01/19 16:46:55.031 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 16:46:55.237 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:46:55.237 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 16:46:55.239 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:47:07.175 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:47:07.175 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 16:47:07.177 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:47:07.177 [D] [user.go:13]  UserController-Index 
+2019/01/19 16:47:07.179 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 16:47:07.180 [D] [Role.go:80]  1 
+2019/01/19 16:47:07.180 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 16:47:07.377 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:47:07.377 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 16:47:07.384 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:47:53.683 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:47:53.684 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 16:47:53.686 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 16:47:53.687 [D] [user.go:13]  UserController-Index 
+2019/01/19 16:47:53.691 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 16:47:53.697 [D] [Role.go:80]  1 
+2019/01/19 16:47:53.697 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 16:47:54.089 [D] [adminbase.go:82]  here is auth 
+2019/01/19 16:47:54.090 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 16:47:54.091 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 17:04:28.788 [D] [adminbase.go:82]  here is auth 
+2019/01/19 17:04:28.789 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 17:04:28.795 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 17:04:28.797 [D] [user.go:13]  UserController-Index 
+2019/01/19 17:04:28.800 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 17:04:28.801 [D] [Role.go:80]  1 
+2019/01/19 17:04:28.803 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 17:04:33.220 [D] [adminbase.go:82]  here is auth 
+2019/01/19 17:04:33.221 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 17:04:33.222 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 17:04:33.223 [D] [user.go:13]  UserController-Index 
+2019/01/19 17:04:33.234 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 17:04:33.235 [D] [Role.go:80]  1 
+2019/01/19 17:04:33.235 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 17:05:08.019 [D] [adminbase.go:82]  here is auth 
+2019/01/19 17:05:08.019 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 17:05:08.021 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 17:05:08.021 [D] [user.go:13]  UserController-Index 
+2019/01/19 17:05:08.023 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 17:05:08.024 [D] [Role.go:80]  1 
+2019/01/19 17:05:08.024 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 17:05:34.000 [D] [adminbase.go:82]  here is auth 
+2019/01/19 17:05:34.001 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 17:05:34.005 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 17:05:34.006 [D] [user.go:13]  UserController-Index 
+2019/01/19 17:05:34.010 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 17:05:34.011 [D] [Role.go:80]  1 
+2019/01/19 17:05:34.012 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 17:05:38.217 [D] [adminbase.go:82]  here is auth 
+2019/01/19 17:05:38.217 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 17:05:38.226 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 17:24:05.915 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 17:24:07.330 [D] [adminbase.go:82]  here is auth 
+2019/01/19 17:24:07.330 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 17:24:07.334 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 17:24:07.334 [D] [user.go:13]  UserController-Index 
+2019/01/19 17:24:07.340 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 17:24:07.341 [D] [Role.go:80]  1 
+2019/01/19 17:24:07.342 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 17:24:07.897 [D] [adminbase.go:82]  here is auth 
+2019/01/19 17:24:07.897 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 17:24:07.900 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 18:00:40.632 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 18:00:47.140 [D] [adminbase.go:82]  here is auth 
+2019/01/19 18:00:47.140 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 18:00:47.144 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 18:00:47.145 [D] [user.go:13]  UserController-Index 
+2019/01/19 18:00:47.149 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 18:00:47.150 [D] [Role.go:80]  1 
+2019/01/19 18:00:47.150 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 18:05:56.030 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 18:05:59.157 [D] [adminbase.go:82]  here is auth 
+2019/01/19 18:05:59.157 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 18:05:59.159 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 18:05:59.160 [D] [user.go:13]  UserController-Index 
+2019/01/19 18:05:59.162 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 18:05:59.163 [D] [Role.go:80]  1 
+2019/01/19 18:05:59.163 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 18:21:01.596 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 18:21:08.483 [D] [adminbase.go:82]  here is auth 
+2019/01/19 18:21:08.484 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 18:21:08.488 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 18:21:08.488 [D] [user.go:13]  UserController-Index 
+2019/01/19 18:21:08.490 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 18:21:08.490 [D] [Role.go:80]  1 
+2019/01/19 18:21:08.491 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:12:38.170 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 19:12:41.755 [D] [adminbase.go:82]  here is auth 
+2019/01/19 19:12:41.755 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 19:12:41.758 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 19:12:41.759 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:12:41.761 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:12:41.763 [D] [Role.go:80]  1 
+2019/01/19 19:12:41.764 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:12:42.350 [D] [adminbase.go:82]  here is auth 
+2019/01/19 19:12:42.350 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 19:12:42.353 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 19:14:05.477 [D] [adminbase.go:82]  here is auth 
+2019/01/19 19:14:05.477 [D] [adminbase.go:83]  MenuController.Index 
+2019/01/19 19:14:05.479 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 19:14:05.835 [D] [adminbase.go:82]  here is auth 
+2019/01/19 19:14:05.836 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 19:14:05.838 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 19:15:44.838 [D] [adminbase.go:82]  here is auth 
+2019/01/19 19:15:44.838 [D] [adminbase.go:83]  MenuController.Index 
+2019/01/19 19:15:44.840 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 19:15:45.233 [D] [adminbase.go:82]  here is auth 
+2019/01/19 19:15:45.234 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 19:15:45.236 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 19:15:47.504 [D] [adminbase.go:82]  here is auth 
+2019/01/19 19:15:47.504 [D] [adminbase.go:83]  AuthController.Index 
+2019/01/19 19:15:47.506 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 19:15:47.919 [D] [adminbase.go:82]  here is auth 
+2019/01/19 19:15:47.920 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 19:15:47.922 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 19:15:50.206 [D] [adminbase.go:82]  here is auth 
+2019/01/19 19:15:50.206 [D] [adminbase.go:83]  MenuController.Index 
+2019/01/19 19:15:50.208 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 19:15:50.587 [D] [adminbase.go:82]  here is auth 
+2019/01/19 19:15:50.587 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 19:15:50.590 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 19:15:52.389 [D] [adminbase.go:82]  here is auth 
+2019/01/19 19:15:52.390 [D] [adminbase.go:83]  UserController.Index 
+2019/01/19 19:15:52.394 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 19:15:52.395 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:15:52.398 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:15:52.406 [D] [Role.go:80]  1 
+2019/01/19 19:15:52.407 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:15:52.922 [D] [adminbase.go:82]  here is auth 
+2019/01/19 19:15:52.923 [D] [adminbase.go:83]  MenuController.UserMenuTree 
+2019/01/19 19:15:52.924 [D] [adminbase.go:101]  用户已登录状态 
+2019/01/19 19:19:27.547 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 19:19:31.345 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:19:31.345 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:19:31.348 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:19:31.348 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:19:31.350 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:19:31.350 [D] [Role.go:80]  1 
+2019/01/19 19:19:31.351 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:19:31.869 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:19:31.869 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:19:31.871 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:20:00.343 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:20:00.344 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:20:00.348 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:20:00.349 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:20:00.350 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:20:00.351 [D] [Role.go:80]  1 
+2019/01/19 19:20:00.351 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:20:00.858 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:20:00.859 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:20:00.862 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:20:49.778 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:20:49.778 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:20:49.781 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:20:49.783 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:20:49.786 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:20:49.787 [D] [Role.go:80]  1 
+2019/01/19 19:20:49.789 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:20:50.995 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:20:50.996 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:20:50.998 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:29:41.622 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:29:41.622 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:29:41.624 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:29:41.625 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:29:41.628 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:29:41.628 [D] [Role.go:80]  1 
+2019/01/19 19:29:41.629 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:29:42.216 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:29:42.217 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:29:42.224 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:29:44.063 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:29:44.063 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:29:44.067 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:29:44.067 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:29:44.069 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:29:44.070 [D] [Role.go:80]  1 
+2019/01/19 19:29:44.071 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:29:44.647 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:29:44.647 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:29:44.649 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:29:57.995 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:29:57.995 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:29:57.998 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:29:57.999 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:29:58.000 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:29:58.001 [D] [Role.go:80]  1 
+2019/01/19 19:29:58.003 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:29:58.726 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:29:58.727 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:29:58.731 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:30:31.299 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 19:30:33.508 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:30:33.509 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:30:33.513 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:30:33.514 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:30:33.523 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:30:33.523 [D] [Role.go:80]  1 
+2019/01/19 19:30:33.525 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:30:34.060 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:30:34.060 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:30:34.063 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:30:44.391 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:30:44.392 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:30:44.395 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:30:44.395 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:30:44.405 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:30:44.405 [D] [Role.go:80]  1 
+2019/01/19 19:30:44.405 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:30:45.217 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:30:45.218 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:30:45.220 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:32:26.166 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:32:26.166 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:32:26.169 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:32:26.169 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:32:26.170 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:32:26.171 [D] [Role.go:80]  1 
+2019/01/19 19:32:26.171 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:32:26.817 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:32:26.817 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:32:26.819 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:32:31.627 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:32:31.627 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:32:31.630 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:32:31.631 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:32:31.633 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:32:31.633 [D] [Role.go:80]  1 
+2019/01/19 19:32:31.634 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:32:32.265 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:32:32.266 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:32:32.268 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:33:04.180 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:33:04.181 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:33:04.184 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:33:04.185 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:33:04.188 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:33:04.189 [D] [Role.go:80]  1 
+2019/01/19 19:33:04.190 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:33:04.989 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:33:04.989 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:33:05.002 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:33:12.402 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:33:12.403 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:33:12.405 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:33:12.408 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:33:12.412 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:33:12.412 [D] [Role.go:80]  1 
+2019/01/19 19:33:12.413 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:33:12.756 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:33:12.757 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:33:12.759 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:52:21.717 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:52:21.717 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 19:52:21.719 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 19:52:21.721 [D] [user.go:13]  UserController-Index 
+2019/01/19 19:52:21.723 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 19:52:21.724 [D] [Role.go:80]  1 
+2019/01/19 19:52:21.724 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 19:52:22.159 [D] [adminbase.go:83]  here is auth 
+2019/01/19 19:52:22.159 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 19:52:22.162 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:03:26.496 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:03:26.507 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:03:26.513 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:03:26.513 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:03:26.531 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 20:03:26.531 [D] [Role.go:80]  1 
+2019/01/19 20:03:26.532 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 20:03:27.193 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:03:27.194 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:03:27.195 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:07:38.064 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:07:38.065 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:07:38.067 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:07:38.069 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:07:38.080 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 20:07:38.081 [D] [Role.go:80]  1 
+2019/01/19 20:07:38.082 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 20:07:38.869 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:07:38.869 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:07:38.871 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:07:41.459 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:07:41.459 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:07:41.461 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:07:41.461 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:07:41.465 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 20:07:41.465 [D] [Role.go:80]  1 
+2019/01/19 20:07:41.465 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 20:07:41.932 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:07:41.933 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:07:41.935 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:07:44.018 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:07:44.018 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:07:44.022 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:07:44.022 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:07:44.024 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 20:07:44.025 [D] [Role.go:80]  1 
+2019/01/19 20:07:44.025 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 20:07:44.474 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:07:44.475 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:07:44.477 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:07:45.777 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:07:45.777 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:07:45.779 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:07:45.779 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:07:45.782 [D] [Role.go:75]  RoleListGrid 
+2019/01/19 20:07:45.785 [D] [Role.go:80]  1 
+2019/01/19 20:07:45.785 [D] [Role.go:81]  [{1 超级管理员 superadmin 0}] 
+2019/01/19 20:07:46.347 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:07:46.348 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:07:46.352 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:08:48.985 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 20:08:54.183 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:08:54.183 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:08:54.187 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:08:54.188 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:08:54.761 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:08:54.762 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:08:54.765 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:08:57.339 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:08:57.340 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:08:57.341 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:08:57.342 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:08:57.974 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:08:57.977 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:08:57.994 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:09:44.350 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:09:44.351 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:09:44.353 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:09:44.353 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:09:45.232 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:09:45.232 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:09:45.237 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:14:14.382 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 20:14:16.352 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:14:16.352 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:14:16.355 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:14:16.355 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:14:16.982 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:14:16.982 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:14:16.983 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:14:17.000 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:14:17.003 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:14:17.006 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:28.901 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:28.902 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:16:28.915 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:28.917 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:16:29.279 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:29.279 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:16:29.285 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:29.292 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:29.292 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:16:29.294 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:30.224 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:30.225 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:16:30.226 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:30.226 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:16:30.409 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:30.409 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:16:30.411 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:30.419 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:30.419 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:16:30.421 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:31.299 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:31.299 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:16:31.302 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:31.302 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:16:31.485 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:31.486 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:16:31.492 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:31.499 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:31.499 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:16:31.507 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:32.061 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:32.062 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:16:32.065 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:32.068 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:16:32.259 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:32.259 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:16:32.261 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:32.266 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:32.266 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:16:32.270 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:32.792 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:32.792 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:16:32.794 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:32.794 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:16:32.994 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:32.994 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:16:32.999 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:33.003 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:33.004 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:16:33.006 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:33.767 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:33.767 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:16:33.769 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:33.769 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:16:33.956 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:33.956 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:16:33.958 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:33.963 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:33.963 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:16:33.965 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:56.355 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:56.356 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:16:56.358 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:56.358 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:16:56.804 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:56.804 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:16:56.806 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:16:56.815 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:16:56.815 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:16:56.817 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:20:42.272 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:20:42.273 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:20:42.276 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:20:42.278 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:20:42.752 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:20:42.752 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:20:42.754 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:20:42.765 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:20:42.773 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:20:42.777 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:20:46.913 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:20:46.914 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:20:46.915 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:30:57.533 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:30:57.533 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:30:57.537 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:30:57.538 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:30:58.050 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:30:58.051 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:30:58.052 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:30:58.067 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:30:58.067 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:30:58.068 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:37:17.643 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:37:17.644 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:37:17.646 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:37:17.646 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:37:18.141 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:37:18.141 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:37:18.145 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:37:18.157 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:37:18.166 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:37:18.177 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:37:54.939 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:37:54.939 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:37:54.942 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:37:54.942 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:37:55.667 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:37:55.667 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:37:55.669 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:37:55.686 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:37:55.692 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:37:55.695 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:38:00.492 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:38:00.492 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:38:00.495 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:38:00.498 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:38:01.103 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:38:01.103 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:38:01.105 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:38:01.118 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:38:01.131 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:38:01.134 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:41:12.978 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 20:41:15.590 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:41:15.591 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:41:15.595 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:41:15.596 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:41:16.292 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:41:16.292 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:41:16.294 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:41:16.312 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:41:16.322 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:41:16.324 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:42:18.289 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:42:18.289 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:42:18.291 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:42:18.291 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:42:18.778 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:42:18.778 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:42:18.780 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:42:18.796 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:42:18.796 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:42:18.798 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:42:54.608 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:42:54.608 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:42:54.615 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:42:54.616 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:42:55.147 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:42:55.147 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:42:55.149 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:42:55.163 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:42:55.163 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:42:55.165 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:48:25.944 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 20:48:36.056 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:48:36.056 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:48:36.058 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:48:36.059 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:48:36.595 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:48:36.595 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:48:36.597 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:48:36.599 [C] [asm_amd64.s:573]  the request url is  /admin/user/userdatagrid
+2019/01/19 20:48:36.602 [C] [asm_amd64.s:573]  Handler crashed with error wrong object type `*[]*models.Role` for rows scan, need *[]*goFrame/models.User or *[]goFrame/models.User
+2019/01/19 20:48:36.604 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 20:48:36.605 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/19 20:48:36.605 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/db.go:918
+2019/01/19 20:48:36.606 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/orm/orm_queryset.go:213
+2019/01/19 20:48:36.606 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/models/User.go:86
+2019/01/19 20:48:36.607 [C] [asm_amd64.s:573]  D:/GoWork/src/goFrame/admin/controllers/user.go:38
+2019/01/19 20:48:36.607 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/19 20:48:36.608 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:447
+2019/01/19 20:48:36.610 [C] [asm_amd64.s:573]  D:/Tool/Go/src/reflect/value.go:308
+2019/01/19 20:48:36.611 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:851
+2019/01/19 20:48:36.612 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/19 20:48:36.613 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/19 20:48:36.615 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/19 20:48:36.618 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/19 20:48:36.622 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:48:36.622 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:48:36.626 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:50:36.079 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/19 20:50:42.869 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:50:42.869 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 20:50:42.873 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:50:42.874 [D] [user.go:13]  UserController-Index 
+2019/01/19 20:50:43.467 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:50:43.467 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:50:43.468 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:50:43.489 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:50:43.494 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 20:50:43.496 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:50:56.339 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:50:56.339 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:50:56.343 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:50:56.352 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:50:56.360 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:50:56.363 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:50:58.722 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:50:58.723 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:50:58.724 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:50:58.734 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:50:58.735 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:50:58.738 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:51:05.615 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:51:05.615 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:51:05.622 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:51:07.044 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:51:07.044 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:51:07.046 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:51:08.413 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:51:08.414 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:51:08.415 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:51:09.907 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:51:09.908 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:51:09.909 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 20:51:10.839 [D] [adminbase.go:83]  here is auth 
+2019/01/19 20:51:10.840 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 20:51:10.844 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 22:24:00.484 [D] [adminbase.go:83]  here is auth 
+2019/01/19 22:24:00.485 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 22:24:00.487 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 22:24:01.203 [D] [adminbase.go:83]  here is auth 
+2019/01/19 22:24:01.204 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 22:24:01.205 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 22:24:01.767 [D] [adminbase.go:83]  here is auth 
+2019/01/19 22:24:01.767 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 22:24:01.769 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 22:24:02.228 [D] [adminbase.go:83]  here is auth 
+2019/01/19 22:24:02.228 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 22:24:02.231 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 22:24:02.855 [D] [adminbase.go:83]  here is auth 
+2019/01/19 22:24:02.855 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 22:24:02.857 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 22:26:22.699 [D] [adminbase.go:83]  here is auth 
+2019/01/19 22:26:22.700 [D] [adminbase.go:84]  UserController.Index 
+2019/01/19 22:26:22.703 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 22:26:22.704 [D] [user.go:13]  UserController-Index 
+2019/01/19 22:26:23.441 [D] [adminbase.go:83]  here is auth 
+2019/01/19 22:26:23.441 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/19 22:26:23.442 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/19 22:26:23.452 [D] [adminbase.go:83]  here is auth 
+2019/01/19 22:26:23.454 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/19 22:26:23.476 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 13:49:09.573 [I] [asm_amd64.s:2361]  http server Running on http://:8000
+2019/01/20 13:49:17.036 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:49:17.037 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 13:49:17.037 [D] [adminbase.go:120]  未登录重定向至登录界面 
+2019/01/20 13:49:17.037 [D] [adminbase.go:121]  /admin/login 
+2019/01/20 13:49:17.042 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:49:17.043 [D] [adminbase.go:84]  LoginController.Login 
+2019/01/20 13:49:17.044 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/20 13:49:24.468 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:49:24.468 [D] [adminbase.go:84]  LoginController.Login 
+2019/01/20 13:49:24.468 [D] [login.go:19]  here is admin Login,uid= 
+2019/01/20 13:49:24.499 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:49:24.499 [D] [adminbase.go:84]  AdminController.Index 
+2019/01/20 13:49:24.501 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 13:49:25.539 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:49:25.539 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 13:49:25.541 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 13:49:42.984 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:49:42.984 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 13:49:42.985 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 13:49:42.985 [D] [user.go:13]  UserController-Index 
+2019/01/20 13:49:43.537 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:49:43.537 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 13:49:43.541 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 13:49:43.560 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:49:43.560 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 13:49:43.562 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 13:49:52.136 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:49:52.137 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 13:49:52.138 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 13:49:54.423 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:49:54.424 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 13:49:54.425 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 13:57:29.928 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:57:29.928 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 13:57:29.931 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 13:57:29.931 [D] [user.go:13]  UserController-Index 
+2019/01/20 13:57:30.204 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:57:30.205 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 13:57:30.206 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 13:57:30.214 [D] [adminbase.go:83]  here is auth 
+2019/01/20 13:57:30.215 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 13:57:30.218 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 14:04:12.760 [D] [adminbase.go:83]  here is auth 
+2019/01/20 14:04:12.761 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 14:04:12.763 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 14:04:12.763 [D] [user.go:13]  UserController-Index 
+2019/01/20 14:04:13.468 [D] [adminbase.go:83]  here is auth 
+2019/01/20 14:04:13.469 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 14:04:13.474 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 14:04:13.492 [D] [adminbase.go:83]  here is auth 
+2019/01/20 14:04:13.492 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 14:04:13.495 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 14:14:53.442 [D] [adminbase.go:83]  here is auth 
+2019/01/20 14:14:53.443 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 14:14:53.445 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 14:14:53.445 [D] [user.go:13]  UserController-Index 
+2019/01/20 14:14:53.786 [D] [adminbase.go:83]  here is auth 
+2019/01/20 14:14:53.787 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 14:14:53.789 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 14:14:53.797 [D] [adminbase.go:83]  here is auth 
+2019/01/20 14:14:53.797 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 14:14:53.798 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 15:47:31.119 [D] [adminbase.go:83]  here is auth 
+2019/01/20 15:47:31.120 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 15:47:31.124 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 15:48:06.892 [D] [adminbase.go:83]  here is auth 
+2019/01/20 15:48:06.892 [D] [adminbase.go:84]  RoleController.Index 
+2019/01/20 15:48:06.894 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 15:48:07.174 [D] [adminbase.go:83]  here is auth 
+2019/01/20 15:48:07.174 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 15:48:07.175 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 15:52:45.305 [D] [adminbase.go:83]  here is auth 
+2019/01/20 15:52:45.305 [D] [adminbase.go:84]  RoleController.Index 
+2019/01/20 15:52:45.308 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 15:52:45.558 [D] [adminbase.go:83]  here is auth 
+2019/01/20 15:52:45.559 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 15:52:45.561 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 15:52:47.413 [D] [adminbase.go:83]  here is auth 
+2019/01/20 15:52:47.413 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 15:52:47.415 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 15:52:47.415 [D] [user.go:13]  UserController-Index 
+2019/01/20 15:52:47.757 [D] [adminbase.go:83]  here is auth 
+2019/01/20 15:52:47.757 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 15:52:47.759 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 15:52:47.767 [D] [adminbase.go:83]  here is auth 
+2019/01/20 15:52:47.767 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 15:52:47.769 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 15:53:08.157 [D] [adminbase.go:83]  here is auth 
+2019/01/20 15:53:08.157 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 15:53:08.159 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 15:53:08.159 [D] [user.go:13]  UserController-Index 
+2019/01/20 15:53:08.403 [D] [adminbase.go:83]  here is auth 
+2019/01/20 15:53:08.403 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 15:53:08.405 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 15:53:08.411 [D] [adminbase.go:83]  here is auth 
+2019/01/20 15:53:08.411 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 15:53:08.415 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 15:53:13.290 [D] [adminbase.go:83]  here is auth 
+2019/01/20 15:53:13.290 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 15:53:13.292 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:11:43.125 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:11:43.125 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 16:11:43.128 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:11:43.129 [D] [user.go:13]  UserController-Index 
+2019/01/20 16:11:43.471 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:11:43.472 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 16:11:43.473 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:11:43.486 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:11:43.486 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 16:11:43.489 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:12:55.562 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:12:55.563 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 16:12:55.565 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:12:55.566 [D] [user.go:13]  UserController-Index 
+2019/01/20 16:12:56.163 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:12:56.163 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 16:12:56.166 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:12:56.184 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:12:56.184 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 16:12:56.187 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:13:49.072 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:13:49.072 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 16:13:49.075 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:13:49.075 [D] [user.go:13]  UserController-Index 
+2019/01/20 16:13:49.607 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:13:49.607 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 16:13:49.609 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:13:49.625 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:13:49.625 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 16:13:49.627 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:13:51.568 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:13:51.569 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 16:13:51.570 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:13:51.571 [D] [user.go:13]  UserController-Index 
+2019/01/20 16:13:52.089 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:13:52.089 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 16:13:52.091 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:13:52.100 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:13:52.101 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 16:13:52.104 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:15:05.557 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:15:05.557 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 16:15:05.561 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:15:05.562 [D] [user.go:13]  UserController-Index 
+2019/01/20 16:15:06.168 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:15:06.169 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 16:15:06.174 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:15:06.187 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:15:06.187 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 16:15:06.190 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:15:16.000 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:15:16.001 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 16:15:16.004 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:15:16.005 [D] [user.go:13]  UserController-Index 
+2019/01/20 16:15:16.514 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:15:16.515 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 16:15:16.518 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:15:16.527 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:15:16.527 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 16:15:16.532 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:15:18.342 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:15:18.342 [D] [adminbase.go:84]  UserController.Index 
+2019/01/20 16:15:18.346 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:15:18.348 [D] [user.go:13]  UserController-Index 
+2019/01/20 16:15:18.839 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:15:18.840 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 16:15:18.847 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:15:18.856 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:15:18.856 [D] [adminbase.go:84]  MenuController.UserMenuTree 
+2019/01/20 16:15:18.858 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:15:57.841 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:15:57.841 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 16:15:57.843 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:16:13.343 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:16:13.343 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 16:16:13.344 [D] [adminbase.go:102]  用户已登录状态 
+2019/01/20 16:16:21.924 [D] [adminbase.go:83]  here is auth 
+2019/01/20 16:16:21.924 [D] [adminbase.go:84]  UserController.UserDataGrid 
+2019/01/20 16:16:21.926 [D] [adminbase.go:102]  用户已登录状态 

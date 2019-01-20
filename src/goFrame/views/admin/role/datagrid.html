@@ -1,0 +1,119 @@
+<script>
+    var $dataGrid = $('#dataGrid');
+    var $searchForm = $("#searchForm")
+    //高亮显示id
+    var highlightPk = null;
+    //初始化加载
+    $(function () {
+        pageInit();
+    });
+    //bootstrap table data init
+    function dataGridInit() {
+        $dataGrid.bootstrapTable({
+            url: '{{ urlfor "RoleController.RoleDataGrid"}}',
+            method: 'post',
+            sidePagination: 'server', //服务器端用 server
+            idField: 'Id',
+            queryParamsType: 'limit',
+            queryParams: function (params) {
+                //params的自带参数类型由queryParamsType决定
+                params.NameLike = $('.searchForm input[name="Name"]').val();
+                return params;
+            },
+            pagination: true,
+            showRefresh: true,
+            showColumns: true,
+            toolbar: '#toolbar',
+            pageSize: 10,
+            pageList: [5, 10, 20, 100, 200],
+            paginationShowPageGo: true,//20170812 lht 扩展select跳转
+            paginationUseBSSelect: true,//20170812 lht 扩展select跳转 启用BoostrapSelect(页面须引用botstrap-select.min.js)
+            cookie: true,
+            classes: 'table table-bordered table-hover',
+            undefinedText: '',
+            sortName: 'Id',
+            sortOrder: 'desc',
+            rowAttributes: function (row, index) {
+                return {'data-pk': row.Id}
+            },
+            columns: [{
+                field: 'state',
+                checkbox: true,
+                radio: false,
+            }, {
+                field: 'Id',
+                title: 'ID',
+                width: '90px',
+                align: 'center',
+                sortable: true,
+            }, {
+                field: 'NameCn',
+                title: '中文名',
+                align: 'center',
+                formatter: formatterWapBySpan,
+                cellStyle: function (value, row, index, field) {
+                    return {classes: 'ellipsis'};
+                }
+            }, {
+                field: 'NameEn',
+                title: '英文名',
+                align: 'center',
+                formatter: formatterWapBySpan,
+                cellStyle: function (value, row, index, field) {
+                    return {classes: 'ellipsis'};
+                }
+            }, {
+                field: 'operate',
+                title: '操作',
+                width: '120px',
+                formatter: function (value, row, index) {
+                    var ret = [];
+                    ret.push('<div class="btn-group">')
+                    if ('{{.canDelete}}' === 'true') {
+                        ret.push('<button class="btn btn-primary btn-xs"  onclick="EditFun(' + row.Id + ')">' +
+                                '<i class="fa fa-pencil"></i> 编辑</button>');
+                    }
+                    if ('{{.canAllocate}}' === 'true') {
+                        ret.push('<button class="btn btn-info btn-xs"  onclick="AllocateFun(' + row.Id + ')">' +
+                                '<i class="fa fa-th"></i> 分配</button>');
+                    }
+                    ret.push('</div>')
+                    return ret.join('');
+                }
+            }],
+            onLoadSuccess: function (data) {
+                layer.closeAll('loading');
+                //
+                //CheboxUniform()
+            },
+            onSort: function (name, order) {
+                //alert('name:' + name + " order:" + order);
+            },
+            onPageChange: function () {
+                //layer.load();
+            },
+            onCheckAll: function (rows) {
+                //禁用删除需要勾选才能用的按钮
+                $(".table-btn-check-enable").removeAttr('disabled');
+            },
+            onCheck: function (rows) {
+                //禁用删除需要勾选才能用的按钮
+                $(".table-btn-check-enable").removeAttr('disabled');
+            },
+            onUncheck: function (rows) {
+                //禁用删除需要勾选才能用的按钮
+                if ($("#dataGrid").bootstrapTable("getSelections").length === 0) {
+                    $(".table-btn-check-enable").attr('disabled', 'disabled');
+                }
+            }, onUncheckAll: function () {
+                //禁用删除需要勾选才能用的按钮
+                if ($("#dataGrid").bootstrapTable("getSelections").length === 0) {
+                    $(".table-btn-check-enable").attr('disabled', 'disabled');
+                }
+            },
+            onLoadError: function (status) {
+                layer.alert('获取数据失败,错误代码：' + status);
+            }
+        });
+    }
+</script>

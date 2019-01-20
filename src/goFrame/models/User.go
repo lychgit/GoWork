@@ -2,7 +2,7 @@ package models
 
 import (
 	"github.com/astaxie/beego/orm"
-)
+	)
 
 type User struct {
 	Id             int `orm:"auto"`
@@ -70,4 +70,28 @@ func UserGetByName(userName string) (*User, error) {
 		return nil, err
 	}
 	return u, nil
+}
+
+func UserList(page, pageSize int, filters ...interface{}) ([]*User, int64) {
+	offset := (page - 1) * pageSize
+	roles := make([]*User, 0)
+	query := orm.NewOrm().QueryTable(TableName("user"))
+	if len(filters) > 0 {
+		l := len(filters)
+		for i := 0; i < l; i += 2 {
+			query = query.Filter(filters[i].(string), filters[i+1])
+		}
+	}
+	total, _ := query.Count()
+	query.OrderBy("-id").Limit(pageSize, offset).All(&roles)
+	return roles, total
+}
+
+func UserListGrid(page, pageSize int, filters ...interface{}) []User {
+	data, total := UserList(page, pageSize)
+	list := make([]User, total)
+	for i, item := range data {
+		list[i] = *item
+	}
+	return list
 }
