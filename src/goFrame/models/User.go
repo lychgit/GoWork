@@ -2,7 +2,16 @@ package models
 
 import (
 	"github.com/astaxie/beego/orm"
-	)
+	"github.com/lhtzbj12/sdrms/models"
+)
+
+// BackendUserQueryParam 用于查询的类
+type UserQueryParam struct {
+	models.BaseQueryParam
+	UserNameLike string //模糊查询
+	MobileLike   string //精确查询
+	SearchStatus string //为空不查询，有值精确查询
+}
 
 type User struct {
 	Id             int `orm:"auto"`
@@ -12,6 +21,7 @@ type User struct {
 	LastLogin      int64
 	LastIp         string
 	Status         int
+	IsSuper        bool
 	Mobile         string         `orm:"size(16)"`
 	Email          string         `orm:"size(256)"`
 	Avatar         string         `orm:"size(256)"`

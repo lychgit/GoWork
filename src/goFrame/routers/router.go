@@ -40,17 +40,31 @@ func init() {
 
 	//用户有权管理的菜单列表（包括区域）
 	beego.Router("/admin/menu/menutree", &admin.MenuController{}, "POST:UserMenuTree")
+
 	//菜单管理
 	beego.Router("/admin/menu/index", &admin.MenuController{}, "*:Index")
+
 	//权限管理
 	beego.Router("/admin/auth/index", &admin.AuthController{}, "*:Index")
+
 	//角色管理
 	beego.Router("/admin/role/index", &admin.RoleController{}, "*:Index")
 	beego.Router("/admin/role/datagrid", &admin.RoleController{}, "POST:RoleDataGrid")
+	beego.Router("/admin/role/rolelist", &admin.RoleController{}, "POST:RoleList")
+	beego.Router("/admin/role/edit/?:id", &admin.RoleController{}, "*:RoleEdit")
+	//beego.Router("/admin/role/delete/?:id", &admin.RoleController{}, "POST:RoleDelete")
+
 	//用户管理
 	beego.Router("/admin/user/index", &admin.UserController{}, "*:Index")
 	beego.Router("/admin/user/datagrid", &admin.UserController{}, "POST:UserDataGrid")
-	beego.Router("/admin/user/edit", &admin.UserController{}, "POST:UserEdit")
+	beego.Router("/admin/user/edit/?:id", &admin.UserController{}, "*:UserEdit")
+	//beego.Router("/admin/user/delete/?:id", &admin.UserController{}, "POST:UserDelete")
+
+
+	//图片管理
+	beego.Router("/admin/picture/index", &admin.PictureController{}, "*:Index")
+	beego.Router("/admin/picture/pictureupload", &admin.PictureController{}, "*:PictureUpload")
+
 	//日志管理
 	beego.Router("/admin/log/index", &admin.LogController{}, "*:Index")
 	beego.Router("/admin/log/system", &admin.LogController{}, "*:System")

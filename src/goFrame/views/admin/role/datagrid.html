@@ -70,11 +70,11 @@
                     var ret = [];
                     ret.push('<div class="btn-group">')
                     if ('{{.canDelete}}' === 'true') {
-                        ret.push('<button class="btn btn-primary btn-xs"  onclick="EditFun(' + row.Id + ')">' +
+                        ret.push('<button class="btn btn-primary btn-xs"  onclick="Edit(' + row.Id + ')">' +
                                 '<i class="fa fa-pencil"></i> 编辑</button>');
                     }
                     if ('{{.canAllocate}}' === 'true') {
-                        ret.push('<button class="btn btn-info btn-xs"  onclick="AllocateFun(' + row.Id + ')">' +
+                        ret.push('<button class="btn btn-info btn-xs"  onclick="Allocate(' + row.Id + ')">' +
                                 '<i class="fa fa-th"></i> 分配</button>');
                     }
                     ret.push('</div>')
@@ -112,6 +112,7 @@
                 }
             },
             onLoadError: function (status) {
+                debugger
                 layer.alert('获取数据失败,错误代码：' + status);
             }
         });

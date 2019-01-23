@@ -1,16 +1,16 @@
 <!-- Content Header (Page header) -->
-{{template "layout/admin/public_datagrid.html"}}
+{{template "admin/picture/js.html" .}}
 <section class="content-header">
     <h1>
-        后台用户管理
-        <small>管理后台用户</small>
+        图片管理
+        <small>管理图片</small>
     </h1>
     <ol class="breadcrumb">
         <li>
             <a href="{{urlfor "MenuController.Index"}}">
                 <i class="fa fa-dashboard"></i> 首页</a>
         </li>
-        <li class="active">后台用户</li>
+        <li class="active">图片</li>
     </ol>
 </section>
 <!-- Main content -->
@@ -21,13 +21,14 @@
             <form id="searchForm" class="searchForm">
                 <div class="box box-solid collapsed-box">
                     <div class="box-header with-border">
-                        <input type="text" name="UserName" class="form-control pull-left input-wd-md" placeholder="用户名">
-                        <select name="RoleId" class="form-control bs-select" data-width="120px">
-                            <option value="">- 全部 -</option>
-                            {{ range .role_rows}}
-                                <option value="{{.Id}}">{{.NameCn}}</option>
-                            {{end}}
-                        </select>
+                        <input type="text" name="UserName" class="form-control pull-left input-wd-md"
+                               placeholder="图片名称">
+                    {{/*<select name="RoleId" class="form-control bs-select" data-width="120px">*/}}
+                    {{/*<option value="">- 全部 -</option>*/}}
+                    {{/*{{ range .role_rows}}*/}}
+                    {{/*<option value="{{.Id}}">{{.NameCn}}</option>*/}}
+                    {{/*{{end}}*/}}
+                    {{/*</select>*/}}
                         <div class="btn-group">
                             <button type="button" class="btn btn-warning" id="btnSearch"><i class="fa fa-search"></i> 搜索
                             </button>
@@ -35,25 +36,25 @@
                                     class="fa fa-eraser"></i> 清除
                             </button>
                         </div>
-                    {{if .showMoreQuery }}
-                        <div class="box-tools pull-right">
-                            <button id="searchpanelbtn" type="button" class="btn btn-box-tool" data-widget="collapse"><i
-                                    class="fa fa-plus"></i>
-                            </button>
-                        </div>
-                    {{end}}
+                    {{/*{{if .showMoreQuery }}*/}}
+                    {{/*<div class="box-tools pull-right">*/}}
+                    {{/*<button id="searchpanelbtn" type="button" class="btn btn-box-tool" data-widget="collapse"><i*/}}
+                    {{/*class="fa fa-plus"></i>*/}}
+                    {{/*</button>*/}}
+                    {{/*</div>*/}}
+                    {{/*{{end}}*/}}
                         <!-- /.box-tools -->
                     </div>
                     <!-- /.box-header -->
-                    <div class="box-body" style="display: none;">
-                        <input type="text" name="Mobile" class="form-control pull-left input-wd-md" placeholder="手机号">
-                        <select name="Status" class="form-control bs-select" data-width="100px">
-                            <option value="">- 全部 -</option>
-                            <option value="-1">锁定</option>
-                            <option value="0">禁用</option>
-                            <option value="1">启用</option>
-                        </select>
-                    </div>
+                {{/*<div class="box-body" style="display: none;">*/}}
+                {{/*<input type="text" name="Mobile" class="form-control pull-left input-wd-md" placeholder="手机号">*/}}
+                {{/*<select name="Status" class="form-control bs-select" data-width="100px">*/}}
+                {{/*<option value="">- 全部 -</option>*/}}
+                {{/*<option value="-1">锁定</option>*/}}
+                {{/*<option value="0">禁用</option>*/}}
+                {{/*<option value="1">启用</option>*/}}
+                {{/*</select>*/}}
+                {{/*</div>*/}}
                     <!-- /.box-body -->
                 </div>
             </form>
@@ -72,7 +73,15 @@
                         </button>
                     {{/*{{end}}*/}}
                     </div>
-                    <table id="dataGrid"></table>
+                    <div id="PictureGrid">
+
+                        <div id="uploader-demo">
+                            <!--用来存放item-->
+                            <div id="fileList" class="uploader-list"></div>
+                            <div id="filePicker">选择图片</div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

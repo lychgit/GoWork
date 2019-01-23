@@ -118,7 +118,7 @@ func MenuListGetByUid(uid, maxrtype int) []*Menu {
 		FROM %s As T0
 		INNER JOIN %s AS T1 ON T0.role_id = T1.role_id
 		INNER JOIN %s AS T2 ON T1.menu_id = T2.id
-		WHERE T0.uid = ? and T2.logic_delete = 0  Order By T2.sort asc,T2.id asc`, TableName("role_user_rel"),TableName("role_menu_rel"), TableName("menu"))
+		WHERE T0.user_id = ? and T2.logic_delete = 0  Order By T2.sort asc,T2.id asc`, TableName("role_user_rel"),TableName("role_menu_rel"), TableName("menu"))
 		o.Raw(sql, user.Id).QueryRows(&list)
 	}
 	//格式化菜单列表

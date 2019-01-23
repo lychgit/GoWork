@@ -67,11 +67,11 @@
             html.push('<td>');
             html.push('  <div class="btn-group">');
             if ('{{.canEdit}}' === 'true') {
-                html.push('    <button class="btn btn-primary btn-xs" onclick="EditFun(' + e.Id + ')"><i class="fa fa-pencil"></i> 编辑</button>');
+                html.push('    <button class="btn btn-primary btn-xs" onclick="Edit(' + e.Id + ')"><i class="fa fa-pencil"></i> 编辑</button>');
             }
             //if (e.SonNum === 0) {
             if ('{{.canDelete}}' === 'true') {
-                html.push('    <button class="btn btn-danger btn-xs" onclick="DeleteFun(' + e.Id + ')"><i class="fa fa-trash"></i> 删除</button>');
+                html.push('    <button class="btn btn-danger btn-xs" onclick="Delete(' + e.Id + ')"><i class="fa fa-trash"></i> 删除</button>');
             }
             //}
             html.push('  </div>');
@@ -134,7 +134,7 @@
             if (doEdit === false) return;
             $('.editable-weight', $treeGrid).editable(rms.getEditableParam('{{urlfor "ResourceController.UpdateSeq"}}', null, true));
     }
-    function EditFun(Id) {
+    function Edit(Id) {
         var title = '添加资源';
         if (Id > 0) {
             title = "编辑资源"

@@ -8,6 +8,7 @@ import (
 	"strings"
 	"github.com/lhtzbj12/sdrms/utils"
 	"github.com/astaxie/beego/orm"
+	"encoding/json"
 )
 
 type UserController struct {
@@ -16,6 +17,8 @@ type UserController struct {
 
 func (this *UserController) Index() {
 	beego.Debug("UserController-Index")
+	//是否显示更多查询条件的按钮
+	this.Data["showMoreQuery"] = true
 	//需要权限控制
 	this.checkAuthor()
 	//将页面左边菜单的某项激活
@@ -37,8 +40,9 @@ func (this *UserController) Index() {
 // DataGrid 后台用户管理页 表格获取数据
 func (this *UserController) UserDataGrid() {
 	//直接反序化获取json格式的requestbody里的值
-	//var params models.RoleQueryParam
-	//json.Unmarshal(this.Ctx.Input.RequestBody, &params)
+	var params models.UserQueryParam
+	json.Unmarshal(this.Ctx.Input.RequestBody, &params)
+	beego.Debug(params)
 	//获取数据列表和总数
 	data, total := models.UserList(this.page, this.pageSize)
 	//定义返回的数据结构
@@ -105,6 +109,7 @@ func (this *UserController) Save() {
 }
 
 func (this *UserController) UserEdit() {
+	beego.Debug("UserEdit")
 	// Edit 添加 编辑 页面
 	//如果是Post请求，则由Save处理
 	if this.Ctx.Request.Method == "POST" {
@@ -131,7 +136,10 @@ func (this *UserController) UserEdit() {
 		roleIds = append(roleIds, strconv.Itoa(item.Role.Id))
 	}
 	this.Data["roles"] = strings.Join(roleIds, ",")
-	this.setTpl("backenduser/edit.html", "shared/layout_pullbox.html")
-	this.LayoutSections = make(map[string]string)
-	this.LayoutSections["footerjs"] = "backenduser/edit_footerjs.html"
+
+	beego.Debug(this.Data["roles"])
+
+	this.setTpl("admin/user/edit.html", "layout/admin/layout_pullbox.html")
+	//this.LayoutSections = make(map[string]string)
+	//this.LayoutSections["footerjs"] = "admin/user/edit_js.html"
 }

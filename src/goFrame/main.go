@@ -56,9 +56,9 @@ func main() {
 
 	//静态文件目录设置，默认是static  可配置单个或多个目录:
 	beego.SetStaticPath("/static", "static") //设置静态文件处理目录
-	beego.SetStaticPath("/static/images", "images")
-	beego.SetStaticPath("/static/css", "css")
-	beego.SetStaticPath("/static/js", "js")
+	beego.SetStaticPath("/images", "static/images")
+	beego.SetStaticPath("/css", "static/css")
+	beego.SetStaticPath("/js", "static/js")
 
 	//beego.SetViewsPath("templatePath") //设置模板目录
 	beego.SetViewsPath("views") //设置模板目录

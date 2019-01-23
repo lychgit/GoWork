@@ -1,0 +1,131 @@
+<!--WebUploader-->
+<!--引入CSS-->
+<link rel="stylesheet" href="/static/plugins/webupload/webuploader.css">
+<!--引入JS-->
+<script src="/static/plugins/icheck/demo/js/zepto.js"></script>
+<script type="text/javascript" src="/static/plugins/webupload/webuploader.js"></script>
+
+<script>
+    $(function () {
+        // 初始化Web Uploader
+        var uploader = new WebUploader.Uploader({
+            auto: true, // 选完文件后，是否自动上传。
+            swf: 'static/plugins/webupload/Uploader.swf', // swf文件路径
+            server: '{{urlfor "PictureController.PictureUpload"}}', // 文件接收服务端。
+            // 选择文件的按钮。可选。
+            pick: '#filePicker', // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+            fileVal: 'file', //设置文件上传域的name
+            chunked: true, //是否要分片上传
+            chunkSize: 100 * 1024 * 1024, //如果要分片，分多大一片(KB)
+            // fileNumLimit: 1, //验证文件总数量, 超出则不允许加入队列
+            //duplicate: true, //去重， 根据文件名字、文件大小和最后修改时间来生成hash Key
+            fileSingleSizeLimit: 5 * 1024 * 1024 * 1024, //限制单文件大小(KB)
+            accept: {
+                title: 'Images',
+                extensions: 'gif,jpg,jpeg,bmp,png',
+                mimeTypes: 'image/*'
+            } // 只允许选择图片文件。
+        });
+
+        // 当有文件添加进来的时候
+        uploader.on('fileQueued', function (file) {
+            //上传进度
+            uploader.onUploadProgress = function (file, percentage) {
+                if (percentage != 1) {
+                    a = percentage.toFixed(4);
+                    b = a.slice(2, 4) + "." + a.slice(4, 6) + "%";
+                    c = b.replace(/^0/, '');
+                    $("#upload_progress").html(c);
+                }
+            };
+            //缩略图
+            uploader.makeThumb(file, function (error, src) {
+                if (error) {
+                    return;
+                }
+                upload_thumb = src;
+            }, 150, 150);
+        });
+
+        // 文件上传过程中创建进度条实时显示。
+        uploader.on('uploadProgress', function (file, percentage) {
+            var $li = $('#' + file.id),
+                    $percent = $li.find('.progress span');
+
+            // 避免重复创建
+            if (!$percent.length) {
+                $percent = $('<p class="progress"><span></span></p>')
+                        .appendTo($li)
+                        .find('span');
+            }
+
+            $percent.css('width', percentage * 100 + '%');
+        });
+
+        //验证错误(文件类型, 大小......)
+        //Q_EXCEED_NUM_LIMIT  验证文件总数量, 超出则不允许加入队列
+        //Q_EXCEED_SIZE_LIMIT 验证单个文件大小是否超出限制, 超出则不允许加入队列
+        // F_EXCEED_SIZE      验证文件总数量, 超出则不允许加入队列
+        // F_DUPLICATE去重    根据文件名字、文件大小和最后修改时间来生成hash Key.
+        uploader.on('error', function (type) {
+            if (type == 'Q_EXCEED_NUM_LIMIT') {
+                alert("上传文件个数上限");
+            } else if (type == 'F_EXCEED_SIZE') {
+                alert("上传文件超出大小");
+            } else if (type == 'Q_TYPE_DENIED') {
+                alert("文件类型错误")
+            }
+        });
+
+        //上传错误
+        uploader.on('uploadError', function (file, reason) {
+            //console.log(reason);
+            alert("上传出错");
+        });
+
+        //    //当文件上传成功时触发
+        //    uploader.on('uploadSuccess', function (file) {
+        //        $("#face2").attr('src', upload_thumb)
+        //        $("#upload_progress").html('100%');
+        //    });
+
+        // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+        uploader.on('uploadSuccess', function (file) {
+            $('#' + file.id).addClass('upload-state-done');
+        });
+
+        // 文件上传失败，显示上传出错。
+        uploader.on('uploadError', function (file) {
+            var $li = $('#' + file.id),
+                    $error = $li.find('div.error');
+
+            // 避免重复创建
+            if (!$error.length) {
+                $error = $('<div class="error"></div>').appendTo($li);
+            }
+
+            $error.text('上传失败');
+        });
+
+        // 完成上传完了，成功或者失败，先删除进度条。
+        uploader.on('uploadComplete', function (file) {
+            $('#' + file.id).find('.progress').remove();
+        });
+
+        //当某个文件上传到服务端响应后，会派送此事件来询问服务端响应是否有效。
+        //如果此事件handler返回值为false, 则此文件将派送server类型的uploadError事件
+        // uploader.on('uploadAccept', function (object, ret) {
+        //     if (ret.code == 0) {
+        //         //原图
+        //         $("#face1").attr('src', './upload/' + ret.uploadimg);
+        //         //缩略图
+        //         $("#face2").attr('src', upload_thumb);
+        //         $("#upload_progress").html('100%');
+        //     } else {
+        //         alert("上传出错");
+        //         //错误信息说明 : http://php.net/manual/zh/features.file-upload.errors.php
+        //         //console.log(ret.code);
+        //     }
+        // })
+    })
+</script>
