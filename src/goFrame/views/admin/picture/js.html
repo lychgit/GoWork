@@ -1,12 +1,63 @@
 <!--WebUploader-->
 <!--引入CSS-->
-<link rel="stylesheet" href="/static/plugins/webupload/webuploader.css">
+<link rel="stylesheet" href="/static/plugins/webuploader/webuploader.css">
+<style>
+    #fileList {
+        display: block;
+        flex-direction: row;
+        /*width: 100%;*/
+    }
+    .file-item {
+        display: inline-block;
+        width: 150px;
+        margin: 5px;
+        padding: 10px 15px;
+    }
+    .info {
+        display: block;
+        /*width: 100%;*/
+        overflow: hidden;//超出的文本隐藏
+        white-space: nowrap;//溢出不换行
+        text-overflow: ellipsis;//溢出用省略号显示
+    }
+    /*.progress, .progress span{*/
+        /*height: 5px;*/
+        /*border-radius: 10px;*/
+        /*margin-bottom: 0px;*/
+    /*}*/
+    /*.progress span{*/
+        /*width: 0;*/
+        /*display: block;*/
+        /*background-color: #00c0ef;*/
+    /*}*/
+    /*.progress, .progress-bar {*/
+        /*height: 9px;*/
+        /*border-radius: 10px;*/
+        /*margin-bottom: 0px;*/
+    /*}*/
+</style>
+
 <!--引入JS-->
 <script src="/static/plugins/icheck/demo/js/zepto.js"></script>
-<script type="text/javascript" src="/static/plugins/webupload/webuploader.js"></script>
+<script type="text/javascript" src="/static/plugins/webuploader/webuploader.js"></script>
 
 <script>
+    WebUploader.Uploader.register({
+        "before-send-file":"beforeSendFile",//整个文件上传前
+        "before-send":"beforeSend",  //每个分片上传前
+        "after-send-file":"afterSendFile",  //分片上传完毕
+    }, {
+        init: function( options ) {},
+        //整个文件上传前
+        beforeSendFile:function(file){},
+        //每个分片上传前
+        beforeSend:function(file){},
+        //分片上传完毕
+        afterSendFile:function(file){},
+    });
+
     $(function () {
+        let $list = $("#fileList");
         // 初始化Web Uploader
         var uploader = new WebUploader.Uploader({
             auto: true, // 选完文件后，是否自动上传。
@@ -15,10 +66,18 @@
             // 选择文件的按钮。可选。
             pick: '#filePicker', // 内部根据当前运行是创建，可能是input元素，也可能是flash.
             fileVal: 'file', //设置文件上传域的name
-            chunked: true, //是否要分片上传
-            chunkSize: 100 * 1024 * 1024, //如果要分片，分多大一片(KB)
-            // fileNumLimit: 1, //验证文件总数量, 超出则不允许加入队列
-            //duplicate: true, //去重， 根据文件名字、文件大小和最后修改时间来生成hash Key
+            chunked: true, // {Boolean} [可选] [默认值：false] 是否要分片处理大文件上传。
+            chunkSize: 5242880, //100 * 1024 * 1024 如果要分片，分多大一片(KB)  {Boolean} [可选] [默认值：5242880] 如果要分片，分多大一片？ 默认大小为5M.
+            chunkRetry: 3, //{Boolean} [可选] [默认值：2] 如果某个分片由于网络问题出错，允许自动重传多少次？
+            threads: 3, // {Boolean} [可选] [默认值：3] 上传并发数。允许同时最大上传进程数。
+            // formData {Object} [可选] [默认值：{}] 文件上传请求的参数表，每次发送都会发送此对象中的参数。
+            // method {Object} [可选] [默认值：'POST'] 文件上传方式，POST或者GET。
+            // sendAsBinary {Object} [可选] [默认值：false] 是否已二进制的流的方式发送文件，这样整个上传内容php://input都为文件内容， 其他参数在$_GET数组中。
+            // fileNumLimit {int} [可选] [默认值：undefined] 验证文件总数量, 超出则不允许加入队列。
+            // fileSizeLimit {int} [可选] [默认值：undefined] 验证文件总大小是否超出限制, 超出则不允许加入队列。
+            // fileSingleSizeLimit {int} [可选] [默认值：undefined] 验证单个文件大小是否超出限制, 超出则不允许加入队列。
+            // duplicate: true, {Boolean} [可选] [默认值：undefined] 去重， 根据文件名字、文件大小和最后修改时间来生成hash Key.
+            // disableWidgets {String, Array} [可选] [默认值：undefined] 默认所有 Uploader.register 了的 widget 都会被加载，如果禁用某一部分，请通过此 option 指定黑名单。
             fileSingleSizeLimit: 5 * 1024 * 1024 * 1024, //限制单文件大小(KB)
             accept: {
                 title: 'Images',
@@ -27,105 +86,163 @@
             } // 只允许选择图片文件。
         });
 
+        var percentages = {};//模拟进度条
         // 当有文件添加进来的时候
         uploader.on('fileQueued', function (file) {
-            //上传进度
-            uploader.onUploadProgress = function (file, percentage) {
-                if (percentage != 1) {
-                    a = percentage.toFixed(4);
-                    b = a.slice(2, 4) + "." + a.slice(4, 6) + "%";
-                    c = b.replace(/^0/, '');
-                    $("#upload_progress").html(c);
-                }
-            };
-            //缩略图
-            uploader.makeThumb(file, function (error, src) {
-                if (error) {
+            percentages[file.id] = {};//模拟进度条
+            percentages[file.id]['progress'] = 0;//模拟进度条
+
+            console.log('fileQueued');
+            let $li = $('<div id="' + file.id + '" class="file-item thumbnail">' +
+                            '<img>' +
+                            '<div class="info" title="' + file.name + '">' + file.name +
+                            '</div>' +
+                            // '<div class="progress">' +
+                            //     '<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">' +
+                            //     '<span class="sr-only">等待上传</span>' +  //显示进度百分比数值
+                            //     '</div>' +
+                            // '</div>' +
+                        '</div>'
+                    ),
+                    $img = $li.find('img');
+            // $list为容器jQuery实例
+            $list.append( $li );
+            // 创建缩略图
+            // 如果为非图片文件，可以不用调用此方法。
+            // thumbnailWidth x thumbnailHeight 为 100 x 100
+            let thumbnailWidth = 150, thumbnailHeight = 150;
+            uploader.makeThumb( file, function( error, src ) {
+                if ( error ) {
+                    $img.replaceWith('<span>不能预览</span>');
                     return;
                 }
-                upload_thumb = src;
-            }, 150, 150);
+                $img.attr( 'src', src );
+            }, thumbnailWidth, thumbnailHeight );
         });
-
         // 文件上传过程中创建进度条实时显示。
-        uploader.on('uploadProgress', function (file, percentage) {
-            var $li = $('#' + file.id),
-                    $percent = $li.find('.progress span');
-
+        uploader.on( 'uploadProgress', function( file, percentage ) {
+            console.log('uploadProgress');
+            let $li = $( '#'+file.id ),  $percent = $li.find('.progress div');
             // 避免重复创建
-            if (!$percent.length) {
-                $percent = $('<p class="progress"><span></span></p>')
-                        .appendTo($li)
-                        .find('span');
+            if ( !$percent.length ) {
+                $percent = $('<div class="progress">' +
+                                '<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">' +
+                                    // '<span class="sr-only"></span>' +  //显示进度百分比数值
+                                '</div>' +
+                            '</div>').appendTo($li).find('div');
+
+                // $percent = $('<p class="progress"><span></span></p>')
+                //         .appendTo( $li )
+                //         .find('span');
+                percentages[file.id]['percent'] = $percent; //模拟进度条
             }
+            let t = window.setInterval(function () {
+                percentages[file.id]['progress'] += 1;
+                if (parseInt(percentages[file.id]['progress']) < 100) {
+                    console.log(percentages[file.id]['progress']);
+                    percentages[file.id]['percent'].attr( 'aria-valuenow', percentages[file.id]['progress']);
+                    percentages[file.id]['percent'].css( 'width', percentages[file.id]['progress'] + '%' );
+                    // percentages[file.id]['percent'].find('span').text(percentages[file.id]['progress'] + '%'); //显示进度百分比数值
+                } else {
+                    percentages[file.id]['percent'].css( 'width',  '100%' );
+                    // percentages[file.id]['percent'].find('span').text('100%'); //显示进度百分比数值
+                    window.clearInterval(t);
+                    $( '#'+file.id ).find('.progress').remove();
+                }
+            },350); //模拟进度条
 
-            $percent.css('width', percentage * 100 + '%');
+            // $percent.css( 'width', percentage * 100 + '%' );
         });
-
-        //验证错误(文件类型, 大小......)
-        //Q_EXCEED_NUM_LIMIT  验证文件总数量, 超出则不允许加入队列
-        //Q_EXCEED_SIZE_LIMIT 验证单个文件大小是否超出限制, 超出则不允许加入队列
-        // F_EXCEED_SIZE      验证文件总数量, 超出则不允许加入队列
-        // F_DUPLICATE去重    根据文件名字、文件大小和最后修改时间来生成hash Key.
-        uploader.on('error', function (type) {
-            if (type == 'Q_EXCEED_NUM_LIMIT') {
-                alert("上传文件个数上限");
-            } else if (type == 'F_EXCEED_SIZE') {
-                alert("上传文件超出大小");
-            } else if (type == 'Q_TYPE_DENIED') {
-                alert("文件类型错误")
-            }
-        });
-
-        //上传错误
-        uploader.on('uploadError', function (file, reason) {
-            //console.log(reason);
-            alert("上传出错");
-        });
-
-        //    //当文件上传成功时触发
-        //    uploader.on('uploadSuccess', function (file) {
-        //        $("#face2").attr('src', upload_thumb)
-        //        $("#upload_progress").html('100%');
-        //    });
 
         // 文件上传成功，给item添加成功class, 用样式标记上传成功。
-        uploader.on('uploadSuccess', function (file) {
-            $('#' + file.id).addClass('upload-state-done');
+        uploader.on( 'uploadSuccess', function( file ) {
+            console.log('uploadSuccess');
+            // debugger;
+            $( '#'+file.id ).addClass('upload-state-done');
         });
 
         // 文件上传失败，显示上传出错。
-        uploader.on('uploadError', function (file) {
-            var $li = $('#' + file.id),
-                    $error = $li.find('div.error');
-
+        uploader.on( 'uploadError', function( file ) {
+            console.log('uploadError');
+            let $li = $( '#'+file.id ), $error = $li.find('div.error');
             // 避免重复创建
-            if (!$error.length) {
-                $error = $('<div class="error"></div>').appendTo($li);
+            if ( !$error.length ) {
+                $error = $('<div class="error"></div>').appendTo( $li );
             }
-
             $error.text('上传失败');
         });
 
         // 完成上传完了，成功或者失败，先删除进度条。
-        uploader.on('uploadComplete', function (file) {
-            $('#' + file.id).find('.progress').remove();
+        uploader.on( 'uploadComplete', function( file ) {
+            console.log('uploadComplete');
+            // $( '#'+file.id ).find('.progress').remove();
         });
+
+        // //验证错误(文件类型, 大小......)
+        // //Q_EXCEED_NUM_LIMIT  验证文件总数量, 超出则不允许加入队列
+        // //Q_EXCEED_SIZE_LIMIT 验证单个文件大小是否超出限制, 超出则不允许加入队列
+        // // F_EXCEED_SIZE      验证文件总数量, 超出则不允许加入队列
+        // // F_DUPLICATE去重    根据文件名字、文件大小和最后修改时间来生成hash Key.
+        uploader.on('error', function (type) {
+            console.log("error");
+            if (type == 'Q_EXCEED_NUM_LIMIT') {
+                console.log("上传文件个数上限");
+            } else if (type == 'F_EXCEED_SIZE') {
+                console.log("上传文件超出大小");
+            } else if (type == 'Q_TYPE_DENIED') {
+                console.log("文件类型错误")
+            }
+        });
+        //
+        // //上传错误
+        // uploader.on('uploadError', function (file, reason) {
+        //     //console.log(reason);
+        //     alert("上传出错");
+        // });
+        //
+        // //    //当文件上传成功时触发
+        // //    uploader.on('uploadSuccess', function (file) {
+        // //        $("#face2").attr('src', upload_thumb)
+        // //        $("#upload_progress").html('100%');
+        // //    });
+        //
+        // // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+        // uploader.on('uploadSuccess', function (file) {
+        //     $('#' + file.id).addClass('upload-state-done');
+        // });
+        //
+        // // 文件上传失败，显示上传出错。
+        // uploader.on('uploadError', function (file) {
+        //     var $li = $('#' + file.id),
+        //             $error = $li.find('div.error');
+        //
+        //     // 避免重复创建
+        //     if (!$error.length) {
+        //         $error = $('<div class="error"></div>').appendTo($li);
+        //     }
+        //
+        //     $error.text('上传失败');
+        // });
+        //
+        // // 完成上传完了，成功或者失败，先删除进度条。
+        // uploader.on('uploadComplete', function (file) {
+        //     $('#' + file.id).find('.progress').remove();
+        // });
 
         //当某个文件上传到服务端响应后，会派送此事件来询问服务端响应是否有效。
         //如果此事件handler返回值为false, 则此文件将派送server类型的uploadError事件
-        // uploader.on('uploadAccept', function (object, ret) {
-        //     if (ret.code == 0) {
-        //         //原图
-        //         $("#face1").attr('src', './upload/' + ret.uploadimg);
-        //         //缩略图
-        //         $("#face2").attr('src', upload_thumb);
-        //         $("#upload_progress").html('100%');
-        //     } else {
-        //         alert("上传出错");
-        //         //错误信息说明 : http://php.net/manual/zh/features.file-upload.errors.php
-        //         //console.log(ret.code);
-        //     }
-        // })
+        uploader.on('uploadAccept', function (object, ret) {
+            if (ret.code == 0) {
+                // //原图
+                // $("#face1").attr('src', './upload/' + ret.uploadimg);
+                // //缩略图
+                // $("#face2").attr('src', upload_thumb);
+                // $("#upload_progress").html('100%');
+            } else {
+                // alert("上传出错");
+                //错误信息说明 : http://php.net/manual/zh/features.file-upload.errors.php
+                //console.log(ret.code);
+            }
+        })
     })
 </script>

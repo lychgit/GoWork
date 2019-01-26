@@ -63,22 +63,22 @@
                 <div class="box-body">
                     <div class="btn-group" id="toolbar">
                     {{/*{{ if .canEdit}}*/}}
-                        <button class="btn btn-info" href="javascript:;" onclick="Edit(0)">
-                            <i class="fa fa-plus"></i> 添加
-                        </button>
+                        {{/*<button class="btn btn-info" href="javascript:;" id="filePicker">*/}}
+                            {{/*<i class="fa fa-plus"></i> 添加*/}}
+                        {{/*</button>*/}}
+                    <div id="filePicker"><i class="fa fa-plus"></i> 添加</div>
                     {{/*{{end}}*/}}
                     {{/*{{ if .canDelete}}*/}}
-                        <button class="btn btn-danger table-btn-check-enable" disabled onclick="Delete()">
-                            <i class="fa fa-trash"></i> 删除
-                        </button>
+                        {{/*<button class="btn btn-danger table-btn-check-enable" disabled onclick="Delete()">*/}}
+                            {{/*<i class="fa fa-trash"></i> 删除*/}}
+                        {{/*</button>*/}}
                     {{/*{{end}}*/}}
                     </div>
                     <div id="PictureGrid">
-
                         <div id="uploader-demo">
                             <!--用来存放item-->
                             <div id="fileList" class="uploader-list"></div>
-                            <div id="filePicker">选择图片</div>
+                            {{/*<div id="filePicker">选择图片</div>*/}}
                         </div>
 
                     </div>

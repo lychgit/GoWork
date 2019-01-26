@@ -60,7 +60,7 @@
             var module = modules[ id ] || root[ id ];
 
             if ( !module ) {
-                // throw new Error( '`' + id + '` is undefined' );
+                throw new Error( '`' + id + '` is undefined' );
             }
 
             return module;
@@ -8102,5 +8102,5 @@
     ], function( preset ) {
         return preset;
     });
-    return require('goFrame/static/plugins/webupload/webuploader');
+    return require('webuploader');
 });
