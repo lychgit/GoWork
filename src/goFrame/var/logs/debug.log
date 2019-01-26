@@ -1547,3 +1547,1927 @@
 2019/01/27 01:31:38.593 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
 2019/01/27 01:31:38.632 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
 2019/01/27 01:31:38.740 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:10.452 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:10.452 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:10.452 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:10.452 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:10.452 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:10.452 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:10.453 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:10.453 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:10.453 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:10.453 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:10.453 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:10.454 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:10.454 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:11.567 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:11.567 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:11.567 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:11.568 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:11.568 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:11.568 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:11.568 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:11.568 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:11.569 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:11.569 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:11.569 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:11.569 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:11.570 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:11.823 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:11.823 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:11.823 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:11.824 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:11.824 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:11.824 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:11.824 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:11.825 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:11.825 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:11.825 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:11.825 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:11.825 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:11.826 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:12.017 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:12.040 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:12.041 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:12.042 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:12.042 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:12.043 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:12.043 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:12.044 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:12.045 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:12.045 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:12.045 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:12.045 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:12.046 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:12.206 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:12.206 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:12.206 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:12.206 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:12.210 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:12.210 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:12.210 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:12.211 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:12.214 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:12.241 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:12.241 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:12.241 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:12.242 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:12.417 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:12.420 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:12.420 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:12.420 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:12.420 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:12.420 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:12.421 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:12.421 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:12.421 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:12.421 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:12.421 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:12.421 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:12.422 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:12.644 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:12.644 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:12.650 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:12.650 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:12.651 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:12.651 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:12.685 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:12.685 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:12.686 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:12.686 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:12.686 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:12.686 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:12.688 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:12.892 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:12.893 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:12.893 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:12.893 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:12.893 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:12.893 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:12.893 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:12.894 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:12.894 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:12.894 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:12.899 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:12.899 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:12.903 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:13.264 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:13.265 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:13.265 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:13.265 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:13.265 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:13.268 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:13.268 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:13.268 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:13.272 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:13.300 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:13.301 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:13.301 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:13.302 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:13.307 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:13.307 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:13.308 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:13.308 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:13.308 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:13.308 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:13.309 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:13.309 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:13.309 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:13.309 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:13.310 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:13.310 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:13.311 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:13.545 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:13.545 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:13.545 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:13.545 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:13.546 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:13.546 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:13.546 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:13.546 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:13.546 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:13.546 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:13.546 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:13.547 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:13.547 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:13.868 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:13.869 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:13.869 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:13.869 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:13.869 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:13.870 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:13.870 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:13.870 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:13.870 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:13.870 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:13.870 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:13.871 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:13.871 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:14.044 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:14.066 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:14.067 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:14.067 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:14.067 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:14.067 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:14.067 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:14.067 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:14.068 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:14.068 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:14.068 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:14.068 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:14.069 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:14.312 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:14.313 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:14.313 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:14.314 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:14.314 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:14.315 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:14.315 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:14.315 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:14.316 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:14.316 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:14.316 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:14.316 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:14.321 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:14.541 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:14.541 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:14.542 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:14.542 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:14.542 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:14.542 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:14.542 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:14.542 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:14.543 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:14.543 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:14.543 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:14.543 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:14.544 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:14.758 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:14.762 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:14.762 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:14.763 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:14.763 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:14.764 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:14.765 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:14.765 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:14.765 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:14.765 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:14.765 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:14.766 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:14.766 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:14.985 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:14.985 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:14.985 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:14.985 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:14.985 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:14.986 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:14.986 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:14.986 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:14.986 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:14.986 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:14.987 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:14.987 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:14.987 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:15.231 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:15.231 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:15.231 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:15.232 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:15.232 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:15.232 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:15.232 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:15.232 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:15.232 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:15.232 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:15.233 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:15.233 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:15.233 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:15.466 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:15.467 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:15.467 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:15.467 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:15.467 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:15.467 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:15.467 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:15.468 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:15.468 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:15.468 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:15.468 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:15.468 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:15.469 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:15.669 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:15.669 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:15.669 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:15.670 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:15.670 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:15.670 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:15.670 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:15.670 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:15.670 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:15.671 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:15.671 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:15.671 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:15.672 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:15.878 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:15.880 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:15.880 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:15.886 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:15.910 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:15.910 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:15.910 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:15.911 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:15.911 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:15.911 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:15.911 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:15.911 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:15.912 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:16.152 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:16.152 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:16.153 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:16.153 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:16.153 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:16.153 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:16.153 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:16.154 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:16.154 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:16.154 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:16.154 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:16.155 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:16.155 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:16.436 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:16.436 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:16.436 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:16.436 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:16.436 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:16.437 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:16.437 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:16.437 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:16.437 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:16.437 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:16.438 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:16.438 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:16.438 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:16.725 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:16.725 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:16.725 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:16.725 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:16.725 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:16.726 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:16.726 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:16.726 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:16.726 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:16.726 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:16.726 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:16.727 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:16.727 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:16.950 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:16.950 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:16.951 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:16.951 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:16.951 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:16.951 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:16.951 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:16.951 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:16.951 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:16.952 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:16.952 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:16.952 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:16.953 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:17.182 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:17.206 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:17.206 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:17.207 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:17.207 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:17.207 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:17.207 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:17.207 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:17.207 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:17.208 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:17.208 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:17.208 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:17.209 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:52.404 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:52.404 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:52.404 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:52.404 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:52.404 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:52.404 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:52.405 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:52.405 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:52.405 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:52.413 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:52.414 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:52.418 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:52.446 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:52.490 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:52.491 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:52.491 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:52.491 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:52.491 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:52.491 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:52.491 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:52.492 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:52.492 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:52.492 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:52.492 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:52.492 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:52.493 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:52.621 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:52.621 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:52.621 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:52.621 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:52.621 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:52.621 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:52.622 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:52.622 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:52.622 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:52.622 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:52.622 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:52.623 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:52.623 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:52.720 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:52.720 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:52.720 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:52.721 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:52.721 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:52.721 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:52.721 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:52.721 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:52.721 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:52.722 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:52.722 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:52.722 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:52.722 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:52.810 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:52.810 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:52.810 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:52.810 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:52.810 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:52.811 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:52.811 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:52.811 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:52.811 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:52.811 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:52.811 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:52.811 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:52.812 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:52.922 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:52.922 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:52.922 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:52.922 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:52.923 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:52.923 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:52.923 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:52.923 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:52.923 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:52.923 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:52.923 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:52.924 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:52.924 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:53.191 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:53.194 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:53.195 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:53.195 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:53.198 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:53.219 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:53.219 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:53.219 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:53.219 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:53.219 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:53.220 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:53.220 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:53.220 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:53.275 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:53.275 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:53.275 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:53.275 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:53.276 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:53.276 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:53.276 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:53.276 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:53.276 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:53.277 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:53.277 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:53.277 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:53.278 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 01:36:53.376 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 01:36:53.376 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 01:36:53.376 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 01:36:53.376 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 01:36:53.376 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 01:36:53.376 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 01:36:53.376 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 01:36:53.376 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 01:36:53.376 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 01:36:53.377 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 01:36:53.377 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 01:36:53.377 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 01:36:53.378 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:15:58.835 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:15:58.836 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:15:58.836 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:15:58.836 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:15:58.836 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:15:58.837 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:15:58.837 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:15:58.837 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:15:58.837 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:15:58.838 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:15:58.838 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:15:58.838 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:15:58.839 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:15:58.956 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:15:58.959 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:15:58.960 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:15:58.960 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:15:58.966 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:15:58.991 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:15:58.991 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:15:58.991 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:15:58.991 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:15:58.991 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:15:58.991 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:15:58.991 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:15:58.992 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:15:59.082 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:15:59.082 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:15:59.083 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:15:59.083 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:15:59.083 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:15:59.083 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:15:59.083 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:15:59.083 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:15:59.084 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:15:59.084 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:15:59.084 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:15:59.084 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:15:59.085 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:15:59.230 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:15:59.230 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:15:59.230 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:15:59.230 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:15:59.230 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:15:59.230 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:15:59.231 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:15:59.231 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:15:59.231 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:15:59.231 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:15:59.231 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:15:59.231 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:15:59.232 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:15:59.378 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:15:59.378 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:15:59.378 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:15:59.378 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:15:59.378 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:15:59.379 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:15:59.379 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:15:59.379 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:15:59.379 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:15:59.379 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:15:59.379 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:15:59.379 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:15:59.380 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:15:59.691 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:15:59.691 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:15:59.691 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:15:59.692 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:15:59.692 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:15:59.692 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:15:59.692 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:15:59.693 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:15:59.693 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:15:59.693 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:15:59.693 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:15:59.693 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:15:59.694 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:15:59.904 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:15:59.905 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:15:59.905 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:15:59.905 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:15:59.905 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:15:59.905 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:15:59.906 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:15:59.906 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:15:59.906 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:15:59.906 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:15:59.906 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:15:59.907 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:15:59.907 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:16:00.311 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:16:00.312 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:16:00.313 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:16:00.313 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:16:00.317 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:16:00.317 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:16:00.320 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:16:00.341 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:16:00.341 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:16:00.342 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:16:00.342 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:16:00.342 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:16:00.343 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:16:00.558 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:16:00.583 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:16:00.583 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:16:00.583 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:16:00.583 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:16:00.584 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:16:00.584 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:16:00.584 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:16:00.584 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:16:00.584 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:16:00.584 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:16:00.584 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:16:00.585 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:18:03.625 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:18:03.626 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:18:03.626 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:18:03.626 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:18:03.626 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:18:03.626 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:18:03.626 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:18:03.627 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:18:03.627 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:18:03.627 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:18:03.627 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:18:03.627 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:18:03.628 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:18:03.729 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:18:03.730 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:18:03.730 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:18:03.730 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:18:03.730 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:18:03.730 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:18:03.731 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:18:03.731 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:18:03.731 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:18:03.731 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:18:03.731 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:18:03.732 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:18:03.732 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:18:03.848 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:18:03.848 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:18:03.848 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:18:03.848 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:18:03.849 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:18:03.849 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:18:03.849 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:18:03.849 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:18:03.849 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:18:03.849 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:18:03.849 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:18:03.850 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:18:03.850 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:18:04.114 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:18:04.114 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:18:04.115 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:18:04.115 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:18:04.115 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:18:04.115 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:18:04.115 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:18:04.115 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:18:04.116 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:18:04.116 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:18:04.116 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:18:04.116 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:18:04.117 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:18:04.401 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:18:04.401 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:18:04.401 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:18:04.402 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:18:04.402 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:18:04.402 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:18:04.402 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:18:04.402 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:18:04.403 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:18:04.403 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:18:04.403 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:18:04.403 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:18:04.404 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:18:04.570 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:18:04.570 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:18:04.571 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:18:04.571 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:18:04.571 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:18:04.571 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:18:04.571 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:18:04.571 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:18:04.572 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:18:04.572 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:18:04.572 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:18:04.572 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:18:04.573 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:18:04.872 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:18:04.872 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:18:04.872 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:18:04.873 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:18:04.873 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:18:04.873 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:18:04.873 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:18:04.873 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:18:04.873 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:18:04.874 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:18:04.874 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:18:04.874 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:18:04.875 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:18:05.084 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:18:05.088 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:18:05.088 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:18:05.088 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:18:05.088 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:18:05.088 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:18:05.088 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:18:05.088 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:18:05.089 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:18:05.089 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:18:05.089 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:18:05.089 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:18:05.091 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:18:05.352 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:18:05.352 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:18:05.352 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:18:05.353 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:18:05.353 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:18:05.353 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:18:05.353 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:18:05.353 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:18:05.354 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:18:05.354 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:18:05.354 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:18:05.354 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:18:05.355 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:19:52.241 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:19:52.243 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:19:52.243 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:19:52.246 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:19:52.267 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:19:52.267 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:19:52.268 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:19:52.268 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:19:52.268 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:19:52.268 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:19:52.268 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:19:52.268 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:19:52.269 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:19:52.318 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:19:52.318 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:19:52.318 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:19:52.319 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:19:52.319 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:19:52.319 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:19:52.319 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:19:52.319 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:19:52.319 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:19:52.320 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:19:52.320 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:19:52.320 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:19:52.321 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:19:52.399 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:19:52.400 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:19:52.400 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:19:52.401 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:19:52.401 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:19:52.401 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:19:52.401 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:19:52.401 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:19:52.402 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:19:52.402 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:19:52.402 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:19:52.402 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:19:52.403 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:19:52.481 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:19:52.505 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:19:52.505 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:19:52.505 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:19:52.505 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:19:52.506 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:19:52.506 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:19:52.506 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:19:52.506 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:19:52.506 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:19:52.506 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:19:52.506 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:19:52.507 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:19:52.582 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:19:52.582 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:19:52.582 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:19:52.582 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:19:52.582 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:19:52.583 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:19:52.583 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:19:52.583 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:19:52.583 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:19:52.583 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:19:52.583 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:19:52.584 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:19:52.584 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:19:52.711 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:19:52.711 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:19:52.711 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:19:52.711 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:19:52.712 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:19:52.712 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:19:52.712 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:19:52.712 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:19:52.712 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:19:52.712 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:19:52.713 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:19:52.713 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:19:52.713 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:19:52.839 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:19:52.839 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:19:52.840 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:19:52.840 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:19:52.840 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:19:52.840 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:19:52.840 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:19:52.840 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:19:52.840 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:19:52.840 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:19:52.841 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:19:52.841 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:19:52.841 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:19:52.953 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:19:52.983 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:19:52.983 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:19:52.983 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:19:52.983 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:19:52.983 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:19:52.984 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:19:52.984 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:19:52.984 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:19:52.984 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:19:52.985 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:19:52.985 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:19:52.985 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:19:53.083 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:19:53.083 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:19:53.083 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:19:53.083 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:19:53.083 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:19:53.084 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:19:53.084 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:19:53.084 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:19:53.084 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:19:53.084 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:19:53.084 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:19:53.085 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:19:53.085 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:20:34.043 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:20:34.067 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:20:34.067 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:20:34.067 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:20:34.067 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:20:34.067 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:20:34.068 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:20:34.068 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:20:34.068 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:20:34.068 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:20:34.068 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:20:34.068 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:20:34.069 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:20:34.118 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:20:34.119 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:20:34.119 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:20:34.119 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:20:34.119 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:20:34.120 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:20:34.120 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:20:34.120 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:20:34.120 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:20:34.120 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:20:34.121 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:20:34.121 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:20:34.121 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:20:34.202 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:20:34.202 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:20:34.202 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:20:34.202 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:20:34.202 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:20:34.202 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:20:34.203 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:20:34.203 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:20:34.203 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:20:34.203 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:20:34.203 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:20:34.203 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:20:34.204 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:20:34.278 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:20:34.279 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:20:34.280 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:20:34.280 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:20:34.281 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:20:34.281 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:20:34.281 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:20:34.282 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:20:34.282 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:20:34.282 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:20:34.282 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:20:34.282 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:20:34.283 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:20:34.362 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:20:34.363 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:20:34.363 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:20:34.363 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:20:34.363 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:20:34.363 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:20:34.363 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:20:34.364 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:20:34.364 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:20:34.364 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:20:34.364 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:20:34.364 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:20:34.365 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:20:34.503 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:20:34.504 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:20:34.505 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:20:34.510 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:20:34.542 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:20:34.542 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:20:34.542 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:20:34.543 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:20:34.543 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:20:34.543 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:20:34.543 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:20:34.543 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:20:34.544 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:20:34.640 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:20:34.642 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:20:34.642 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:20:34.642 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:20:34.642 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:20:34.648 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:20:34.648 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:20:34.652 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:20:34.679 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:20:34.680 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:20:34.680 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:20:34.680 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:20:34.681 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:20:34.759 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:20:34.759 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:20:34.759 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:20:34.759 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:20:34.759 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:20:34.760 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:20:34.760 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:20:34.760 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:20:34.760 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:20:34.760 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:20:34.760 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:20:34.761 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:20:34.762 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:20:34.873 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:20:34.873 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:20:34.873 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:20:34.873 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:20:34.873 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:20:34.873 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:20:34.873 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:20:34.874 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:20:34.874 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:20:34.875 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:20:34.875 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:20:34.875 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:20:34.877 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:21:04.440 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:21:04.440 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:21:04.440 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:21:04.441 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:21:04.441 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:21:04.441 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:21:04.441 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:21:04.445 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:21:04.445 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:21:04.448 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:21:04.467 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:21:04.467 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:21:04.467 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:21:04.519 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:21:04.519 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:21:04.519 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:21:04.519 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:21:04.520 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:21:04.520 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:21:04.520 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:21:04.520 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:21:04.520 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:21:04.520 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:21:04.521 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:21:04.521 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:21:04.521 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:21:04.597 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:21:04.597 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:21:04.597 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:21:04.597 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:21:04.598 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:21:04.598 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:21:04.598 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:21:04.598 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:21:04.598 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:21:04.598 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:21:04.598 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:21:04.599 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:21:04.599 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:21:04.681 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:21:04.683 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:21:04.684 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:21:04.684 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:21:04.684 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:21:04.685 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:21:04.685 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:21:04.685 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:21:04.685 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:21:04.685 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:21:04.685 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:21:04.685 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:21:04.686 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:21:04.776 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:21:04.776 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:21:04.776 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:21:04.777 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:21:04.778 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:21:04.778 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:21:04.778 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:21:04.778 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:21:04.779 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:21:04.779 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:21:04.779 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:21:04.779 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:21:04.780 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:21:04.929 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:21:04.930 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:21:04.930 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:21:04.930 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:21:04.930 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:21:04.930 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:21:04.930 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:21:04.931 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:21:04.931 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:21:04.931 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:21:04.931 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:21:04.931 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:21:04.932 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:21:05.057 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:21:05.057 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:21:05.057 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:21:05.057 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:21:05.057 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:21:05.058 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:21:05.058 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:21:05.058 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:21:05.058 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:21:05.058 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:21:05.058 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:21:05.058 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:21:05.059 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:21:05.158 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:21:05.158 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:21:05.158 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:21:05.158 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:21:05.159 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:21:05.159 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:21:05.160 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:21:05.161 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:21:05.161 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:21:05.161 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:21:05.162 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:21:05.163 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:21:05.165 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:21:05.268 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:21:05.268 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:21:05.268 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:21:05.269 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:21:05.269 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:21:05.269 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:21:05.269 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:21:05.269 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:21:05.269 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:21:05.270 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:21:05.270 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:21:05.270 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:21:05.272 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:15.703 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:15.703 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:15.703 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:15.703 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:15.704 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:15.704 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:15.704 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:15.704 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:15.704 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:15.704 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:15.705 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:15.705 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:15.706 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:15.959 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:15.960 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:15.961 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:15.961 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:15.961 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:15.962 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:15.962 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:15.962 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:15.962 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:15.962 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:15.963 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:15.963 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:15.963 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:16.251 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:16.251 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:16.251 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:16.252 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:16.252 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:16.252 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:16.252 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:16.252 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:16.253 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:16.253 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:16.253 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:16.253 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:16.254 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:16.352 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:16.352 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:16.352 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:16.353 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:16.353 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:16.353 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:16.353 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:16.353 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:16.353 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:16.353 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:16.354 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:16.354 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:16.354 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:16.563 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:16.563 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:16.563 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:16.563 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:16.564 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:16.564 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:16.564 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:16.564 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:16.564 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:16.564 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:16.564 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:16.565 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:16.565 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:16.667 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:16.668 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:16.669 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:16.669 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:16.670 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:16.672 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:16.672 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:16.672 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:16.672 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:16.672 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:16.673 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:16.673 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:16.673 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:16.831 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:16.831 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:16.831 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:16.831 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:16.831 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:16.831 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:16.831 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:16.831 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:16.832 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:16.832 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:16.832 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:16.832 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:16.832 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:17.261 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:17.261 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:17.262 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:17.262 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:17.262 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:17.263 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:17.264 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:17.264 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:17.265 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:17.265 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:17.265 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:17.265 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:17.267 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:17.397 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:17.397 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:17.400 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:17.421 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:17.421 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:17.421 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:17.422 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:17.422 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:17.422 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:17.422 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:17.422 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:17.422 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:17.423 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:17.853 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:17.854 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:17.854 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:17.854 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:17.855 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:17.855 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:17.855 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:17.855 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:17.855 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:17.855 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:17.856 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:17.856 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:17.856 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:18.358 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:18.358 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:18.358 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:18.358 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:18.358 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:18.358 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:18.359 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:18.359 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:18.359 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:18.359 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:18.359 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:18.360 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:18.360 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:18.838 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:18.838 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:18.838 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:18.838 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:18.839 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:18.839 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:18.839 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:18.840 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:18.840 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:18.840 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:18.840 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:18.840 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:18.841 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:20.067 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:20.069 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:20.070 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:20.074 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:20.098 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:20.098 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:20.099 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:20.099 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:20.099 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:20.099 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:20.099 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:20.099 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:20.100 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:20.517 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:20.517 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:20.517 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:20.517 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:20.517 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:20.517 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:20.518 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:20.518 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:20.518 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:20.518 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:20.518 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:20.518 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:20.519 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:20.853 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:20.854 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:20.854 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:20.854 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:20.854 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:20.854 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:20.854 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:20.855 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:20.855 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:20.855 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:20.855 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:20.856 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:20.856 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:21.265 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:21.291 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:21.292 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:21.292 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:21.292 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:21.293 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:21.293 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:21.293 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:21.294 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:21.295 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:21.296 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:21.297 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:21.298 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:21.586 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:21.586 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:21.587 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:21.587 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:21.587 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:21.587 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:21.587 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:21.588 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:21.588 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:21.588 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:21.588 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:21.588 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:21.589 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:22.101 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:22.101 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:22.101 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:22.102 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:22.102 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:22.102 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:22.102 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:22.102 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:22.102 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:22.103 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:22.103 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:22.103 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:22.104 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:22.260 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:22.260 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:22.260 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:22.260 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:22.260 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:22.260 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:22.261 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:22.261 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:22.261 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:22.261 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:22.261 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:22.262 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:22.262 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:22.546 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:22.546 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:22.547 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:22.547 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:22.547 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:22.547 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:22.547 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:22.548 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:22.548 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:22.548 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:22.548 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:22.549 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:22.549 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:22.797 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:22.797 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:22.797 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:22.798 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:22.798 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:22.798 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:22.802 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:22.802 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:22.806 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:22.829 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:22.831 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:22.832 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:22.833 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:23.226 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:23.230 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:23.231 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:23.231 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:23.231 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:23.231 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:23.231 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:23.231 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:23.232 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:23.232 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:23.232 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:23.232 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:23.233 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:23.765 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:23.784 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:23.785 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:23.785 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:23.785 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:23.785 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:23.785 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:23.785 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:23.786 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:23.786 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:23.786 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:23.786 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:23.787 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:23.918 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:23.921 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:23.921 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:23.921 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:23.922 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:23.922 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:23.922 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:23.922 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:23.926 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:23.926 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:23.927 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:23.927 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:23.928 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:24.155 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:24.155 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:24.156 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:24.156 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:24.156 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:24.156 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:24.156 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:24.156 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:24.157 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:24.157 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:24.157 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:24.157 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:24.158 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:24.455 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:24.455 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:24.455 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:24.455 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:24.455 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:24.455 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:24.456 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:24.456 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:24.456 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:24.456 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:24.456 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:24.456 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:24.457 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:24.664 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:24.668 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:24.668 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:24.668 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:24.668 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:24.668 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:24.668 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:24.669 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:24.669 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:24.669 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:24.669 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:24.669 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:24.670 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:24.921 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:24.922 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:24.922 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:24.922 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:24.923 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:24.923 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:24.944 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:24.944 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:24.945 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:24.945 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:24.945 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:24.945 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:24.945 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:25.101 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:25.102 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:25.102 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:25.102 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:25.102 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:25.102 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:25.102 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:25.103 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:25.103 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:25.103 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:25.103 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:25.103 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:25.104 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:25.377 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:25.377 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:25.378 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:25.378 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:25.378 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:25.378 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:25.378 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:25.379 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:25.379 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:25.379 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:25.379 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:25.379 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:25.380 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:25.678 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:25.678 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:25.678 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:25.678 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:25.679 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:25.679 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:25.679 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:25.679 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:25.679 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:25.679 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:25.679 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:25.680 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:25.680 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:25.909 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:25.911 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:25.912 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:25.913 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:25.914 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:25.914 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:25.914 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:25.914 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:25.914 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:25.914 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:25.914 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:25.914 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:25.915 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:26.083 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:26.085 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:26.085 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:26.085 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:26.085 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:26.085 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:26.085 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:26.085 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:26.086 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:26.086 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:26.086 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:26.086 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:26.088 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:26.281 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:26.282 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:26.282 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:26.283 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:26.283 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:26.284 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:26.288 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:26.288 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:26.292 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:26.314 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:26.314 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:26.315 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:26.315 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:26.459 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:26.459 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:26.459 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:26.459 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:26.459 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:26.460 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:26.460 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:26.460 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:26.460 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:26.460 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:26.460 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:26.460 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:26.461 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:26.724 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:26.727 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:26.728 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:26.731 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:26.759 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:26.759 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:26.760 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:26.760 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:26.760 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:26.760 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:26.760 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:26.760 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:26.761 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:27.014 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:27.035 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:27.035 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:27.036 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:27.036 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:27.036 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:27.036 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:27.036 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:27.036 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:27.037 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:27.037 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:27.038 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:27.039 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:27.233 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:27.234 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:27.234 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:27.234 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:27.234 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:27.234 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:27.234 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:27.235 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:27.235 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:27.235 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:27.235 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:27.235 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:27.236 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:27.417 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:27.417 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:27.417 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:27.418 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:27.418 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:27.418 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:27.418 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:27.418 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:27.418 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:27.418 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:27.418 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:27.418 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:27.419 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:27.586 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:27.586 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:27.586 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:27.586 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:27.586 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:27.586 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:27.587 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:27.587 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:27.587 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:27.587 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:27.587 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:27.587 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:27.588 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:27.829 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:27.829 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:27.830 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:27.830 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:27.830 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:27.830 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:27.830 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:27.830 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:27.831 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:27.831 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:27.831 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:27.831 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:27.832 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:28.168 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:28.168 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:28.169 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:28.169 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:28.169 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:28.169 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:28.169 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:28.169 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:28.169 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:28.169 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:28.170 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:28.170 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:28.170 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:28.443 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:28.443 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:28.443 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:28.443 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:28.444 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:28.444 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:28.444 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:28.444 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:28.444 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:28.445 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:28.445 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:28.445 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:28.445 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:28.461 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:28.461 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:28.461 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:28.461 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:28.461 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:28.462 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:28.462 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:28.462 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:28.462 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:28.462 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:28.462 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:28.462 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:28.463 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:28.672 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:28.692 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:28.692 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:28.692 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:28.692 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:28.692 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:28.693 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:28.693 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:28.693 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:28.693 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:28.693 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:28.693 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:28.694 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:28.767 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:28.768 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:28.788 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:28.788 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:28.789 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:28.789 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:28.789 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:28.789 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:28.789 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:28.789 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:28.789 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:28.790 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:28.790 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:29.089 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:29.090 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:29.090 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:29.090 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:29.090 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:29.090 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:29.090 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:29.091 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:29.091 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:29.091 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:29.091 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:29.091 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:29.092 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:29.529 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:29.529 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:29.529 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:29.529 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:29.529 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:29.530 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:29.530 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:29.530 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:29.530 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:29.530 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:29.530 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:29.531 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:29.531 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:29.726 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:29.727 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:29.727 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:29.727 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:29.727 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:29.727 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:29.727 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:29.728 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:29.728 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:29.728 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:29.728 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:29.728 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:29.729 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:30.037 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:30.040 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:30.040 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:30.040 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:30.043 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:30.064 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:30.065 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:30.066 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:30.067 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:30.068 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:30.068 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:30.068 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:30.069 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:30.221 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:30.221 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:30.221 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:30.221 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:30.225 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:30.225 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:30.228 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:30.252 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:30.252 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:30.252 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:30.252 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:30.252 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:30.253 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:30.507 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:30.507 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:30.508 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:30.511 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:30.536 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:30.536 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:30.536 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:30.536 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:30.537 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:30.537 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:30.537 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:30.537 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:30.538 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:30.648 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:30.649 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:30.649 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:30.649 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:30.649 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:30.649 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:30.649 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:30.649 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:30.649 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:30.650 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:30.650 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:30.650 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:30.650 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:30.913 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:30.913 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:30.913 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:30.914 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:30.914 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:30.914 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:30.914 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:30.914 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:30.914 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:30.914 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:30.915 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:30.915 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:30.915 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:31.112 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:31.112 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:31.112 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:31.112 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:31.113 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:31.113 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:31.113 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:31.113 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:31.113 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:31.114 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:31.114 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:31.114 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:31.122 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:31.417 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:31.417 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:31.417 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:31.418 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:31.418 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:31.418 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:31.418 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:31.418 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:31.418 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:31.418 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:31.418 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:31.419 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:31.419 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:31.585 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:31.586 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:31.586 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:31.586 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:31.586 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:31.586 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:31.586 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:31.586 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:31.587 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:31.587 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:31.587 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:31.587 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:31.589 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:31.901 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:31.901 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:31.923 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:31.923 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:31.923 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:31.923 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:31.923 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:31.923 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:31.924 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:31.924 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:31.924 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:31.924 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:31.925 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:32.247 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:32.247 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:32.248 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:32.248 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:32.248 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:32.248 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:32.248 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:32.248 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:32.248 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:32.249 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:32.249 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:32.249 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:32.249 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:32.499 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:32.500 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:32.500 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:32.500 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:32.500 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:32.500 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:32.500 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:32.500 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:32.501 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:32.501 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:32.501 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:32.501 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:32.501 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:32.820 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:32.821 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:32.821 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:32.821 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:32.828 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:32.849 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:32.849 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:32.849 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:32.849 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:32.849 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:32.849 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:32.850 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:32.850 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:33.164 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:33.166 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:33.167 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:33.171 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:33.193 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:33.193 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:33.193 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:33.193 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:33.194 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:33.194 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:33.194 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:33.194 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:33.195 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:33.297 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:33.300 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:33.300 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:33.302 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:33.330 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:33.330 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:33.330 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:33.331 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:33.331 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:33.331 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:33.331 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:33.331 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:33.332 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:33.500 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:33.501 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:33.501 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:33.501 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:33.501 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:33.501 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:33.502 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:33.502 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:33.502 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:33.502 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:33.505 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:33.505 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:33.506 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:22:33.664 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:22:33.664 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:22:33.665 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:22:33.665 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:22:33.665 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:22:33.665 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:22:33.665 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:22:33.665 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:22:33.665 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:22:33.665 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:22:33.666 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:22:33.667 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:22:33.670 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:24:03.750 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:24:03.750 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:24:03.750 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:24:03.750 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:24:03.750 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:24:03.750 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:24:03.751 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:24:03.751 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:24:03.751 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:24:03.751 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:24:03.751 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:24:03.752 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:24:03.752 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:24:08.807 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:24:08.807 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:24:08.808 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:24:08.808 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:24:08.808 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:24:08.808 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:24:08.808 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:24:08.808 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:24:08.809 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:24:08.809 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:24:08.809 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:24:08.810 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:24:08.812 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/27 02:24:15.710 [C] [asm_amd64.s:573]  the request url is  /admin/picture/pictureupload
+2019/01/27 02:24:15.711 [C] [asm_amd64.s:573]  Handler crashed with error can't find templatefile in the path:views/picturecontroller/pictureupload.tpl
+2019/01/27 02:24:15.711 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:573
+2019/01/27 02:24:15.711 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/panic.go:502
+2019/01/27 02:24:15.711 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/template.go:75
+2019/01/27 02:24:15.711 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:283
+2019/01/27 02:24:15.711 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:234
+2019/01/27 02:24:15.712 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/controller.go:214
+2019/01/27 02:24:15.712 [C] [asm_amd64.s:573]  D:/GoWork/src/github.com/astaxie/beego/router.go:863
+2019/01/27 02:24:15.712 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:2694
+2019/01/27 02:24:15.712 [C] [asm_amd64.s:573]  D:/Tool/Go/src/net/http/server.go:1830
+2019/01/27 02:24:15.712 [C] [asm_amd64.s:573]  D:/Tool/Go/src/runtime/asm_amd64.s:2361
+2019/01/27 02:24:15.713 [server.go:2921]  [HTTP] http: multiple response.WriteHeader calls
