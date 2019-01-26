@@ -8,11 +8,11 @@
         /*width: 100%;*/
     }
     .file-item {
-        display: inline-block;
-        width: 150px;
-        margin: 5px;
-        padding: 10px 15px;
-    }
+         display: inline-block;
+         width: 170px;
+         margin: 5px;
+         padding: 10px 15px;
+     }
     .info {
         display: block;
         /*width: 100%;*/
@@ -21,7 +21,7 @@
         text-overflow: ellipsis;//溢出用省略号显示
     }
     /*.progress, .progress span{*/
-        /*height: 5px;*/
+        /*height: 9px;*/
         /*border-radius: 10px;*/
         /*margin-bottom: 0px;*/
     /*}*/
@@ -30,11 +30,28 @@
         /*display: block;*/
         /*background-color: #00c0ef;*/
     /*}*/
-    /*.progress, .progress-bar {*/
-        /*height: 9px;*/
-        /*border-radius: 10px;*/
-        /*margin-bottom: 0px;*/
-    /*}*/
+    .progress, .progress-bar {
+        margin-bottom: 0px;
+    }
+    .progress-waiting {
+        display: flex;
+        height: 100%;
+    }
+    .progress-waiting span {
+        display: block;
+        margin: auto;
+        color: #0C0C0C;
+    }
+    .progress-success {
+        display: flex;
+        height: 100%;
+        background-color: #00a65a;
+    }
+    .progress-success span {
+        display: block;
+        margin: auto;
+        color: #fff;
+    }
 </style>
 
 <!--引入JS-->
@@ -97,11 +114,11 @@
                             '<img>' +
                             '<div class="info" title="' + file.name + '">' + file.name +
                             '</div>' +
-                            // '<div class="progress">' +
-                            //     '<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">' +
-                            //     '<span class="sr-only">等待上传</span>' +  //显示进度百分比数值
-                            //     '</div>' +
-                            // '</div>' +
+                            '<div class="progress">' +
+                                '<div class="progress-waiting">' +
+                                    '<span>等待上传</span>' +  //显示进度百分比数值
+                                '</div>' +
+                            '</div>' +
                         '</div>'
                     ),
                     $img = $li.find('img');
@@ -126,8 +143,8 @@
             // 避免重复创建
             if ( !$percent.length ) {
                 $percent = $('<div class="progress">' +
-                                '<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">' +
-                                    // '<span class="sr-only"></span>' +  //显示进度百分比数值
+                                '<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 0%">' +
+                                    '<span class="">0%</span>' +  //显示进度百分比数值
                                 '</div>' +
                             '</div>').appendTo($li).find('div');
 
@@ -135,19 +152,39 @@
                 //         .appendTo( $li )
                 //         .find('span');
                 percentages[file.id]['percent'] = $percent; //模拟进度条
+            } else {
+                //移除已有的等待中进度条   添加加载的进度条
+                $( '#'+file.id ).find('.progress').remove();
+                $percent = $('<div class="progress">' +
+                        '<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 0%">' +
+                        '<span class="">0%</span>' +  //显示进度百分比数值
+                        '</div>' +
+                        '</div>').appendTo($li).find('div');
+                percentages[file.id]['percent'] = $percent; //模拟进度条
             }
             let t = window.setInterval(function () {
-                percentages[file.id]['progress'] += 1;
                 if (parseInt(percentages[file.id]['progress']) < 100) {
-                    console.log(percentages[file.id]['progress']);
+                    percentages[file.id]['progress'] += 1;
+                    // console.log(percentages[file.id]['progress']);
                     percentages[file.id]['percent'].attr( 'aria-valuenow', percentages[file.id]['progress']);
                     percentages[file.id]['percent'].css( 'width', percentages[file.id]['progress'] + '%' );
-                    // percentages[file.id]['percent'].find('span').text(percentages[file.id]['progress'] + '%'); //显示进度百分比数值
+                    // debugger;
+                    percentages[file.id]['percent'].find('span').text(percentages[file.id]['progress'] + '%'); //显示进度百分比数值
                 } else {
                     percentages[file.id]['percent'].css( 'width',  '100%' );
-                    // percentages[file.id]['percent'].find('span').text('100%'); //显示进度百分比数值
+                    percentages[file.id]['percent'].find('span').text('Success'); //显示进度百分比数值
                     window.clearInterval(t);
-                    $( '#'+file.id ).find('.progress').remove();
+                    // //移除已有的等待中进度条   添加加载的进度条
+                    // $( '#'+file.id ).find('.progress').remove();
+                    // $percent = $('<div class="progress">' +
+                    //                 '<div class="progress-success">' +
+                    //                     '<span>Success</span>' +  //显示进度百分比数值
+                    //                 '</div>' +
+                    //             '</div>').appendTo($li).find('div');
+                    //上传成功3秒后删除提示
+                    // window.setTimeout(function (){
+                    //     $( '#'+file.id ).find('.progress').remove();
+                    // },3000);
                 }
             },350); //模拟进度条
 
