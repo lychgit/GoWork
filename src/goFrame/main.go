@@ -11,8 +11,8 @@ func init() {
 	models.Init()
 	// 生产环境不输出debug日志
 	if beego.AppConfig.String("runmode") == "dev" {
-		beego.SetLevel(beego.LevelInformational)
-		//beego.SetLevel(beego.LevelDebug)
+		//beego.SetLevel(beego.LevelInformational)
+		beego.SetLevel(beego.LevelDebug)
 	}
 	beego.AppConfig.Set("version", beego.AppConfig.String("AppVer"))
 }
@@ -100,7 +100,7 @@ func main() {
 	//对于自定义的参数，需使用 beego.GetConfig(typ, key string, defaultVal interface{}) 来获取指定 runmode 下的配置（需 1.4.0 以上版本），typ 为参数类型，key 为参数名, defaultVal 为默认值
 
 	//我们的程序往往期望把信息输出到 log 中，现在设置输出到文件很方便，如下所示：
-	beego.SetLogger("file", `{"filename": "var/logs/debug.log"}`);
+	//beego.SetLogger("file", `{"filename": "var/logs/debug.log"}`);
 
 	////dbhost := beego.AppConfig.String("dev::mysqluser")
 	//dbuser := beego.AppConfig.String("AppName")
