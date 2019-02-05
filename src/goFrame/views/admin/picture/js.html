@@ -6,6 +6,7 @@
 <!--引入JS-->
 <script src="/static/plugins/icheck/demo/js/zepto.js"></script>
 <script type="text/javascript" src="/static/plugins/webuploader/js/webuploader.js"></script>
+{{/*<script type="text/javascript" src="/static/plugins/webuploader/js/jquery.js"></script>*/}}
 
 <script>
     WebUploader.Uploader.register({
@@ -13,13 +14,103 @@
         "before-send":"beforeSend",  //每个分片上传前
         "after-send-file":"afterSendFile",  //分片上传完毕
     }, {
-        init: function( options ) {},
+        init: function( options ) {
+            console.log(options)
+        },
         //整个文件上传前
-        beforeSendFile:function(file){},
+        beforeSendFile:function(file){
+            console.log("beforeSendFile");
+            let fileName = file.name; //为自定义参数文件名赋值
+            let deferred = WebUploader.Deferred();
+            //1、计算文件的唯一标记fileMd5，用于断点续传  如果.md5File(file)方法里只写一个file参数则计算MD5值会很慢 所以加了后面的参数：10*1024*1024
+            (new WebUploader.Uploader()).md5File(file,0,2*1024*1024).progress(function(percentage){
+                //$('#'+file.id ).find('p.state').text('正在读取文件信息...');
+            }).then(function(val){
+                $.ajax({
+                    type:"POST",
+                url: '{{urlfor "PictureController.PictureUpload"}}',  //ajax验证每一个分片
+                data:{
+                    param: "settask",
+                    filename:fileName,
+                    filehash:val,
+                    filesize:file.size,
+                    label: "class",
+                    chunksize: 2*1024*1024, //2M
+                    fileid:file.id
+                },
+                    cache: false,
+                    async: false, // 与js同步
+                    timeout: 1000, //todo 超时的话，只能认md5File为该分片未上传过
+                    dataType:"json",
+                    success:function(response){
+                        console.log(response);
+                        if(typeof response != "undefined" && response != null && response.obj.taskid){
+                            taskid = response.obj.taskid;
+                        }
+                        deferred.resolve();
+                    },
+                    error: function (response) {
+                        //上传任务创建失败 拒绝上传这个文件
+                        deferred.reject();
+                    }
+                });
+            });
+            return deferred.promise();
+        },
         //每个分片上传前
-        beforeSend:function(file){},
+        beforeSend:function(block){
+            console.log("beforeSend");
+            console.log(block);
+            let deferred = WebUploader.Deferred();
+            $.ajax({
+                type:"POST",
+                url: '{{urlfor "PictureController.PictureUpload"}}', //ajax验证每一个分片
+                data:{
+                    param: "checkchunk",
+                    taskid: taskid,  //文件唯一标记
+                    chunk: block.chunk,  //当前分块下标
+                    chunks: block.chunks,
+                    chunksize: block.end - block.start//当前分块大小
+                },
+                cache: false,
+                async: false, // 与js同步
+                timeout: 1000, //todo 超时的话，只能认为该分片未上传过
+                dataType:"json",
+                success:function(response){
+                    console.log(response);
+                    if(typeof response != "undefined" && response != null && response.obj.isexist){
+                        //分块存在，跳过
+                        deferred.reject();
+                    }else{
+                        //分块不存在或不完整，重新发送该分块内容
+                        deferred.resolve();
+                    }
+                }
+            });
+            this.owner.options.formData.taskid = taskid;
+            return deferred.promise();
+        },
         //分片上传完毕
-        afterSendFile:function(file){},
+        afterSendFile:function(file){
+            console.log("afterSendFile");
+            //如果分块上传成功，则通知后台合并分块
+            $.ajax({
+                type: 'POST',
+                url: '{{urlfor "PictureController.PictureUpload"}}',
+                data:{
+                    param: "mergechunks",
+                    taskid:taskid
+                },
+                dataType:'json',
+                success: function(response){
+                    console.log(response);
+                    //合并成功之后的操作
+                    if(!empty(response) && !empty(response.obj) && response.obj.status=='ok'){
+
+                    }
+                }
+            });
+        },
     });
 
     $(function () {
@@ -125,6 +216,7 @@
             percentages[file.id]['progress'] = 0;//模拟进度条
         });
 
+        //文件从上传队列中移除
         uploader.onFileDequeued = function( file ) {
             fileCount--;
             fileSize -= file.size;
@@ -302,7 +394,6 @@
                 }
             });
         }
-
 
         // 负责view的销毁
         function removeFile( file ) {

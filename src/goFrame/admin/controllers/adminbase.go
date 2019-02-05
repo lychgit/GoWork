@@ -8,7 +8,8 @@ import (
 	"goFrame/libs"
 	"encoding/json"
 		"bytes"
-)
+	"github.com/lhtzbj12/sdrms/enums"
+		)
 
 type BaseController struct {
 	beego.Controller
@@ -198,7 +199,7 @@ func (this *BaseController) ajaxMsg(msg interface{}, msgno int) {
 	out["status"] = msgno
 	out["msg"] = msg
 
-	this.jsonResult(0, "", out)
+	this.jsonResult(enums.JRCodeSucc, "", out)
 }
 
 //获取用户IP地址
@@ -246,7 +247,10 @@ func (this *BaseController) getUserSession() {
 	}
 }
 
-
+func (this *BaseController) Json_decode (data interface{}, encoding ...bool) map[interface{}]interface{}{
+	var arr  = make(map[interface{}]interface{})
+	return arr
+}
 
 func (this *BaseController) Json_encode(data interface{}, encoding ...bool) string {
 	var (
@@ -260,7 +264,7 @@ func (this *BaseController) json_return(data interface{}, hasIndent bool, encodi
 	var content []byte
 	var err error
 	if hasIndent {
-		content, err = json.MarshalIndent(data, "", "  ")
+		content, err = json.MarshalIndent(data, "", "")
 	} else {
 		content, err = json.Marshal(data)
 	}
@@ -298,4 +302,11 @@ func (this *BaseController) pointToArray(data []*interface{}) map[interface{}]in
 		list[i] = *data[i]
 	}
 	return list
+}
+
+func (this * BaseController) Empty(data interface{}) bool {
+	if data == nil || data == "" {
+		return false
+	}
+	return true
 }

@@ -7,35 +7,7 @@ import (
 	"crypto/rand"
 	"encoding/base64"
 		"crypto/md5"
-)
-
-func isExist(path string)(bool){
-	_, err := os.Stat(path)
-	if err != nil{
-		if os.IsExist(err){
-			return true
-		}
-		if os.IsNotExist(err){
-			return false
-		}
-		fmt.Println(err)
-		return false
-	}
-	return true
-}
-
-func IsExist(path string) bool {
-	_, err := os.Stat(path)
-	if err!= nil {
-		if os.IsExist(err) {
-			return true
-		}
-		if os.IsNotExist(err) {
-			return false
-		}
-	}
-	return true
-}
+	)
 
 func Md5(str string) string {
 	hash := md5.New()
@@ -51,4 +23,66 @@ func UniqueId() string {
 		return ""
 	}
 	return Md5(base64.URLEncoding.EncodeToString(b))
+}
+
+func IsExist(path string) bool {
+	_, err := os.Stat(path)
+	//file, err := os.Stat(path)
+	if err != nil {
+		if os.IsExist(err) {
+			return true
+		}
+		if os.IsNotExist(err) {
+			return false
+		}
+	}
+	//beego.Debug(file.IsDir())
+	return true
+}
+
+func IsDir(path string) bool {
+	file, err := os.Stat(path)
+	if err != nil {
+		if os.IsExist(err) && file.IsDir() {
+			return true
+		}
+		if os.IsNotExist(err) {
+			return false
+		}
+	}
+	return file.IsDir()
+}
+
+func IsFile(path string) bool {
+	file, err := os.Stat(path)
+	if err != nil {
+		if os.IsExist(err) && !file.IsDir() {
+			return true
+		}
+		if os.IsNotExist(err) {
+			return false
+		}
+	}
+	return !file.IsDir()
+}
+
+func GetFile(path string) os.FileInfo {
+	file, err := os.Stat(path)
+	if err != nil {
+		if os.IsExist(err) && !file.IsDir() {
+			return file
+		}
+		if os.IsNotExist(err) {
+			return nil
+		}
+	}
+	if !file.IsDir() {
+		return file
+	} else {
+		return nil
+	}
+}
+
+func fileUpload(path string) bool {
+	return true;
 }

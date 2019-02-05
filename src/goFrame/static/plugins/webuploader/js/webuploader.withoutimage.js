@@ -4989,5 +4989,5 @@
     ], function( preset ) {
         return preset;
     });
-    return require('goFrame/static/plugins/webupload/webuploader');
+    return require('webuploader');
 });

@@ -18,7 +18,6 @@ func init() {
 		t.Execute(rw, data)
 	})
 	/*路由设置*/
-
 	//固定路由
 	beego.Router("/", &controllers.MainController{}, "*:Index")
 	//beego.Router("/", &controll.MainController{}, "*:Index")
@@ -29,6 +28,8 @@ func init() {
 	//beego.Router("/help", &controllers.HelpController{}, "*:Index")
 
 
+	//测试路由
+	beego.Router("/admin/test", &admin.TestController{}, "*:Index")
 	/******************************		后台路由	******************************/
 	beego.Router("/admin", &admin.AdminController{}, "*:Index")
 	beego.Router("/admin/login", &admin.LoginController{}, "*:Login")

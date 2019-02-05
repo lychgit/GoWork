@@ -23,7 +23,8 @@
 <script src="/static/plugins/respond.min.js"></script>
 <![endif]-->
 <!-- jQuery 3 -->
-<script src="/static/plugins/jquery.min.js"></script>
+{{/*<script src="/static/plugins/jquery.min.js"></script>*/}}
+<script src="/static/js/jquery-2.1.1.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
@@ -41,3 +42,13 @@
 <script src="/static/sdtheme/scripts/sdtheme.js"></script>
 <!-- 当前产品初始化 -->
 <script src="/static/product/scripts/rms.js"></script>
+
+<script type="text/javascript">
+    function empty(data) {
+        if (typeof data != "undefined" && data != null && data != '' && ((Array.isArray(data) && data.length > 0) || !Array.isArray(data)) && ((typeof data == "object" && JSON.stringify(data) != "{}") || typeof data != "object") ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
