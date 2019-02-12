@@ -25,6 +25,7 @@ func UniqueId() string {
 	return Md5(base64.URLEncoding.EncodeToString(b))
 }
 
+//根据传入路径判断文件或目录是否存在
 func IsExist(path string) bool {
 	_, err := os.Stat(path)
 	//file, err := os.Stat(path)
@@ -40,6 +41,7 @@ func IsExist(path string) bool {
 	return true
 }
 
+//根据传入路径判断文件是否是目录
 func IsDir(path string) bool {
 	file, err := os.Stat(path)
 	if err != nil {
@@ -53,6 +55,7 @@ func IsDir(path string) bool {
 	return file.IsDir()
 }
 
+//根据传入路径判断是否是文件
 func IsFile(path string) bool {
 	file, err := os.Stat(path)
 	if err != nil {
@@ -66,6 +69,12 @@ func IsFile(path string) bool {
 	return !file.IsDir()
 }
 
+//根据传入路径判断文件是否可写
+func IsWritable(path string) bool {
+	return true;
+}
+
+//获取路径对应的文件
 func GetFile(path string) os.FileInfo {
 	file, err := os.Stat(path)
 	if err != nil {
@@ -81,8 +90,4 @@ func GetFile(path string) os.FileInfo {
 	} else {
 		return nil
 	}
-}
-
-func fileUpload(path string) bool {
-	return true;
 }

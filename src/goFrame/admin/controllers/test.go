@@ -15,7 +15,7 @@ func (this *TestController) Index() {
 	beego.Debug("init - upload")
 	uploadConf := make(map[string]interface{})
 	uploadConf["MaxSize"] = 100
-	uploadConf["AutoSub"] = false
+	uploadConf["AutoSub"] = true
 	utils.NewUpload(uploadConf)
 	this.jsonResult(enums.JRCodeFailed,"",nil)
 }
