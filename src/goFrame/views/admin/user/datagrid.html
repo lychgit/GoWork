@@ -15,7 +15,6 @@
         if (Id > 0) {
             title = "编辑用户"
         }
-        // debugger
         var url = '{{ urlfor "UserController.UserEdit"}}' + '/' + Id;
         layer.open({
             type: 2,
@@ -71,7 +70,10 @@
             queryParamsType: 'limit',
             queryParams: function (params) {
                 //params的自带参数类型由queryParamsType决定
-                params.NameLike = $('.searchForm input[name="Name"]').val();
+                params.NameLike =$.trim($('.searchForm input[name="Name"]').val());
+                params.MobileLike = $.trim($('.searchForm input[name="Mobile"]').val());
+                params.SearchStatus = $('.searchForm select[name="Status"]').selectpicker('val');
+                console.log(params);
                 return params;
             },
             pagination: true,
@@ -181,7 +183,6 @@
                 }
             },
             onLoadError: function (status) {
-                debugger
                 layer.alert('获取数据失败,错误代码：' + status);
             }
         });

@@ -4,6 +4,9 @@
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/astaxie/beego" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/astaxie/goredis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/github.com/astaxie/beego" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/github.com/astaxie/goredis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/github.com/go-sql-driver/mysql" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/go-sql-driver/mysql" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/lisijie/cron" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/lisijie/goblog" vcs="Git" />

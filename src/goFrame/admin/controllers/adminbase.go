@@ -3,13 +3,13 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"goFrame/models"
+	"goFrame/libs"
+	"goFrame/enums"
 	"strings"
 	"strconv"
-	"goFrame/libs"
 	"encoding/json"
-		"bytes"
-	"github.com/lhtzbj12/sdrms/enums"
-		)
+	"bytes"
+)
 
 type BaseController struct {
 	beego.Controller
@@ -83,8 +83,8 @@ func (this *BaseController) checkAuthor(ignores ...string) {
 func (this *BaseController) auth(controllerName, actionName string) {
 	beego.Debug("here is auth")                    //debug埋点
 	beego.Debug(controllerName + "." + actionName) //debug埋点
-	//beego.Debug(this.Ctx.Request.URL)              //debug埋点
-	//beego.Debug(this.Ctx.Request)                  //debug埋点
+	beego.Debug(this.Ctx.Request.URL)              //debug埋点
+	beego.Debug(this.Ctx.Request)                  //debug埋点
 	arr := strings.Split(this.Ctx.GetCookie("auth"), "|")
 	//beego.Debug("GetCookie" + this.Ctx.GetCookie("auth")) //debug埋点
 	//beego.Debug(arr[0]) //debug埋点

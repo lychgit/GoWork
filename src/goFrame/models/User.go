@@ -2,12 +2,12 @@ package models
 
 import (
 	"github.com/astaxie/beego/orm"
-	"github.com/lhtzbj12/sdrms/models"
+	"github.com/astaxie/beego"
 )
 
 // BackendUserQueryParam 用于查询的类
 type UserQueryParam struct {
-	models.BaseQueryParam
+	BaseQueryParam
 	UserNameLike string //模糊查询
 	MobileLike   string //精确查询
 	SearchStatus string //为空不查询，有值精确查询
@@ -28,6 +28,7 @@ type User struct {
 	RoleIds        []int          `orm:"-" form:"RoleIds"`
 	RoleUserRel    []*RoleUserRel `orm:"reverse(many)"` // 设置一对多的反向关系
 	MenuUrlForList []string       `orm:"-"`
+	CreateTime     int64
 }
 
 func (u *User) TableName() string {
@@ -84,7 +85,7 @@ func UserGetByName(userName string) (*User, error) {
 
 func UserList(page, pageSize int, filters ...interface{}) ([]*User, int64) {
 	offset := (page - 1) * pageSize
-	roles := make([]*User, 0)
+	users := make([]*User, 0)
 	query := orm.NewOrm().QueryTable(TableName("user"))
 	if len(filters) > 0 {
 		l := len(filters)
@@ -93,9 +94,36 @@ func UserList(page, pageSize int, filters ...interface{}) ([]*User, int64) {
 		}
 	}
 	total, _ := query.Count()
-	query.OrderBy("-id").Limit(pageSize, offset).All(&roles)
-	return roles, total
+	query.OrderBy("-id").Limit(pageSize, offset).All(&users)
+	return users, total
 }
+
+
+func UserPageList(params *UserQueryParam) ([]*User, int64) {
+	query := orm.NewOrm().QueryTable(TableName("user"))
+	data := make([]*User, 0)
+	//默认排序
+	sortOrder := "Id"
+	switch params.Sort {
+	case "Id":
+		sortOrder = "Id"
+	}
+	if params.Order == "desc" {
+		sortOrder = "-" + sortOrder
+	}
+	query = query.Filter("username__istartswith", params.UserNameLike)
+	query = query.Filter("mobile__istartswith", params.MobileLike)
+	//if len(params.Mobile) > 0 {
+	//	query = query.Filter("mobile", params.Mobile)
+	//}
+	if len(params.SearchStatus) > 0 {
+		query = query.Filter("status", params.SearchStatus)
+	}
+	total, _ := query.Count()
+	query.OrderBy(sortOrder).Limit(params.Limit, params.Offset).All(&data)
+	return data, total
+}
+
 
 func UserListGrid(page, pageSize int, filters ...interface{}) []User {
 	data, total := UserList(page, pageSize)

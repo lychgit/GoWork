@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"goFrame/models"
-		"github.com/lhtzbj12/sdrms/enums"
-		"github.com/astaxie/beego/orm"
+	"goFrame/enums"
+	"github.com/astaxie/beego/orm"
 )
 
 type RoleController struct {
@@ -23,7 +23,6 @@ func (this *RoleController) Index() {
 	//this.Data["canDelete"] = this.checkActionRoleor("MenuController", "Delete")
 	this.display()
 }
-
 
 //DataList 角色列表
 func (this *RoleController) RoleList() {
@@ -48,14 +47,13 @@ func (this *RoleController) RoleDataGrid() {
 	this.ServeJSON()
 }
 
-
 func (this *RoleController) Save() {
 	m := models.Role{}
 	o := orm.NewOrm()
 	var err error
 	//获取form里的值
 	if err = this.ParseForm(&m); err != nil {
-		this.jsonResult(enums.JRCode004, "获取数据失败", m.Id)
+		this.jsonResult(enums.JRCodeFailed, "获取数据失败", m.Id)
 	}
 	if m.Id == 0 {
 		if _, err := o.Insert(&m); err != nil {
@@ -68,7 +66,7 @@ func (this *RoleController) Save() {
 		//
 		//}
 		if _, err := o.Update(&m); err != nil {
-			this.jsonResult(enums.JRCode003, "编辑失败", m.Id)
+			this.jsonResult(enums.JRCodeFailed, "编辑失败", m.Id)
 		}
 	}
 }

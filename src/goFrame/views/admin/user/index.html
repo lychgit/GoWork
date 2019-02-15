@@ -22,12 +22,12 @@
                 <div class="box box-solid collapsed-box">
                     <div class="box-header with-border">
                         <input type="text" name="UserName" class="form-control pull-left input-wd-md" placeholder="用户名">
-                        <select name="RoleId" class="form-control bs-select" data-width="120px">
-                            <option value="">- 全部 -</option>
-                            {{ range .role_rows}}
-                                <option value="{{.Id}}">{{.NameCn}}</option>
-                            {{end}}
-                        </select>
+                        {{/*<select name="RoleId" class="form-control bs-select" data-width="120px">*/}}
+                            {{/*<option value="">- 全部 -</option>*/}}
+                            {{/*{{ range .role_rows}}*/}}
+                                {{/*<option value="{{.Id}}">{{.NameCn}}</option>*/}}
+                            {{/*{{end}}*/}}
+                        {{/*</select>*/}}
                         <div class="btn-group">
                             <button type="button" class="btn btn-warning" id="btnSearch"><i class="fa fa-search"></i> 搜索
                             </button>

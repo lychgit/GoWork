@@ -26,7 +26,7 @@ func main() {
 	//是否异常恢复，默认值为 true，即当应用出现异常的情况，通过 recover 恢复回来，而不会导致应用异常退出
 	beego.BConfig.RecoverPanic = true
 	//是否允许在 HTTP 请求时，返回原始请求体数据字节，默认为 false （GET or HEAD or 上传文件请求除外）
-	beego.BConfig.CopyRequestBody = false
+	beego.BConfig.CopyRequestBody = true
 	//文件上传默认内存缓存大小，默认值是 1 << 26(64M)
 	beego.BConfig.MaxMemory = 1 << 26
 	//是否显示系统错误信息，默认为 true

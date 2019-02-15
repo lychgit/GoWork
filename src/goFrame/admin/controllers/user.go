@@ -1,14 +1,15 @@
 package controllers
 
 import (
-	"goFrame/models"
-		"github.com/astaxie/beego"
-	"github.com/lhtzbj12/sdrms/enums"
+	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/orm"
 	"strconv"
 	"strings"
-	"github.com/lhtzbj12/sdrms/utils"
-	"github.com/astaxie/beego/orm"
 	"encoding/json"
+	"goFrame/enums"
+	"goFrame/utils"
+	"goFrame/models"
+	"time"
 )
 
 type UserController struct {
@@ -42,9 +43,9 @@ func (this *UserController) UserDataGrid() {
 	//直接反序化获取json格式的requestbody里的值
 	var params models.UserQueryParam
 	json.Unmarshal(this.Ctx.Input.RequestBody, &params)
-	beego.Debug(params)
 	//获取数据列表和总数
-	data, total := models.UserList(this.page, this.pageSize)
+	//data, total := models.UserList(this.page, this.pageSize)
+	data, total := models.UserPageList(&params)
 	//定义返回的数据结构
 	result := make(map[string]interface{})
 	result["total"] = total
@@ -59,7 +60,7 @@ func (this *UserController) Save() {
 	var err error
 	//获取form里的值
 	if err = this.ParseForm(&m); err != nil {
-		this.jsonResult(enums.JRCode004, "获取数据失败", m.Id)
+		this.jsonResult(enums.JRCodeFailed, "获取数据失败", m.Id)
 	}
 	//删除已关联的历史数据
 	//if _, err := o.QueryTable(models.RoleBackendUserRelTBName()).Filter("backenduser__id", m.Id).Delete(); err != nil {
@@ -68,12 +69,13 @@ func (this *UserController) Save() {
 	if m.Id == 0 {
 		//对密码进行加密
 		m.Password = utils.String2md5(m.Password)
+		m.CreateTime = time.Now().Unix()
 		if _, err := o.Insert(&m); err != nil {
-			this.jsonResult(enums.JRCodeFailed, "添加失败", m.Id)
+			this.jsonResult(enums.JRCodeFailed, err.Error(), m.Id)
 		}
 	} else {
 		if user, err := models.UserGetById(m.Id); err != nil {
-			this.jsonResult(enums.JRCode004, "数据无效，请刷新后重试", m.Id)
+			this.jsonResult(enums.JRCodeFailed, err.Error(), m.Id)
 		} else {
 			m.Password = strings.TrimSpace(m.Password)
 			if len(m.Password) == 0 {
@@ -86,9 +88,10 @@ func (this *UserController) Save() {
 			m.Avatar = user.Avatar
 		}
 		if _, err := o.Update(&m); err != nil {
-			this.jsonResult(enums.JRCode003, "编辑失败", m.Id)
+			this.jsonResult(enums.JRCodeFailed, err.Error(), m.Id)
 		}
 	}
+	this.jsonResult(enums.JRCodeSucc, "success!", m.Id)
 	////添加关系
 	//var relations []models.RoleBackendUserRel
 	//for _, roleId := range m.RoleIds {

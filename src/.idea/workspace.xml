@@ -4,7 +4,8 @@
     <list default="true" id="a3d56d0d-42a1-4b3d-9a4f-590c642be896" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/github.com/lisijie/webcron/app/controllers/index.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/github.com/lisijie/webcron/views/index/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goFrame/utils/public.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goFrame/utils/stringtool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/github.com/astaxie/beego/context/input.go" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/astaxie/beego/context/input.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/github.com/lisijie/goblog/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/lisijie/goblog/conf/app.conf" afterDir="false" />
@@ -14,12 +15,15 @@
       <change beforePath="$PROJECT_DIR$/github.com/lisijie/webcron/app/models/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/lisijie/webcron/app/models/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/github.com/lisijie/webcron/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/lisijie/webcron/conf/app.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/github.com/lisijie/webcron/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/github.com/lisijie/webcron/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goFrame/admin/controllers/picture.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/admin/controllers/picture.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goFrame/admin/controllers/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/admin/controllers/test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goFrame/goFrame.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/goFrame/main.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/goFrame/utils/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/utils/file.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goFrame/utils/upload.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/utils/upload.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/admin/controllers/adminbase.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/admin/controllers/adminbase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/admin/controllers/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/admin/controllers/role.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/admin/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/admin/controllers/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/models/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/models/User.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/models/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/models/models.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/views/admin/user/datagrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/views/admin/user/datagrid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/views/admin/user/edit_js.html" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/views/admin/user/edit_js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goFrame/views/admin/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/goFrame/views/admin/user/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,12 +35,13 @@
     <session id="-702239614">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="81" />
+          <entry key="project.closed" value="85" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="9" />
           <entry key="project.open.time.11" value="8" />
           <entry key="project.open.time.12" value="8" />
           <entry key="project.open.time.13" value="4" />
-          <entry key="project.open.time.14" value="5" />
+          <entry key="project.open.time.14" value="6" />
           <entry key="project.open.time.15" value="5" />
           <entry key="project.open.time.16" value="5" />
           <entry key="project.open.time.17" value="3" />
@@ -47,10 +52,10 @@
           <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="5" />
-          <entry key="project.open.time.8" value="17" />
+          <entry key="project.open.time.7" value="6" />
+          <entry key="project.open.time.8" value="18" />
           <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="82" />
+          <entry key="project.opened" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -60,8 +65,8 @@
           <entry key="8dc213b1071724d754b987d371eba7a8info" value="2" />
           <entry key="conf" value="24" />
           <entry key="css" value="8" />
-          <entry key="go" value="779" />
-          <entry key="html" value="259" />
+          <entry key="go" value="849" />
+          <entry key="html" value="293" />
           <entry key="jpgtmp" value="2" />
           <entry key="js" value="46" />
           <entry key="log" value="24" />
@@ -75,8 +80,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="8" />
-          <entry key="Go" value="779" />
-          <entry key="HTML" value="259" />
+          <entry key="Go" value="849" />
+          <entry key="HTML" value="293" />
           <entry key="JavaScript" value="46" />
           <entry key="PLAIN_TEXT" value="70" />
           <entry key="x86 Plan9 Assembly" value="3" />
@@ -86,8 +91,8 @@
         <counts>
           <entry key="conf" value="254" />
           <entry key="css" value="35" />
-          <entry key="go" value="23921" />
-          <entry key="html" value="3766" />
+          <entry key="go" value="24171" />
+          <entry key="html" value="3806" />
           <entry key="js" value="57" />
           <entry key="log" value="12" />
           <entry key="prod" value="2" />
@@ -98,8 +103,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="35" />
-          <entry key="Go" value="23921" />
-          <entry key="HTML" value="3766" />
+          <entry key="Go" value="24171" />
+          <entry key="HTML" value="3806" />
           <entry key="JavaScript" value="57" />
           <entry key="PLAIN_TEXT" value="351" />
         </counts>
@@ -113,46 +118,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/user.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/picture.go">
+        <entry file="file://$PROJECT_DIR$/goFrame/models/User.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="222" column="63" selection-start-line="222" selection-start-column="63" selection-end-line="222" selection-end-column="63" />
-              <folding>
-                <element signature="e#21#138#0" expanded="true" />
-                <element signature="n#!!block;n#saveTaskInfo#0" />
-                <element signature="n#!!block;n#checkChunk#0" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="122" selection-start-line="122" selection-end-line="122" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goFrame/utils/upload.go">
+        <entry file="file://$PROJECT_DIR$/goFrame/views/admin/user/edit_js.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2090">
-              <caret line="117" column="28" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+            <state relative-caret-position="146">
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goFrame/views/admin/picture/js.html">
+        <entry file="file://$PROJECT_DIR$/goFrame/views/admin/user/datagrid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1273">
-              <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+            <state relative-caret-position="-722">
+              <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goFrame/utils/file.go">
+        <entry file="file://$PROJECT_DIR$/goFrame/routers/router.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1235">
-              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-              <folding>
-                <element signature="e#15#94#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="59" column="84" selection-start-line="59" selection-start-column="72" selection-end-line="59" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/goFrame/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/backenduser/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-266">
+              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -169,21 +193,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Uploader</find>
-      <find>save</find>
-      <find>MoveUploadedFile</find>
-      <find>MaxSize</find>
-      <find>GetName</find>
-      <find>MIMEHeader</find>
-      <find>getHash</find>
-      <find>GetSaveName</find>
-      <find>mk</find>
-      <find>getSaveName</find>
-      <find>getSubPath</find>
-      <find>getName</find>
-      <find>SaveName</find>
-      <find>上传文件生成缓存</find>
-      <find>name</find>
       <find>file</find>
       <find>Mkdir</find>
       <find>CheckRootPath</find>
@@ -199,10 +208,23 @@
       <find>uploadfile</find>
       <find>FileHeaderdefaultMaxMemory</find>
       <find>defaultMaxMemory</find>
+      <find>BaseQueryParam</find>
+      <find>enums</find>
+      <find>Time</find>
+      <find>iframe</find>
+      <find>name</find>
+      <find>FormSubmit</find>
+      <find>$dataGrid`</find>
+      <find>dataGrid</find>
+      <find>roles</find>
+      <find>UserList</find>
+      <find>UserGetByName</find>
+      <find>sortorder</find>
+      <find>DataGrid</find>
+      <find>Limit</find>
+      <find>json.Unmarshal(this.Ctx.Input.RequestBody, &amp;params)</find>
     </findStrings>
     <replaceStrings>
-      <replace>T2</replace>
-      <replace>(this</replace>
       <replace>UrlForLink</replace>
       <replace>Menu</replace>
       <replace>json_status</replace>
@@ -231,20 +253,19 @@
       <replace>Upload</replace>
       <replace>getSaveName</replace>
       <replace>rootPath</replace>
+      <replace>users</replace>
+      <replace>sortOrder</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\GoWork\src\github.com\lisijie\webcron\app</dir>
       <dir>D:\GoWork\src\goFrame\views\layout</dir>
       <dir>D:\GoWork\src\github.com\lisijie\webcron</dir>
-      <dir>D:\GoWork\src</dir>
       <dir>D:\GoWork\src\github.com\lhtzbj12\sdrms\views\backenduser</dir>
       <dir>D:\GoWork\src\github.com\lhtzbj12\sdrms\controllers</dir>
-      <dir>D:\GoWork\src\github.com\lhtzbj12\sdrms\views</dir>
       <dir>D:\GoWork\src\goFrame\views</dir>
       <dir>D:\GoWork\src\goFrame\admin\controllers</dir>
       <dir>D:\GoWork\src\goFrame\views\admin\user</dir>
       <dir>D:\GoWork\src\github.com\lhtzbj12\sdrms</dir>
-      <dir>D:\GoWork\src\github.com\lhtzbj12</dir>
       <dir>D:\GoWork\src\goFrame\static</dir>
       <dir>D:\GoWork\src\pyth_case</dir>
       <dir>D:\GoWork\src\goFrame\static\plugins\webuploader\js</dir>
@@ -252,6 +273,9 @@
       <dir>D:\GoWork\src\goFrame\models</dir>
       <dir>D:\GoWork\src\github.com</dir>
       <dir>D:\GoWork\src\goFrame</dir>
+      <dir>D:\GoWork\src</dir>
+      <dir>D:\GoWork\src\github.com\lhtzbj12\sdrms\views</dir>
+      <dir>D:\GoWork\src\github.com\lhtzbj12</dir>
     </dirStrings>
   </component>
   <component name="GOROOT" path="D:\Tool\Go" />
@@ -261,19 +285,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/goFrame/models/models.go" />
-        <option value="$PROJECT_DIR$/goFrame/views/layout/admin/public_datagrid.html" />
-        <option value="$PROJECT_DIR$/goFrame/views/layout/admin/layout_pullbox.html" />
-        <option value="$PROJECT_DIR$/goFrame/models/User.go" />
-        <option value="$PROJECT_DIR$/goFrame/views/admin/user/datagrid.html" />
-        <option value="$PROJECT_DIR$/goFrame/admin/controllers/role.go" />
         <option value="$PROJECT_DIR$/goFrame/views/admin/user/edit.html" />
         <option value="$PROJECT_DIR$/goFrame/views/admin/login/login.html" />
         <option value="$PROJECT_DIR$/goFrame/models/Menu.go" />
-        <option value="$PROJECT_DIR$/github.com/lhtzbj12/sdrms/controllers/BackendUserController.go" />
-        <option value="$PROJECT_DIR$/goFrame/views/admin/user/edit_js.html" />
         <option value="$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/backenduser/edit_footerjs.html" />
-        <option value="$PROJECT_DIR$/goFrame/views/admin/user/index.html" />
         <option value="$PROJECT_DIR$/goFrame/models/Picture.go" />
         <option value="$PROJECT_DIR$/goFrame/views/admin/picture/head.html" />
         <option value="$PROJECT_DIR$/goFrame/static/js/1.hs.html" />
@@ -283,14 +298,12 @@
         <option value="$PROJECT_DIR$/goFrame/static/plugins/webuploader/webuploader.js" />
         <option value="$PROJECT_DIR$/goFrame/static/plugins/jquery.min.js" />
         <option value="$PROJECT_DIR$/goFrame/views/layout/admin/layout.html" />
-        <option value="$PROJECT_DIR$/goFrame/admin/controllers/user.go" />
         <option value="$PROJECT_DIR$/goFrame/static/plugins/webuploader/webuploader.css" />
         <option value="$PROJECT_DIR$/goFrame/static/plugins/webuploader/css/webuploader.css" />
         <option value="$PROJECT_DIR$/goFrame/static/plugins/webuploader/js/webuploader.js" />
         <option value="$PROJECT_DIR$/goFrame/views/admin/picture/index.html" />
         <option value="$PROJECT_DIR$/goFrame/static/plugins/webuploader/css/style.css" />
         <option value="$PROJECT_DIR$/goFrame/var/logs/debug.log" />
-        <option value="$PROJECT_DIR$/goFrame/main.go" />
         <option value="$PROJECT_DIR$/github.com/astaxie/beego/context/input.go" />
         <option value="$PROJECT_DIR$/goFrame/static/plugins/webuploader/js/webuploader.nolog.js" />
         <option value="$PROJECT_DIR$/goFrame/static/plugins/webuploader/js/webuploader.noimage.js" />
@@ -300,7 +313,6 @@
         <option value="$PROJECT_DIR$/goFrame/views/layout/layout.html" />
         <option value="$PROJECT_DIR$/goFrame/views/layout/admin/head.html" />
         <option value="$PROJECT_DIR$/goFrame/views/layout/admin/public_js.html" />
-        <option value="$PROJECT_DIR$/goFrame/admin/controllers/adminbase.go" />
         <option value="$PROJECT_DIR$/goFrame/models/init.go" />
         <option value="$PROJECT_DIR$/goFrame/models/RoleMenuRel.go" />
         <option value="$PROJECT_DIR$/goFrame/models/RoleUserRel.go" />
@@ -312,6 +324,18 @@
         <option value="$PROJECT_DIR$/goFrame/utils/public.go" />
         <option value="$PROJECT_DIR$/goFrame/utils/upload.go" />
         <option value="$PROJECT_DIR$/goFrame/admin/controllers/picture.go" />
+        <option value="$PROJECT_DIR$/goFrame/models/models.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/controllers/role.go" />
+        <option value="$PROJECT_DIR$/goFrame/views/admin/user/edit_js.html" />
+        <option value="$PROJECT_DIR$/goFrame/views/admin/user/index.html" />
+        <option value="$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/backenduser/index_footerjs.html" />
+        <option value="$PROJECT_DIR$/github.com/lhtzbj12/sdrms/controllers/BackendUserController.go" />
+        <option value="$PROJECT_DIR$/github.com/lhtzbj12/sdrms/models/BackendUser.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/controllers/adminbase.go" />
+        <option value="$PROJECT_DIR$/goFrame/views/admin/user/datagrid.html" />
+        <option value="$PROJECT_DIR$/goFrame/main.go" />
+        <option value="$PROJECT_DIR$/goFrame/admin/controllers/user.go" />
+        <option value="$PROJECT_DIR$/goFrame/models/User.go" />
       </list>
     </option>
   </component>
@@ -345,6 +369,66 @@
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lhtzbj12" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lhtzbj12" type="462c0819:PsiDirectoryNode" />
+              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lhtzbj12" type="462c0819:PsiDirectoryNode" />
+              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lhtzbj12" type="462c0819:PsiDirectoryNode" />
+              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
+              <item name="routers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lhtzbj12" type="462c0819:PsiDirectoryNode" />
+              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lhtzbj12" type="462c0819:PsiDirectoryNode" />
+              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="backenduser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lhtzbj12" type="462c0819:PsiDirectoryNode" />
+              <item name="sdrms" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="goFrame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -364,27 +448,19 @@
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="goFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="goFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="tmp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="goFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="routers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="goFrame" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
@@ -392,32 +468,14 @@
               <item name="goFrame" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="picture" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="goFrame" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="goFrame" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pyth_case" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="var" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
@@ -441,25 +499,25 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/Case/goblog" />
+    <property name="last_opened_file_path" value="D:/Case/新建文件夹/github.com" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GoWork\src\goFrame\static\js" />
-      <recent name="D:\GoWork\src\goFrame\static\plugins\webuploader\css" />
-      <recent name="D:\GoWork\src\goFrame\static\plugins\webuploader\img" />
-      <recent name="D:\GoWork\src\goFrame\static" />
-      <recent name="D:\GoWork\src\goFrame\views\admin\picture" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GoWork\src\goFrame\static\plugins\webuploader" />
       <recent name="D:\GoWork\src\goFrame\static\plugins\webuploader\js" />
       <recent name="D:\GoWork\src\goFrame\static\plugins\webuploader\css" />
       <recent name="D:\GoWork\src\goFrame\static\plugins" />
       <recent name="D:\GoWork\src\goFrame\views\layout\admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GoWork\src\goFrame\utils" />
+      <recent name="D:\GoWork\src\goFrame\static\js" />
+      <recent name="D:\GoWork\src\goFrame\static\plugins\webuploader\css" />
+      <recent name="D:\GoWork\src\goFrame\static\plugins\webuploader\img" />
+      <recent name="D:\GoWork\src\goFrame\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -549,8 +607,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -562,7 +621,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32719547" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3264642" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49865952" visible="true" weight="0.38503253" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49865952" visible="true" weight="0.38394794" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.2592068" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -577,290 +636,313 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/menu.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Tool/Go/src/os/types.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/context/context.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Tool/Go/src/os/stat.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/layout/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/layout/admin/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/layout/admin/layout.html">
+    <entry file="file://D:/Case/新建文件夹/github.com/lhtzbj12/sdrms/utils/stringtool.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1881">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/models/User.go">
+    <entry file="file://$PROJECT_DIR$/goFrame/utils/stringtool.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/models/Role.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/models/models.go">
+    <entry file="file://D:/Case/新建文件夹/github.com/lhtzbj12/sdrms/utils/logs.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="15" />
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/models/Menu.go">
+    <entry file="file://D:/Case/新建文件夹/github.com/lhtzbj12/sdrms/models/RoleResourceRel.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/models/Config.go">
+    <entry file="file://D:/Case/新建文件夹/github.com/lhtzbj12/sdrms/models/RoleBackendUserRel.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/models/init.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="44" column="101" lean-forward="true" selection-start-line="44" selection-start-column="101" selection-end-line="44" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/models/RoleMenuRel.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/models/RoleUserRel.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/models/task_log.go">
+    <entry file="file://D:/Case/新建文件夹/github.com/lhtzbj12/sdrms/models/Role.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/models/Picture.go">
+    <entry file="file://D:/Case/新建文件夹/github.com/lhtzbj12/sdrms/models/Resource.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="-589">
+          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/layout/admin/public_js.html">
+    <entry file="file://D:/Case/新建文件夹/github.com/lhtzbj12/sdrms/models/init.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="-169">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/upload/tmp/1eb4bb8bfc8e41a7d6d30e9cf0110271info" />
-    <entry file="file://$PROJECT_DIR$/goFrame/routers/router.go">
+    <entry file="file://D:/Case/新建文件夹/github.com/lhtzbj12/sdrms/models/Common.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="228">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Tool/Go/src/reflect/makefunc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1991" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Tool/Go/src/reflect/export_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Tool/Go/src/reflect/set_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3211">
-          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Tool/Go/src/os/file_windows.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="260" column="31" selection-start-line="260" selection-start-column="23" selection-end-line="260" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/testdata/bindata.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="153" column="51" selection-start-line="153" selection-start-column="51" selection-end-line="153" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/models/Log.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Tool/Go/src/errors/errors.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Tool/Go/src/reflect/value.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="1709" column="28" selection-start-line="1709" selection-start-column="28" selection-end-line="1709" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Tool/Go/src/reflect/type.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="1132" column="5" selection-start-line="1132" selection-start-column="5" selection-end-line="1132" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/utils/uploader.go" />
-    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/adminbase.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="311" column="1" lean-forward="true" selection-start-line="305" selection-end-line="311" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Tool/Go/src/net/textproto/header.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="33" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/admin.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/Tool/Go/src/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/upload/tmp/7a111630395efd3048eef54c3ea25c40_005a59e32-797e-4161-92c2-6af826970223.pngtmp" />
-    <entry file="file://$PROJECT_DIR$/goFrame/upload/tmp/12bf3aef74221e549de3e965051ad05d_062d9a006-b369-4aec-a9ee-43e17ff0be0b.pngtmp" />
-    <entry file="file://$PROJECT_DIR$/goFrame/upload/tmp/271e998310e978bf401dcb789498220d_06b1d93bf-8710-4ab7-ac88-d27cf03dfbb0.jpgtmp" />
-    <entry file="file://D:/Tool/Go/src/os/file.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4579">
-          <caret line="248" column="5" selection-start-line="248" selection-start-column="5" selection-end-line="248" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/upload/tmp/6b1d93bf-8710-4ab7-ac88-d27cf03dfbb0.jpg_271e998310e978bf401dcb789498220d_06b1d93bf-8710-4ab7-ac88-d27cf03dfbb0.jpgtmp" />
-    <entry file="file://D:/Tool/Go/src/io/io.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-226">
-          <caret line="84" column="33" lean-forward="true" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/upload/tmp/62d9a006-b369-4aec-a9ee-43e17ff0be0b.png_12bf3aef74221e549de3e965051ad05d_062d9a006-b369-4aec-a9ee-43e17ff0be0b.pngtmp" />
-    <entry file="file://$PROJECT_DIR$/goFrame/upload/tmp/05a59e32-797e-4161-92c2-6af826970223.png_7a111630395efd3048eef54c3ea25c40_005a59e32-797e-4161-92c2-6af826970223.png">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/Tool/Go/src/net/http/request.go">
+    <entry file="file://D:/Case/新建文件夹/github.com/lhtzbj12/sdrms/models/BackendUser.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="20" />
+          <caret line="9" column="1" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#21#94#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/utils/public.go">
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/menu.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Tool/Go/src/mime/multipart/formdata.go">
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/log.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="160" column="21" lean-forward="true" selection-start-line="160" selection-start-column="21" selection-end-line="160" selection-end-column="21" />
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/index.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/admin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/auth.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/picture.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="222" column="63" selection-start-line="222" selection-start-column="63" selection-end-line="222" selection-end-column="63" />
+        <state relative-caret-position="171">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/role.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="54" column="45" lean-forward="true" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
           <folding>
-            <element signature="e#21#138#0" expanded="true" />
-            <element signature="n#!!block;n#saveTaskInfo#0" />
-            <element signature="n#!!block;n#checkChunk#0" />
+            <element signature="e#21#98#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/utils/upload.go">
+    <entry file="file://$PROJECT_DIR$/goFrame/views/admin/user/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2090">
-          <caret line="117" column="28" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+        <state relative-caret-position="-424">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/views/admin/picture/js.html">
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/shared/layout_base.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/shared/layout_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+        <state relative-caret-position="-2394" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/shared/layout_pullbox.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/backenduser/index_headcssjs.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/shared/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/shared/control-sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-798" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/shared/globalcss.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/shared/globaljs.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/Tool/Go/src/encoding/json/decode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goFrame/utils/file.go">
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/controllers/BaseController.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        <state relative-caret-position="-1824" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/backenduser/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-511" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/backenduser/edit_footerjs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1442" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/views/admin/user/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/backenduser/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/models/Common.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/models/models.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/views/admin/user/edit_js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Tool/Go/src/net/http/request.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="180" column="4" selection-start-line="180" selection-start-column="4" selection-end-line="180" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/adminbase.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="86" column="60" lean-forward="true" selection-start-line="86" selection-start-column="60" selection-end-line="86" selection-end-column="60" />
           <folding>
-            <element signature="e#15#94#0" expanded="true" />
+            <element signature="e#21#158#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/astaxie/beego/controller.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="398" column="21" selection-start-line="398" selection-start-column="21" selection-end-line="398" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/login.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="64" />
+          <folding>
+            <element signature="e#21#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/models/BackendUser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/controllers/BackendUserController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#14#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/views/backenduser/index_footerjs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2748">
+          <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/views/admin/user/datagrid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-722">
+          <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github.com/lhtzbj12/sdrms/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="35" column="96" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="59" column="84" selection-start-line="59" selection-start-column="72" selection-end-line="59" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/admin/controllers/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goFrame/models/User.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
         </state>
       </provider>
     </entry>
