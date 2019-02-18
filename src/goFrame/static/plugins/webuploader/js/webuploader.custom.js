@@ -5173,8 +5173,7 @@
                         height: this.height
                     };
     
-                    //debugger;
-    
+
                     // 读取meta信息。
                     if ( !me._metas && 'image/jpeg' === me.type ) {
                         Util.parseMeta( me._blob, function( error, ret ) {

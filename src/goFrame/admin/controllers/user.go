@@ -10,6 +10,7 @@ import (
 	"goFrame/utils"
 	"goFrame/models"
 	"time"
+	"fmt"
 )
 
 type UserController struct {
@@ -40,6 +41,7 @@ func (this *UserController) Index() {
 
 // DataGrid 后台用户管理页 表格获取数据
 func (this *UserController) UserDataGrid() {
+	beego.Debug("UserDataGrid")
 	//直接反序化获取json格式的requestbody里的值
 	var params models.UserQueryParam
 	json.Unmarshal(this.Ctx.Input.RequestBody, &params)
@@ -145,4 +147,30 @@ func (this *UserController) UserEdit() {
 	this.setTpl("admin/user/edit.html", "layout/admin/layout_pullbox.html")
 	//this.LayoutSections = make(map[string]string)
 	//this.LayoutSections["footerjs"] = "admin/user/edit_js.html"
+}
+
+func (this *UserController) UserDelete() {
+	beego.Debug("Delete")
+	if this.Ctx.Request.Method == "POST" {
+		userIds := this.GetString("ids")
+		ids := make([]int, 0, len(userIds))
+		for _, id := range strings.Split(userIds, ",") {
+			if id, err := strconv.Atoi(id); err == nil {
+				ids = append(ids, id)
+			} else {
+				this.jsonResult(enums.JRCodeFailed, err.Error(), nil)
+			}
+		}
+		query := orm.NewOrm().QueryTable(models.TableName("user"))
+		beego.Debug("ids")
+		beego.Debug(userIds)
+		//if num, err := query.Filter("id__in", ids).Delete(); err == nil {
+		if num, err := query.Filter("id__in", ids).Update(orm.Params{ "logic_delete": 1}); err == nil {
+			this.jsonResult(enums.JRCodeSucc, fmt.Sprintf("Successful deletion of %d records", num), nil)
+		} else {
+			this.jsonResult(enums.JRCodeFailed, "delete failed!", nil)
+		}
+	} else {
+		this.jsonResult(enums.JRCodeSucc, "reuqest method error!", nil)
+	}
 }

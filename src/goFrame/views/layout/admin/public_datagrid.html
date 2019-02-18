@@ -9,21 +9,17 @@
 <script src="/static/plugins/bootstrap-table/bootstrap-table-editable.js"></script>
 
 <script>
-    var $dataGrid = $('#dataGrid');
-    var $searchForm = $("#searchForm")
-    //高亮显示id
-    var highlightPk = null;
     //初始化加载
     $(function () {
+        console.log("public_datagrid");
         pageInit();
     });
 
     //初始化页面
     function pageInit() {
         //从cookie加载查询条件，传入参数为form id
-        // sdtheme.loadSearchText('searchForm');
-        //初始化表格
-        dataGridInit();
+        sdtheme.loadSearchText('searchForm');
+        //初始化表格查询共有项
         //搜索
         $("#btnSearch").on("click", function (e) {
             refreshToFirstPage();
@@ -43,20 +39,30 @@
             highlightPk = null;
         });
         //保持搜索条件面板状态
-        // sdtheme.searchPanelStatusInit('searchpanelbtn');
-    };
+        sdtheme.searchPanelStatusInit('searchpanelbtn');
+    }
 
     //刷新当前页
     function refresh(pk) {
+        if (!loadDataGrid) {
+            return;
+        }
         $dataGrid.bootstrapTable('refresh');
         highlightPk = pk;
     }
 
     //刷新并跳转至第一页
     function refreshToFirstPage() {
+        if (!loadDataGrid) {
+            return;
+        }
         //表格刷新时，保存查询条件到cookie
         // sdtheme.saveSearchText('searchForm');
         //刷新并跳转至第1页
+        //
+        // NameLike
+        // MobileLike
+        // SearchStatus
         $dataGrid.bootstrapTable('refresh', {pageNumber: 1});
         //同时要更新cookie里保存当前页码
         // $.cookie('dataGrid.bs.table.pageNumber', 1, {expires: 1});
@@ -64,6 +70,7 @@
 
     {{/*var editable4Seq = rms.getEditableParam('{{urlfor "RoleController.UpdateSeq"}}', null, true);*/}}
 
+    //time format
     function dateFormatter(value, row, index) {
         if (value !== null) {
             var date = new Date(value * 1000);
@@ -89,7 +96,7 @@
         for (var k in o)
             if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
         return fmt;
-    }
+    };
 
     ///用一个带有title值的span将值包裹起来
     function formatterWapBySpan(value, row, index) {
@@ -97,5 +104,55 @@
             return '<span title="' + value + '">' + value + '</span>';
         }
         return "";
+    }
+
+    function Edit(Id) {
+        var title = '添加用户';
+        if (Id > 0) {
+            title = "编辑用户"
+        }
+        var url = '{{ urlfor "UserController.UserEdit"}}' + '/' + Id;
+        layer.open({
+            type: 2,
+            title: title,
+            shadeClose: false,
+            shade: 0.2,
+            maxmin: true,
+            shift: 1,
+            area: ['1000px', '600px'],
+            content: url,
+            btn: ['保存', '关闭'],
+            yes: function (index, layero) {
+                var iframeWin = window[layero.find('iframe')[0]['name']];
+                iframeWin.FormSubmit();
+            }
+        });
+    }
+    //删除所选的记录
+    function Delete() {
+        console.log("Delete");
+        var url = '{{ urlfor "UserController.UserDelete"}}';
+        var rows = $dataGrid.bootstrapTable("getSelections");
+        if (rows.length === 0) {
+            layer.alert('请选择想要删除的项', {icon: 0, title: '提示'});
+            return;
+        }
+        var ids = [];
+        $(rows).each(function (i, e) {
+            ids.push(e.Id);
+        });
+        layer.confirm('您是否要删除所选的项？', {
+            btn: ['是', '否'], icon: 3, title: '请确认'
+        }, function () {
+            var dataValues = {ids: ids.join(',')};
+            $.sdpost(url, dataValues, function (res) {
+                if (res.code == 0) {
+                    layer.msg(res.msg, {icon: 1, title: '成功'});
+                    refresh();
+                } else {
+                    layer.alert(res.msg, {icon: 2, title: "失败"});
+                }
+            });
+        });
     }
 </script>

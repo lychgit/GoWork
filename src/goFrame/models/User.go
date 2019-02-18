@@ -2,7 +2,6 @@ package models
 
 import (
 	"github.com/astaxie/beego/orm"
-	"github.com/astaxie/beego"
 )
 
 // BackendUserQueryParam 用于查询的类
@@ -22,6 +21,7 @@ type User struct {
 	LastIp         string
 	Status         int
 	IsSuper        bool
+	LogicDelete    int
 	Mobile         string         `orm:"size(16)"`
 	Email          string         `orm:"size(256)"`
 	Avatar         string         `orm:"size(256)"`
@@ -101,7 +101,7 @@ func UserList(page, pageSize int, filters ...interface{}) ([]*User, int64) {
 
 func UserPageList(params *UserQueryParam) ([]*User, int64) {
 	query := orm.NewOrm().QueryTable(TableName("user"))
-	data := make([]*User, 0)
+	users := make([]*User, 0)
 	//默认排序
 	sortOrder := "Id"
 	switch params.Sort {
@@ -113,6 +113,7 @@ func UserPageList(params *UserQueryParam) ([]*User, int64) {
 	}
 	query = query.Filter("username__istartswith", params.UserNameLike)
 	query = query.Filter("mobile__istartswith", params.MobileLike)
+	query = query.Filter("logic_delete", 0)
 	//if len(params.Mobile) > 0 {
 	//	query = query.Filter("mobile", params.Mobile)
 	//}
@@ -120,8 +121,8 @@ func UserPageList(params *UserQueryParam) ([]*User, int64) {
 		query = query.Filter("status", params.SearchStatus)
 	}
 	total, _ := query.Count()
-	query.OrderBy(sortOrder).Limit(params.Limit, params.Offset).All(&data)
-	return data, total
+	query.OrderBy(sortOrder).Limit(params.Limit, params.Offset).All(&users)
+	return users, total
 }
 
 

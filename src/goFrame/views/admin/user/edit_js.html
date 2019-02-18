@@ -27,7 +27,7 @@
         $select.html('');
         $.sdpost(url,{},function(re){
             if(re.code === 0){
-                var html=[]
+                var html=[];
                 $(re.obj).each(function(i,e){
                     html.push('<option value="' + e.Id + '">' + e.NameCn + '</option>')
                 });
@@ -49,7 +49,7 @@
         } else {
             return false;
         }
-    }
+    };
     //表单验证及AJAX提交
     function validateInfo() {
         var $thisForm = $('#thisForm');
@@ -74,7 +74,6 @@
                 },
             },
             submitHandler: function (form) {
-                debugger;
 				var url ='{{ urlfor "UserController.UserEdit"}}';
 				var data = $thisForm.serialize();				
 				$.sdpost(url,data,function(re){
