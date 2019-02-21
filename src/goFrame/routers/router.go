@@ -53,7 +53,7 @@ func init() {
 	beego.Router("/admin/role/datagrid", &admin.RoleController{}, "POST:RoleDataGrid")
 	beego.Router("/admin/role/rolelist", &admin.RoleController{}, "POST:RoleList")
 	beego.Router("/admin/role/edit/?:id", &admin.RoleController{}, "*:RoleEdit")
-	//beego.Router("/admin/role/delete", &admin.RoleController{}, "POST:RoleDelete")
+	beego.Router("/admin/role/delete", &admin.RoleController{}, "POST:RoleDelete")
 
 	//用户管理
 	beego.Router("/admin/user/index", &admin.UserController{}, "*:Index")

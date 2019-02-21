@@ -82,6 +82,7 @@ func (this *UserController) Save() {
 		}
 	} else {
 		//修改用户信息
+		m.UpdateTime = time.Now().Unix()
 		if user, err := models.UserGetById(m.Id); err != nil {
 			this.jsonResult(enums.JRCodeFailed, err.Error(), m.Id)
 		} else {

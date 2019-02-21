@@ -29,6 +29,7 @@ type User struct {
 	RoleUserRel    []*RoleUserRel `orm:"reverse(many)"` // 设置一对多的反向关系
 	MenuUrlForList []string       `orm:"-"`
 	CreateTime     int64
+	UpdateTime     int64
 }
 
 func (u *User) TableName() string {

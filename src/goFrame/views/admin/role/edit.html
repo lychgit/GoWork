@@ -1,0 +1,22 @@
+{{template "admin/user/edit_js.html" .}}
+<form id="thisForm">
+    <input type="hidden" name="Id" id="Id" value="{{.m.Id}}">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>角色名</label>
+                <input type="text" name="RoleName" class="form-control" placeholder="长度不超过24" value="{{.m.UserName}}">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>状态</label>
+                <select name="Status" id="Status" class="form-control bs-select" >
+                    <option value="0">启用</option>
+                    <option value="1">禁用</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</form>
+</div>

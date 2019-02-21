@@ -1,12 +1,15 @@
 <script>
     var $dataGrid = $('#dataGrid');
-    var $searchForm = $("#searchForm")
+    var $searchForm = $("#searchForm");
+    //高亮显示id
+    var loadDataGrid = true;//加载数据
     //高亮显示id
     var highlightPk = null;
     //初始化加载
     $(function () {
-        pageInit();
+        dataGridInit();
     });
+
     //bootstrap table data init
     function dataGridInit() {
         $dataGrid.bootstrapTable({
@@ -17,7 +20,9 @@
             queryParamsType: 'limit',
             queryParams: function (params) {
                 //params的自带参数类型由queryParamsType决定
-                params.NameLike = $('.searchForm input[name="Name"]').val();
+                params.RoleNameLike =$.trim($('.searchForm input[name="RoleName"]').val());
+                params.SearchStatus = $('.searchForm select[name="Status"]').selectpicker('val');
+                // console.log(params);
                 return params;
             },
             pagination: true,
@@ -48,70 +53,89 @@
                 sortable: true,
             }, {
                 field: 'NameCn',
-                title: '中文名',
+                title: '角色中文名称',
+                align: 'center',
+                formatter: formatterWapBySpan,
+                cellStyle: function (value, row, index, field) {
+                    return {classes: 'ellipsis'};
+                }
+            },  {
+                field: 'NameEn',
+                title: '角色英文名称',
                 align: 'center',
                 formatter: formatterWapBySpan,
                 cellStyle: function (value, row, index, field) {
                     return {classes: 'ellipsis'};
                 }
             }, {
-                field: 'NameEn',
-                title: '英文名',
-                align: 'center',
-                formatter: formatterWapBySpan,
-                cellStyle: function (value, row, index, field) {
-                    return {classes: 'ellipsis'};
-                }
+                field: 'Status',
+                title: '状态',
+                formatter:sdtheme.showenable,
             }, {
                 field: 'operate',
                 title: '操作',
                 width: '120px',
                 formatter: function (value, row, index) {
                     var ret = [];
-                    ret.push('<div class="btn-group">')
-                    if ('{{.canDelete}}' === 'true') {
+                    ret.push('<div class="btn-group">');
+                    {{/*if ('{{.canDelete}}' === 'true') {*/}}
                         ret.push('<button class="btn btn-primary btn-xs"  onclick="Edit(' + row.Id + ')">' +
                                 '<i class="fa fa-pencil"></i> 编辑</button>');
-                    }
-                    if ('{{.canAllocate}}' === 'true') {
-                        ret.push('<button class="btn btn-info btn-xs"  onclick="Allocate(' + row.Id + ')">' +
-                                '<i class="fa fa-th"></i> 分配</button>');
-                    }
-                    ret.push('</div>')
+                    // }
+                    {{/*if ('{{.canAllocate}}' === 'true') {*/}}
+                    //     ret.push('<button class="btn btn-info btn-xs"  onclick="Allocate(' + row.Id + ')">' +
+                    //             '<i class="fa fa-th"></i> 分配</button>');
+                    // }
+                    ret.push('</div>');
                     return ret.join('');
                 }
             }],
-            onLoadSuccess: function (data) {
-                layer.closeAll('loading');
-                //
-                //CheboxUniform()
+            onSearch: function() {
+                console.log("onSearch");
+                if (loadDataGrid) {
+                    loadDataGrid = false;
+                }
+            },
+            onRefresh: function() {
+                console.log("onRefresh");
+                if (loadDataGrid) {
+                    loadDataGrid = false;
+                }
             },
             onSort: function (name, order) {
                 //alert('name:' + name + " order:" + order);
             },
             onPageChange: function () {
-                //layer.load();
+                layer.load();
             },
             onCheckAll: function (rows) {
-                //禁用删除需要勾选才能用的按钮
+                //某条记录或全部记录被选中时  去除删除按钮禁用状态
                 $(".table-btn-check-enable").removeAttr('disabled');
             },
             onCheck: function (rows) {
-                //禁用删除需要勾选才能用的按钮
+                //某条记录或全部记录被选中时  去除删除按钮禁用状态
                 $(".table-btn-check-enable").removeAttr('disabled');
             },
             onUncheck: function (rows) {
-                //禁用删除需要勾选才能用的按钮
-                if ($("#dataGrid").bootstrapTable("getSelections").length === 0) {
-                    $(".table-btn-check-enable").attr('disabled', 'disabled');
-                }
-            }, onUncheckAll: function () {
-                //禁用删除需要勾选才能用的按钮
+                //某条记录或全部记录被选中时  去除删除按钮禁用状态
                 if ($("#dataGrid").bootstrapTable("getSelections").length === 0) {
                     $(".table-btn-check-enable").attr('disabled', 'disabled');
                 }
             },
+            onUncheckAll: function () {
+                //某条记录或全部记录被选中时  去除删除按钮禁用状态
+                if ($("#dataGrid").bootstrapTable("getSelections").length === 0) {
+                    $(".table-btn-check-enable").attr('disabled', 'disabled');
+                }
+            },
+            onLoadSuccess: function (data) {
+                loadDataGrid = true;
+                layer.closeAll('loading');
+                //
+                //CheboxUniform()
+            },
             onLoadError: function (status) {
+                loadDataGrid = true;
                 layer.alert('获取数据失败,错误代码：' + status);
             }
         });
