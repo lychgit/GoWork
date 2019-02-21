@@ -99,6 +99,18 @@ func UserList(page, pageSize int, filters ...interface{}) ([]*User, int64) {
 }
 
 
+func UserListGrid(page, pageSize int, filters ...interface{}) []User {
+	data, total := UserList(page, pageSize)
+	list := make([]User, total)
+	for i, item := range data {
+		list[i] = *item
+	}
+	return list
+}
+
+/*
+	DataGrid获取User数据
+ */
 func UserPageList(params *UserQueryParam) ([]*User, int64) {
 	query := orm.NewOrm().QueryTable(TableName("user"))
 	users := make([]*User, 0)
@@ -123,14 +135,4 @@ func UserPageList(params *UserQueryParam) ([]*User, int64) {
 	total, _ := query.Count()
 	query.OrderBy(sortOrder).Limit(params.Limit, params.Offset).All(&users)
 	return users, total
-}
-
-
-func UserListGrid(page, pageSize int, filters ...interface{}) []User {
-	data, total := UserList(page, pageSize)
-	list := make([]User, total)
-	for i, item := range data {
-		list[i] = *item
-	}
-	return list
 }

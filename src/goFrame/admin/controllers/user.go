@@ -19,16 +19,18 @@ type UserController struct {
 
 func (this *UserController) Index() {
 	beego.Debug("UserController-Index")
+
 	//是否显示更多查询条件的按钮
 	this.Data["showMoreQuery"] = true
+
 	//需要权限控制
 	this.checkAuthor()
-	//将页面左边菜单的某项激活
-	//this.Data["activeSidebarUrl"] = this.URLFor(this.controllerName + "." + this.actionName)
+
 	//获取角色列表
 	data := models.RoleListGrid(this.page, this.pageSize)
 	//rolelist["rows"] = this.Json_encode(data)
 	this.Data["role_rows"] = data
+
 	//页面里按钮权限控制
 	//this.Data["canEdit"] = this.checkActionUseror("MenuController", "Edit")
 	//this.Data["canDelete"] = this.checkActionUseror("MenuController", "Delete")
@@ -38,10 +40,10 @@ func (this *UserController) Index() {
 	this.display()
 }
 
-
-// DataGrid 后台用户管理页 表格获取数据
+/*
+	DataGrid 后台用户管理页 表格获取数据
+ */
 func (this *UserController) UserDataGrid() {
-	beego.Debug("UserDataGrid")
 	//直接反序化获取json格式的requestbody里的值
 	var params models.UserQueryParam
 	json.Unmarshal(this.Ctx.Input.RequestBody, &params)
@@ -56,6 +58,9 @@ func (this *UserController) UserDataGrid() {
 	this.ServeJSON()
 }
 
+/*
+	后台保存用户信息
+ */
 func (this *UserController) Save() {
 	m := models.User{}
 	o := orm.NewOrm()
@@ -69,13 +74,14 @@ func (this *UserController) Save() {
 	//	this.jsonResult(202, "删除历史关系失败", "")
 	//}
 	if m.Id == 0 {
-		//对密码进行加密
-		m.Password = utils.String2md5(m.Password)
+		//新增用户
+		m.Password = utils.String2md5(m.Password) //对密码进行加密
 		m.CreateTime = time.Now().Unix()
 		if _, err := o.Insert(&m); err != nil {
 			this.jsonResult(enums.JRCodeFailed, err.Error(), m.Id)
 		}
 	} else {
+		//修改用户信息
 		if user, err := models.UserGetById(m.Id); err != nil {
 			this.jsonResult(enums.JRCodeFailed, err.Error(), m.Id)
 		} else {
@@ -113,8 +119,10 @@ func (this *UserController) Save() {
 	//}
 }
 
+/*
+	后台编辑用户信息
+ */
 func (this *UserController) UserEdit() {
-	beego.Debug("UserEdit")
 	// Edit 添加 编辑 页面
 	//如果是Post请求，则由Save处理
 	if this.Ctx.Request.Method == "POST" {
@@ -141,16 +149,13 @@ func (this *UserController) UserEdit() {
 		roleIds = append(roleIds, strconv.Itoa(item.Role.Id))
 	}
 	this.Data["roles"] = strings.Join(roleIds, ",")
-
-	beego.Debug(this.Data["roles"])
-
 	this.setTpl("admin/user/edit.html", "layout/admin/layout_pullbox.html")
-	//this.LayoutSections = make(map[string]string)
-	//this.LayoutSections["footerjs"] = "admin/user/edit_js.html"
 }
 
+/*
+	后台逻辑删除用户
+ */
 func (this *UserController) UserDelete() {
-	beego.Debug("Delete")
 	if this.Ctx.Request.Method == "POST" {
 		userIds := this.GetString("ids")
 		ids := make([]int, 0, len(userIds))
@@ -162,9 +167,9 @@ func (this *UserController) UserDelete() {
 			}
 		}
 		query := orm.NewOrm().QueryTable(models.TableName("user"))
-		beego.Debug("ids")
-		beego.Debug(userIds)
+		//物理删除
 		//if num, err := query.Filter("id__in", ids).Delete(); err == nil {
+		//逻辑删除
 		if num, err := query.Filter("id__in", ids).Update(orm.Params{ "logic_delete": 1}); err == nil {
 			this.jsonResult(enums.JRCodeSucc, fmt.Sprintf("Successful deletion of %d records", num), nil)
 		} else {

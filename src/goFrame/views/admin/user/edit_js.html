@@ -9,7 +9,7 @@
    $(function () {
        //使用bootstrap-select的下拉初始化
        $("select.bs-select").selectpicker();
-          pageInit(); 
+          pageInit();
     });
     function pageInit(){
         //角色下拉框初始化
@@ -18,8 +18,8 @@
         $("#IsSuper").selectpicker('val','{{.m.IsSuper}}');
         $("#Status").selectpicker('val','{{.m.Status}}');
         //验证
-        validateInfo(); 
-    }	
+        validateInfo();
+    }
     //角色下拉框初始化
     function roleSelectInit(selecteds){
         var url = '{{urlfor "RoleController.RoleList"}}';
@@ -62,7 +62,7 @@
                 Mobile: {
                     mobile: true,
                     maxlength: 16,
-                }, 
+                },
                 Email: {
                     email: true,
                     maxlength: 256,
@@ -75,7 +75,7 @@
             },
             submitHandler: function (form) {
 				var url ='{{ urlfor "UserController.UserEdit"}}';
-				var data = $thisForm.serialize();				
+				var data = $thisForm.serialize();
 				$.sdpost(url,data,function(re){
 					if(re.code === 0){
 						// parent.layer.msg(re.msg);
@@ -91,6 +91,6 @@
     }
 
     function FormSubmit() {
-        $("#thisForm").submit();		
+        $("#thisForm").submit();
     }
 </script>
