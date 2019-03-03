@@ -1,13 +1,21 @@
-{{template "admin/user/edit_js.html" .}}
+{{template "admin/role/edit_js.html" .}}
 <form id="thisForm">
     <input type="hidden" name="Id" id="Id" value="{{.m.Id}}">
-    <div class="row">
+    <div class="row margin-top-15">
         <div class="col-md-6">
             <div class="form-group">
-                <label>角色名</label>
-                <input type="text" name="RoleName" class="form-control" placeholder="长度不超过24" value="{{.m.UserName}}">
+                <label>角色中文名</label>
+                <input type="text" name="NameCn" class="form-control" placeholder="长度不超过24" value="{{.m.NameCn}}">
             </div>
         </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>角色英文名</label>
+                <input type="text" name="NameEn" class="form-control" placeholder="长度不超过24" value="{{.m.NameEn}}">
+            </div>
+        </div>
+    </div>
+    <div class="row margin-top-15">
         <div class="col-md-6">
             <div class="form-group">
                 <label>状态</label>

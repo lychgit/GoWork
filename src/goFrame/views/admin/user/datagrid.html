@@ -10,6 +10,55 @@
         dataGridInit();
     });
 
+    function Edit(Id) {
+        var title = '添加用户';
+        if (Id > 0) {
+            title = "编辑用户"
+        }
+        var url = '{{ urlfor "UserController.UserEdit"}}' + '/' + Id;
+        layer.open({
+            type: 2,
+            title: title,
+            shadeClose: false,
+            shade: 0.2,
+            maxmin: true,
+            shift: 1,
+            area: ['1000px', '600px'],
+            content: url,
+            btn: ['保存', '关闭'],
+            yes: function (index, layero) {
+                var iframeWin = window[layero.find('iframe')[0]['name']];
+                iframeWin.FormSubmit();
+            }
+        });
+    }
+    //删除所选的记录
+    function Delete() {
+        console.log("Delete");
+        var url = '{{ urlfor "UserController.UserDelete"}}';
+        var rows = $dataGrid.bootstrapTable("getSelections");
+        if (rows.length === 0) {
+            layer.alert('请选择想要删除的项', {icon: 0, title: '提示'});
+            return;
+        }
+        var ids = [];
+        $(rows).each(function (i, e) {
+            ids.push(e.Id);
+        });
+        layer.confirm('您是否要删除所选的项？', {
+            btn: ['是', '否'], icon: 3, title: '请确认'
+        }, function () {
+            var dataValues = {ids: ids.join(',')};
+            $.sdpost(url, dataValues, function (res) {
+                if (res.code == 0) {
+                    layer.msg(res.msg, {icon: 1, title: '成功'});
+                    refresh();
+                } else {
+                    layer.alert(res.msg, {icon: 2, title: "失败"});
+                }
+            });
+        });
+    }
     //bootstrap table data init
     function dataGridInit() {
         $dataGrid.bootstrapTable({
@@ -55,6 +104,14 @@
             }, {
                 field: 'UserName',
                 title: '用户名称',
+                align: 'center',
+                formatter: formatterWapBySpan,
+                cellStyle: function (value, row, index, field) {
+                    return {classes: 'ellipsis'};
+                }
+            }, {
+                field: 'NameCn',
+                title: '角色',
                 align: 'center',
                 formatter: formatterWapBySpan,
                 cellStyle: function (value, row, index, field) {
@@ -141,6 +198,7 @@
                 }
             },
             onLoadSuccess: function (data) {
+                console.log(data);
                 loadDataGrid = true;
                 layer.closeAll('loading');
                 //

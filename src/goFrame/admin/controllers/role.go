@@ -64,23 +64,27 @@ func (this *RoleController) Save() {
 	var err error
 	//获取form里的值
 	if err = this.ParseForm(&m); err != nil {
-		this.jsonResult(enums.JRCodeFailed, "获取数据失败", m.Id)
+		beego.Error(err.Error())
+		this.jsonResult(enums.JRCodeFailed, "获取数据失败!", m.Id)
 	}
 	if m.Id == 0 {
 		m.CreateTime = time.Now().Unix()
 		if _, err := o.Insert(&m); err != nil {
-			this.jsonResult(enums.JRCodeFailed, "添加失败", m.Id)
+			beego.Error(err.Error())
+			this.jsonResult(enums.JRCodeFailed, "添加失败!", m.Id)
 		}
 	} else {
 		m.UpdateTime = time.Now().Unix()
 		if _, err := o.Update(&m); err != nil {
-			this.jsonResult(enums.JRCodeFailed, "编辑失败", m.Id)
+			beego.Error(err.Error())
+			this.jsonResult(enums.JRCodeFailed, "编辑失败!", m.Id)
 		}
 	}
-	this.jsonResult(enums.JRCodeSucc, "success!", m.Id)
+	this.jsonResult(enums.JRCodeSucc, "角色添加成功!", m.Id)
 }
 
 func (this *RoleController) RoleEdit() {
+	beego.Debug("RoleEdit")
 	// Edit 添加 编辑 页面
 	//如果是Post请求，则由Save处理
 	if this.Ctx.Request.Method == "POST" {
@@ -89,6 +93,7 @@ func (this *RoleController) RoleEdit() {
 	Id, _ := this.GetInt(":id", 0)
 	role := &models.Role{}
 	var err error
+
 	if Id > 0 {
 		role, err = models.RoleGetById(Id)
 		if err != nil {
@@ -104,7 +109,7 @@ func (this *RoleController) RoleEdit() {
 
 
 /*
-	后台逻辑删除用户
+	后台逻辑删除角色
  */
 func (this *RoleController) RoleDelete() {
 	if this.Ctx.Request.Method == "POST" {
@@ -122,11 +127,12 @@ func (this *RoleController) RoleDelete() {
 		//if num, err := query.Filter("id__in", ids).Delete(); err == nil {
 		//逻辑删除
 		if num, err := query.Filter("id__in", ids).Update(orm.Params{ "logic_delete": 1}); err == nil {
-			this.jsonResult(enums.JRCodeSucc, fmt.Sprintf("Successful deletion of %d records", num), nil)
+			this.jsonResult(enums.JRCodeSucc, fmt.Sprintf("成功删除 %d 个角色!", num), nil)
 		} else {
-			this.jsonResult(enums.JRCodeFailed, "delete failed!", nil)
+			beego.Error(err.Error())
+			this.jsonResult(enums.JRCodeFailed, "角色删除失败!", nil)
 		}
 	} else {
-		this.jsonResult(enums.JRCodeSucc, "reuqest method error!", nil)
+		this.jsonResult(enums.JRCodeSucc, "请求方式错误!", nil)
 	}
 }

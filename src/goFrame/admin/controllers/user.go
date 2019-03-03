@@ -44,12 +44,27 @@ func (this *UserController) Index() {
 	DataGrid 后台用户管理页 表格获取数据
  */
 func (this *UserController) UserDataGrid() {
+	beego.Debug("UserDataGrid")
 	//直接反序化获取json格式的requestbody里的值
 	var params models.UserQueryParam
 	json.Unmarshal(this.Ctx.Input.RequestBody, &params)
 	//获取数据列表和总数
 	//data, total := models.UserList(this.page, this.pageSize)
 	data, total := models.UserPageList(&params)
+
+	//获取用户角色
+	o := orm.NewOrm()
+	for _, user := range data{
+		beego.Debug(user)
+		o.LoadRelated(user, "RoleUserRel")
+		//获取关联的roleId列表
+		var roleIds  []int
+		for _, item := range user.RoleUserRel {
+			roleIds = append(roleIds, item.Role.Id)
+		}
+		user.RoleIds = roleIds
+	}
+
 	//定义返回的数据结构
 	result := make(map[string]interface{})
 	result["total"] = total
@@ -67,7 +82,8 @@ func (this *UserController) Save() {
 	var err error
 	//获取form里的值
 	if err = this.ParseForm(&m); err != nil {
-		this.jsonResult(enums.JRCodeFailed, "获取数据失败", m.Id)
+		beego.Error(err.Error())
+		this.jsonResult(enums.JRCodeFailed, "获取数据失败!", m.Id)
 	}
 	//删除已关联的历史数据
 	//if _, err := o.QueryTable(models.RoleBackendUserRelTBName()).Filter("backenduser__id", m.Id).Delete(); err != nil {
@@ -78,13 +94,15 @@ func (this *UserController) Save() {
 		m.Password = utils.String2md5(m.Password) //对密码进行加密
 		m.CreateTime = time.Now().Unix()
 		if _, err := o.Insert(&m); err != nil {
+			beego.Error(err.Error())
 			this.jsonResult(enums.JRCodeFailed, err.Error(), m.Id)
 		}
 	} else {
 		//修改用户信息
 		m.UpdateTime = time.Now().Unix()
 		if user, err := models.UserGetById(m.Id); err != nil {
-			this.jsonResult(enums.JRCodeFailed, err.Error(), m.Id)
+			beego.Error(err.Error())
+			this.jsonResult(enums.JRCodeFailed, "用户信息修改失败!", m.Id)
 		} else {
 			m.Password = strings.TrimSpace(m.Password)
 			if len(m.Password) == 0 {
@@ -97,10 +115,11 @@ func (this *UserController) Save() {
 			m.Avatar = user.Avatar
 		}
 		if _, err := o.Update(&m); err != nil {
-			this.jsonResult(enums.JRCodeFailed, err.Error(), m.Id)
+			beego.Error(err.Error())
+			this.jsonResult(enums.JRCodeFailed, "用户信息修改失败!", m.Id)
 		}
 	}
-	this.jsonResult(enums.JRCodeSucc, "success!", m.Id)
+	this.jsonResult(enums.JRCodeSucc, "用户添加成功!", m.Id)
 	////添加关系
 	//var relations []models.RoleBackendUserRel
 	//for _, roleId := range m.RoleIds {
@@ -135,7 +154,8 @@ func (this *UserController) UserEdit() {
 	if Id > 0 {
 		user, err = models.UserGetById(Id)
 		if err != nil {
-			this.pageError("数据无效，请刷新后重试")
+			beego.Error(err.Error())
+			this.pageError("数据无效，请刷新后重试!")
 		}
 		o := orm.NewOrm()
 		o.LoadRelated(user, "RoleUserRel")
@@ -172,11 +192,12 @@ func (this *UserController) UserDelete() {
 		//if num, err := query.Filter("id__in", ids).Delete(); err == nil {
 		//逻辑删除
 		if num, err := query.Filter("id__in", ids).Update(orm.Params{ "logic_delete": 1}); err == nil {
-			this.jsonResult(enums.JRCodeSucc, fmt.Sprintf("Successful deletion of %d records", num), nil)
+			this.jsonResult(enums.JRCodeSucc, fmt.Sprintf("成功删除 %d 个用户!", num), nil)
 		} else {
-			this.jsonResult(enums.JRCodeFailed, "delete failed!", nil)
+			beego.Error(err.Error())
+			this.jsonResult(enums.JRCodeFailed, "用户删除失败!", nil)
 		}
 	} else {
-		this.jsonResult(enums.JRCodeSucc, "reuqest method error!", nil)
+		this.jsonResult(enums.JRCodeSucc, "请求方式错误!", nil)
 	}
 }
