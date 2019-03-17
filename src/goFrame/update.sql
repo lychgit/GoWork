@@ -1,13 +1,19 @@
+-- 创建 go_role_user_rel 表  role_id、 user_id的索引
+CREATE INDEX index_role_id  ON go_role_user_rel (role_id);
+CREATE INDEX index_user_id  ON go_role_user_rel (user_id);
+-- 查看是否创建成功
+show  CREATE TABLE go_role_user_rel
+-- 查看索引是否生效
+EXPLAIN SELECT * from go_role_user_rel
+
+-- 创建 go_role_actione_rel 表  role_id、 action_id的索引
+alter table go_role_actione_rel add INDEX index_role_id (role_id);
+alter table go_role_actione_rel add INDEX index_action_id (action_id);
 
 
-一.多企业OA共存
-1.用户可加入多个企业, 该企业中用户可以是多种角色共存;高级角色可分配等级比较低的角色权限、等级
-用户加入企业方式： 1：申请， 2： 企业邀请
-用户申请加入企业，仅企业中分配有查询申请者信息、处理申请的人员可处理对应事务。
-企业邀请用户加入，用户的消息栏会有邀请消息， 用户同意后自动加入企业。
+-- 创建 go_role_menu_rel 表  role_id、 menu_id的索引
+alter table go_role_menu_rel add INDEX index_role_id (role_id);
+alter table go_role_menu_rel add INDEX index_menu_id (menu_id);
 
-二、消息发送
-1.可以发送企业的公共消息和私密消息。
-2.可以选择消息模板修改编辑后群发消息。
-  1). 编辑保存消息模板
-  2). 发送消息时可选发送消息的类型-某个企业公共消息、私人消息；发送企业消息时需可选择企业过滤，
+-- 删除索引
+DROP index index_logic_delete ON go_role_menu_rel;
