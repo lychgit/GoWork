@@ -7,6 +7,7 @@ import (
 	"os"
 	"path"
 		"io"
+	"strings"
 )
 
 type Upload struct {
@@ -45,9 +46,11 @@ func NewUpload(params map[string]interface{}) (Upload, error) {
 		Hash:     true,                 //是否生成hash编码
 		CallBack: false,                //检测文件是否存在回调，如果存在返回文件信息数组
 		Driver:   "",                   // 文件上传驱动
+		FileType: "",
 	}
 	upload.SubName[0] = "date"
 	upload.SubName[1] = "Ymd"
+	upload.FileType = ".gif,.jpg,.jpeg,.bmp,.png,.swf,.tmp"
 
 	if len(params) > 0 {
 		//根据传入的参数初始化upload结构体
@@ -90,7 +93,7 @@ func (u *Upload) GetError() string {
  * @param  boolean $replace 同名文件是否覆盖
  * @return boolean          保存状态，true-成功，false-失败
  */
-func (u *Upload) Save(file *multipart.FileHeader, fileInfo map[string]interface{}, replace bool) bool {
+func (u *Upload) saveFile(file *multipart.FileHeader, fileInfo map[string]interface{}, replace bool) bool {
 	temFile, err := file.Open()
 	defer temFile.Close()
 	if err != nil {
@@ -119,14 +122,6 @@ func (u *Upload) Save(file *multipart.FileHeader, fileInfo map[string]interface{
 			}
 		}
 		return true
-	}
-}
-
-func (u *Upload) Upload(file *multipart.FileHeader) (map[string]interface{},error) {
-	if info, k := u.UploadFile(file); !k {
-		return nil, u.error
-	} else {
-		return info, nil
 	}
 }
 
@@ -182,16 +177,15 @@ func (u *Upload) CheckSavePath() bool {
  * 检查上传的文件后缀是否合法
  * @param string $ext 后缀
  */
- func (u * Upload) checkExt(ext string) {
- 	if Empty(u.SaveExt) {
-
+ func (u * Upload) checkExt(ext string) bool {
+ 	if Empty(u.FileType) {
+		return true
+	} else if InArray(Explode(",",u.FileType) ,strings.ToLower(ext)) {
+		return true
+	} else {
+		return false
 	}
-	 return
  }
-//private function checkExt($ext)
-//{
-//return empty($this->config['exts']) ? true : in_array(strtolower($ext), $this->exts);
-//}
 
 
 /**
@@ -232,25 +226,22 @@ func (u *Upload) CheckSavePath() bool {
  * @param string $file 文件信息
  */
  func (u *Upload) getSaveName(file *multipart.FileHeader) string {
- 	var rule string
- 	rule = u.SaveName
+ 	rule := u.SaveName
  	var saveName string
  	if Empty(rule) {
 		saveName = file.Filename
 	} else {
-		saveName = u.getName(rule, file.Filename)
+		saveName = u.getName(rule,"")
 		if Empty(saveName) {
 			u.error = errors.New("File name rule error!")
 			return ""
 		}
 	}
- 	var ext string
  	if Empty(u.SaveExt) {
- 		ext = path.Ext(file.Filename)
+		return saveName + path.Ext(file.Filename)
 	} else {
-		ext = u.SaveExt
+		return saveName + u.SaveExt
 	}
-	return saveName + ext
  }
 
 /**
@@ -270,7 +261,11 @@ func (u *Upload) CheckSavePath() bool {
  	return subPath
  }
 
-func (u *Upload) UploadFile(file *multipart.FileHeader) (map[string]interface{},bool) {
+func (u *Upload) getHash(temName string) string{
+	return  Md5(temName)
+}
+
+func (u *Upload) upload(file *multipart.FileHeader) (map[string]interface{},bool) {
 	/* 检测上传根目录 */
 	if !u.CheckRootPath() {
 		return nil, false
@@ -313,15 +308,15 @@ func (u *Upload) UploadFile(file *multipart.FileHeader) (map[string]interface{},
 	//}
 
 	/* 检查文件后缀 */
-	//if (!$this->checkExt($info['ext'])) {
-	//throw new \Exception('Upload file suffixes are not allowed');
-	//}
+	if !u.checkExt(String(info["ext"])) {
+		u.error = errors.New("File suffix name error!'")
+		return nil, false
+	}
 
 	/* 哈希验证 */
 	if u.Hash {
-		info["md5"] = u.GetHash(u.SaveName)
+		info["md5"] = u.getHash(u.SaveName)
 	}
-
 
 	/* 调用回调函数检测文件是否存在 */
 	//if($this->callback){
@@ -341,25 +336,20 @@ func (u *Upload) UploadFile(file *multipart.FileHeader) (map[string]interface{},
 	/* 检测并创建子目录 */
 	info["savePath"] = u.SavePath + u.getSubPath(String(info["name"]))
 	//
-	/* 对图像文件进行严格检测 */
-	//$ext = strtolower($info['ext']);
-	//if (!$_POST['chunks'] && in_array($ext, array('gif', 'jpg', 'jpeg', 'bmp', 'png', 'swf'))) {
-	//$imginfo = getimagesize($file->getTempName());
-	//if (empty($imginfo) || ($ext == 'gif' && empty($imginfo['bits']))) {
-	//throw new \Exception('Illegal image file!');
-	//}
-	//}
-	//
 	beego.Debug("info save")
 	beego.Debug(info)
 	/* 保存文件 并记录保存成功的文件 */
-	if  u.Save(file, info, u.Replace) {
+	if  u.saveFile(file, info, u.Replace) {
 		return info,true
 	} else {
 		return nil, false
 	}
 }
 
-func (u *Upload) GetHash(temName string) string{
-	return  Md5(temName)
+func (u *Upload) Upload(file *multipart.FileHeader) (map[string]interface{},error) {
+	if info, k := u.upload(file); !k {
+		return nil, u.error
+	} else {
+		return info, nil
+	}
 }

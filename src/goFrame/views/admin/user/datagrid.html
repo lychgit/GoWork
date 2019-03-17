@@ -5,6 +5,10 @@
     var loadDataGrid = true;//加载数据
     //高亮显示id
     var highlightPk = null;
+
+    //角色列表
+    var roles = {{.role_rows}};
+
     //初始化加载
     $(function () {
         dataGridInit();
@@ -110,10 +114,10 @@
                     return {classes: 'ellipsis'};
                 }
             }, {
-                field: 'NameCn',
+                field: 'RoleIds',
                 title: '角色',
                 align: 'center',
-                formatter: formatterWapBySpan,
+                formatter: formatterRoleBySpan,
                 cellStyle: function (value, row, index, field) {
                     return {classes: 'ellipsis'};
                 }
@@ -214,5 +218,26 @@
             var texts = [{ Text: '锁定', Value: -1 }, { Text: '禁用', Value: 0 }, { Text: '启用', Value: 1 } ]
             return sdtheme.showenum(value, texts);
         }
+
+        ///用一个带有title值的span将值包裹起来
+        function formatterRoleBySpan(value, row, index) {
+            let roles_str = "";
+            if (!empty(value)) {
+                for (let i in value) {
+                    let key = arraySeach(value[i], arrayColumn(roles, "Id"));
+                    if (!empty(key)) {
+                        if (roles_str != '') {
+                            roles_str += '、';
+                        }
+                        roles_str += roles[key].NameCn;
+                    }
+                }
+            }
+            if (roles_str == '') {
+                roles_str =  '普通用户';
+            }
+            return '<span title="' + roles_str + '">' + roles_str + '</span>';
+        }
+
     }
 </script>

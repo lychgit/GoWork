@@ -18,7 +18,6 @@ func init() {
 }
 
 func main() {
-
 	//是否路由忽略大小写匹配，默认是 true，区分大小写
 	beego.BConfig.RouterCaseSensitive = true
 	//beego 服务器默认在请求的时候输出 server 为 LYCH
