@@ -8,7 +8,9 @@ import (
 	"bufio"
 	"goFrame/enums"
 	"mime/multipart"
-	)
+	"time"
+	"errors"
+)
 
 type PictureController struct {
 	BaseController
@@ -203,8 +205,24 @@ func (this *PictureController) mergeBlock(fileFlag interface{}, tmpPath, uploadP
 	infoPath := tmpPath + taskId + "info"
 	if utils.IsFile(infoPath) {
 		//data := ; //获取文件中数据
-		//saveDir := time.Date()
+		data := map[string]string {"filename": "1.jpg"}
+		saveDir := utils.Date(time.Now(),"Ymd") + string(os.PathSeparator)
+		//mergeFile = os.Getuid()
+		//($i = strrpos($data['filename'], '.')) && $ext = substr($data['filename'], $i);
+		index := strings.Index(data["filename"], ".")
+		ext := utils.String(data["filename"][index:])
+		beego.Debug(ext)
+		//打开文件
+		//if (!$out = @fopen($rootPath . '/' . $saveDir . $mergeFile . $ext, "wb")) {
+		//return new \Xin\Lib\MessageResponse('Open Merge Failed', 'error', [], 500);
+		//}
 
+		if !utils.IsDir(uploadPath + saveDir) {
+			if err := os.Mkdir(uploadPath + saveDir, os.ModePerm); err != nil {
+				beego.Error(errors.New("上传目录" + uploadPath + saveDir + "创建失败!"))
+				this.jsonResult(enums.JRCodeFailed, "上传目录" + uploadPath + saveDir + "创建失败!", nil)
+			}
+		}
 
 		this.jsonResult(enums.JRCodeSucc, "", nil)
 	} else {
@@ -221,7 +239,6 @@ func (this *PictureController) uploadfile(rootPath, tmpPath, saveName string)  {
 	if hasFiles := this.Ctx.Request.ParseMultipartForm(32 << 20); hasFiles != nil {
 		this.jsonResult(enums.JRCodeFailed, "上传文件解析失败", nil)
 	}
-
 	var fileHeads []*multipart.FileHeader
 	fileHeads = this.Ctx.Request.MultipartForm.File["file"]  //获取上传的文件句柄   type: array
 	//上传upload类初始化

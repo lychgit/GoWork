@@ -3,6 +3,7 @@ package utils
 import (
 	"time"
 	"fmt"
+	"strings"
 )
 
 const (
@@ -22,61 +23,64 @@ const (
 	StampMilli = "Jan _2 15:04:05.000"
 	StampMicro = "Jan _2 15:04:05.000000"
 	StampNano  = "Jan _2 15:04:05.000000000"
+
+	Year     = "06"
+	LongYear = "2006"
+
+	Month     = "Jan"
+	ZeroMonth = "01"
+	NumMonth  = "1"
+	LongMonth = "January"
+
+	Day         = "2"
+	ZeroDay     = "02"
+	UnderDay    = "_2"
+	WeekDay     = "Mon"
+	LongWeekDay = "Monday"
+
+	Hour       = "15"
+	ZeroHour12 = "03"
+	Hour12     = "3"
+
+	Minute     = "4"
+	ZeroMinute = "04"
+
+	Second     = "5"
+	ZeroSecond = "05"
+
+	PM                    = "PM"
+	pm                    = "pm"
+	TZ                    = "MST"
+	ISO8601TZ             = "Z0700" // prints Z for UTC
+	ISO8601SecondsTZ      = "Z070000"
+	ISO8601ShortTZ        = "Z07"
+	ISO8601ColonTZ        = "Z07:00" // prints Z for UTC
+	ISO8601ColonSecondsTZ = "Z07:00:00"
+	NumTZ                 = "-0700" // always numeric
+	NumSecondsTz          = "-070000"
+	NumShortTZ            = "-07"    // always numeric
+	NumColonTZ            = "-07:00" // always numeric
+	NumColonSecondsTZ     = "-07:00:00"
+	FracSecond0           = ".0"               //".00", ... , trailing zeros included
+	FracSecond9           = ".9"               //".99", ..., trailing zeros omitted
+	stdNeedDate           = 1 << 8             // need month, day, year
+	stdNeedClock          = 2 << 8             // need hour, minute, second
+	stdArgShift           = 16                 // extra argument in high bits, above low stdArgShift
+	stdMask               = 1<<stdArgShift - 1 // mask out argument
 )
 
-const (
-	_                        = iota
-	stdLongMonth             = iota + stdNeedDate  // "January"
-	stdMonth                                       // "Jan"
-	stdNumMonth                                    // "1"
-	stdZeroMonth                                   // "01"
-	stdLongWeekDay                                 // "Monday"
-	stdWeekDay                                     // "Mon"
-	stdDay                                         // "2"
-	stdUnderDay                                    // "_2"
-	stdZeroDay                                     // "02"
-	stdHour                  = iota + stdNeedClock // "15"
-	stdHour12                                      // "3"
-	stdZeroHour12                                  // "03"
-	stdMinute                                      // "4"
-	stdZeroMinute                                  // "04"
-	stdSecond                                      // "5"
-	stdZeroSecond                                  // "05"
-	stdLongYear              = iota + stdNeedDate  // "2006"
-	stdYear                                        // "06"
-	stdPM                    = iota + stdNeedClock // "PM"
-	stdpm                                          // "pm"
-	stdTZ                    = iota                // "MST"
-	stdISO8601TZ                                   // "Z0700"  // prints Z for UTC
-	stdISO8601SecondsTZ                            // "Z070000"
-	stdISO8601ShortTZ                              // "Z07"
-	stdISO8601ColonTZ                              // "Z07:00" // prints Z for UTC
-	stdISO8601ColonSecondsTZ                       // "Z07:00:00"
-	stdNumTZ                                       // "-0700"  // always numeric
-	stdNumSecondsTz                                // "-070000"
-	stdNumShortTZ                                  // "-07"    // always numeric
-	stdNumColonTZ                                  // "-07:00" // always numeric
-	stdNumColonSecondsTZ                           // "-07:00:00"
-	stdFracSecond0                                 // ".0", ".00", ... , trailing zeros included
-	stdFracSecond9                                 // ".9", ".99", ..., trailing zeros omitted
-
-	stdNeedDate  = 1 << 8             // need month, day, year
-	stdNeedClock = 2 << 8             // need hour, minute, second
-	stdArgShift  = 16                 // extra argument in high bits, above low stdArgShift
-	stdMask      = 1<<stdArgShift - 1 // mask out argument
-)
 //根据传入的Y-m-d、 Y/m/d日期格式  生成Go语言time中对应的 显示格式字符串
-func getFormat (layout string) string {
-	var format string
-	return format
+func format(layout string) string {
+	r := strings.NewReplacer("Y", LongYear, "y", Year, "m", ZeroMonth, "d", ZeroDay, "H", Hour, "h", ZeroHour12, "i", ZeroSecond, "s", ZeroMinute)
+	return r.Replace(layout)
 }
 
 /**
  * t 要格式化的时间
  * layout 要格式化的时间格式
  */
-func Format(t time.Time, layout string) string {
-	f := getFormat(layout)
+func Date(t time.Time, layout string) string {
+	f := format(layout)
 	o := time.Date(t.Year(), t.Month(), t.Day(), t.Hour(), t.Minute(), t.Second(), t.Nanosecond(), time.Local)
 	return o.Format(f)
 }

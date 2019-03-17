@@ -5,6 +5,7 @@ import (
 	"strings"
 	"errors"
 	"github.com/astaxie/beego"
+	"strconv"
 )
 
 //初始化结构体
@@ -53,7 +54,24 @@ func Empty(data interface{}) bool {
 
 //将数据的类型强制转换为string类型
 func String(data interface{}) string{
-	return interface{}(data).(string)
+	var str string
+	switch data.(type) {
+	case int, int8, int32, int64, uint, uint8, uint16, uint32, uint64:
+		str = strconv.Itoa(interface{}(data).(int))
+		break
+	case float32:
+		str = strconv.FormatFloat(interface{}(data).(float64),'f',7, 32)
+		break
+	case float64:
+		str = strconv.FormatFloat(interface{}(data).(float64),'f',15, 64)
+		break
+	case string:
+		str = interface{}(data).(string)
+		break
+	default:
+		str = ""
+	}
+	return str
 }
 
 //判断数组中是否存在某个值
