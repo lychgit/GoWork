@@ -8,7 +8,9 @@ import (
 	"bufio"
 	"goFrame/enums"
 	"mime/multipart"
-	)
+	"time"
+	"errors"
+)
 
 type PictureController struct {
 	BaseController
@@ -54,6 +56,9 @@ func (this *PictureController) PictureUpload() {
 
 	tmpPath := "tmp"
 	rootPath := "upload"
+	fileTempPath := tmpPath + pathSeparator//文件缓存路径
+	uploadPath := rootPath + pathSeparator//文件存储路径
+
 	// Create target dir  判断保存文件的文件夹是否存在  不存在则新建
 	if k := utils.IsExist(rootPath); !k {
 		os.Mkdir(rootPath, os.ModePerm)
@@ -67,7 +72,8 @@ func (this *PictureController) PictureUpload() {
 	// Remove old temp files
 	if (cleanupTargetDir) {
 		if v := utils.IsDir(tmpPath); !v {
-			//'{"jsonrpc" : "2.0", "error" : {"code": 100, "message": "Failed to open temp directory."}, "id" : "id"}'
+			beego.Error("Failed to open temp directory!")
+			this.jsonResult(enums.JRCodeFailed, "Failed to open temp directory!", nil)
 		}
 		//递归移除 缓存目录下的旧文件
 	}
@@ -83,14 +89,14 @@ func (this *PictureController) PictureUpload() {
 		this.checkChunk(tmpPath)
 	} else if param == "mergechunks" {
 		//合并文件分片
-		this.mergeBlock(nil)
+		this.mergeBlock(nil, fileTempPath, uploadPath)
 	} else {
 		//上传图片
 		file, fileHead, fileErr := this.Ctx.Request.FormFile("file")  //上传的文件
 		//beego.Debug(file)
 		//beego.Debug(fileHead)
 		if file == nil {
-			beego.Debug("xx上传失败")
+			beego.Error(" 未找到要上传的图片!, ERROR: FormFile获取上传图片失败!")
 			msg := ""
 			this.jsonResult(enums.JRCodeFailed, msg, nil)
 		}
@@ -108,18 +114,16 @@ func (this *PictureController) PictureUpload() {
 			fileName = utils.UniqueId()//生成一个唯一ID
 		}
 
-		//文件id
-		Id := this.Ctx.Request.Form.Get("id")
-		beego.Debug(Id)
-		//文件类型
-		fileType := this.Ctx.Request.Form.Get("type")
-		beego.Debug(fileType)
+		////文件id   上传多个图片 id不同  WU_FILE_1、 WU_FILE_2
+		//Id := this.Ctx.Request.Form.Get("id")
+		//beego.Debug(Id)
+		////文件类型
+		//fileType := this.Ctx.Request.Form.Get("type")
+		//beego.Debug(fileType) //image/png
 
-		chunk := this.GetString("chunk", "0")
-		taskId := this.GetString("taskid", "0")
-		saveName := fileName + "_" + taskId + "_" + chunk
-		fileTempPath := tmpPath + pathSeparator//文件缓存路径
-		uploadPath := rootPath + pathSeparator//文件存储路径
+		chunk := this.GetString("chunk", "0") //分块下标
+		taskId := this.GetString("taskid", "0") //文件唯一标记
+		saveName := fileName + "_" +  taskId + "_" + chunk
 		this.uploadfile(uploadPath, fileTempPath, saveName)
 	}
 }
@@ -167,12 +171,15 @@ func (this *PictureController) saveTaskInfo(tmpPath string) {
 /**
  * 	检测分片是否存在
  *	params string tmpPath  分片存储缓存路径
+ *	chunk 分块下标
+ *	chunksize 分块大小
  */
 func (this *PictureController) checkChunk(tmpPath string) {
-	chunk := this.GetString("chunk", "0")
+	chunk := this.GetString("chunk", "0") //分块下标
 	if chunkSize, ok := interface{}(this.GetString("chunksize", "0")).(int64); !ok {
 		taskId := this.GetString("taskid")
 		if !this.Empty(chunk) || !this.Empty(chunkSize){
+			beego.Error("分块下标或分块大小不能为空! ERROR: chunk or chunkSize is empty!")
 			this.jsonResult(enums.JRCodeFailed, "invalid param", nil)
 		}
 		data := make(map[string]bool)
@@ -193,8 +200,35 @@ func (this *PictureController) checkChunk(tmpPath string) {
  * 	合并分片
  *	params interface{} fileFlag  可识别属于同一文件的分片标识
  */
-func (this *PictureController) mergeBlock(fileFlag interface{}){
-	this.jsonResult(enums.JRCodeSucc, "", nil)
+func (this *PictureController) mergeBlock(fileFlag interface{}, tmpPath, uploadPath string){
+	taskId := this.GetString("taskid", "0") //文件唯一标记
+	infoPath := tmpPath + taskId + "info"
+	if utils.IsFile(infoPath) {
+		//data := ; //获取文件中数据
+		data := map[string]string {"filename": "1.jpg"}
+		saveDir := utils.Date(time.Now(),"Ymd") + string(os.PathSeparator)
+		//mergeFile = os.Getuid()
+		//($i = strrpos($data['filename'], '.')) && $ext = substr($data['filename'], $i);
+		index := strings.Index(data["filename"], ".")
+		ext := utils.String(data["filename"][index:])
+		beego.Debug(ext)
+		//打开文件
+		//if (!$out = @fopen($rootPath . '/' . $saveDir . $mergeFile . $ext, "wb")) {
+		//return new \Xin\Lib\MessageResponse('Open Merge Failed', 'error', [], 500);
+		//}
+
+		if !utils.IsDir(uploadPath + saveDir) {
+			if err := os.Mkdir(uploadPath + saveDir, os.ModePerm); err != nil {
+				beego.Error(errors.New("上传目录" + uploadPath + saveDir + "创建失败!"))
+				this.jsonResult(enums.JRCodeFailed, "上传目录" + uploadPath + saveDir + "创建失败!", nil)
+			}
+		}
+
+		this.jsonResult(enums.JRCodeSucc, "", nil)
+	} else {
+		beego.Error("Merge Sharding Failed!")
+		this.jsonResult(enums.JRCodeFailed, "Merge Sharding Failed", nil)
+	}
 }
 
 /**
@@ -205,25 +239,19 @@ func (this *PictureController) uploadfile(rootPath, tmpPath, saveName string)  {
 	if hasFiles := this.Ctx.Request.ParseMultipartForm(32 << 20); hasFiles != nil {
 		this.jsonResult(enums.JRCodeFailed, "上传文件解析失败", nil)
 	}
-
-	//beego.Debug("Key of MultipartForm.File")
-	//for k, _ := range this.Ctx.Request.MultipartForm.File {
-	//	beego.Debug(k)
-	//}
-
 	var fileHeads []*multipart.FileHeader
 	fileHeads = this.Ctx.Request.MultipartForm.File["file"]  //获取上传的文件句柄   type: array
 	//上传upload类初始化
 	uploadConf := make(map[string]interface{})
-	uploadConf["RootPath"] = rootPath
-	uploadConf["SavePath"] = tmpPath
+	uploadConf["RootPath"] = rootPath //图库根路径
+	uploadConf["SavePath"] = tmpPath //分块缓存文件存储路径
 	uploadConf["AutoSub"] = false
-	uploadConf["SaveName"] = saveName
-	uploadConf["SaveExt"] = "tmp"
+	uploadConf["SaveName"] = saveName //缓存文件保存名称
+	uploadConf["SaveExt"] = ".tmp" //缓存文件后缀
 	if upload, err := utils.NewUpload(uploadConf); err == nil {
 		var infos [] map[string]interface{}
 		for _, fileHead := range fileHeads {
-			beego.Debug("upload")
+			beego.Debug("upload temp file")
 			beego.Debug(upload)
 			if info, err := upload.Upload(fileHead); err != nil {
 				beego.Debug(err.Error())
@@ -235,6 +263,7 @@ func (this *PictureController) uploadfile(rootPath, tmpPath, saveName string)  {
 		}
 		this.jsonResult(enums.JRCodeSucc, "upload success!", infos)
 	} else {
+		beego.Error("文件上传类实例化失败！ ERROR: file upload class create error!")
 		this.jsonResult(enums.JRCodeFailed, "upload create error!", nil)
 	}
 }

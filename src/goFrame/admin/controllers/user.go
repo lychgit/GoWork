@@ -27,9 +27,9 @@ func (this *UserController) Index() {
 	this.checkAuthor()
 
 	//获取角色列表
-	data := models.RoleListGrid(this.page, this.pageSize)
+	roles := models.RoleListGrid(this.page, this.pageSize)
 	//rolelist["rows"] = this.Json_encode(data)
-	this.Data["role_rows"] = data
+	this.Data["role_rows"] = roles
 
 	//页面里按钮权限控制
 	//this.Data["canEdit"] = this.checkActionUseror("MenuController", "Edit")

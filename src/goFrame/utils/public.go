@@ -5,8 +5,10 @@ import (
 	"strings"
 	"errors"
 	"github.com/astaxie/beego"
+	"strconv"
 )
 
+//初始化结构体
 func InitStruct(ptr interface{}, params map[string]interface{}) error {
 	ref := reflect.ValueOf(ptr)
 	if ref.Kind() == reflect.Ptr {
@@ -42,6 +44,7 @@ func InitStruct(ptr interface{}, params map[string]interface{}) error {
 	}
 }
 
+//判断data是否为空
 func Empty(data interface{}) bool {
 	if data == nil || data == "" {
 		return true
@@ -49,10 +52,29 @@ func Empty(data interface{}) bool {
 	return false
 }
 
+//将数据的类型强制转换为string类型
 func String(data interface{}) string{
-	return interface{}(data).(string)
+	var str string
+	switch data.(type) {
+	case int, int8, int32, int64, uint, uint8, uint16, uint32, uint64:
+		str = strconv.Itoa(interface{}(data).(int))
+		break
+	case float32:
+		str = strconv.FormatFloat(interface{}(data).(float64),'f',7, 32)
+		break
+	case float64:
+		str = strconv.FormatFloat(interface{}(data).(float64),'f',15, 64)
+		break
+	case string:
+		str = interface{}(data).(string)
+		break
+	default:
+		str = ""
+	}
+	return str
 }
 
+//判断数组中是否存在某个值
 func  InArray(data map[interface{}]interface{}, value interface{})  bool {
 	for _, v := range data {
 		if v == value {
@@ -61,7 +83,7 @@ func  InArray(data map[interface{}]interface{}, value interface{})  bool {
 	}
 	return false
 }
-
+//判断数组中是否存在某个键值
 func KeyInArray(data map[interface{}]interface{}, key interface{}) bool {
 	for k, _ := range data {
 		if k == key {
@@ -70,7 +92,22 @@ func KeyInArray(data map[interface{}]interface{}, key interface{}) bool {
 	}
 	return false
 }
-
+/**
+ * separator	必需。规定在哪里分割字符串。
+ * str	必需。要分割的字符串。
+ * limit 可选。规定所返回的数组元素的数目。 可能的值：
+ * 大于 0 - 返回包含最多 limit 个元素的数组
+ * 小于 0 - 返回包含除了最后的 -limit 个元素以外的所有元素的数组
+ * 0 - 返回包含一个元素的数组
+ */
+func Explode(separator string, str string)  map[interface{}]interface{}{
+	attr := make(map[interface{}]interface{})
+	for k,v := range strings.SplitN(str, separator, -1) {
+		attr[k] = v
+	}
+	return attr
+}
+//结构体数据 debug打印输出
 func DebugStruct(ptr interface{}) {
 	beego.Debug("DebugStruct")
 	ref := reflect.ValueOf(ptr)

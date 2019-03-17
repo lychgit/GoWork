@@ -25,6 +25,11 @@ func (this *RoleController) Index() {
 	//this.Data["canEdit"] = this.checkActionRoleor("MenuController", "Edit")
 	//this.Data["canDelete"] = this.checkActionRoleor("MenuController", "Delete")
 
+	////获取角色列表
+	//roles := models.RoleListGrid(this.page, this.pageSize)
+	////rolelist["rows"] = this.Json_encode(data)
+	//this.Data["role_rows"] = roles
+
 	this.LayoutSections = make(map[string]string)
 	this.LayoutSections["datagrid"] = "admin/" + this.controllerName + "/datagrid.html"
 	this.display()
