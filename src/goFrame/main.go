@@ -4,7 +4,7 @@ import (
 	_ "goFrame/routers"
 	"github.com/astaxie/beego"
 	"goFrame/models"
-)
+	)
 
 func init() {
 	//beego.LoadAppConfig("ini", "conf/app.conf")
@@ -91,7 +91,7 @@ func main() {
 	//通过fastcgi 标准I/O，启用 fastcgi 后才生效，默认 false
 	beego.BConfig.Listen.EnableStdIo = false
 
-	/******************************		Session配置	******************************/
+	/******************************	Session配置	******************************/
 
 	beego.BConfig.WebConfig.Session.SessionOn = true
 
