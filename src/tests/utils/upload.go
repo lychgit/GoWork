@@ -101,8 +101,6 @@ func (u *Upload) saveFile(file *multipart.FileHeader, fileInfo map[string]interf
 		return false
 	} else {
 		fileName := u.RootPath + String(fileInfo["savePath"]) + String(fileInfo["saveName"])
-		beego.Debug("缓存文件保存名称")
-		beego.Debug(fileName)
 		if !replace && IsFile(fileName) {
 			/* 不覆盖同名文件 */
 			u.error = errors.New("存在同名文件" + String(fileInfo["saveName"]))

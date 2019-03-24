@@ -7,9 +7,7 @@ import (
 	"crypto/rand"
 	"encoding/base64"
 		"crypto/md5"
-	"github.com/astaxie/beego"
-	"errors"
-)
+	)
 
 func Md5(str string) string {
 	hash := md5.New()
@@ -92,25 +90,4 @@ func GetFile(path string) os.FileInfo {
 	} else {
 		return nil
 	}
-}
-
-func GetFileSize(infoPath string) int64 {
-	if fileInfo, err := os.Stat(infoPath); err == nil {
-		return fileInfo.Size()
-	} else {
-		beego.Error("GetFileSize:" + err.Error())
-		return 0
-	}
-}
-
-func DeleteFile(fileName string) error {
-	//删除文件
-	if !IsFile(fileName) {
-		return errors.New("file isn't exist")
-	}
-	if err := os.Remove(fileName); err != nil {
-		beego.Error("DeleteFile: " + err.Error())
-		return err
-	}
-	return nil
 }

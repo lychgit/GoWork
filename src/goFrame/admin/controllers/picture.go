@@ -10,10 +10,20 @@ import (
 	"mime/multipart"
 	"time"
 	"errors"
+		"encoding/json"
 )
 
 type PictureController struct {
 	BaseController
+}
+
+type  TempInfo struct{
+	ChunkSize int64 `json:"ChunkSize"`
+	FileHash string `json:"FileHash"`
+	FileId string `json:"FileId"`
+	FileName string `json:"FileName"`
+	FileSize int64 `json:"FileSize"`
+	Label string `json:"Label"`
 }
 
 func (this *PictureController) Index() {
@@ -123,7 +133,7 @@ func (this *PictureController) PictureUpload() {
 
 		chunk := this.GetString("chunk", "0") //分块下标
 		taskId := this.GetString("taskid", "0") //文件唯一标记
-		saveName := fileName + "_" +  taskId + "_" + chunk
+		saveName := fileName + "_" +  taskId + "_" + chunk  //文件保存名称
 		this.uploadfile(uploadPath, fileTempPath, saveName)
 	}
 }
@@ -136,29 +146,35 @@ func (this *PictureController) saveTaskInfo(tmpPath string) {
 	beego.Debug("saveTaskInfo: " + tmpPath)
 	pathSeparator := string(os.PathSeparator)
 	fileHash := strings.TrimSpace(this.GetString("filehash"))
-	chunkSize := strings.TrimSpace(this.GetString("chunksize"))
+	chunkSize, _ := this.GetInt64("chunksize", 0)
 	taskId := utils.Md5(fileHash + "_" + string(this.userId))
 	infoPath := tmpPath + pathSeparator + taskId + "info"
 	//判断分片任务信息缓存文件是否存在
+	fileSize, _ := this.GetInt64("filesize",0)
 	if v := utils.IsFile(infoPath); !v {
-		data := make(map[string]interface{})
-		data["filename"] = this.GetString("filename")
-		data["filehash"] = fileHash
-		data["filesize"] = this.GetString("filesize")
-		data["label"] = this.GetString("label")
-		data["chunksize"] = chunkSize
-		data["fileid"] = this.GetString("fileid")
+		var data  TempInfo
+		data.ChunkSize = chunkSize
+		data.FileHash = fileHash
+		data.FileId = this.GetString("fileid")
+		data.FileName = this.GetString("filename")
+		data.FileSize = fileSize
+		data.Label = this.GetString("label")
+		temp, err := json.Marshal(data)
+		if err != nil {
+			beego.Error(err.Error())
+		}
 		//file_put_contents($infoPath, serialize($data)); //将任务信息写入infoPath目录下保存
 		infoFile, err := os.OpenFile(infoPath, os.O_CREATE|os.O_WRONLY, 0644)
 		defer infoFile.Close()
 		if err != nil {
 			//分片任务信息缓存文件创建失败
-			beego.Error("create file error:", err)
+			beego.Error("create file error:", err.Error())
 		}
 		ioW := bufio.NewWriter(infoFile) //创建新的 Writer 对象
-		_, error := ioW.WriteString(this.Json_encode(data))
+		_, error := ioW.WriteString(string(temp))
 		if error != nil {
-			beego.Error("write error", error)
+			beego.Error("write error", error.Error())
+			this.jsonResult(enums.JRCodeFailed, "", data)
 		}
 		ioW.Flush()
 	}
@@ -205,26 +221,115 @@ func (this *PictureController) mergeBlock(fileFlag interface{}, tmpPath, uploadP
 	infoPath := tmpPath + taskId + "info"
 	if utils.IsFile(infoPath) {
 		//data := ; //获取文件中数据
-		data := map[string]string {"filename": "1.jpg"}
-		saveDir := utils.Date(time.Now(),"Ymd") + string(os.PathSeparator)
-		//mergeFile = os.Getuid()
-		//($i = strrpos($data['filename'], '.')) && $ext = substr($data['filename'], $i);
-		index := strings.Index(data["filename"], ".")
-		ext := utils.String(data["filename"][index:])
-		beego.Debug(ext)
-		//打开文件
-		//if (!$out = @fopen($rootPath . '/' . $saveDir . $mergeFile . $ext, "wb")) {
-		//return new \Xin\Lib\MessageResponse('Open Merge Failed', 'error', [], 500);
-		//}
+		tempInfoFile, err := os.Open(infoPath)
+		defer tempInfoFile.Close()
+		if err != nil {
+			this.ReturnFailedJson(err, "Failed to find file!")
+		}
+		tempInfoSize := utils.GetFileSize(infoPath)
+		if tempInfoSize == 0 {
+			beego.Error("mergeBlock: 缓存文件大小为0")
+			return
+		}
+		data := TempInfo{}
+		var info = make([]byte, tempInfoSize)
+		if _, err := tempInfoFile.Read(info); err == nil {
+			error := json.Unmarshal(info, &data)
+			if error != nil {
+				this.ReturnFailedJson(error, "Unmarshal Failed!")
+			}
+		} else {
+			this.ReturnFailedJson(err, "Failed to find file!")
+		}
 
+		saveDir := utils.Date("Ymd", time.Now()) + string(os.PathSeparator)
 		if !utils.IsDir(uploadPath + saveDir) {
 			if err := os.Mkdir(uploadPath + saveDir, os.ModePerm); err != nil {
 				beego.Error(errors.New("上传目录" + uploadPath + saveDir + "创建失败!"))
 				this.jsonResult(enums.JRCodeFailed, "上传目录" + uploadPath + saveDir + "创建失败!", nil)
 			}
 		}
+		//截取文件后缀名
+		//index := strings.Index(data.FileName, ".")
+		//ext := utils.String(data.FileName[index:])
+		//创建、打开上传文件
+		uploadFilePath := uploadPath + saveDir + data.FileName
 
-		this.jsonResult(enums.JRCodeSucc, "", nil)
+		//判断文件是否已存在
+		if utils.IsFile(uploadFilePath) {
+			return  //?????????????
+		}
+		uploadFile, err := os.OpenFile(uploadFilePath, os.O_CREATE|os.O_WRONLY, 0777)
+		defer uploadFile.Close()
+		if err != nil {
+			beego.Error("mergeBlock: " + err.Error())
+			this.jsonResult(enums.JRCodeFailed, "Failed to open upload file ", nil)
+		}
+
+		//锁住文件后合并缓存文件
+		i := 0 //文件个数   循环分片
+		var size int64 = 0
+		fileSize := data.FileSize
+		//优化 -> 加文件锁  ????
+
+		//合并缓存文
+		ioW := bufio.NewWriter(uploadFile) //创建新的 Writer 对象
+		for size < fileSize {
+			chunkFile := uploadPath + tmpPath + data.FileName + "_" + taskId  + "_" + utils.String(i) + ".tmp"
+			i++
+			chunkFileSize := utils.GetFileSize(chunkFile)
+			beego.Debug("chunkFileSize")
+			beego.Debug(chunkFileSize)
+			if chunkFileSize == 0 {
+				utils.DeleteFile(chunkFile)
+				continue
+			}
+			tempFile, err := os.OpenFile(chunkFile, os.O_RDONLY, 0777)
+			defer tempFile.Close()
+			if err != nil {
+				beego.Error("mergeBlock: " + err.Error())
+				break
+			}
+			//将缓存文件内容读取后写入上传文件中
+			var buff = make([] byte, chunkFileSize)
+			if _, err := tempFile.Read(buff); err != nil {
+				beego.Error("mergeBlock: " + err.Error())
+				break
+			}
+			chunkSize, err := ioW.Write(buff) //缓存块大小
+			if err != nil {
+				beego.Error("mergeBlock: " + err.Error())
+				break
+			}
+			//刷新缓存buff
+			ioW.Flush()
+			size += int64(chunkSize)
+			//合并成功, 关闭缓存文件
+			if err := tempFile.Close(); err != nil {
+				beego.Error("mergeBlock: " + err.Error())
+				break
+			}
+			//删除文件
+			utils.DeleteFile(chunkFile)
+		}
+		if size < fileSize {
+			this.jsonResult(enums.JRCodeFailed, "Failed to operate the shard file " + utils.String(size) + "--" + utils.String(data.FileSize), nil)
+		}
+
+		var result = make(map[string]interface{})
+		result["savePath"] = saveDir
+		result["saveName"] = saveDir
+		result["fileName"] = data.FileName //title
+		result["uid"] = this.userId //title
+		//$data['label'] = $this->request->getQuery('label');
+		//$data['audit_statu']=$this->request->getQuery('admin');
+		//$data['artwork']=$this->request->getQuery('artwork');
+		//$filedata = $this->_saveToDb($data);
+		//$filedata['fileid'] = $data['fileid'];
+		//删除记录合并信息的文件
+		tempInfoFile.Close()
+		utils.DeleteFile(infoPath)
+		this.jsonResult(enums.JRCodeSucc, "", result)
 	} else {
 		beego.Error("Merge Sharding Failed!")
 		this.jsonResult(enums.JRCodeFailed, "Merge Sharding Failed", nil)

@@ -1,12 +1,23 @@
 package main
 
 import (
-	"github.com/astaxie/beego"
 	"strings"
 	"time"
+	"os"
+	"github.com/astaxie/beego"
 	"goFrame/utils"
-	)
+	"encoding/json"
+		"bufio"
+)
 
+type TempInfo struct {
+	ChunkSize int64  `json:"ChunkSize"`
+	FileHash  string `json:"FileHash"`
+	FileId    string `json:"FileId"`
+	FileName  string `json:"FileName"`
+	FileSize  int64  `json:"FileSize"`
+	Label     string `json:"Label"`
+}
 const (
 	ANSIC       = "Mon Jan _2 15:04:05 2006"
 	UnixDate    = "Mon Jan _2 15:04:05 MST 2006"
@@ -86,12 +97,109 @@ func Date(t time.Time, layout string) string {
 	return o.Format(f)
 }
 
-func main() {
-	beego.Debug(Date(time.Now(),"Ymd"))
+func testFile() {
+	taskId := "45a31f103639d71aff37831afd304af3"
+	tmpPath := "tests/tmp/"
+	infoPath := tmpPath + taskId + "info"
+	if utils.IsFile(infoPath) {
+		beego.Debug("is a file")
+	} else {
+		beego.Debug("isn't a file")
+	}
+	tempInfoFile, err := os.Open(infoPath)
+	if err != nil {
+		beego.Debug(err.Error())
+	}
+	var tempInfoSize int64
+	if fileInfo, err := os.Stat(infoPath); err == nil {
+		tempInfoSize = fileInfo.Size()
+	} else {
+		beego.Error(err.Error())
+	}
+	data := TempInfo{}
+	var info = make([]byte, tempInfoSize)
+	if _, err := tempInfoFile.Read(info); err == nil {
+		error := json.Unmarshal(info, &data)
+		beego.Error(info)
+		if error != nil {
+			beego.Error(error.Error())
+		}
+		beego.Error(data)
+	} else {
+		beego.Debug(err.Error())
+	}
 
-	data := map[string]string {"filename": "1.jpg"}
-	beego.Error(data["filename"])
-	index := strings.Index(data["filename"], ".")
-	ext := utils.String(data["filename"][index:])
-	beego.Error(ext)
+	uploadPath := ""
+	mergeFile := "1"
+	ext := ".jpg"
+	saveDir := utils.Date("Ymd", time.Now()) + string(os.PathSeparator)
+	//创建、打开上传文件
+	uploadFilePath := uploadPath + saveDir + utils.String(mergeFile) + ext
+	uploadFile, err := os.OpenFile(uploadFilePath, os.O_CREATE|os.O_WRONLY, 0777)
+	defer uploadFile.Close()
+	if err != nil {
+		beego.Error("mergeBlock: " + err.Error())
+	}
+	//锁住文件后合并缓存文件
+	i := 0 //文件个数
+	var size int64 = 0
+	fileSize := data.FileSize
+	//优化 -> 加文件锁  ????
+
+	//合并缓存文
+	ioW := bufio.NewWriter(uploadFile) //创建新的 Writer 对象
+	for size < fileSize {
+		chunkFile := tmpPath + taskId  + "." + utils.String(i) + ".tmp"
+		tempFile, err := os.OpenFile(chunkFile, os.O_RDONLY, 0777)
+		defer func() {
+			if tempFile != nil {
+				//缓存文件合并过程失败 退出前关闭文件
+				tempFile.Close()
+			}
+		}()
+		if err != nil {
+			beego.Error("mergeBlock: " + err.Error())
+			break
+		}
+		//将缓存文件内容读取后写入上传文件中
+		var buff [] byte
+		if _, err := tempFile.Read(buff); err != nil {
+			beego.Error("mergeBlock: " + err.Error())
+			break
+		}
+		chunkSize, err := ioW.Write(buff) //缓存块大小
+		if err != nil {
+			beego.Error("mergeBlock: " + err.Error())
+			break
+		}
+		ioW.Flush()
+		size += int64(chunkSize)
+		i++
+		//合并成功, 关闭缓存文件
+		if err := tempFile.Close(); err != nil {
+			beego.Error("mergeBlock: " + err.Error())
+			break
+		}
+		//删除合并的缓存文件
+		if err := os.Remove(chunkFile); err != nil {
+			beego.Error("mergeBlock: " + err.Error())
+			break
+		}
+	}
+	if size < fileSize {
+		beego.Error("mergeBlock: " + err.Error())
+	}
+}
+
+
+func main() {
+	//beego.Debug(Date(time.Now(),"Ymd"))
+	//
+	//data := map[string]string {"filename": "1.jpg"}
+	//beego.Error(data["filename"])
+	//index := strings.Index(data["filename"], ".")
+	//ext := utils.String(data["filename"][index:])
+	//beego.Error(ext)
+	testFile()
+
 }

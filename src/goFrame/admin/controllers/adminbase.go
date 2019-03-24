@@ -81,10 +81,10 @@ func (this *BaseController) checkAuthor(ignores ...string) {
 
 //登录状态验证
 func (this *BaseController) auth(controllerName, actionName string) {
-	beego.Debug("here is auth")                    //debug埋点
-	beego.Debug(controllerName + "." + actionName) //debug埋点
-	beego.Debug(this.Ctx.Request.URL)              //debug埋点
-	beego.Debug(this.Ctx.Request)                  //debug埋点
+	//beego.Debug("here is auth")                    //debug埋点
+	//beego.Debug(controllerName + "." + actionName) //debug埋点
+	//beego.Debug(this.Ctx.Request.URL)              //debug埋点
+	//beego.Debug(this.Ctx.Request)                  //debug埋点
 	arr := strings.Split(this.Ctx.GetCookie("auth"), "|")
 	//beego.Debug("GetCookie" + this.Ctx.GetCookie("auth")) //debug埋点
 	//beego.Debug(arr[0]) //debug埋点
@@ -309,4 +309,8 @@ func (this * BaseController) Empty(data interface{}) bool {
 		return false
 	}
 	return true
+}
+func (this * BaseController) ReturnFailedJson(error error, msg string) {
+	beego.Error(error.Error())
+	this.jsonResult(enums.JRCodeFailed, msg, nil)
 }
