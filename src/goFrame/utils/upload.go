@@ -8,6 +8,9 @@ import (
 	"path"
 		"io"
 	"strings"
+	"encoding/json"
+	"bufio"
+	"tests/utils"
 )
 
 type Upload struct {
@@ -353,5 +356,125 @@ func (u *Upload) Upload(file *multipart.FileHeader) (map[string]interface{},erro
 		return nil, u.error
 	} else {
 		return info, nil
+	}
+}
+
+
+/**
+ *  保存文件上传的任务信息
+ * tmpPath  存储缓存路径
+ * tmpPath 缓存信息文件路径
+ * fileId  WebUpload插件 queue队列中文件的id
+ * fileName 上传的文件名称
+ * label
+ * chunkSize 上传的分块大小
+ * fileSize 上传的文件大小
+ * userId 用户id
+ */
+func SaveTaskInfo(tmpPath, fileHash, fileId, fileName, label string, chunkSize, fileSize, userId int64) (saveInfo map[string]interface{},error error){
+	var data = make(map[string]interface{});
+	pathSeparator := string(os.PathSeparator)
+	taskId := utils.Md5(fileHash + "_" + string(userId))
+	infoPath := tmpPath + pathSeparator + taskId + "info"
+	//判断分片任务信息缓存文件是否存在
+	if v := utils.IsFile(infoPath); !v {
+		var info  TempInfo
+		info.ChunkSize = chunkSize
+		info.FileHash = fileHash
+		info.FileId = fileId
+		info.FileName = fileName
+		info.FileSize = fileSize
+		info.Label = label
+		temp, err := json.Marshal(info)
+		if err != nil {
+			beego.Error(err.Error())
+		}
+		//file_put_contents($infoPath, serialize($data)); //将任务信息写入infoPath目录下保存
+		infoFile, err := os.OpenFile(infoPath, os.O_CREATE|os.O_WRONLY, 0644)
+		defer infoFile.Close()
+		if err != nil {
+			//分片任务信息缓存文件创建失败
+			beego.Error("create file error:", err.Error())
+
+		}
+		ioW := bufio.NewWriter(infoFile) //创建新的 Writer 对象
+		_, error := ioW.WriteString(string(temp))
+		if error != nil {
+			beego.Error("write error", error.Error())
+			data["message"] = error.Error()
+			return data, error
+		}
+		ioW.Flush()
+	}
+	data["taskid"] = taskId;
+	return data, nil
+}
+
+/**
+ * 	检测分片是否存在
+ *	params string tmpPath  分片存储缓存路径
+ *	chunk 分块下标
+ *	chunksize 分块大小
+ */
+func CheckChunk(rootPath, tmpPath, taskId, chunk string, chunkSize int64) (checkInfo map[string]interface{}, error error) {
+	data := make(map[string]interface{})
+	infoPath := tmpPath + taskId + "info"
+	tempInfo, n := GetJsonFileInfo(infoPath)
+	if n == 0 {
+		data["isExist"] = false
+		return nil, errors.New("tempinfo is null")
+	}
+
+	if !Empty(chunk) || !Empty(chunkSize){
+		err := errors.New("ERROR: chunk or chunkSize is empty! 分块下标或分块大小不能为空!")
+		data["message"] = err.Error()
+		return data, err
+	}
+	//$isExist = filesize($tmpfile) == $chunkSize;
+	tempFile := rootPath + tmpPath + tempInfo.FileName + "_" + taskId + "_"  + chunk + ".tmp"
+
+	if !utils.IsFile(tempFile) || utils.GetFile(tempFile).Size() != chunkSize {
+		data["isExist"] = false
+	} else {
+		data["isExist"] = true
+	}
+	return data, nil
+}
+
+
+/**
+ * 	上传文件    上传文件生成缓存
+ */
+func UploadTmpeFile(rootPath, tmpPath, saveName string)  {
+	beego.Debug("uploadfile 上传文件生成缓存")
+	if hasFiles := this.Ctx.Request.ParseMultipartForm(32 << 20); hasFiles != nil {
+		this.jsonResult(enums.JRCodeFailed, "上传文件解析失败", nil)
+	}
+	var fileHeads []*multipart.FileHeader
+	fileHeads = this.Ctx.Request.MultipartForm.File["file"]  //获取上传的文件句柄   type: array
+	//上传upload类初始化
+	uploadConf := make(map[string]interface{})
+	uploadConf["RootPath"] = rootPath //图库根路径
+	uploadConf["SavePath"] = tmpPath //分块缓存文件存储路径
+	uploadConf["AutoSub"] = false
+	uploadConf["SaveName"] = saveName //缓存文件保存名称
+	uploadConf["SaveExt"] = ".tmp" //缓存文件后缀
+	if upload, err := utils.NewUpload(uploadConf); err == nil {
+		var infos [] map[string]interface{}
+		for _, fileHead := range fileHeads {
+			beego.Debug("upload temp file")
+			beego.Debug(upload)
+			if info, err := upload.Upload(fileHead); err != nil {
+				beego.Debug(err.Error())
+				this.jsonResult(enums.JRCodeFailed, fileHead.Filename + "upload failed!", nil)
+			} else {
+				beego.Debug(info)
+				infos = append(infos, info)
+			}
+		}
+		this.jsonResult(enums.JRCodeSucc, "upload success!", infos)
+	} else {
+		beego.Error("文件上传类实例化失败！ ERROR: file upload class create error!")
+		this.jsonResult(enums.JRCodeFailed, "upload create error!", nil)
 	}
 }

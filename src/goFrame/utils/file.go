@@ -9,7 +9,17 @@ import (
 		"crypto/md5"
 	"github.com/astaxie/beego"
 	"errors"
+	"encoding/json"
 )
+
+type  TempInfo struct{
+	ChunkSize int64 `json:"ChunkSize"`
+	FileHash string `json:"FileHash"`
+	FileId string `json:"FileId"`
+	FileName string `json:"FileName"`
+	FileSize int64 `json:"FileSize"`
+	Label string `json:"Label"`
+}
 
 func Md5(str string) string {
 	hash := md5.New()
@@ -113,4 +123,31 @@ func DeleteFile(fileName string) error {
 		return err
 	}
 	return nil
+}
+
+//获取文件中的json数据
+func GetJsonFileInfo(infoPath string) (temp TempInfo, n int64)  {
+	//data := ; //获取文件中数据
+	tempInfoFile, err := os.Open(infoPath)
+	defer tempInfoFile.Close()
+	if err != nil {
+		//this.ReturnFailedJson(err, "Failed to find file!")
+	}
+	tempInfoSize := GetFileSize(infoPath)
+	if tempInfoSize == 0 {
+		beego.Error("缓存文件大小为0")
+		return TempInfo{}, 0
+	}
+	data := TempInfo{}
+	var info = make([]byte, tempInfoSize)
+	if _, err := tempInfoFile.Read(info); err == nil {
+		if err := json.Unmarshal(info, &data); err != nil {
+			beego.Error(err.Error())
+			return TempInfo{}, 0
+		}
+	} else {
+		beego.Error(err.Error())
+		return TempInfo{}, 0
+	}
+	return data, tempInfoSize
 }

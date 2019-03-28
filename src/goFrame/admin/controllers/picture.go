@@ -4,13 +4,13 @@ import (
 	"github.com/astaxie/beego"
 	"goFrame/utils"
 	"os"
-	"strings"
-	"bufio"
+		"bufio"
 	"goFrame/enums"
 	"mime/multipart"
 	"time"
 	"errors"
 		"encoding/json"
+	"strings"
 )
 
 type PictureController struct {
@@ -88,41 +88,42 @@ func (this *PictureController) PictureUpload() {
 		//递归移除 缓存目录下的旧文件
 	}
 
+	taskId := this.GetString("taskid", "0") //文件唯一标记
+
 	param := this.GetString("param")
 	beego.Debug("param")
 	beego.Debug(param)
 	if param == "settask" {
 		//保存上传任务信息     保存的文件信息是整个文件的数据信息
-		this.saveTaskInfo(tmpPath)
+		fileHash := strings.TrimSpace(this.GetString("filehash"))
+		fileId := this.GetString("fileid")
+		fileName := this.GetString("filename")
+		fileSize, _ := this.GetInt64("filesize",0)
+		chunkSize, _ := this.GetInt64("chunksize", 0)
+		label := this.GetString("label")
+		data, err := utils.SaveTaskInfo(tmpPath, fileHash, fileId, fileName, label, chunkSize, fileSize, int64(this.userId))
+		if err != nil{
+			this.jsonResult(enums.JRCodeFailed, "", data)
+		}
+		this.jsonResult(enums.JRCodeSucc, "", data)
 	} else if param == "checkchunk" {
 		//检测分片是否存在
-		this.checkChunk(tmpPath)
+		chunk := this.GetString("chunk", "0") //分块下标
+		chunkSize, _ := this.GetInt64("chunksize", 0)
+		taskId := this.GetString("taskid")
+		data, err := utils.CheckChunk(rootPath, fileTempPath, taskId, chunk, chunkSize)
+		if err != nil{
+			this.jsonResult(enums.JRCodeFailed, "", data)
+		}
+		this.jsonResult(enums.JRCodeSucc, "", data)
 	} else if param == "mergechunks" {
 		//合并文件分片
-		this.mergeBlock(nil, fileTempPath, uploadPath)
+		this.mergeBlock(taskId, fileTempPath, uploadPath)
 	} else {
-		//上传图片
-		file, fileHead, fileErr := this.Ctx.Request.FormFile("file")  //上传的文件
-		//beego.Debug(file)
-		//beego.Debug(fileHead)
-		if file == nil {
-			beego.Error(" 未找到要上传的图片!, ERROR: FormFile获取上传图片失败!")
-			msg := ""
-			this.jsonResult(enums.JRCodeFailed, msg, nil)
-		}
 		//fileBytes, _ := ioutil.ReadAll(file)
 		//beego.Debug("fileBytes")
 		//beego.Debug(fileBytes)
 
-		// Get a file name
-		var fileName string
-		if name := this.Ctx.Request.Form.Get("name"); name != "" {
-			fileName = name
-		} else if  fileErr == nil {
-			fileName = fileHead.Filename
-		} else {
-			fileName = utils.UniqueId()//生成一个唯一ID
-		}
 
 		////文件id   上传多个图片 id不同  WU_FILE_1、 WU_FILE_2
 		//Id := this.Ctx.Request.Form.Get("id")
@@ -130,59 +131,35 @@ func (this *PictureController) PictureUpload() {
 		////文件类型
 		//fileType := this.Ctx.Request.Form.Get("type")
 		//beego.Debug(fileType) //image/png
-
+		fileName := this.getUploadFileName()
 		chunk := this.GetString("chunk", "0") //分块下标
-		taskId := this.GetString("taskid", "0") //文件唯一标记
 		saveName := fileName + "_" +  taskId + "_" + chunk  //文件保存名称
 		this.uploadfile(uploadPath, fileTempPath, saveName)
 	}
 }
 
-/**
- * 	保存文件上传的任务信息
- *	params string tmpPath  存储缓存路径
- */
-func (this *PictureController) saveTaskInfo(tmpPath string) {
-	beego.Debug("saveTaskInfo: " + tmpPath)
-	pathSeparator := string(os.PathSeparator)
-	fileHash := strings.TrimSpace(this.GetString("filehash"))
-	chunkSize, _ := this.GetInt64("chunksize", 0)
-	taskId := utils.Md5(fileHash + "_" + string(this.userId))
-	infoPath := tmpPath + pathSeparator + taskId + "info"
-	//判断分片任务信息缓存文件是否存在
-	fileSize, _ := this.GetInt64("filesize",0)
-	if v := utils.IsFile(infoPath); !v {
-		var data  TempInfo
-		data.ChunkSize = chunkSize
-		data.FileHash = fileHash
-		data.FileId = this.GetString("fileid")
-		data.FileName = this.GetString("filename")
-		data.FileSize = fileSize
-		data.Label = this.GetString("label")
-		temp, err := json.Marshal(data)
-		if err != nil {
-			beego.Error(err.Error())
-		}
-		//file_put_contents($infoPath, serialize($data)); //将任务信息写入infoPath目录下保存
-		infoFile, err := os.OpenFile(infoPath, os.O_CREATE|os.O_WRONLY, 0644)
-		defer infoFile.Close()
-		if err != nil {
-			//分片任务信息缓存文件创建失败
-			beego.Error("create file error:", err.Error())
-		}
-		ioW := bufio.NewWriter(infoFile) //创建新的 Writer 对象
-		_, error := ioW.WriteString(string(temp))
-		if error != nil {
-			beego.Error("write error", error.Error())
-			this.jsonResult(enums.JRCodeFailed, "", data)
-		}
-		ioW.Flush()
+func (this *PictureController) getUploadFileName() string {
+	//上传图片
+	file, fileHead, fileErr := this.Ctx.Request.FormFile("file")  //上传的文件
+	//beego.Debug(file)
+	//beego.Debug(fileHead)
+	if file == nil {
+		beego.Error(" 未找到要上传的文件!, ERROR: FormFile获取上传文件失败!")
+		msg := ""
+		this.jsonResult(enums.JRCodeFailed, msg, nil)
 	}
-	var data = make(map[string]interface{});
-	data["taskid"] = taskId;
-	beego.Debug(data)
-	this.jsonResult(enums.JRCodeSucc, "", data)
+	// Get a file name
+	var fileName string
+	if name := this.Ctx.Request.Form.Get("name"); name != "" {
+		fileName = name
+	} else if  fileErr == nil {
+		fileName = fileHead.Filename
+	} else {
+		fileName = utils.UniqueId()//生成一个唯一ID
+	}
+	return fileName
 }
+
 
 /**
  * 	检测分片是否存在
@@ -190,18 +167,27 @@ func (this *PictureController) saveTaskInfo(tmpPath string) {
  *	chunk 分块下标
  *	chunksize 分块大小
  */
-func (this *PictureController) checkChunk(tmpPath string) {
+func (this *PictureController) checkChunk(rootPath, tmpPath, taskId string) {
 	chunk := this.GetString("chunk", "0") //分块下标
+	data := make(map[string]bool)
+
+	infoPath := tmpPath + taskId + "info"
+	tempInfo, n := utils.GetJsonFileInfo(infoPath)
+	if n == 0 {
+		data["isExist"] = false
+		this.jsonResult(enums.JRCodeFailed, "tempinfo is null", nil)
+	}
+
 	if chunkSize, ok := interface{}(this.GetString("chunksize", "0")).(int64); !ok {
 		taskId := this.GetString("taskid")
 		if !this.Empty(chunk) || !this.Empty(chunkSize){
 			beego.Error("分块下标或分块大小不能为空! ERROR: chunk or chunkSize is empty!")
 			this.jsonResult(enums.JRCodeFailed, "invalid param", nil)
 		}
-		data := make(map[string]bool)
 		//$isExist = filesize($tmpfile) == $chunkSize;
-		tempFile := tmpPath + taskId + chunk + ".tmp"
-		if !utils.IsFile(tempFile) || utils.GetFile(tempFile).Size() == chunkSize {
+		tempFile := rootPath + tmpPath + tempInfo.FileName + "_" + taskId + "_"  + chunk + ".tmp"
+	
+		if !utils.IsFile(tempFile) || utils.GetFile(tempFile).Size() != chunkSize {
 			data["isExist"] = false
 		} else {
 			data["isExist"] = true
@@ -216,8 +202,7 @@ func (this *PictureController) checkChunk(tmpPath string) {
  * 	合并分片
  *	params interface{} fileFlag  可识别属于同一文件的分片标识
  */
-func (this *PictureController) mergeBlock(fileFlag interface{}, tmpPath, uploadPath string){
-	taskId := this.GetString("taskid", "0") //文件唯一标记
+func (this *PictureController) mergeBlock(taskId, tmpPath, uploadPath string){
 	infoPath := tmpPath + taskId + "info"
 	if utils.IsFile(infoPath) {
 		//data := ; //获取文件中数据
@@ -257,7 +242,7 @@ func (this *PictureController) mergeBlock(fileFlag interface{}, tmpPath, uploadP
 
 		//判断文件是否已存在
 		if utils.IsFile(uploadFilePath) {
-			return  //?????????????
+			this.jsonResult(enums.JRCodeFailed, "文件已存在", nil)
 		}
 		uploadFile, err := os.OpenFile(uploadFilePath, os.O_CREATE|os.O_WRONLY, 0777)
 		defer uploadFile.Close()
