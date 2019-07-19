@@ -441,40 +441,40 @@ func CheckChunk(rootPath, tmpPath, taskId, chunk string, chunkSize int64) (check
 	return data, nil
 }
 
-
-/**
- * 	上传文件    上传文件生成缓存
- */
-func UploadTmpeFile(rootPath, tmpPath, saveName string)  {
-	beego.Debug("uploadfile 上传文件生成缓存")
-	if hasFiles := this.Ctx.Request.ParseMultipartForm(32 << 20); hasFiles != nil {
-		this.jsonResult(enums.JRCodeFailed, "上传文件解析失败", nil)
-	}
-	var fileHeads []*multipart.FileHeader
-	fileHeads = this.Ctx.Request.MultipartForm.File["file"]  //获取上传的文件句柄   type: array
-	//上传upload类初始化
-	uploadConf := make(map[string]interface{})
-	uploadConf["RootPath"] = rootPath //图库根路径
-	uploadConf["SavePath"] = tmpPath //分块缓存文件存储路径
-	uploadConf["AutoSub"] = false
-	uploadConf["SaveName"] = saveName //缓存文件保存名称
-	uploadConf["SaveExt"] = ".tmp" //缓存文件后缀
-	if upload, err := utils.NewUpload(uploadConf); err == nil {
-		var infos [] map[string]interface{}
-		for _, fileHead := range fileHeads {
-			beego.Debug("upload temp file")
-			beego.Debug(upload)
-			if info, err := upload.Upload(fileHead); err != nil {
-				beego.Debug(err.Error())
-				this.jsonResult(enums.JRCodeFailed, fileHead.Filename + "upload failed!", nil)
-			} else {
-				beego.Debug(info)
-				infos = append(infos, info)
-			}
-		}
-		this.jsonResult(enums.JRCodeSucc, "upload success!", infos)
-	} else {
-		beego.Error("文件上传类实例化失败！ ERROR: file upload class create error!")
-		this.jsonResult(enums.JRCodeFailed, "upload create error!", nil)
-	}
-}
+//
+///**
+// * 	上传文件    上传文件生成缓存
+// */
+//func UploadTmpeFile(rootPath, tmpPath, saveName string)  {
+//	beego.Debug("uploadfile 上传文件生成缓存")
+//	if hasFiles := this.Ctx.Request.ParseMultipartForm(32 << 20); hasFiles != nil {
+//		this.jsonResult(enums.JRCodeFailed, "上传文件解析失败", nil)
+//	}
+//	var fileHeads []*multipart.FileHeader
+//	fileHeads = this.Ctx.Request.MultipartForm.File["file"]  //获取上传的文件句柄   type: array
+//	//上传upload类初始化
+//	uploadConf := make(map[string]interface{})
+//	uploadConf["RootPath"] = rootPath //图库根路径
+//	uploadConf["SavePath"] = tmpPath //分块缓存文件存储路径
+//	uploadConf["AutoSub"] = false
+//	uploadConf["SaveName"] = saveName //缓存文件保存名称
+//	uploadConf["SaveExt"] = ".tmp" //缓存文件后缀
+//	if upload, err := utils.NewUpload(uploadConf); err == nil {
+//		var infos [] map[string]interface{}
+//		for _, fileHead := range fileHeads {
+//			beego.Debug("upload temp file")
+//			beego.Debug(upload)
+//			if info, err := upload.Upload(fileHead); err != nil {
+//				beego.Debug(err.Error())
+//				this.jsonResult(enums.JRCodeFailed, fileHead.Filename + "upload failed!", nil)
+//			} else {
+//				beego.Debug(info)
+//				infos = append(infos, info)
+//			}
+//		}
+//		this.jsonResult(enums.JRCodeSucc, "upload success!", infos)
+//	} else {
+//		beego.Error("文件上传类实例化失败！ ERROR: file upload class create error!")
+//		this.jsonResult(enums.JRCodeFailed, "upload create error!", nil)
+//	}
+//}

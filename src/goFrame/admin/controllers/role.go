@@ -1,15 +1,15 @@
 package controllers
 
 import (
-	"goFrame/models"
+	"goFrame/models/system"
 	"goFrame/enums"
-	"github.com/astaxie/beego/orm"
 	"strings"
 	"strconv"
 	"fmt"
 	"time"
 	"encoding/json"
 	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/orm"
 )
 
 type RoleController struct {
@@ -26,7 +26,7 @@ func (this *RoleController) Index() {
 	//this.Data["canDelete"] = this.checkActionRoleor("MenuController", "Delete")
 
 	////获取角色列表
-	//roles := models.RoleListGrid(this.page, this.pageSize)
+	//roles := system.RoleListGrid(this.page, this.pageSize)
 	////rolelist["rows"] = this.Json_encode(data)
 	//this.Data["role_rows"] = roles
 
@@ -38,11 +38,10 @@ func (this *RoleController) Index() {
 //DataList 角色列表
 func (this *RoleController) RoleList() {
 	//获取角色列表
-	data := models.RoleListGrid(this.page, this.pageSize)
+	data := system.RoleListGrid(this.page, this.pageSize)
 	//定义返回的数据结构
 	this.jsonResult(enums.JRCodeSucc, "", data)
 }
-
 
 /*
 	DataGrid 后台用户角色管理页 表格获取数据
@@ -50,11 +49,11 @@ func (this *RoleController) RoleList() {
 func (this *RoleController) RoleDataGrid() {
 	beego.Debug("RoleDataGrid")
 	//直接反序化获取json格式的requestbody里的值
-	var params models.RoleQueryParam
+	var params system.RoleQueryParam
 	json.Unmarshal(this.Ctx.Input.RequestBody, &params)
 	//获取数据列表和总数
-	//data, total := models.RoleList(this.page, this.pageSize)
-	data, total := models.RolePageList(&params)
+	//data, total := system.RoleList(this.page, this.pageSize)
+	data, total := system.RolePageList(&params)
 	//定义返回的数据结构
 	result := make(map[string]interface{})
 	result["total"] = total
@@ -64,7 +63,7 @@ func (this *RoleController) RoleDataGrid() {
 }
 
 func (this *RoleController) Save() {
-	m := models.Role{}
+	m := system.Role{}
 	o := orm.NewOrm()
 	var err error
 	//获取form里的值
@@ -96,11 +95,11 @@ func (this *RoleController) RoleEdit() {
 		this.Save()
 	}
 	Id, _ := this.GetInt(":id", 0)
-	role := &models.Role{}
+	role := &system.Role{}
 	var err error
 
 	if Id > 0 {
-		role, err = models.RoleGetById(Id)
+		role, err = system.RoleGetById(Id)
 		if err != nil {
 			this.pageError("数据无效，请刷新后重试")
 		}
@@ -111,7 +110,6 @@ func (this *RoleController) RoleEdit() {
 	this.Data["m"] = role
 	this.setTpl("admin/role/edit.html", "layout/admin/layout_pullbox.html")
 }
-
 
 /*
 	后台逻辑删除角色
@@ -127,11 +125,11 @@ func (this *RoleController) RoleDelete() {
 				this.jsonResult(enums.JRCodeFailed, err.Error(), nil)
 			}
 		}
-		query := orm.NewOrm().QueryTable(models.TableName("role"))
+		query := orm.NewOrm().QueryTable(system.TableName("role"))
 		//物理删除
 		//if num, err := query.Filter("id__in", ids).Delete(); err == nil {
 		//逻辑删除
-		if num, err := query.Filter("id__in", ids).Update(orm.Params{ "logic_delete": 1}); err == nil {
+		if num, err := query.Filter("id__in", ids).Update(orm.Params{"logic_delete": 1}); err == nil {
 			this.jsonResult(enums.JRCodeSucc, fmt.Sprintf("成功删除 %d 个角色!", num), nil)
 		} else {
 			beego.Error(err.Error())

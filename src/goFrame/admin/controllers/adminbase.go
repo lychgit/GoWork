@@ -2,13 +2,14 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"goFrame/models"
+	"goFrame/models/system"
 	"goFrame/libs"
 	"goFrame/enums"
 	"strings"
 	"strconv"
 	"encoding/json"
 	"bytes"
+	"github.com/lhtzbj12/sdrms/models"
 )
 
 type BaseController struct {
@@ -17,7 +18,7 @@ type BaseController struct {
 	//functonName    string //方法全名
 	controllerName string
 	actionName     string
-	curUser        models.User
+	curUser        system.User
 	userId         int
 	userName       string
 	page           int
@@ -94,7 +95,7 @@ func (this *BaseController) auth(controllerName, actionName string) {
 		idstr, password := arr[0], arr[1]
 		userId, _ := strconv.Atoi(idstr)
 		if userId > 0 {
-			user, err := models.UserGetById(userId)
+			user, err := system.UserGetById(userId)
 			if err == nil && password == libs.Md5([]byte(this.getClientIp()+"|"+user.Password+user.Salt)) {
 				this.userId = user.Id
 				this.userName = user.UserName
@@ -105,14 +106,14 @@ func (this *BaseController) auth(controllerName, actionName string) {
 			//t := time.Now()
 			//params := this.Ctx.Request
 			//fmt.Println(params)
-			//log := new(models.Log)
+			//log := new(system.Log)
 			//log.Uid = this.userId
 			//log.Action = controllerName + "." + actionName //控制器+方法
 			//log.Ip = this.getClientIp()                    //访问者的ip
 			////log.Params = this.Ctx.Request.Header; //请求参数
 			//log.Type = 0
 			//log.CreateTime = t.Unix()
-			//models.LogAdd(log)
+			//system.LogAdd(log)
 		}
 	}
 	//未登录重定向至登录界面
@@ -188,7 +189,7 @@ func (this *BaseController) showMsg(args ...string) {
 
 // 输出json
 func (this *BaseController) jsonResult(code interface{}, msg string, obj interface{}) {
-	r := &models.JsonResult{code, msg, obj}
+	r := &system.JsonResult{code, msg, obj}
 	this.Data["json"] = r
 	this.ServeJSON()
 	this.StopRun()
@@ -219,13 +220,13 @@ func (this *BaseController) pageError(msg string) {
 	设置用户session信息
  */
 func (this *BaseController) setUserSession(uid int) error {
-	//m, err := models.
-	m, err := models.UserGetById(uid)
+	//m, err := system.
+	m, err := system.UserGetById(uid)
 	if err != nil {
 		return err
 	}
 	//获取这个用户能获取到的所有菜单列表
-	resourceList := models.MenuListGetByUid(uid, 1000)
+	resourceList := system.MenuListGetByUid(uid, 1000)
 	//beego.Debug("获取这个用户能获取到的所有菜单列表")
 	//beego.Debug(resourceList)
 	for _, item := range resourceList {
@@ -242,7 +243,7 @@ func (this *BaseController) getUserSession() {
 	if a != nil {
 		//待实现  从session中获取当前登录的后台用户的操作方法权限
 
-		this.curUser = a.(models.User)
+		this.curUser = a.(system.User)
 		this.Data["user"] = a
 	}
 }

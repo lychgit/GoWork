@@ -8,7 +8,7 @@ import (
 	"encoding/json"
 	"goFrame/enums"
 	"goFrame/utils"
-	"goFrame/models"
+	"goFrame/models/system"
 	"time"
 	"fmt"
 )
@@ -27,7 +27,7 @@ func (this *UserController) Index() {
 	this.checkAuthor()
 
 	//获取角色列表
-	roles := models.RoleListGrid(this.page, this.pageSize)
+	roles := system.RoleListGrid(this.page, this.pageSize)
 	//rolelist["rows"] = this.Json_encode(data)
 	this.Data["role_rows"] = roles
 
@@ -46,19 +46,19 @@ func (this *UserController) Index() {
 func (this *UserController) UserDataGrid() {
 	beego.Debug("UserDataGrid")
 	//直接反序化获取json格式的requestbody里的值
-	var params models.UserQueryParam
+	var params system.UserQueryParam
 	json.Unmarshal(this.Ctx.Input.RequestBody, &params)
 	//获取数据列表和总数
-	//data, total := models.UserList(this.page, this.pageSize)
-	data, total := models.UserPageList(&params)
+	//data, total := system.UserList(this.page, this.pageSize)
+	data, total := system.UserPageList(&params)
 
 	//获取用户角色
 	o := orm.NewOrm()
-	for _, user := range data{
+	for _, user := range data {
 		beego.Debug(user)
 		o.LoadRelated(user, "RoleUserRel")
 		//获取关联的roleId列表
-		var roleIds  []int
+		var roleIds []int
 		for _, item := range user.RoleUserRel {
 			roleIds = append(roleIds, item.Role.Id)
 		}
@@ -77,7 +77,7 @@ func (this *UserController) UserDataGrid() {
 	后台保存用户信息
  */
 func (this *UserController) Save() {
-	m := models.User{}
+	m := system.User{}
 	o := orm.NewOrm()
 	var err error
 	//获取form里的值
@@ -86,7 +86,7 @@ func (this *UserController) Save() {
 		this.jsonResult(enums.JRCodeFailed, "获取数据失败!", m.Id)
 	}
 	//删除已关联的历史数据
-	//if _, err := o.QueryTable(models.RoleBackendUserRelTBName()).Filter("backenduser__id", m.Id).Delete(); err != nil {
+	//if _, err := o.QueryTable(system.RoleBackendUserRelTBName()).Filter("backenduser__id", m.Id).Delete(); err != nil {
 	//	this.jsonResult(202, "删除历史关系失败", "")
 	//}
 	if m.Id == 0 {
@@ -100,7 +100,7 @@ func (this *UserController) Save() {
 	} else {
 		//修改用户信息
 		m.UpdateTime = time.Now().Unix()
-		if user, err := models.UserGetById(m.Id); err != nil {
+		if user, err := system.UserGetById(m.Id); err != nil {
 			beego.Error(err.Error())
 			this.jsonResult(enums.JRCodeFailed, "用户信息修改失败!", m.Id)
 		} else {
@@ -121,10 +121,10 @@ func (this *UserController) Save() {
 	}
 	this.jsonResult(enums.JRCodeSucc, "用户添加成功!", m.Id)
 	////添加关系
-	//var relations []models.RoleBackendUserRel
+	//var relations []system.RoleBackendUserRel
 	//for _, roleId := range m.RoleIds {
-	//	r := models.Role{Id: roleId}
-	//	relation := models.RoleBackendUserRel{BackendUser: &m, Role: &r}
+	//	r := system.Role{Id: roleId}
+	//	relation := system.RoleBackendUserRel{BackendUser: &m, Role: &r}
 	//	relations = append(relations, relation)
 	//}
 	//if len(relations) > 0 {
@@ -149,10 +149,10 @@ func (this *UserController) UserEdit() {
 		this.Save()
 	}
 	Id, _ := this.GetInt(":id", 0)
-	user := &models.User{}
+	user := &system.User{}
 	var err error
 	if Id > 0 {
-		user, err = models.UserGetById(Id)
+		user, err = system.UserGetById(Id)
 		if err != nil {
 			beego.Error(err.Error())
 			this.pageError("数据无效，请刷新后重试!")
@@ -187,11 +187,11 @@ func (this *UserController) UserDelete() {
 				this.jsonResult(enums.JRCodeFailed, err.Error(), nil)
 			}
 		}
-		query := orm.NewOrm().QueryTable(models.TableName("user"))
+		query := orm.NewOrm().QueryTable(system.TableName("user"))
 		//物理删除
 		//if num, err := query.Filter("id__in", ids).Delete(); err == nil {
 		//逻辑删除
-		if num, err := query.Filter("id__in", ids).Update(orm.Params{ "logic_delete": 1}); err == nil {
+		if num, err := query.Filter("id__in", ids).Update(orm.Params{"logic_delete": 1}); err == nil {
 			this.jsonResult(enums.JRCodeSucc, fmt.Sprintf("成功删除 %d 个用户!", num), nil)
 		} else {
 			beego.Error(err.Error())

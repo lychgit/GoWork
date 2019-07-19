@@ -3,7 +3,7 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/utils"
-	"goFrame/models"
+	"goFrame/models/system"
 	"goFrame/libs"
 	)
 
@@ -28,10 +28,10 @@ func (this *AdminController) Index() {
 	//}
 	//
 	//// 最近执行的日志
-	//logs, _ := models.TaskLogGetList(1, 20)
+	//logs, _ := log.TaskLogGetList(1, 20)
 	//recentLogs := make([]map[string]interface{}, len(logs))
 	//for k, v := range logs {
-	//	task, err := models.TaskGetById(v.TaskId)
+	//	task, err := log.TaskGetById(v.TaskId)
 	//	taskName := ""
 	//	if err == nil {
 	//		taskName = task.TaskName
@@ -48,10 +48,10 @@ func (this *AdminController) Index() {
 	//}
 	//
 	////// 最近执行失败的日志
-	//logs, _ = models.TaskLogGetList(1, 20, "status__lt", 0)
+	//logs, _ = log.TaskLogGetList(1, 20, "status__lt", 0)
 	//errLogs := make([]map[string]interface{}, len(logs))
 	//for k, v := range logs {
-	//	task, err := models.TaskGetById(v.TaskId)
+	//	task, err := log.TaskGetById(v.TaskId)
 	//	taskName := ""
 	//	if err == nil {
 	//		taskName = task.TaskName
@@ -76,7 +76,7 @@ func (this *AdminController) Index() {
 // 个人信息
 func (this *AdminController) Profile() {
 	beego.ReadFromRequest(&this.Controller)
-	user, _ := models.UserGetById(this.userId)
+	user, _ := system.UserGetById(this.userId)
 
 	if this.isPost() {
 		flash := beego.NewFlash()

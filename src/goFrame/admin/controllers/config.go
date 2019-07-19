@@ -1,8 +1,8 @@
 package controllers
 
 import (
+	"goFrame/models/system"
 	"github.com/astaxie/beego"
-	"goFrame/models"
 	"time"
 )
 
@@ -12,10 +12,10 @@ type ConfigController struct {
 
 func (this *ConfigController) Config() {
 	this.Data["pageTitle"] = "系统配置"
-	configs, _ := models.ConfigList(1, 20, "status", 1)
-	configList := make([]map[string] interface{}, len(configs))
+	configs, _ := system.ConfigList(1, 20, "status", 1)
+	configList := make([]map[string]interface{}, len(configs))
 	for k, v := range configs {
-		row := make(map[string] interface{})
+		row := make(map[string]interface{})
 		row["id"] = v.Id
 		row["name"] = v.Name
 		row["desc"] = v.Desc
@@ -52,7 +52,7 @@ func (this *ConfigController) EditConfig() {
 		}
 		if out.data["errorMsg"] == "" {
 			t := time.Now()
-			c := new(models.Config)
+			c := new(system.Config)
 			c.Name = name
 			c.Settings = settings
 			c.Desc = desc
@@ -89,7 +89,7 @@ func (this *ConfigController) DeleteConfig() {
 		out.data["errorMsg"] = ""
 		//id := this.Ctx.Input.Query("id")
 		id, _ := this.GetInt("id")
-		if config, err := models.ConfigGetById(id); err != nil {
+		if config, err := system.ConfigGetById(id); err != nil {
 			out.status = false
 			out.data["errorMsg"] = "can't found this config"
 		} else {

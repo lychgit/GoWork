@@ -11,6 +11,8 @@
     <mapping directory="$PROJECT_DIR$/github.com/lisijie/cron" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/lisijie/goblog" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/lisijie/webcron" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/shiLinQing407" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/github.com/shiLinQing407/BeeGoWeb" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/goblog" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/pyth_case/github.com/astaxie/beego" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/pyth_case/github.com/astaxie/goredis" vcs="Git" />

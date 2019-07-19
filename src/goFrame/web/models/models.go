@@ -5,5 +5,5 @@ import (
 )
 
 func TableName(name string) string {
-	return beego.AppConfig.String("db.prefix") + name
+	return beego.AppConfig.String("dbprefix") + name
 }

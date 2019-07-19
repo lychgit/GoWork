@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
-	"goFrame/models"
+	"goFrame/models/system"
 	"goFrame/libs"
 	"strings"
 	"time"
@@ -28,7 +28,7 @@ func (this *LoginController) Login() {
 		password := strings.TrimSpace(this.GetString("password"))
 		remember := this.GetString("remember")
 		if username != "" && password != "" {
-			user, err := models.UserGetByName(username)
+			user, err := system.UserGetByName(username)
 			errorMsg := ""
 			if err != nil || user.Password != libs.Md5([]byte(password+user.Salt)) {
 				errorMsg = "帐号或密码错误"
@@ -38,7 +38,7 @@ func (this *LoginController) Login() {
 				//beego.Debug("UserUpdate") //debug埋点
 				user.LastIp = this.getClientIp()
 				user.LastLogin = time.Now().Unix() //获取当前时间的Unix时间戳
-				models.UserUpdate(user)
+				system.UserUpdate(user)
 				authkey := libs.Md5([]byte(this.getClientIp() + "|" + user.Password + user.Salt))
 				//设置登录cookie
 				if remember == "yes" {

@@ -1,51 +1,53 @@
+/*
+@Time : 2019/3/28 11:02
+@Author : shilinqing
+@File : Init
+*/
 package models
 
 import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego"
-	"fmt"
-	"net/url"
-	)
+		"net/url"
+	"github.com/shiLinQing407/BeeGoWeb/models/system"
+	"github.com/shiLinQing407/BeeGoWeb/models/log"
+)
+
 
 var (
 	db orm.Ormer
 )
 
 func Init() {
+	beego.Error("init.init")
 	dbhost := beego.AppConfig.String("dbhost")
 	dbport := beego.AppConfig.String("dbport")
 	dbuser := beego.AppConfig.String("dbuser")
 	dbpassword := beego.AppConfig.String("dbpassword")
 	dbname := beego.AppConfig.String("dbname")
 	timezone := beego.AppConfig.String("dbtimezone")
-	//dbprefix := beego.AppConfig.String("dbprefix")
 	if dbport == "" {
 		dbport = "3306"
 	}
+	//fmt.Println(os.Getwd())
 	dsn := dbuser + ":" + dbpassword + "@tcp(" + dbhost + ":" + dbport + ")/" + dbname + "?charset=utf8"
 	if timezone != "" {
 		dsn = dsn + "&loc=" + url.QueryEscape(timezone)
 	}
 	//註冊默認數據庫
-	fmt.Println(dsn)
-	orm.RegisterDataBase("default", "mysql", dsn)
-	//orm.RegisterDataBase("default", "mysql", "root:123456@tcp(127.0.0.1:3306)/go?charset=utf8")
-	//不使用表名前缀
-	//orm.RegisterModel(new(User), new(Task), new(TaskGroup), new(TaskLog))
-	//使用表名前缀
-	//dbprefix = "go_"
-	//orm.RegisterModelWithPrefix(dbprefix, new(model.TaskLog))
-	//orm.RegisterModelWithPrefix(dbprefix, new(User), new(Log))
-	orm.RegisterModel(new(User), new(Log), new(Config), new(Menu), new(Role), new(RoleMenuRel),new(RoleUserRel))
-
-	if beego.AppConfig.String("runmode") == "dev" {
-		orm.Debug = true
-	}
-	//orm.RegisterDataBase("default", "mysql", "root:123456@tcp(127.0.0.1:3306)/tprbac?charset=utf8")
+	//fmt.Println(dsn)
+	//orm.RegisterDataBase("default", "mysql", dsn)
+	orm.RegisterDataBase("default", "mysql", "root:123456@tcp(127.0.0.1:3306)/go?charset=utf8")
+	//orm.RegisterDataBase("default", "mysql", "root:root@tcp(127.0.0.1:3306)/go_web?charset=utf8")
+	//new用来分配内存，但与其他语言中的同名函数不同，它不会初始化内存，只会讲内存置零；
+	// 也就是说，new(T)会为类型为T的新项分配已置零的内存空间，并返回他的地址，也就是一个类型为*T的值。
+	// 用Go的术语来说，它返回一个指针，改指针指向新分配的，类型为T的零值
+	orm.RegisterModelWithPrefix("go_", new(system.User), new(log.Log), new(system.Menu), new(system.Role), new(system.RoleMenuRel),new(system.RoleUserRel))
+	//if beego.AppConfig.String("runmode") == "dev" {
+	//	orm.Debug = true
+	//}
 	db = orm.NewOrm()
+	orm.Debug = true
 }
 
-func TableName(name string) string {
-	return beego.AppConfig.String("dbprefix") + name
-}

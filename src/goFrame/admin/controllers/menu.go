@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"goFrame/models"
+	"goFrame/models/system"
 	"strings"
 	)
 
@@ -26,7 +26,7 @@ func (this *MenuController) Index() {
 func (this *MenuController) UserMenuTree() {
 	uid := this.curUser.Id
 	//获取用户有权管理的菜单列表（包括区域）
-	tree := models.MenuListGetByUid(uid, 1)
+	tree := system.MenuListGetByUid(uid, 1)
 	////转换UrlFor 2 LinkUrl
 	this.UrlForLink(tree)
 	//beego.Debug(tree)
@@ -34,7 +34,7 @@ func (this *MenuController) UserMenuTree() {
 }
 
 //UrlForLink 使用URLFor方法，批量将资源表里的UrlFor值转成LinkUrl
-func (this *MenuController) UrlForLink(menus []*models.Menu) {
+func (this *MenuController) UrlForLink(menus []*system.Menu) {
 	for _, item := range menus {
 		//beego.Debug(item.UrlFor)
 		item.LinkUrl = this.UrlForLinkOne(item.UrlFor)
@@ -65,7 +65,7 @@ func (this *MenuController) UrlForLinkOne(urlfor string) string {
 //
 ////TreeGrid 获取所有资源的列表
 //func (this *MenuController) TreeGrid() {
-//	tree := models.MenuTreeGrid()
+//	tree := system.MenuTreeGrid()
 //	//转换UrlFor 2 LinkUrl
 //	this.UrlForLink(tree)
 //	//this.jsonResult(0, "", tree)
@@ -75,7 +75,7 @@ func (this *MenuController) UrlForLinkOne(urlfor string) string {
 //ParentTreeGrid 获取可以成为某节点的父节点列表
 //func (this *MenuController) ParentTreeGrid() {
 //	Id, _ := this.GetInt("id", 0)
-//	tree := models.MenuTreeGrid4Parent(Id)
+//	tree := system.MenuTreeGrid4Parent(Id)
 //	//转换UrlFor 2 LinkUrl
 //	this.UrlForLink(tree)
 //	//this.jsonResult(0, "", tree)
